@@ -1,0 +1,1314 @@
+<div data-elementor-type="wp-page" data-elementor-id="4170" class="elementor elementor-4170" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-ea7b6a2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="ea7b6a2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c63f9d7 elementor-widget__width-inherit elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides" data-id="c63f9d7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;transition_speed&quot;:900,&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:60,&quot;navigation&quot;:&quot;both&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+										<div class="elementor-repeater-item-cb57859 swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/06/%D8%A7%D9%88%D9%84-%D8%B3%D9%84%D8%A7%D9%8A%D8%AF-min.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"><div class="elementor-slide-heading"> اكتشف عسيــر</div><div class="elementor-slide-description">الطبيعـة ، الثقافــة  ، المغامرة </div></div></div></div><div class="elementor-repeater-item-c3b7539 swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5589.jpeg)"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d8%ad%d9%81%d9%84%d8%a9-%d8%a2%d9%85%d8%a7%d9%84-%d9%85%d8%a7%d9%87%d8%b1-%d9%88%d9%81%d8%a4%d8%a7%d8%af-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d9%88%d8%a7%d8%ad%d8%af/" target="_blank" rel="noopener"><div class="swiper-slide-contents"></div></a></div><div class="elementor-repeater-item-9eb81d2 swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5408.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-f3da884 swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5411.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-a99f0de swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5414.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-d47b19d swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5586.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-12d35f6 swiper-slide"><div class="swiper-slide-bg" role="img" style="background-image:url(/storage/uploads/2024/07/IMG_5409.jpeg)"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div>				</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous slide</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next slide</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-06727ac e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="06727ac" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-d2f77e2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d2f77e2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6150e0 elementor-widget elementor-widget-heading" data-id="c6150e0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">خطط  لقضاء إجازة رائعة! </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1d7bda9 elementor-widget elementor-widget-heading" data-id="1d7bda9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"> وتعرف على أجمل الاختيارات التي تمنحك تجربة متكاملة وجمال لا يضاهى  </h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9465fc2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9465fc2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-0cb69ab e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="0cb69ab" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c8f03b2 elementor-widget elementor-widget-image" data-id="c8f03b2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+							<img fetchpriority="high" decoding="async" width="330" height="310" src="/storage/uploads/2024/07/البكس-الخارجي-1-7.jpeg" class="attachment-full size-full wp-image-18613" alt="" srcset="/storage/uploads/2024/07/البكس-الخارجي-1-7.jpeg 330w, /storage/uploads/2024/07/البكس-الخارجي-1-7-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-c92efa1 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c92efa1" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3804da7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3804da7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-61e85d2 elementor-widget elementor-widget-heading" data-id="61e85d2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الفعاليات الترفيهية
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f22f915 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f22f915" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e759e2e elementor-widget elementor-widget-heading" data-id="e759e2e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fa3117d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="fa3117d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c7047fb elementor-widget elementor-widget-heading" data-id="c7047fb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">مدماك
+</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f6f9639 elementor-widget elementor-widget-text-editor" data-id="f6f9639" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-2195a48 elementor-widget elementor-widget-text-editor" data-id="2195a48" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-element elementor-element-4f996c5 elementor-widget elementor-widget-text-editor" data-id="4f996c5" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-element elementor-element-00cb5aa elementor-widget elementor-widget-text-editor" data-id="00cb5aa" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>هي فعالية  ترفيهية  تم تصميمها بأسلوب معماري مستلهمة من روح عسير المدمجة بالحداثة، تقع  بالقرب من  منتزه السحاب على إطلالة ساحرة</p></div></div><div class="elementor-element elementor-element-864564e elementor-align-right elementor-widget elementor-widget-button" data-id="864564e" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper"> </div></div></div></div></div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d88cc1d elementor-align-center elementor-widget elementor-widget-button" data-id="d88cc1d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد </span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a931e86 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a931e86" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-15f9cdc elementor-widget elementor-widget-image" data-id="15f9cdc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/%d8%aa%d9%85%d8%a7%d8%b4%d9%8a/" target="_blank" rel="noopener">
+							<img decoding="async" width="330" height="310" src="/storage/uploads/2024/08/مزرعه-الليوان.jpeg" class="attachment-full size-full wp-image-20897" alt="" srcset="/storage/uploads/2024/08/مزرعه-الليوان.jpeg 330w, /storage/uploads/2024/08/مزرعه-الليوان-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-543133d e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="543133d" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e1e9b34 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e1e9b34" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cd79d8f elementor-widget elementor-widget-heading" data-id="cd79d8f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">التجارب السياحية</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-812f9b5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="812f9b5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-13215ab elementor-widget elementor-widget-heading" data-id="13215ab" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e06c3b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4e06c3b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-51b47a1 elementor-widget elementor-widget-heading" data-id="51b47a1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%d8%aa%d9%85%d8%a7%d8%b4%d9%8a/" target="_blank" rel="noopener">مزرعه الليوان</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-68c3e4e elementor-widget elementor-widget-text-editor" data-id="68c3e4e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>تقع مزرعة الليوان في مدينة أبها في قرية آل يوسف التراثية،ويمتاز موقعها بوجود مزرعة وبيت طين تم تطويره وتحويله إلى وجهة سياحية محلية تراثية مستوحاة من ثقافة المنطقة.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-14ae345 elementor-align-center elementor-widget elementor-widget-button" data-id="14ae345" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%85%d8%b2%d8%b1%d8%b9%d9%87-%d8%a7%d9%84%d9%84%d9%8a%d9%88%d9%86/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d58aecf e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d58aecf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8972ce2 elementor-widget elementor-widget-image" data-id="8972ce2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/ateeq-tea/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="/storage/uploads/2024/08/منش-.jpeg" class="attachment-full size-full wp-image-20901" alt="" srcset="/storage/uploads/2024/08/منش-.jpeg 330w, /storage/uploads/2024/08/منش--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-2fd228e e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2fd228e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8776ea4 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="8776ea4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-717d45b elementor-widget elementor-widget-heading" data-id="717d45b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الحلويات والمخبوزات
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b4a50a8 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="b4a50a8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7f54490 elementor-widget elementor-widget-heading" data-id="7f54490" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها
+</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9a5d9fb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9a5d9fb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-22bd018 elementor-widget elementor-widget-heading" data-id="22bd018" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">منش بيكري</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d65110d elementor-widget elementor-widget-text-editor" data-id="d65110d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-4e91535a elementor-widget elementor-widget-text-editor" data-id="4e91535a" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>استمتع بتجربة لا تُنسى في مخبز منش بيكري المعروف بتقديمه مجموعة متنوعة من المخبوزات والكعك، خاصة كوب كيك اللذيذ.</p></div></div><div class="elementor-element elementor-element-554fbf21 elementor-align-right elementor-widget elementor-widget-button" data-id="554fbf21" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper"> </div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c6d7ba6 elementor-align-center elementor-widget elementor-widget-button" data-id="c6d7ba6" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%85%d9%86%d8%b4-%d8%a8%d9%8a%d9%83%d8%b1%d9%8a/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a35b63d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a35b63d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-51345e7 elementor-widget elementor-widget-image" data-id="51345e7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="330" height="310" src="/storage/uploads/2024/06/صالون-نورة-.jpeg" class="attachment-full size-full wp-image-14528" alt="" srcset="/storage/uploads/2024/06/صالون-نورة-.jpeg 330w, /storage/uploads/2024/06/صالون-نورة--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-a85c1ab e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a85c1ab" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3e797b8 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3e797b8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-249b516 elementor-widget elementor-widget-heading" data-id="249b516" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الخدمات والمرافق 
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e46751f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e46751f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cd5e301 elementor-widget elementor-widget-heading" data-id="cd5e301" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">خميس مشيط</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ed0d478 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ed0d478" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a1594d0 elementor-widget elementor-widget-heading" data-id="a1594d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">صالون نورة القحطاني </h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-feee3f6 elementor-widget elementor-widget-text-editor" data-id="feee3f6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>من الوجهات الرائعة في عالم العناية و الجمال يقدم خدمات تجميلية من الاعتناء بالاظافر واليدين والمساج والحمام المغربي وتجربة فريدة من الاسترخاء والجمال</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b1bd03d elementor-align-center elementor-widget elementor-widget-button" data-id="b1bd03d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d8%b5%d8%a7%d9%84%d9%88%d9%86-%d9%86%d9%88%d8%b1%d8%a9-%d8%a7%d9%84%d9%82%d8%ad%d8%b7%d8%a7%d9%86%d9%8a/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9c64095 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="9c64095" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-28db7df e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="28db7df" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-87d26ae elementor-widget elementor-widget-heading" data-id="87d26ae" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">الإقامة والتسوق
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0f03e74 elementor-widget elementor-widget-heading" data-id="0f03e74" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">عالم التسوق المثالي إلى إقامة  رائْعة لا تنسى</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2a43ab7 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2a43ab7" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-570be18 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="570be18" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0454d21 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="0454d21" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								شالية الندي الخاص 							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								ليلة استثنائية من الراحة والاسترخاء
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							شالية الندي الخاص 						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							ليلة استثنائية من الراحة والاسترخاء
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/%d8%b4%d8%a7%d9%84%d9%8a%d9%87-%d8%a7%d9%84%d9%86%d8%af%d9%89-%d8%a7%d9%84%d8%ae%d8%a7%d8%b5/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5ef056f elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="5ef056f" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								بارك أبها							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								وجهة مثالية للعائلة 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							بارك أبها						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							وجهة مثالية للعائلة 
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/%d8%a8%d8%a7%d8%b1%d9%83-%d8%a3%d8%a8%d9%87%d8%a7/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d77114c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d77114c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9eafcad elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="9eafcad" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								فندق انيفيل							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								إقامة فاخرة ولحظات سعيدة
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							فندق انيفيل						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							إقامة فاخرة ولحظات سعيدة
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/%d8%a7%d9%86%d9%8a%d9%81%d9%8a%d9%84/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a7dcd21 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a7dcd21" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2dfda0c elementor-align-center elementor-widget elementor-widget-button" data-id="2dfda0c" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/') }}/%d8%a7%d9%84%d8%a5%d9%82%d8%a7%d9%85%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b3%d9%88%d9%82/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">اكتشف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9535315 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="9535315" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e08aefb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e08aefb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8a23488 elementor-widget elementor-widget-heading" data-id="8a23488" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">استعد لرحلة لا تُنسى في عالم النكهات والطهي المحلي !</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ea0be34 elementor-widget elementor-widget-heading" data-id="ea0be34" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">حيث يلتقي الطعم الرفيع مع جولة فريدة لاستكشاف مذاقات محلية وعالمية متنوعة</h6>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-00af093 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="00af093" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-6486165 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="6486165" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f4a2158 elementor-flip-box--direction-right elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="f4a2158" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								La-Scene لاسين							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							La-Scene لاسين						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/la-scene-لاسين/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dfe8640 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="dfe8640" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								 فلق							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								طبق في عالم مختلف 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							 فلق						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/فلق/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ef4b40b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ef4b40b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-932cf91 elementor-flip-box--direction-down elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="932cf91" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								  زورنا							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							  زورنا						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/زورنا/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2326462 elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="2326462" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								مطعم سنسو الإيطالي							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							مطعم سنسو الإيطالي						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/مطعم-سنسو-الإيطالي/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7fe35c0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="7fe35c0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-42ad5a9 elementor-align-center elementor-widget elementor-widget-button" data-id="42ad5a9" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/') }}/%d9%85%d8%a3%d9%83%d9%88%d9%84%d8%a7%d8%aa-%d9%88%d9%85%d8%b4%d8%b1%d9%88%d8%a8%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أكتشف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1bac9a7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="1bac9a7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-97b5217 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="97b5217" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9993d89 elementor-widget elementor-widget-heading" data-id="9993d89" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">اكتشف المزيد </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-28f3324 elementor-widget elementor-widget-heading" data-id="28f3324" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-medium">من العروض والخدمات التي تجعلك دائمًا على اطلاع بكل جديد</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d62acd2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d62acd2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c33e68f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c33e68f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-02d5990 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="02d5990" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								الاكواب							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								yoshapottery							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							الاكواب						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							yoshapottery						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/yoshapottery/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-07553a6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="07553a6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3931b9d elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="3931b9d" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								العبايات							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								BR BY BATOOL							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							العبايات						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							BR BY BATOOL						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/br-by-batool/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dae7d75 elementor-flip-box--direction-down elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="dae7d75" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								سكتش ارت							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								حين يكون للفن حكاية
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							سكتش ارت						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							حين يكون للفن حكاية
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/%d8%b3%d9%83%d8%aa%d8%b4-%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9d96681 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9d96681" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f53a82b elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="f53a82b" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								WA							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								سلسلة العودة إلى الداخل 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							WA						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							سلسلة العودة إلى الداخل 
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="{{ url('/') }}/wa/" target="_blank" rel="noopener">
+							أعرف المزيد						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9509105 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9509105" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-04e15cf elementor-align-center elementor-widget elementor-widget-button" data-id="04e15cf" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/') }}/%d8%a7%d9%84%d9%88%d8%ac%d9%87%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أكتشف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-310f3f2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="310f3f2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5474005 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5474005" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-53014bb elementor-widget elementor-widget-heading" data-id="53014bb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">استكشف أفضل اختياراتنا </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-df14f1c elementor-widget elementor-widget-heading" data-id="df14f1c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">للمعالم والوجهات السياحية واستمتع بتجربة سفر لا تُنسى</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e3f7c0 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4e3f7c0" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ae678c7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ae678c7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-0f3988d elementor-widget elementor-widget-image" data-id="0f3988d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="2560" height="1920" src="/storage/uploads/2024/08/حديقة-المشهد-scaled.jpeg" class="attachment-full size-full wp-image-20934" alt="" srcset="/storage/uploads/2024/08/حديقة-المشهد-scaled.jpeg 2560w, /storage/uploads/2024/08/حديقة-المشهد-300x225.jpeg 300w, /storage/uploads/2024/08/حديقة-المشهد-1024x768.jpeg 1024w, /storage/uploads/2024/08/حديقة-المشهد-768x576.jpeg 768w, /storage/uploads/2024/08/حديقة-المشهد-1536x1152.jpeg 1536w, /storage/uploads/2024/08/حديقة-المشهد-2048x1536.jpeg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-5cfa29f e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5cfa29f" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c133fd2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c133fd2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0ca9ef2 elementor-widget elementor-widget-heading" data-id="0ca9ef2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الحدائق والمنتزهات</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10033bb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10033bb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fdd835c elementor-widget elementor-widget-heading" data-id="fdd835c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-bbe4f4a e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="bbe4f4a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6724c84 elementor-widget elementor-widget-heading" data-id="6724c84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">حديقة المشهد</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-eb72086 elementor-widget elementor-widget-text-editor" data-id="eb72086" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>استكشف حديقة  المشهد، ومساحتها الطبيعة،  تضم  مرافق  للعائلات  وألعاب  للأطفال  ومنافذ  لبيع  الوجبات والأكلات التراثية والمحلية.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ffde78e elementor-align-center elementor-widget elementor-widget-button" data-id="ffde78e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cc7ee9b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="cc7ee9b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8a4a157 elementor-widget elementor-widget-image" data-id="8a4a157" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="330" height="310" src="/storage/uploads/2024/06/ساحه-الوطن-.jpeg" class="attachment-full size-full wp-image-13018" alt="" srcset="/storage/uploads/2024/06/ساحه-الوطن-.jpeg 330w, /storage/uploads/2024/06/ساحه-الوطن--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-f6f3ed6 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f6f3ed6" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5d2c484 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5d2c484" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-55b0f3f elementor-widget elementor-widget-heading" data-id="55b0f3f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الحدائق والمنتزهات</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d69b55b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d69b55b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-87371c0 elementor-widget elementor-widget-heading" data-id="87371c0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9198c38 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9198c38" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bd576b5 elementor-widget elementor-widget-heading" data-id="bd576b5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">ممشى ساحة الوطن
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-83abe95 elementor-widget elementor-widget-text-editor" data-id="83abe95" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>استمتع بلحظات حيوية ومنعشة في ممشى ساحة الوطن الذي يحتوي على  مرافق من  مقاعد للجلوس ومواقف للسيارات ومسار للمشي</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c5951df elementor-align-center elementor-widget elementor-widget-button" data-id="c5951df" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%85%d9%85%d8%b4%d9%89-%d8%b3%d8%a7%d8%ad%d8%a9-%d8%a7%d9%84%d9%88%d8%b7%d9%86/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-28b642d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="28b642d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ea86980 elementor-widget elementor-widget-image" data-id="ea86980" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="310" height="330" src="/storage/uploads/2024/07/البكس-الخارجي-8-1.jpeg" class="attachment-full size-full wp-image-17726" alt="" srcset="/storage/uploads/2024/07/البكس-الخارجي-8-1.jpeg 310w, /storage/uploads/2024/07/البكس-الخارجي-8-1-282x300.jpeg 282w" sizes="(max-width: 310px) 100vw, 310px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-dc4ff03 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="dc4ff03" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-bf4a2f1 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="bf4a2f1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-57471c6 elementor-widget elementor-widget-heading" data-id="57471c6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">المعالم والمنتزهات
+
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c878d04 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c878d04" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0eef1d2 elementor-widget elementor-widget-heading" data-id="0eef1d2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">بللسمر</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a2e3cec e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a2e3cec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-36c9733 elementor-widget elementor-widget-heading" data-id="36c9733" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">شعف آل خريم
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e90c76f elementor-widget elementor-widget-text-editor" data-id="e90c76f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">منتزه الشعف </span><span style="font-weight: 400;">آل خريم </span><span style="font-weight: 400;"> يرتفع قرابة 2800 مترا فوق سطح البحر ، ويتميز بكثافة أشجار العرعر ، </span><span style="font-weight: 400;">وسهولة التنقل بين الممرات والاشجار. </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-aa0916e elementor-align-center elementor-widget elementor-widget-button" data-id="aa0916e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d8%b4%d8%b9%d9%81-%d8%a2%d9%84-%d8%ae%d8%b1%d9%8a%d9%85/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3e0cf0f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3e0cf0f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d1b8f88 elementor-widget elementor-widget-image" data-id="d1b8f88" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="310" height="330" src="/storage/uploads/2024/07/البكس-الخارجي-9.jpeg" class="attachment-full size-full wp-image-17702" alt="" srcset="/storage/uploads/2024/07/البكس-الخارجي-9.jpeg 310w, /storage/uploads/2024/07/البكس-الخارجي-9-282x300.jpeg 282w" sizes="(max-width: 310px) 100vw, 310px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-a5b8a29 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a5b8a29" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4fb9b07 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4fb9b07" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b6abe0b elementor-widget elementor-widget-heading" data-id="b6abe0b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">المعالم السياحية </p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10901dd e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10901dd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4eeec7d elementor-widget elementor-widget-heading" data-id="4eeec7d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">السودة</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-746a3e5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="746a3e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-83e0377 elementor-widget elementor-widget-heading" data-id="83e0377" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">وادي عين الذيبة 
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec2fdc3 elementor-widget elementor-widget-text-editor" data-id="ec2fdc3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;"> تعد عين الذيبة واحدة من أبرز معالم الجذب الطبيعية في منطقة عسير ،تضم مجموعة من الشلالات المذهلة  ذات المياه العذبة و يوجد بها مختلف النباتات </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-62c4fc1 elementor-align-center elementor-widget elementor-widget-button" data-id="62c4fc1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%88%d8%a7%d8%af%d9%8a-%d8%b9%d9%8a%d9%86-%d8%a7%d9%84%d8%b0%d9%8a%d8%a8%d8%a9/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d02fe9c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d02fe9c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-de48a69 elementor-align-center elementor-widget elementor-widget-button" data-id="de48a69" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/') }}/%d8%a7%d9%84%d9%88%d8%ac%d9%87%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أكتشف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7956e84 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="7956e84" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-10cbd2a e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10cbd2a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-80c6913 elementor-widget elementor-widget-heading" data-id="80c6913" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">نقدم لك تجربة </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-273e86e elementor-widget elementor-widget-heading" data-id="273e86e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-medium">تمزج بين الجمال التاريخي والتنوع الثقافي في معالم التراث والثقافة  </h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1202734e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="1202734e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-31b66e31 customslider elementor--h-position-left elementor--v-position-middle elementor-arrows-position-inside elementor-widget elementor-widget-slides" data-id="31b66e31" data-element_type="widget" data-e-type="widget" data-settings="{&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;,&quot;transition_speed&quot;:500}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+										<div class="elementor-repeater-item-caa9bdf swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d8%b5%d8%b1-%d9%85%d8%a7%d9%84%d9%83-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القصور التاريخية</h6><div class="elementor-slide-description"><h4>قصر  مالك التاريخي
+</h4>
+قصر  مالك  التاريخي،  يتجسد  التاريخ  والولاء،  استمتع  <br>مشاهدة  القطع  الأثرية  والوثائق  في  قلب  القصر والطبيعة  المحيطة  <br>من  إطلالته الساحرة على المزارع المحيطة فيه</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div><div class="elementor-repeater-item-30295e2 swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d9%84%d8%b9%d8%a9-%d8%b4%d9%85%d8%b3%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a%d8%a9-2/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القصور التاريخية</h6><div class="elementor-slide-description"><h4>قلعة  شمسان التاريخية
+</h4>
+قلعة شمسان التاريخية في أبها  يعود تاريخ تشييدها بتصميمها الأخير<br> إلى أكثر من 100 عام،وشيدت على جبل شمسان وتعتبر مثالًا <br>بارزًا للأسلوب والفنون المعمارية التقليدية
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div><div class="elementor-repeater-item-dc0daac swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d8%b5%d8%b1-%d8%b4%d8%af%d8%a7-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القصور التاريخية</h6><div class="elementor-slide-description"><h4>قصر  شدا التاريخي
+</h4>
+استعد للانغماس في مدينة أبها بتاريخ قصر شدا، المعلم التاريخي <br>البارز الممتد لأعوام مبني على نمط عمارة عسير  الذي بني القصر من الحجارة، <br>مع تغطية الجدران بطبقة من الجص من الداخل والخارج .</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div><div class="elementor-repeater-item-1ae7b9d swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d8%b1%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d9%81%d8%aa%d8%a7%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d8%b4%d9%83%d9%8a%d9%84%d9%8a%d8%a9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القرى التراثية</h6><div class="elementor-slide-description"><h4>قرية  المفتاحة التشكيلية
+</h4>
+قرية المفتاحة تحفة معمارية تجمع بين الفن والإلهام والأصالة، <br>وتوفر تجربة سياحية فريدة تأخذ الزائر في رحلة عبر التاريخ <br>والثقافة المحلية بأجواء رائعة ومليئة بالحيوية
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div><div class="elementor-repeater-item-c55e3ff swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d8%b1%d9%8a%d8%a9-%d8%b1%d8%ac%d8%a7%d9%84-%d8%a3%d9%84%d9%85%d8%b9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القرى التراثية</h6><div class="elementor-slide-description"><h4>قرية  رجال ألمع
+</h4>
+اكتشف  جمال  وتاريخ  القرية  التي  شيدت  مبانيها  من  الحجر <br> واستمتع  بالمعالم  الأثرية  وتعرف  على  فن  القط  العسيري <br>،تتسم أهميتها التاريخية  لأكثر من 700 عام
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div><div class="elementor-repeater-item-476e474 swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="{{ url('/') }}/%d9%82%d8%b1%d9%8a%d8%a9-%d9%88%d8%b7%d9%86-%d8%a7%d9%85%d8%b3%d9%88%d8%af%d8%a9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">القرى التراثية</h6><div class="elementor-slide-description"><h4>قرية وطن امسودة
+</h4>
+استكشف  قرية  زبنة  التاريخية،  حيث  تجتمع  روعة  الحاضر <br> مع  بريق  الماضي، تجد فيها القلاع والمعالم الأثرية،<br> ومسارات المشي بين الطبيعة والبيوت الاثرية عيش تجربة الطبيعية والاستكشاف</div><div  class="elementor-button elementor-slide-button elementor-size-md">أكتشف المزيد</div></div></a></div>				</div>
+																				<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous slide</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next slide</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e29c165 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="e29c165" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e43a621 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e43a621" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d144b98 elementor-widget elementor-widget-heading" data-id="d144b98" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">استعد لتجارب وفعاليات عسير القادمة </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5385128 elementor-widget elementor-widget-heading" data-id="5385128" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">حيث تنتظرك تجارب فريدة ولحظات لا تُنسى</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7cea75e e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="7cea75e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-94a6537 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="94a6537" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2d42238 elementor-widget elementor-widget-image" data-id="2d42238" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/%d8%ad%d9%81%d9%84-%d8%b5%d9%8a%d9%81-%d8%a7%d9%84%d9%86%d9%85%d8%a7%d8%b5-2024/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="/storage/uploads/2024/08/البكس-الخارجي-2.jpeg" class="attachment-full size-full wp-image-19449" alt="" srcset="/storage/uploads/2024/08/البكس-الخارجي-2.jpeg 330w, /storage/uploads/2024/08/البكس-الخارجي-2-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-a8c004e elementor-absolute elementor-widget elementor-widget-heading" data-id="a8c004e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">انتهت</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b3d510 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3b3d510" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-0c70b03 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="0c70b03" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b5143d0 elementor-widget elementor-widget-heading" data-id="b5143d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الفعاليات القادمة</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-43c973f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="43c973f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1b501dd elementor-widget elementor-widget-heading" data-id="1b501dd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-369692d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="369692d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bf3dc92 elementor-widget elementor-widget-heading" data-id="bf3dc92" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%d8%ad%d9%81%d9%84-%d8%b5%d9%8a%d9%81-%d8%a7%d9%84%d9%86%d9%85%d8%a7%d8%b5-2024/" target="_blank" rel="noopener">حفلة رابح صقر</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d50626b elementor-widget elementor-widget-text-editor" data-id="d50626b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>تطل علينا حفلة الفنان رابح صقر الغنائية في 9 أغسطس 2024، في مدينة أبها ،ضمن سلسلة حفلات “جولة المملكة 2024”</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-60da9a1 elementor-align-center elementor-widget elementor-widget-button" data-id="60da9a1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/rabihsager/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-efd9dab e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="efd9dab" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f9b786e elementor-widget elementor-widget-image" data-id="f9b786e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="330" height="310" src="/storage/uploads/2024/07/البكس-الخارجي-1-7.jpeg" class="attachment-full size-full wp-image-18613" alt="" srcset="/storage/uploads/2024/07/البكس-الخارجي-1-7.jpeg 330w, /storage/uploads/2024/07/البكس-الخارجي-1-7-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-580d8e9 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="580d8e9" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-581c5ff e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="581c5ff" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2982d85 elementor-widget elementor-widget-heading" data-id="2982d85" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الفعاليات الترفيهية</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d962b35 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d962b35" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7d2f111 elementor-widget elementor-widget-heading" data-id="7d2f111" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها </p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b80a5c3 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="b80a5c3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-955b14a elementor-widget elementor-widget-heading" data-id="955b14a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%D8%AD%D9%81%D9%84%D8%A9-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%85%D8%AC%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%84%D9%87/" target="_blank" rel="noopener">مدماك</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-84cde95 elementor-widget elementor-widget-text-editor" data-id="84cde95" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>هي فعالية  ترفيهية  تم تصميمها بأسلوب معماري مستلهمة من روح عسير المدمجة بالحداثة، تقع  بالقرب من  منتزه السحاب على إطلالة ساحرة</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-89d98b3 elementor-align-center elementor-widget elementor-widget-button" data-id="89d98b3" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-16fe2e3 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="16fe2e3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-7a3cbfc elementor-widget elementor-widget-image" data-id="7a3cbfc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="550" height="500" src="/storage/uploads/2024/07/مربع-جنب-الصور-.jpeg" class="attachment-full size-full wp-image-17204" alt="" srcset="/storage/uploads/2024/07/مربع-جنب-الصور-.jpeg 550w, /storage/uploads/2024/07/مربع-جنب-الصور--300x273.jpeg 300w" sizes="(max-width: 550px) 100vw, 550px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-25b694b elementor-absolute elementor-widget elementor-widget-heading" data-id="25b694b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">انتهت</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-c5240f5 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c5240f5" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-85891a7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="85891a7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-adb41fd elementor-widget elementor-widget-heading" data-id="adb41fd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الفعاليات الرياضية</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ab0beb0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ab0beb0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4565708 elementor-widget elementor-widget-heading" data-id="4565708" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9235d6f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9235d6f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-84f836a elementor-widget elementor-widget-heading" data-id="84f836a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">كأس السوبر السعودي 2024</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-70d2eac elementor-widget elementor-widget-text-editor" data-id="70d2eac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">تستضيف مدينة أبها  منافسات بطولة كأس السوبر السعودي 2024 انطلاقًا من 13-17 أغسطس المقبل , بالتزامن مع موسم صيف عسير 2024</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-68b7193 elementor-align-center elementor-widget elementor-widget-button" data-id="68b7193" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9867d50 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9867d50" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-b782068 elementor-widget elementor-widget-image" data-id="b782068" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="{{ url('/') }}/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="/storage/uploads/2024/07/البكس-الخارجي-.png" class="attachment-full size-full wp-image-17988" alt="" srcset="/storage/uploads/2024/07/البكس-الخارجي-.png 330w, /storage/uploads/2024/07/البكس-الخارجي--300x282.png 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-49a808c e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="49a808c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4fae9f6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4fae9f6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-14768a2 elementor-widget elementor-widget-heading" data-id="14768a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">الفعاليات الترفيهية
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2d3bb2e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2d3bb2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d6ec1fd elementor-widget elementor-widget-heading" data-id="d6ec1fd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">أبها</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-16c1d9d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="16c1d9d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d18b2a2 elementor-widget elementor-widget-heading" data-id="d18b2a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="{{ url('/') }}/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">باتل كارت</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d9f82a3 elementor-widget elementor-widget-text-editor" data-id="d9f82a3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-b4b6875 elementor-widget elementor-widget-text-editor" data-id="b4b6875" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>فعالية تتميز بوجود  أول سباق سيارات كارتنج بمزيج ألعاب الفيديو والواقع المعزز، والكثير من الألعاب المختلفة مثل حلبة سباق السيارات، كرة القدم ولعبة الثعبان.</p></div></div><div class="elementor-element elementor-element-560bbf0 elementor-align-right elementor-widget elementor-widget-button" data-id="560bbf0" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper"> </div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a9f5f34 elementor-align-center elementor-widget elementor-widget-button" data-id="a9f5f34" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="{{ url('/') }}/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أعرف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-38dcb2d e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="38dcb2d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d151437 elementor-align-center elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="d151437" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/') }}/%d9%81%d8%b9%d8%a7%d9%84%d9%8a%d8%a7%d8%aa-%d9%88%d9%85%d9%87%d8%b1%d8%ac%d8%a7%d9%86%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">أكتشف المزيد</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f29224b e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="f29224b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4544b71 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4544b71" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a23a765 elementor-widget elementor-widget-heading" data-id="a23a765" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">اكتشف عسير</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c3b909e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c3b909e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-88dedf8 elementor-widget elementor-widget-shortcode" data-id="88dedf8" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><div id="wpgmza_map" class="wpgmza_map" data-settings='{"id":"1","map_title":"Homepage Map","map_width":"100","map_height":"400","map_start_lat":"19.575828633542443","map_start_lng":"42.21838678923842","map_start_location":"45.950464398418106,-109.81550500000003","map_start_zoom":"7","default_marker":"","type":"0","alignment":"4","directions_enabled":"0","styling_enabled":"0","styling_json":"","active":"0","kml":"","bicycle":"0","traffic":"0","dbox":"0","dbox_width":"","listmarkers":"0","listmarkers_advanced":"0","filterbycat":"0","ugm_enabled":"0","ugm_category_enabled":"0","fusion":"","map_width_type":"%","map_height_type":"px","mass_marker_support":"0","ugm_access":"0","order_markers_by":"0","order_markers_choice":"0","show_user_location":"0","default_to":"","other_settings":{"map_type":1,"sl_stroke_color":"","sl_fill_color":"","sl_stroke_opacity":"","sl_fill_opacity":"","transport_layer":false,"action":"wpgmza_save_map","redirect_to":"\/wp-admin\/admin-post.php","map_id":"1","http_referer":"\/wp-admin\/admin.php?page=wp-google-maps-menu&amp;amp;action=edit&amp;amp;map_id=1","wpgmza_id":"1","wpgmza_start_location":"19.575828633542443,42.21838678923842","wpgmza_start_zoom":"7","store_locator_enabled":false,"store_locator_search_area":"radial","wpgmza_store_locator_radius_style":"legacy","wpgmza_store_locator_default_radius":"10","store_locator_auto_area_max_zoom":"","store_locator_distance":false,"wpgmza_store_locator_position":false,"store_locator_show_distance":false,"store_locator_category":false,"wpgmza_store_locator_use_their_location":false,"wpgmza_store_locator_bounce":false,"wpgmza_sl_animation":null,"wpgmza_store_locator_hide_before_search":false,"store_locator_query_string":"","store_locator_location_placeholder":"","store_locator_default_address":"","store_locator_name_search":false,"store_locator_name_string":"","store_locator_not_found_message":"","wpgmza_map_align":"1","jump_to_nearest_marker_on_initialization":false,"automatically_pan_to_users_location":false,"override_users_location_zoom_level":false,"override_users_location_zoom_levels":"","show_distance_from_location":false,"map_max_zoom":"21","map_min_zoom":"0","click_open_link":false,"fit_maps_bounds_to_markers":false,"fit_maps_bounds_to_markers_after_filtering":false,"hide_point_of_interest":false,"wpgmza_zoom_on_marker_click":false,"wpgmza_zoom_on_marker_click_slider":"","close_infowindow_on_map_click":false,"disable_lightbox_images":false,"use_Raw_Jpeg_Coordinates":false,"disable_polygon_info_windows":false,"enable_marker_ratings":false,"only_load_markers_within_viewport":false,"iw_primary_color":"#000000","iw_accent_color":"#000000","iw_text_color":"#000000","wpgmza_listmarkers_by":"0","wpgmza_marker_listing_position":false,"zoom_level_on_marker_listing_override":false,"zoom_level_on_marker_listing_click":"","marker_listing_disable_zoom":false,"datatable_no_result_message":"","remove_search_box_datables":false,"dataTable_pagination_style":null,"datatable_search_string":"","datatable_result_start":"","datatable_result_of":"","datatable_result_to":"","datatable_result_total":"","datatable_result_show":"","datatable_result_entries":"","wpgmza_savemap":"Save Map \u00bb"}}' data-map-id='1' Data-maps-engine='open-layers' data-shortcode-attributes='{"id":"1"}' style="display:block; overflow:auto; width:100%; height:400px; float:left;"></div></div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7127347 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="7127347" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1409e74 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="1409e74" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ecdee39 elementor-widget elementor-widget-heading" data-id="ecdee39" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">ماذا يقول العملاء عنا</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9f80908 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9f80908" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-06c8f4e elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel" data-id="06c8f4e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper-container">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						فخورين بتفعيل وتأسيس  هذه المنصة الرائعه التي تدعم السياحة و شباب وبنات المنطقة ، وتخدم السائحين وكل من له رغبه باستكشاف جمال منطقة عسير .					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="/storage/uploads/2024/06/سكتش-ارت-1-1.jpeg" alt="سكتش ارات">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">سكتش ارات</span><span class="elementor-testimonial__title">متجر</span></cite>			</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						منصة فيها المناطق السياحية في ابها وكل المعلومات اللي تحتاجها عن عسير .. عن الأماكن التراثية العريقة والسياحية والمطاعم المشهورة .. بالتوفيق للقائمين عليها🙏🏻					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="/storage/uploads/2024/07/البكس-الخارجي-21.jpeg" alt=" الندي الخاص ">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name"> الندي الخاص </span><span class="elementor-testimonial__title">شالية</span></cite>			</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						" منصة ساحة الفعاليات تعكس بشكل جميل التراث والثقافة المحلية إنها منصة  رائعة لمعرفة  بالفعاليات الجديدة  والمعاصرة على حد سواء"					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="/storage/uploads/2024/07/الصورة-الا-جنب-المربعات-الصغيرة-.jpeg" alt="WA">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">WA</span><span class="elementor-testimonial__title">متجر</span></cite>			</div>
+		</div>
+								</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-aabf940 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="aabf940" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-642f6ec e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="642f6ec" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6c8eda4 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="6c8eda4" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-910ce56 elementor-widget elementor-widget-heading" data-id="910ce56" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">الاشتراك في النشرة الإخبارية</h4>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f5a9914 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f5a9914" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-949031f elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="949031f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;button_width&quot;:&quot;25&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;20&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="Newsletter">
+			<input type="hidden" name="post_id" value="4170"/>
+			<input type="hidden" name="form_id" value="949031f"/>
+			<input type="hidden" name="referer_title" value="الصفحة الرئيسية | Events" />
+
+							<input type="hidden" name="queried_id" value="4170"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-60 elementor-sm-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-xs  elementor-field-textual" placeholder="ادخل البريد الاكتروني" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-25 e-form__buttons elementor-sm-20">
+					<button type="submit" class="elementor-button elementor-size-xs">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">اشترك الان</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	
+	
+</div><!-- .entry-content .clear -->
+
+	
+	
+</article><!-- #post-## -->
+
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+
+<script nitro-exclude>
+    document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
+</script>	</div> <!-- ast-container -->
+	</div><!-- #content -->
+		

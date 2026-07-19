@@ -1,0 +1,1315 @@
+﻿
+				<div class="elementor-element elementor-element-ea7b6a2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="ea7b6a2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c63f9d7 elementor-widget__width-inherit elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides" data-id="c63f9d7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;transition_speed&quot;:900,&quot;_animation&quot;:&quot;none&quot;,&quot;_animation_delay&quot;:60,&quot;navigation&quot;:&quot;both&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+										<div class="elementor-repeater-item-cb57859 swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"><div class="elementor-slide-heading"> Ø§ÙƒØªØ´Ù Ø¹Ø³ÙŠÙ€Ù€Ø±</div><div class="elementor-slide-description">Ø§Ù„Ø·Ø¨ÙŠØ¹Ù€Ø© ØŒ Ø§Ù„Ø«Ù‚Ø§ÙÙ€Ù€Ø©  ØŒ Ø§Ù„Ù…ØºØ§Ù…Ø±Ø© </div></div></div></div><div class="elementor-repeater-item-c3b7539 swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d8%ad%d9%81%d9%84%d8%a9-%d8%a2%d9%85%d8%a7%d9%84-%d9%85%d8%a7%d9%87%d8%b1-%d9%88%d9%81%d8%a4%d8%a7%d8%af-%d8%b9%d8%a8%d8%af%d8%a7%d9%84%d9%88%d8%a7%d8%ad%d8%af/" target="_blank" rel="noopener"><div class="swiper-slide-contents"></div></a></div><div class="elementor-repeater-item-9eb81d2 swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-f3da884 swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-a99f0de swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-d47b19d swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div><div class="elementor-repeater-item-12d35f6 swiper-slide"><div class="swiper-slide-bg" role="img"></div><div class="swiper-slide-inner" ><div class="swiper-slide-contents"></div></div></div>				</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous slide</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next slide</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-06727ac e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="06727ac" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-d2f77e2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d2f77e2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6150e0 elementor-widget elementor-widget-heading" data-id="c6150e0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø®Ø·Ø·Â  Ù„Ù‚Ø¶Ø§Ø¡ Ø¥Ø¬Ø§Ø²Ø© Ø±Ø§Ø¦Ø¹Ø©!Â </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1d7bda9 elementor-widget elementor-widget-heading" data-id="1d7bda9" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Â ÙˆØªØ¹Ø±Ù Ø¹Ù„Ù‰ Ø£Ø¬Ù…Ù„ Ø§Ù„Ø§Ø®ØªÙŠØ§Ø±Ø§Øª Ø§Ù„ØªÙŠ ØªÙ…Ù†Ø­Ùƒ ØªØ¬Ø±Ø¨Ø© Ù…ØªÙƒØ§Ù…Ù„Ø© ÙˆØ¬Ù…Ø§Ù„ Ù„Ø§ ÙŠØ¶Ø§Ù‡Ù‰  </h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9465fc2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9465fc2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-0cb69ab e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="0cb69ab" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c8f03b2 elementor-widget elementor-widget-image" data-id="c8f03b2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+							<img fetchpriority="high" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7.jpeg" class="attachment-full size-full wp-image-18613" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-c92efa1 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c92efa1" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3804da7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3804da7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-61e85d2 elementor-widget elementor-widget-heading" data-id="61e85d2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„ØªØ±ÙÙŠÙ‡ÙŠØ©
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f22f915 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f22f915" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-e759e2e elementor-widget elementor-widget-heading" data-id="e759e2e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fa3117d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="fa3117d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-c7047fb elementor-widget elementor-widget-heading" data-id="c7047fb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">Ù…Ø¯Ù…Ø§Ùƒ
+</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f6f9639 elementor-widget elementor-widget-text-editor" data-id="f6f9639" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-2195a48 elementor-widget elementor-widget-text-editor" data-id="2195a48" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-element elementor-element-4f996c5 elementor-widget elementor-widget-text-editor" data-id="4f996c5" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-element elementor-element-00cb5aa elementor-widget elementor-widget-text-editor" data-id="00cb5aa" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>Ù‡ÙŠ ÙØ¹Ø§Ù„ÙŠØ©Â  ØªØ±ÙÙŠÙ‡ÙŠØ©Â  ØªÙ… ØªØµÙ…ÙŠÙ…Ù‡Ø§ Ø¨Ø£Ø³Ù„ÙˆØ¨ Ù…Ø¹Ù…Ø§Ø±ÙŠ Ù…Ø³ØªÙ„Ù‡Ù…Ø© Ù…Ù† Ø±ÙˆØ­ Ø¹Ø³ÙŠØ± Ø§Ù„Ù…Ø¯Ù…Ø¬Ø© Ø¨Ø§Ù„Ø­Ø¯Ø§Ø«Ø©ØŒ ØªÙ‚Ø¹Â  Ø¨Ø§Ù„Ù‚Ø±Ø¨ Ù…Ù†Â  Ù…Ù†ØªØ²Ù‡ Ø§Ù„Ø³Ø­Ø§Ø¨ Ø¹Ù„Ù‰ Ø¥Ø·Ù„Ø§Ù„Ø© Ø³Ø§Ø­Ø±Ø©</p></div></div><div class="elementor-element elementor-element-864564e elementor-align-right elementor-widget elementor-widget-button" data-id="864564e" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper">Â </div></div></div></div></div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-d88cc1d elementor-align-center elementor-widget elementor-widget-button" data-id="d88cc1d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯ </span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a931e86 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a931e86" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-15f9cdc elementor-widget elementor-widget-image" data-id="15f9cdc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/%d8%aa%d9%85%d8%a7%d8%b4%d9%8a/" target="_blank" rel="noopener">
+							<img decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ø²Ø±Ø¹Ù‡-Ø§Ù„Ù„ÙŠÙˆØ§Ù†.jpeg" class="attachment-full size-full wp-image-20897" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ø²Ø±Ø¹Ù‡-Ø§Ù„Ù„ÙŠÙˆØ§Ù†.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ø²Ø±Ø¹Ù‡-Ø§Ù„Ù„ÙŠÙˆØ§Ù†-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-543133d e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="543133d" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e1e9b34 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e1e9b34" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cd79d8f elementor-widget elementor-widget-heading" data-id="cd79d8f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ØªØ¬Ø§Ø±Ø¨ Ø§Ù„Ø³ÙŠØ§Ø­ÙŠØ©</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-812f9b5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="812f9b5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-13215ab elementor-widget elementor-widget-heading" data-id="13215ab" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e06c3b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4e06c3b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-51b47a1 elementor-widget elementor-widget-heading" data-id="51b47a1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%d8%aa%d9%85%d8%a7%d8%b4%d9%8a/" target="_blank" rel="noopener">Ù…Ø²Ø±Ø¹Ù‡ Ø§Ù„Ù„ÙŠÙˆØ§Ù†</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-68c3e4e elementor-widget elementor-widget-text-editor" data-id="68c3e4e" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>ØªÙ‚Ø¹ Ù…Ø²Ø±Ø¹Ø© Ø§Ù„Ù„ÙŠÙˆØ§Ù† ÙÙŠ Ù…Ø¯ÙŠÙ†Ø© Ø£Ø¨Ù‡Ø§ ÙÙŠ Ù‚Ø±ÙŠØ© Ø¢Ù„ ÙŠÙˆØ³Ù Ø§Ù„ØªØ±Ø§Ø«ÙŠØ©ØŒÙˆÙŠÙ…ØªØ§Ø² Ù…ÙˆÙ‚Ø¹Ù‡Ø§ Ø¨ÙˆØ¬ÙˆØ¯ Ù…Ø²Ø±Ø¹Ø© ÙˆØ¨ÙŠØª Ø·ÙŠÙ† ØªÙ… ØªØ·ÙˆÙŠØ±Ù‡ ÙˆØªØ­ÙˆÙŠÙ„Ù‡ Ø¥Ù„Ù‰ ÙˆØ¬Ù‡Ø© Ø³ÙŠØ§Ø­ÙŠØ© Ù…Ø­Ù„ÙŠØ© ØªØ±Ø§Ø«ÙŠØ© Ù…Ø³ØªÙˆØ­Ø§Ø© Ù…Ù† Ø«Ù‚Ø§ÙØ© Ø§Ù„Ù…Ù†Ø·Ù‚Ø©.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-14ae345 elementor-align-center elementor-widget elementor-widget-button" data-id="14ae345" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%85%d8%b2%d8%b1%d8%b9%d9%87-%d8%a7%d9%84%d9%84%d9%8a%d9%88%d9%86/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d58aecf e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d58aecf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8972ce2 elementor-widget elementor-widget-image" data-id="8972ce2" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/ateeq-tea/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ù†Ø´-.jpeg" class="attachment-full size-full wp-image-20901" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ù†Ø´-.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/08/Ù…Ù†Ø´--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-2fd228e e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2fd228e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8776ea4 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="8776ea4" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-717d45b elementor-widget elementor-widget-heading" data-id="717d45b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ø­Ù„ÙˆÙŠØ§Øª ÙˆØ§Ù„Ù…Ø®Ø¨ÙˆØ²Ø§Øª
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b4a50a8 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="b4a50a8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7f54490 elementor-widget elementor-widget-heading" data-id="7f54490" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§
+</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9a5d9fb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9a5d9fb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-22bd018 elementor-widget elementor-widget-heading" data-id="22bd018" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ù…Ù†Ø´ Ø¨ÙŠÙƒØ±ÙŠ</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d65110d elementor-widget elementor-widget-text-editor" data-id="d65110d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-4e91535a elementor-widget elementor-widget-text-editor" data-id="4e91535a" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>Ø§Ø³ØªÙ…ØªØ¹ Ø¨ØªØ¬Ø±Ø¨Ø© Ù„Ø§ ØªÙÙ†Ø³Ù‰ ÙÙŠ Ù…Ø®Ø¨Ø² Ù…Ù†Ø´ Ø¨ÙŠÙƒØ±ÙŠ Ø§Ù„Ù…Ø¹Ø±ÙˆÙ Ø¨ØªÙ‚Ø¯ÙŠÙ…Ù‡ Ù…Ø¬Ù…ÙˆØ¹Ø© Ù…ØªÙ†ÙˆØ¹Ø© Ù…Ù† Ø§Ù„Ù…Ø®Ø¨ÙˆØ²Ø§Øª ÙˆØ§Ù„ÙƒØ¹ÙƒØŒ Ø®Ø§ØµØ© ÙƒÙˆØ¨ ÙƒÙŠÙƒ Ø§Ù„Ù„Ø°ÙŠØ°.</p></div></div><div class="elementor-element elementor-element-554fbf21 elementor-align-right elementor-widget elementor-widget-button" data-id="554fbf21" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper">Â </div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c6d7ba6 elementor-align-center elementor-widget elementor-widget-button" data-id="c6d7ba6" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%85%d9%86%d8%b4-%d8%a8%d9%8a%d9%83%d8%b1%d9%8a/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a35b63d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a35b63d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-51345e7 elementor-widget elementor-widget-image" data-id="51345e7" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/06/ØµØ§Ù„ÙˆÙ†-Ù†ÙˆØ±Ø©-.jpeg" class="attachment-full size-full wp-image-14528" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/06/ØµØ§Ù„ÙˆÙ†-Ù†ÙˆØ±Ø©-.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/06/ØµØ§Ù„ÙˆÙ†-Ù†ÙˆØ±Ø©--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-a85c1ab e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a85c1ab" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3e797b8 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3e797b8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-249b516 elementor-widget elementor-widget-heading" data-id="249b516" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ø®Ø¯Ù…Ø§Øª ÙˆØ§Ù„Ù…Ø±Ø§ÙÙ‚ 
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e46751f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e46751f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-cd5e301 elementor-widget elementor-widget-heading" data-id="cd5e301" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø®Ù…ÙŠØ³ Ù…Ø´ÙŠØ·</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ed0d478 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ed0d478" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a1594d0 elementor-widget elementor-widget-heading" data-id="a1594d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">ØµØ§Ù„ÙˆÙ† Ù†ÙˆØ±Ø© Ø§Ù„Ù‚Ø­Ø·Ø§Ù†ÙŠ </h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-feee3f6 elementor-widget elementor-widget-text-editor" data-id="feee3f6" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Ù…Ù† Ø§Ù„ÙˆØ¬Ù‡Ø§Øª Ø§Ù„Ø±Ø§Ø¦Ø¹Ø© ÙÙŠ Ø¹Ø§Ù„Ù… Ø§Ù„Ø¹Ù†Ø§ÙŠØ© Ùˆ Ø§Ù„Ø¬Ù…Ø§Ù„ ÙŠÙ‚Ø¯Ù… Ø®Ø¯Ù…Ø§Øª ØªØ¬Ù…ÙŠÙ„ÙŠØ© Ù…Ù† Ø§Ù„Ø§Ø¹ØªÙ†Ø§Ø¡ Ø¨Ø§Ù„Ø§Ø¸Ø§ÙØ± ÙˆØ§Ù„ÙŠØ¯ÙŠÙ† ÙˆØ§Ù„Ù…Ø³Ø§Ø¬ ÙˆØ§Ù„Ø­Ù…Ø§Ù… Ø§Ù„Ù…ØºØ±Ø¨ÙŠ ÙˆØªØ¬Ø±Ø¨Ø© ÙØ±ÙŠØ¯Ø© Ù…Ù† Ø§Ù„Ø§Ø³ØªØ±Ø®Ø§Ø¡ ÙˆØ§Ù„Ø¬Ù…Ø§Ù„</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b1bd03d elementor-align-center elementor-widget elementor-widget-button" data-id="b1bd03d" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d8%b5%d8%a7%d9%84%d9%88%d9%86-%d9%86%d9%88%d8%b1%d8%a9-%d8%a7%d9%84%d9%82%d8%ad%d8%b7%d8%a7%d9%86%d9%8a/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9c64095 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="9c64095" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-28db7df e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="28db7df" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-87d26ae elementor-widget elementor-widget-heading" data-id="87d26ae" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§Ù„Ø¥Ù‚Ø§Ù…Ø© ÙˆØ§Ù„ØªØ³ÙˆÙ‚
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0f03e74 elementor-widget elementor-widget-heading" data-id="0f03e74" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ø¹Ø§Ù„Ù… Ø§Ù„ØªØ³ÙˆÙ‚ Ø§Ù„Ù…Ø«Ø§Ù„ÙŠ Ø¥Ù„Ù‰ Ø¥Ù‚Ø§Ù…Ø©  Ø±Ø§Ø¦Ù’Ø¹Ø© Ù„Ø§ ØªÙ†Ø³Ù‰</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-2a43ab7 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2a43ab7" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-570be18 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="570be18" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0454d21 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="0454d21" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ø´Ø§Ù„ÙŠØ© Ø§Ù„Ù†Ø¯ÙŠ Ø§Ù„Ø®Ø§Øµ 							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Ù„ÙŠÙ„Ø© Ø§Ø³ØªØ«Ù†Ø§Ø¦ÙŠØ© Ù…Ù† Ø§Ù„Ø±Ø§Ø­Ø© ÙˆØ§Ù„Ø§Ø³ØªØ±Ø®Ø§Ø¡
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ø´Ø§Ù„ÙŠØ© Ø§Ù„Ù†Ø¯ÙŠ Ø§Ù„Ø®Ø§Øµ 						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							Ù„ÙŠÙ„Ø© Ø§Ø³ØªØ«Ù†Ø§Ø¦ÙŠØ© Ù…Ù† Ø§Ù„Ø±Ø§Ø­Ø© ÙˆØ§Ù„Ø§Ø³ØªØ±Ø®Ø§Ø¡
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/%d8%b4%d8%a7%d9%84%d9%8a%d9%87-%d8%a7%d9%84%d9%86%d8%af%d9%89-%d8%a7%d9%84%d8%ae%d8%a7%d8%b5/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5ef056f elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="5ef056f" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ø¨Ø§Ø±Ùƒ Ø£Ø¨Ù‡Ø§							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								ÙˆØ¬Ù‡Ø© Ù…Ø«Ø§Ù„ÙŠØ© Ù„Ù„Ø¹Ø§Ø¦Ù„Ø© 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ø¨Ø§Ø±Ùƒ Ø£Ø¨Ù‡Ø§						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							ÙˆØ¬Ù‡Ø© Ù…Ø«Ø§Ù„ÙŠØ© Ù„Ù„Ø¹Ø§Ø¦Ù„Ø© 
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/%d8%a8%d8%a7%d8%b1%d9%83-%d8%a3%d8%a8%d9%87%d8%a7/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d77114c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d77114c" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9eafcad elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="9eafcad" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								ÙÙ†Ø¯Ù‚ Ø§Ù†ÙŠÙÙŠÙ„							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Ø¥Ù‚Ø§Ù…Ø© ÙØ§Ø®Ø±Ø© ÙˆÙ„Ø­Ø¸Ø§Øª Ø³Ø¹ÙŠØ¯Ø©
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							ÙÙ†Ø¯Ù‚ Ø§Ù†ÙŠÙÙŠÙ„						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							Ø¥Ù‚Ø§Ù…Ø© ÙØ§Ø®Ø±Ø© ÙˆÙ„Ø­Ø¸Ø§Øª Ø³Ø¹ÙŠØ¯Ø©
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/%d8%a7%d9%86%d9%8a%d9%81%d9%8a%d9%84/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a7dcd21 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a7dcd21" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2dfda0c elementor-align-center elementor-widget elementor-widget-button" data-id="2dfda0c" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://eventsquare.sa/%d8%a7%d9%84%d8%a5%d9%82%d8%a7%d9%85%d8%a9-%d9%88%d8%a7%d9%84%d8%aa%d8%b3%d9%88%d9%82/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø§ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9535315 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="9535315" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e08aefb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e08aefb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8a23488 elementor-widget elementor-widget-heading" data-id="8a23488" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Ø§Ø³ØªØ¹Ø¯ Ù„Ø±Ø­Ù„Ø© Ù„Ø§ ØªÙÙ†Ø³Ù‰ ÙÙŠ Ø¹Ø§Ù„Ù… Ø§Ù„Ù†ÙƒÙ‡Ø§Øª ÙˆØ§Ù„Ø·Ù‡ÙŠ Ø§Ù„Ù…Ø­Ù„ÙŠ !</h5>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ea0be34 elementor-widget elementor-widget-heading" data-id="ea0be34" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ø­ÙŠØ« ÙŠÙ„ØªÙ‚ÙŠ Ø§Ù„Ø·Ø¹Ù… Ø§Ù„Ø±ÙÙŠØ¹ Ù…Ø¹ Ø¬ÙˆÙ„Ø© ÙØ±ÙŠØ¯Ø© Ù„Ø§Ø³ØªÙƒØ´Ø§Ù Ù…Ø°Ø§Ù‚Ø§Øª Ù…Ø­Ù„ÙŠØ© ÙˆØ¹Ø§Ù„Ù…ÙŠØ© Ù…ØªÙ†ÙˆØ¹Ø©</h6>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-00af093 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="00af093" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-6486165 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="6486165" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f4a2158 elementor-flip-box--direction-right elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="f4a2158" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								La-Scene Ù„Ø§Ø³ÙŠÙ†							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							La-Scene Ù„Ø§Ø³ÙŠÙ†						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/la-scene-Ù„Ø§Ø³ÙŠÙ†/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dfe8640 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="dfe8640" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								 ÙÙ„Ù‚							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Ø·Ø¨Ù‚ ÙÙŠ Ø¹Ø§Ù„Ù… Ù…Ø®ØªÙ„Ù 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							 ÙÙ„Ù‚						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/ÙÙ„Ù‚/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ef4b40b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ef4b40b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-932cf91 elementor-flip-box--direction-down elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="932cf91" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								  Ø²ÙˆØ±Ù†Ø§							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							  Ø²ÙˆØ±Ù†Ø§						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/Ø²ÙˆØ±Ù†Ø§/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2326462 elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="2326462" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ù…Ø·Ø¹Ù… Ø³Ù†Ø³Ùˆ Ø§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠ							</h3>
+						
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ù…Ø·Ø¹Ù… Ø³Ù†Ø³Ùˆ Ø§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠ						</h3>
+					
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/Ù…Ø·Ø¹Ù…-Ø³Ù†Ø³Ùˆ-Ø§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠ/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7fe35c0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="7fe35c0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-42ad5a9 elementor-align-center elementor-widget elementor-widget-button" data-id="42ad5a9" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://eventsquare.sa/%d9%85%d8%a3%d9%83%d9%88%d9%84%d8%a7%d8%aa-%d9%88%d9%85%d8%b4%d8%b1%d9%88%d8%a8%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1bac9a7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="1bac9a7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-97b5217 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="97b5217" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9993d89 elementor-widget elementor-widget-heading" data-id="9993d89" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯Â </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-28f3324 elementor-widget elementor-widget-heading" data-id="28f3324" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-medium">Ù…Ù† Ø§Ù„Ø¹Ø±ÙˆØ¶ ÙˆØ§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„ØªÙŠ ØªØ¬Ø¹Ù„Ùƒ Ø¯Ø§Ø¦Ù…Ù‹Ø§ Ø¹Ù„Ù‰ Ø§Ø·Ù„Ø§Ø¹ Ø¨ÙƒÙ„ Ø¬Ø¯ÙŠØ¯</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d62acd2 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d62acd2" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c33e68f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c33e68f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-02d5990 elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="02d5990" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ø§Ù„Ø§ÙƒÙˆØ§Ø¨							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								yoshapottery							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ø§Ù„Ø§ÙƒÙˆØ§Ø¨						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							yoshapottery						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/yoshapottery/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-07553a6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="07553a6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3931b9d elementor-flip-box--effect-flip elementor-flip-box--direction-up elementor-widget elementor-widget-flip-box" data-id="3931b9d" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ø§Ù„Ø¹Ø¨Ø§ÙŠØ§Øª							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								BR BY BATOOL							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ø§Ù„Ø¹Ø¨Ø§ÙŠØ§Øª						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							BR BY BATOOL						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/br-by-batool/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dae7d75 elementor-flip-box--direction-down elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="dae7d75" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								Ø³ÙƒØªØ´ Ø§Ø±Øª							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Ø­ÙŠÙ† ÙŠÙƒÙˆÙ† Ù„Ù„ÙÙ† Ø­ÙƒØ§ÙŠØ©
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							Ø³ÙƒØªØ´ Ø§Ø±Øª						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							Ø­ÙŠÙ† ÙŠÙƒÙˆÙ† Ù„Ù„ÙÙ† Ø­ÙƒØ§ÙŠØ©
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/%d8%b3%d9%83%d8%aa%d8%b4-%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9d96681 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9d96681" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-f53a82b elementor-flip-box--direction-left elementor-flip-box--effect-flip elementor-widget elementor-widget-flip-box" data-id="f53a82b" data-element_type="widget" data-e-type="widget" data-widget_type="flip-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-flip-box" tabindex="0">
+			<div class="elementor-flip-box__layer elementor-flip-box__front">
+				<div class="elementor-flip-box__layer__overlay">
+					<div class="elementor-flip-box__layer__inner">
+						
+													<h3 class="elementor-flip-box__layer__title">
+								WA							</h3>
+						
+													<div class="elementor-flip-box__layer__description">
+								Ø³Ù„Ø³Ù„Ø© Ø§Ù„Ø¹ÙˆØ¯Ø© Ø¥Ù„Ù‰ Ø§Ù„Ø¯Ø§Ø®Ù„ 
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="elementor-flip-box__layer elementor-flip-box__back">
+			<div class="elementor-flip-box__layer__overlay">
+				<div class="elementor-flip-box__layer__inner">
+											<h3 class="elementor-flip-box__layer__title">
+							WA						</h3>
+					
+											<div class="elementor-flip-box__layer__description">
+							Ø³Ù„Ø³Ù„Ø© Ø§Ù„Ø¹ÙˆØ¯Ø© Ø¥Ù„Ù‰ Ø§Ù„Ø¯Ø§Ø®Ù„ 
+						</div>
+					
+											<a class="elementor-flip-box__button elementor-button elementor-size-md" href="https://eventsquare.sa/wa/" target="_blank" rel="noopener">
+							Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯						</a>
+								</div>
+		</div>
+		</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9509105 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9509105" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-04e15cf elementor-align-center elementor-widget elementor-widget-button" data-id="04e15cf" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://eventsquare.sa/%d8%a7%d9%84%d9%88%d8%ac%d9%87%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-310f3f2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="310f3f2" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5474005 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5474005" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-53014bb elementor-widget elementor-widget-heading" data-id="53014bb" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§Ø³ØªÙƒØ´Ù Ø£ÙØ¶Ù„ Ø§Ø®ØªÙŠØ§Ø±Ø§ØªÙ†Ø§Â </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-df14f1c elementor-widget elementor-widget-heading" data-id="df14f1c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ù„Ù„Ù…Ø¹Ø§Ù„Ù… ÙˆØ§Ù„ÙˆØ¬Ù‡Ø§Øª Ø§Ù„Ø³ÙŠØ§Ø­ÙŠØ© ÙˆØ§Ø³ØªÙ…ØªØ¹ Ø¨ØªØ¬Ø±Ø¨Ø© Ø³ÙØ± Ù„Ø§ ØªÙÙ†Ø³Ù‰</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4e3f7c0 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4e3f7c0" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ae678c7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ae678c7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-0f3988d elementor-widget elementor-widget-image" data-id="0f3988d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="2560" height="1920" src="https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-scaled.jpeg" class="attachment-full size-full wp-image-20934" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-scaled.jpeg 2560w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-300x225.jpeg 300w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-1024x768.jpeg 1024w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-768x576.jpeg 768w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-1536x1152.jpeg 1536w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø­Ø¯ÙŠÙ‚Ø©-Ø§Ù„Ù…Ø´Ù‡Ø¯-2048x1536.jpeg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-5cfa29f e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5cfa29f" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c133fd2 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c133fd2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0ca9ef2 elementor-widget elementor-widget-heading" data-id="0ca9ef2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ø­Ø¯Ø§Ø¦Ù‚ ÙˆØ§Ù„Ù…Ù†ØªØ²Ù‡Ø§Øª</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10033bb e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10033bb" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fdd835c elementor-widget elementor-widget-heading" data-id="fdd835c" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-bbe4f4a e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="bbe4f4a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6724c84 elementor-widget elementor-widget-heading" data-id="6724c84" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ø­Ø¯ÙŠÙ‚Ø© Ø§Ù„Ù…Ø´Ù‡Ø¯</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-eb72086 elementor-widget elementor-widget-text-editor" data-id="eb72086" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Ø§Ø³ØªÙƒØ´Ù Ø­Ø¯ÙŠÙ‚Ø©Â  Ø§Ù„Ù…Ø´Ù‡Ø¯ØŒ ÙˆÙ…Ø³Ø§Ø­ØªÙ‡Ø§ Ø§Ù„Ø·Ø¨ÙŠØ¹Ø©ØŒÂ  ØªØ¶Ù…Â  Ù…Ø±Ø§ÙÙ‚Â  Ù„Ù„Ø¹Ø§Ø¦Ù„Ø§ØªÂ  ÙˆØ£Ù„Ø¹Ø§Ø¨Â  Ù„Ù„Ø£Ø·ÙØ§Ù„Â  ÙˆÙ…Ù†Ø§ÙØ°Â  Ù„Ø¨ÙŠØ¹Â  Ø§Ù„ÙˆØ¬Ø¨Ø§Øª ÙˆØ§Ù„Ø£ÙƒÙ„Ø§Øª Ø§Ù„ØªØ±Ø§Ø«ÙŠØ© ÙˆØ§Ù„Ù…Ø­Ù„ÙŠØ©.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-ffde78e elementor-align-center elementor-widget elementor-widget-button" data-id="ffde78e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cc7ee9b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="cc7ee9b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8a4a157 elementor-widget elementor-widget-image" data-id="8a4a157" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/06/Ø³Ø§Ø­Ù‡-Ø§Ù„ÙˆØ·Ù†-.jpeg" class="attachment-full size-full wp-image-13018" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/06/Ø³Ø§Ø­Ù‡-Ø§Ù„ÙˆØ·Ù†-.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/06/Ø³Ø§Ø­Ù‡-Ø§Ù„ÙˆØ·Ù†--300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-f6f3ed6 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f6f3ed6" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5d2c484 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="5d2c484" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-55b0f3f elementor-widget elementor-widget-heading" data-id="55b0f3f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ø­Ø¯Ø§Ø¦Ù‚ ÙˆØ§Ù„Ù…Ù†ØªØ²Ù‡Ø§Øª</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d69b55b e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d69b55b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-87371c0 elementor-widget elementor-widget-heading" data-id="87371c0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9198c38 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9198c38" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bd576b5 elementor-widget elementor-widget-heading" data-id="bd576b5" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ù…Ù…Ø´Ù‰ Ø³Ø§Ø­Ø© Ø§Ù„ÙˆØ·Ù†
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-83abe95 elementor-widget elementor-widget-text-editor" data-id="83abe95" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Ø§Ø³ØªÙ…ØªØ¹ Ø¨Ù„Ø­Ø¸Ø§Øª Ø­ÙŠÙˆÙŠØ© ÙˆÙ…Ù†Ø¹Ø´Ø© ÙÙŠ Ù…Ù…Ø´Ù‰ Ø³Ø§Ø­Ø© Ø§Ù„ÙˆØ·Ù† Ø§Ù„Ø°ÙŠ ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰Â  Ù…Ø±Ø§ÙÙ‚ Ù…Ù†Â  Ù…Ù‚Ø§Ø¹Ø¯ Ù„Ù„Ø¬Ù„ÙˆØ³ ÙˆÙ…ÙˆØ§Ù‚Ù Ù„Ù„Ø³ÙŠØ§Ø±Ø§Øª ÙˆÙ…Ø³Ø§Ø± Ù„Ù„Ù…Ø´ÙŠ</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c5951df elementor-align-center elementor-widget elementor-widget-button" data-id="c5951df" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%85%d9%85%d8%b4%d9%89-%d8%b3%d8%a7%d8%ad%d8%a9-%d8%a7%d9%84%d9%88%d8%b7%d9%86/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-28b642d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="28b642d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ea86980 elementor-widget elementor-widget-image" data-id="ea86980" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="310" height="330" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-8-1.jpeg" class="attachment-full size-full wp-image-17726" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-8-1.jpeg 310w, https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-8-1-282x300.jpeg 282w" sizes="(max-width: 310px) 100vw, 310px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-dc4ff03 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="dc4ff03" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-bf4a2f1 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="bf4a2f1" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-57471c6 elementor-widget elementor-widget-heading" data-id="57471c6" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ù…Ø¹Ø§Ù„Ù… ÙˆØ§Ù„Ù…Ù†ØªØ²Ù‡Ø§Øª
+
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c878d04 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c878d04" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0eef1d2 elementor-widget elementor-widget-heading" data-id="0eef1d2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø¨Ù„Ù„Ø³Ù…Ø±</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a2e3cec e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a2e3cec" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-36c9733 elementor-widget elementor-widget-heading" data-id="36c9733" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ø´Ø¹Ù Ø¢Ù„ Ø®Ø±ÙŠÙ…
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e90c76f elementor-widget elementor-widget-text-editor" data-id="e90c76f" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Ù…Ù†ØªØ²Ù‡ Ø§Ù„Ø´Ø¹Ù </span><span style="font-weight: 400;">Ø¢Ù„ Ø®Ø±ÙŠÙ… </span><span style="font-weight: 400;">Â ÙŠØ±ØªÙØ¹ Ù‚Ø±Ø§Ø¨Ø© 2800 Ù…ØªØ±Ø§ ÙÙˆÙ‚ Ø³Ø·Ø­ Ø§Ù„Ø¨Ø­Ø± ØŒ ÙˆÙŠØªÙ…ÙŠØ² Ø¨ÙƒØ«Ø§ÙØ© Ø£Ø´Ø¬Ø§Ø± Ø§Ù„Ø¹Ø±Ø¹Ø± ØŒÂ </span><span style="font-weight: 400;">ÙˆØ³Ù‡ÙˆÙ„Ø© Ø§Ù„ØªÙ†Ù‚Ù„ Ø¨ÙŠÙ† Ø§Ù„Ù…Ù…Ø±Ø§Øª ÙˆØ§Ù„Ø§Ø´Ø¬Ø§Ø±. </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-aa0916e elementor-align-center elementor-widget elementor-widget-button" data-id="aa0916e" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d8%b4%d8%b9%d9%81-%d8%a2%d9%84-%d8%ae%d8%b1%d9%8a%d9%85/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3e0cf0f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3e0cf0f" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d1b8f88 elementor-widget elementor-widget-image" data-id="d1b8f88" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="310" height="330" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-9.jpeg" class="attachment-full size-full wp-image-17702" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-9.jpeg 310w, https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-9-282x300.jpeg 282w" sizes="(max-width: 310px) 100vw, 310px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-a5b8a29 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="a5b8a29" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4fb9b07 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4fb9b07" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b6abe0b elementor-widget elementor-widget-heading" data-id="b6abe0b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ù…Ø¹Ø§Ù„Ù… Ø§Ù„Ø³ÙŠØ§Ø­ÙŠØ© </p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10901dd e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10901dd" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4eeec7d elementor-widget elementor-widget-heading" data-id="4eeec7d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„Ø³ÙˆØ¯Ø©</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-746a3e5 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="746a3e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-83e0377 elementor-widget elementor-widget-heading" data-id="83e0377" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">ÙˆØ§Ø¯ÙŠ Ø¹ÙŠÙ† Ø§Ù„Ø°ÙŠØ¨Ø© 
+</h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec2fdc3 elementor-widget elementor-widget-text-editor" data-id="ec2fdc3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">Â ØªØ¹Ø¯ Ø¹ÙŠÙ† Ø§Ù„Ø°ÙŠØ¨Ø© ÙˆØ§Ø­Ø¯Ø© Ù…Ù† Ø£Ø¨Ø±Ø² Ù…Ø¹Ø§Ù„Ù… Ø§Ù„Ø¬Ø°Ø¨ Ø§Ù„Ø·Ø¨ÙŠØ¹ÙŠØ© ÙÙŠ Ù…Ù†Ø·Ù‚Ø© Ø¹Ø³ÙŠØ± ØŒØªØ¶Ù… Ù…Ø¬Ù…ÙˆØ¹Ø© Ù…Ù† Ø§Ù„Ø´Ù„Ø§Ù„Ø§Øª Ø§Ù„Ù…Ø°Ù‡Ù„Ø©Â  Ø°Ø§Øª Ø§Ù„Ù…ÙŠØ§Ù‡ Ø§Ù„Ø¹Ø°Ø¨Ø© Ùˆ ÙŠÙˆØ¬Ø¯ Ø¨Ù‡Ø§ Ù…Ø®ØªÙ„Ù Ø§Ù„Ù†Ø¨Ø§ØªØ§Øª </span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-62c4fc1 elementor-align-center elementor-widget elementor-widget-button" data-id="62c4fc1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%88%d8%a7%d8%af%d9%8a-%d8%b9%d9%8a%d9%86-%d8%a7%d9%84%d8%b0%d9%8a%d8%a8%d8%a9/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d02fe9c e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d02fe9c" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-de48a69 elementor-align-center elementor-widget elementor-widget-button" data-id="de48a69" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://eventsquare.sa/%d8%a7%d9%84%d9%88%d8%ac%d9%87%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7956e84 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="7956e84" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-10cbd2a e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="10cbd2a" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-80c6913 elementor-widget elementor-widget-heading" data-id="80c6913" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ù†Ù‚Ø¯Ù… Ù„Ùƒ ØªØ¬Ø±Ø¨Ø© </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-273e86e elementor-widget elementor-widget-heading" data-id="273e86e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-medium">ØªÙ…Ø²Ø¬ Ø¨ÙŠÙ† Ø§Ù„Ø¬Ù…Ø§Ù„ Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠ ÙˆØ§Ù„ØªÙ†ÙˆØ¹ Ø§Ù„Ø«Ù‚Ø§ÙÙŠ ÙÙŠ Ù…Ø¹Ø§Ù„Ù… Ø§Ù„ØªØ±Ø§Ø« ÙˆØ§Ù„Ø«Ù‚Ø§ÙØ©  </h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-1202734e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="1202734e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-31b66e31 customslider elementor--h-position-left elementor--v-position-middle elementor-arrows-position-inside elementor-widget elementor-widget-slides" data-id="31b66e31" data-element_type="widget" data-e-type="widget" data-settings="{&quot;navigation&quot;:&quot;arrows&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;transition&quot;:&quot;slide&quot;,&quot;transition_speed&quot;:500}" data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+										<div class="elementor-repeater-item-caa9bdf swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d8%b5%d8%b1-%d9%85%d8%a7%d9%84%d9%83-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚ØµÙˆØ± Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚ØµØ±  Ù…Ø§Ù„Ùƒ Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠ
+</h4>
+Ù‚ØµØ±  Ù…Ø§Ù„Ùƒ  Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØŒ  ÙŠØªØ¬Ø³Ø¯  Ø§Ù„ØªØ§Ø±ÙŠØ®  ÙˆØ§Ù„ÙˆÙ„Ø§Ø¡ØŒ  Ø§Ø³ØªÙ…ØªØ¹  <br>Ù…Ø´Ø§Ù‡Ø¯Ø©  Ø§Ù„Ù‚Ø·Ø¹  Ø§Ù„Ø£Ø«Ø±ÙŠØ©  ÙˆØ§Ù„ÙˆØ«Ø§Ø¦Ù‚  ÙÙŠ  Ù‚Ù„Ø¨  Ø§Ù„Ù‚ØµØ± ÙˆØ§Ù„Ø·Ø¨ÙŠØ¹Ø©  Ø§Ù„Ù…Ø­ÙŠØ·Ø©  <br>Ù…Ù†  Ø¥Ø·Ù„Ø§Ù„ØªÙ‡ Ø§Ù„Ø³Ø§Ø­Ø±Ø© Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø²Ø§Ø±Ø¹ Ø§Ù„Ù…Ø­ÙŠØ·Ø© ÙÙŠÙ‡</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div><div class="elementor-repeater-item-30295e2 swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d9%84%d8%b9%d8%a9-%d8%b4%d9%85%d8%b3%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a%d8%a9-2/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚ØµÙˆØ± Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚Ù„Ø¹Ø©  Ø´Ù…Ø³Ø§Ù† Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©
+</h4>
+Ù‚Ù„Ø¹Ø© Ø´Ù…Ø³Ø§Ù† Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ© ÙÙŠ Ø£Ø¨Ù‡Ø§  ÙŠØ¹ÙˆØ¯ ØªØ§Ø±ÙŠØ® ØªØ´ÙŠÙŠØ¯Ù‡Ø§ Ø¨ØªØµÙ…ÙŠÙ…Ù‡Ø§ Ø§Ù„Ø£Ø®ÙŠØ±<br> Ø¥Ù„Ù‰ Ø£ÙƒØ«Ø± Ù…Ù† 100 Ø¹Ø§Ù…ØŒÙˆØ´ÙŠØ¯Øª Ø¹Ù„Ù‰ Ø¬Ø¨Ù„ Ø´Ù…Ø³Ø§Ù† ÙˆØªØ¹ØªØ¨Ø± Ù…Ø«Ø§Ù„Ù‹Ø§ <br>Ø¨Ø§Ø±Ø²Ù‹Ø§ Ù„Ù„Ø£Ø³Ù„ÙˆØ¨ ÙˆØ§Ù„ÙÙ†ÙˆÙ† Ø§Ù„Ù…Ø¹Ù…Ø§Ø±ÙŠØ© Ø§Ù„ØªÙ‚Ù„ÙŠØ¯ÙŠØ©
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div><div class="elementor-repeater-item-dc0daac swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d8%b5%d8%b1-%d8%b4%d8%af%d8%a7-%d8%a7%d9%84%d8%aa%d8%a7%d8%b1%d9%8a%d8%ae%d9%8a/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚ØµÙˆØ± Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚ØµØ±  Ø´Ø¯Ø§ Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠ
+</h4>
+Ø§Ø³ØªØ¹Ø¯ Ù„Ù„Ø§Ù†ØºÙ…Ø§Ø³ ÙÙŠ Ù…Ø¯ÙŠÙ†Ø© Ø£Ø¨Ù‡Ø§ Ø¨ØªØ§Ø±ÙŠØ® Ù‚ØµØ± Ø´Ø¯Ø§ØŒ Ø§Ù„Ù…Ø¹Ù„Ù… Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠ <br>Ø§Ù„Ø¨Ø§Ø±Ø² Ø§Ù„Ù…Ù…ØªØ¯ Ù„Ø£Ø¹ÙˆØ§Ù… Ù…Ø¨Ù†ÙŠ Ø¹Ù„Ù‰ Ù†Ù…Ø· Ø¹Ù…Ø§Ø±Ø© Ø¹Ø³ÙŠØ±  Ø§Ù„Ø°ÙŠ Ø¨Ù†ÙŠ Ø§Ù„Ù‚ØµØ± Ù…Ù† Ø§Ù„Ø­Ø¬Ø§Ø±Ø©ØŒ <br>Ù…Ø¹ ØªØºØ·ÙŠØ© Ø§Ù„Ø¬Ø¯Ø±Ø§Ù† Ø¨Ø·Ø¨Ù‚Ø© Ù…Ù† Ø§Ù„Ø¬Øµ Ù…Ù† Ø§Ù„Ø¯Ø§Ø®Ù„ ÙˆØ§Ù„Ø®Ø§Ø±Ø¬ .</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div><div class="elementor-repeater-item-1ae7b9d swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d8%b1%d9%8a%d8%a9-%d8%a7%d9%84%d9%85%d9%81%d8%aa%d8%a7%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d8%b4%d9%83%d9%8a%d9%84%d9%8a%d8%a9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚Ø±Ù‰ Ø§Ù„ØªØ±Ø§Ø«ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚Ø±ÙŠØ©  Ø§Ù„Ù…ÙØªØ§Ø­Ø© Ø§Ù„ØªØ´ÙƒÙŠÙ„ÙŠØ©
+</h4>
+Ù‚Ø±ÙŠØ© Ø§Ù„Ù…ÙØªØ§Ø­Ø© ØªØ­ÙØ© Ù…Ø¹Ù…Ø§Ø±ÙŠØ© ØªØ¬Ù…Ø¹ Ø¨ÙŠÙ† Ø§Ù„ÙÙ† ÙˆØ§Ù„Ø¥Ù„Ù‡Ø§Ù… ÙˆØ§Ù„Ø£ØµØ§Ù„Ø©ØŒ <br>ÙˆØªÙˆÙØ± ØªØ¬Ø±Ø¨Ø© Ø³ÙŠØ§Ø­ÙŠØ© ÙØ±ÙŠØ¯Ø© ØªØ£Ø®Ø° Ø§Ù„Ø²Ø§Ø¦Ø± ÙÙŠ Ø±Ø­Ù„Ø© Ø¹Ø¨Ø± Ø§Ù„ØªØ§Ø±ÙŠØ® <br>ÙˆØ§Ù„Ø«Ù‚Ø§ÙØ© Ø§Ù„Ù…Ø­Ù„ÙŠØ© Ø¨Ø£Ø¬ÙˆØ§Ø¡ Ø±Ø§Ø¦Ø¹Ø© ÙˆÙ…Ù„ÙŠØ¦Ø© Ø¨Ø§Ù„Ø­ÙŠÙˆÙŠØ©
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div><div class="elementor-repeater-item-c55e3ff swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d8%b1%d9%8a%d8%a9-%d8%b1%d8%ac%d8%a7%d9%84-%d8%a3%d9%84%d9%85%d8%b9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚Ø±Ù‰ Ø§Ù„ØªØ±Ø§Ø«ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚Ø±ÙŠØ©  Ø±Ø¬Ø§Ù„ Ø£Ù„Ù…Ø¹
+</h4>
+Ø§ÙƒØªØ´Ù  Ø¬Ù…Ø§Ù„  ÙˆØªØ§Ø±ÙŠØ®  Ø§Ù„Ù‚Ø±ÙŠØ©  Ø§Ù„ØªÙŠ  Ø´ÙŠØ¯Øª  Ù…Ø¨Ø§Ù†ÙŠÙ‡Ø§  Ù…Ù†  Ø§Ù„Ø­Ø¬Ø± <br> ÙˆØ§Ø³ØªÙ…ØªØ¹  Ø¨Ø§Ù„Ù…Ø¹Ø§Ù„Ù…  Ø§Ù„Ø£Ø«Ø±ÙŠØ©  ÙˆØªØ¹Ø±Ù  Ø¹Ù„Ù‰  ÙÙ†  Ø§Ù„Ù‚Ø·  Ø§Ù„Ø¹Ø³ÙŠØ±ÙŠ <br>ØŒØªØªØ³Ù… Ø£Ù‡Ù…ÙŠØªÙ‡Ø§ Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©  Ù„Ø£ÙƒØ«Ø± Ù…Ù† 700 Ø¹Ø§Ù…
+</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div><div class="elementor-repeater-item-476e474 swiper-slide"><div class="swiper-slide-bg" role="img"></div><a class="swiper-slide-inner" href="https://eventsquare.sa/%d9%82%d8%b1%d9%8a%d8%a9-%d9%88%d8%b7%d9%86-%d8%a7%d9%85%d8%b3%d9%88%d8%af%d8%a9/" target="_blank" rel="noopener"><div class="swiper-slide-contents"><h6 class="elementor-slide-heading">Ø§Ù„Ù‚Ø±Ù‰ Ø§Ù„ØªØ±Ø§Ø«ÙŠØ©</h6><div class="elementor-slide-description"><h4>Ù‚Ø±ÙŠØ© ÙˆØ·Ù† Ø§Ù…Ø³ÙˆØ¯Ø©
+</h4>
+Ø§Ø³ØªÙƒØ´Ù  Ù‚Ø±ÙŠØ©  Ø²Ø¨Ù†Ø©  Ø§Ù„ØªØ§Ø±ÙŠØ®ÙŠØ©ØŒ  Ø­ÙŠØ«  ØªØ¬ØªÙ…Ø¹  Ø±ÙˆØ¹Ø©  Ø§Ù„Ø­Ø§Ø¶Ø± <br> Ù…Ø¹  Ø¨Ø±ÙŠÙ‚  Ø§Ù„Ù…Ø§Ø¶ÙŠØŒ ØªØ¬Ø¯ ÙÙŠÙ‡Ø§ Ø§Ù„Ù‚Ù„Ø§Ø¹ ÙˆØ§Ù„Ù…Ø¹Ø§Ù„Ù… Ø§Ù„Ø£Ø«Ø±ÙŠØ©ØŒ<br> ÙˆÙ…Ø³Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø´ÙŠ Ø¨ÙŠÙ† Ø§Ù„Ø·Ø¨ÙŠØ¹Ø© ÙˆØ§Ù„Ø¨ÙŠÙˆØª Ø§Ù„Ø§Ø«Ø±ÙŠØ© Ø¹ÙŠØ´ ØªØ¬Ø±Ø¨Ø© Ø§Ù„Ø·Ø¨ÙŠØ¹ÙŠØ© ÙˆØ§Ù„Ø§Ø³ØªÙƒØ´Ø§Ù</div><div  class="elementor-button elementor-slide-button elementor-size-md">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</div></div></a></div>				</div>
+																				<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous slide</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next slide</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e29c165 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="e29c165" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-e43a621 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="e43a621" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d144b98 elementor-widget elementor-widget-heading" data-id="d144b98" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§Ø³ØªØ¹Ø¯ Ù„ØªØ¬Ø§Ø±Ø¨ ÙˆÙØ¹Ø§Ù„ÙŠØ§Øª Ø¹Ø³ÙŠØ± Ø§Ù„Ù‚Ø§Ø¯Ù…Ø©Â </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5385128 elementor-widget elementor-widget-heading" data-id="5385128" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default">Ø­ÙŠØ« ØªÙ†ØªØ¸Ø±Ùƒ ØªØ¬Ø§Ø±Ø¨ ÙØ±ÙŠØ¯Ø© ÙˆÙ„Ø­Ø¸Ø§Øª Ù„Ø§ ØªÙÙ†Ø³Ù‰</h6>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7cea75e e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="7cea75e" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-94a6537 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="94a6537" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-2d42238 elementor-widget elementor-widget-image" data-id="2d42238" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/%d8%ad%d9%81%d9%84-%d8%b5%d9%8a%d9%81-%d8%a7%d9%84%d9%86%d9%85%d8%a7%d8%b5-2024/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/08/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-2.jpeg" class="attachment-full size-full wp-image-19449" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/08/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-2.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/08/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-2-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-a8c004e elementor-absolute elementor-widget elementor-widget-heading" data-id="a8c004e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§Ù†ØªÙ‡Øª</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b3d510 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="3b3d510" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-0c70b03 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="0c70b03" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-b5143d0 elementor-widget elementor-widget-heading" data-id="b5143d0" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„Ù‚Ø§Ø¯Ù…Ø©</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-43c973f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="43c973f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1b501dd elementor-widget elementor-widget-heading" data-id="1b501dd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-369692d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="369692d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-bf3dc92 elementor-widget elementor-widget-heading" data-id="bf3dc92" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%d8%ad%d9%81%d9%84-%d8%b5%d9%8a%d9%81-%d8%a7%d9%84%d9%86%d9%85%d8%a7%d8%b5-2024/" target="_blank" rel="noopener">Ø­ÙÙ„Ø© Ø±Ø§Ø¨Ø­ ØµÙ‚Ø±</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d50626b elementor-widget elementor-widget-text-editor" data-id="d50626b" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>ØªØ·Ù„ Ø¹Ù„ÙŠÙ†Ø§ Ø­ÙÙ„Ø© Ø§Ù„ÙÙ†Ø§Ù† Ø±Ø§Ø¨Ø­ ØµÙ‚Ø± Ø§Ù„ØºÙ†Ø§Ø¦ÙŠØ© ÙÙŠ 9 Ø£ØºØ³Ø·Ø³ 2024ØŒ ÙÙŠ Ù…Ø¯ÙŠÙ†Ø© Ø£Ø¨Ù‡Ø§ ØŒØ¶Ù…Ù† Ø³Ù„Ø³Ù„Ø© Ø­ÙÙ„Ø§Øª â€œØ¬ÙˆÙ„Ø© Ø§Ù„Ù…Ù…Ù„ÙƒØ© 2024â€</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-60da9a1 elementor-align-center elementor-widget elementor-widget-button" data-id="60da9a1" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/rabihsager/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-efd9dab e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="efd9dab" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f9b786e elementor-widget elementor-widget-image" data-id="f9b786e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7.jpeg" class="attachment-full size-full wp-image-18613" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7.jpeg 330w, https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-1-7-300x282.jpeg 300w" sizes="(max-width: 330px) 100vw, 330px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-580d8e9 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="580d8e9" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-581c5ff e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="581c5ff" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2982d85 elementor-widget elementor-widget-heading" data-id="2982d85" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„ØªØ±ÙÙŠÙ‡ÙŠØ©</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d962b35 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="d962b35" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7d2f111 elementor-widget elementor-widget-heading" data-id="7d2f111" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§ </p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b80a5c3 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="b80a5c3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-955b14a elementor-widget elementor-widget-heading" data-id="955b14a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%D8%AD%D9%81%D9%84%D8%A9-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%85%D8%AC%D9%8A%D8%AF-%D8%B9%D8%A8%D8%AF-%D8%A7%D9%84%D9%84%D9%87/" target="_blank" rel="noopener">Ù…Ø¯Ù…Ø§Ùƒ</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-84cde95 elementor-widget elementor-widget-text-editor" data-id="84cde95" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Ù‡ÙŠ ÙØ¹Ø§Ù„ÙŠØ©Â  ØªØ±ÙÙŠÙ‡ÙŠØ©Â  ØªÙ… ØªØµÙ…ÙŠÙ…Ù‡Ø§ Ø¨Ø£Ø³Ù„ÙˆØ¨ Ù…Ø¹Ù…Ø§Ø±ÙŠ Ù…Ø³ØªÙ„Ù‡Ù…Ø© Ù…Ù† Ø±ÙˆØ­ Ø¹Ø³ÙŠØ± Ø§Ù„Ù…Ø¯Ù…Ø¬Ø© Ø¨Ø§Ù„Ø­Ø¯Ø§Ø«Ø©ØŒ ØªÙ‚Ø¹Â  Ø¨Ø§Ù„Ù‚Ø±Ø¨ Ù…Ù†Â  Ù…Ù†ØªØ²Ù‡ Ø§Ù„Ø³Ø­Ø§Ø¨ Ø¹Ù„Ù‰ Ø¥Ø·Ù„Ø§Ù„Ø© Ø³Ø§Ø­Ø±Ø©</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-89d98b3 elementor-align-center elementor-widget elementor-widget-button" data-id="89d98b3" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d9%85%d8%af%d9%85%d8%a7%d9%83/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-16fe2e3 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="16fe2e3" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-7a3cbfc elementor-widget elementor-widget-image" data-id="7a3cbfc" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="550" height="500" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ù…Ø±Ø¨Ø¹-Ø¬Ù†Ø¨-Ø§Ù„ØµÙˆØ±-.jpeg" class="attachment-full size-full wp-image-17204" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ù…Ø±Ø¨Ø¹-Ø¬Ù†Ø¨-Ø§Ù„ØµÙˆØ±-.jpeg 550w, https://eventssquare.sa/wp-content/uploads/2024/07/Ù…Ø±Ø¨Ø¹-Ø¬Ù†Ø¨-Ø§Ù„ØµÙˆØ±--300x273.jpeg 300w" sizes="(max-width: 550px) 100vw, 550px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-25b694b elementor-absolute elementor-widget elementor-widget-heading" data-id="25b694b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ø§Ù†ØªÙ‡Øª</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-c5240f5 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c5240f5" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-85891a7 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="85891a7" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-adb41fd elementor-widget elementor-widget-heading" data-id="adb41fd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„Ø±ÙŠØ§Ø¶ÙŠØ©</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ab0beb0 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="ab0beb0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-4565708 elementor-widget elementor-widget-heading" data-id="4565708" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9235d6f e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9235d6f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-84f836a elementor-widget elementor-widget-heading" data-id="84f836a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">ÙƒØ£Ø³ Ø§Ù„Ø³ÙˆØ¨Ø± Ø§Ù„Ø³Ø¹ÙˆØ¯ÙŠ 2024</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-70d2eac elementor-widget elementor-widget-text-editor" data-id="70d2eac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="font-weight: 400;">ØªØ³ØªØ¶ÙŠÙ Ù…Ø¯ÙŠÙ†Ø© Ø£Ø¨Ù‡Ø§Â  Ù…Ù†Ø§ÙØ³Ø§Øª Ø¨Ø·ÙˆÙ„Ø© ÙƒØ£Ø³ Ø§Ù„Ø³ÙˆØ¨Ø± Ø§Ù„Ø³Ø¹ÙˆØ¯ÙŠ 2024 Ø§Ù†Ø·Ù„Ø§Ù‚Ù‹Ø§ Ù…Ù† 13-17 Ø£ØºØ³Ø·Ø³ Ø§Ù„Ù…Ù‚Ø¨Ù„ , Ø¨Ø§Ù„ØªØ²Ø§Ù…Ù† Ù…Ø¹ Ù…ÙˆØ³Ù… ØµÙŠÙ Ø¹Ø³ÙŠØ± 2024</span></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-68b7193 elementor-align-center elementor-widget elementor-widget-button" data-id="68b7193" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%B3%D9%88%D8%A8%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-2024/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9867d50 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9867d50" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-b782068 elementor-widget elementor-widget-image" data-id="b782068" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eventsquare.sa/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+							<img loading="lazy" decoding="async" width="330" height="310" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-.png" class="attachment-full size-full wp-image-17988" alt="" srcset="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-.png 330w, https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ--300x282.png 300w" sizes="(max-width: 330px) 100vw, 330px" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-49a808c e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="49a808c" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4fae9f6 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4fae9f6" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-14768a2 elementor-widget elementor-widget-heading" data-id="14768a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„ØªØ±ÙÙŠÙ‡ÙŠØ©
+
+</p>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2d3bb2e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="2d3bb2e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d6ec1fd elementor-widget elementor-widget-heading" data-id="d6ec1fd" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Ø£Ø¨Ù‡Ø§</p>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-16c1d9d e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="16c1d9d" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-d18b2a2 elementor-widget elementor-widget-heading" data-id="d18b2a2" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="https://eventsquare.sa/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">Ø¨Ø§ØªÙ„ ÙƒØ§Ø±Øª</a></h6>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d9f82a3 elementor-widget elementor-widget-text-editor" data-id="d9f82a3" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-element elementor-element-b4b6875 elementor-widget elementor-widget-text-editor" data-id="b4b6875" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><p>ÙØ¹Ø§Ù„ÙŠØ© ØªØªÙ…ÙŠØ² Ø¨ÙˆØ¬ÙˆØ¯Â  Ø£ÙˆÙ„ Ø³Ø¨Ø§Ù‚ Ø³ÙŠØ§Ø±Ø§Øª ÙƒØ§Ø±ØªÙ†Ø¬ Ø¨Ù…Ø²ÙŠØ¬ Ø£Ù„Ø¹Ø§Ø¨ Ø§Ù„ÙÙŠØ¯ÙŠÙˆ ÙˆØ§Ù„ÙˆØ§Ù‚Ø¹ Ø§Ù„Ù…Ø¹Ø²Ø²ØŒ ÙˆØ§Ù„ÙƒØ«ÙŠØ± Ù…Ù† Ø§Ù„Ø£Ù„Ø¹Ø§Ø¨ Ø§Ù„Ù…Ø®ØªÙ„ÙØ©Â Ù…Ø«Ù„ Ø­Ù„Ø¨Ø© Ø³Ø¨Ø§Ù‚ Ø§Ù„Ø³ÙŠØ§Ø±Ø§ØªØŒ ÙƒØ±Ø© Ø§Ù„Ù‚Ø¯Ù… ÙˆÙ„Ø¹Ø¨Ø© Ø§Ù„Ø«Ø¹Ø¨Ø§Ù†.</p></div></div><div class="elementor-element elementor-element-560bbf0 elementor-align-right elementor-widget elementor-widget-button" data-id="560bbf0" data-element_type="widget" data-widget_type="button.default"><div class="elementor-widget-container"><div class="elementor-button-wrapper">Â </div></div></div>								</div>
+				</div>
+				<div class="elementor-element elementor-element-a9f5f34 elementor-align-center elementor-widget elementor-widget-button" data-id="a9f5f34" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://eventsquare.sa/%d8%a8%d8%a7%d8%aa%d9%84-%d9%83%d8%a7%d8%b1%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-38dcb2d e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="38dcb2d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d151437 elementor-align-center elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="d151437" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="https://eventsquare.sa/%d9%81%d8%b9%d8%a7%d9%84%d9%8a%d8%a7%d8%aa-%d9%88%d9%85%d9%87%d8%b1%d8%ac%d8%a7%d9%86%d8%a7%d8%aa/" target="_blank" rel="noopener">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Ø£ÙƒØªØ´Ù Ø§Ù„Ù…Ø²ÙŠØ¯</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f29224b e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="f29224b" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4544b71 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="4544b71" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-a23a765 elementor-widget elementor-widget-heading" data-id="a23a765" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Ø§ÙƒØªØ´Ù Ø¹Ø³ÙŠØ±</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c3b909e e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="c3b909e" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-88dedf8 elementor-widget elementor-widget-shortcode" data-id="88dedf8" data-element_type="widget" data-e-type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><div id="wpgmza_map" class="wpgmza_map" data-settings='{"id":"1","map_title":"Homepage Map","map_width":"100","map_height":"400","map_start_lat":"19.575828633542443","map_start_lng":"42.21838678923842","map_start_location":"45.950464398418106,-109.81550500000003","map_start_zoom":"7","default_marker":"","type":"0","alignment":"4","directions_enabled":"0","styling_enabled":"0","styling_json":"","active":"0","kml":"","bicycle":"0","traffic":"0","dbox":"0","dbox_width":"","listmarkers":"0","listmarkers_advanced":"0","filterbycat":"0","ugm_enabled":"0","ugm_category_enabled":"0","fusion":"","map_width_type":"%","map_height_type":"px","mass_marker_support":"0","ugm_access":"0","order_markers_by":"0","order_markers_choice":"0","show_user_location":"0","default_to":"","other_settings":{"map_type":1,"sl_stroke_color":"","sl_fill_color":"","sl_stroke_opacity":"","sl_fill_opacity":"","transport_layer":false,"action":"wpgmza_save_map","redirect_to":"\/wp-admin\/admin-post.php","map_id":"1","http_referer":"\/wp-admin\/admin.php?page=wp-google-maps-menu&amp;amp;action=edit&amp;amp;map_id=1","wpgmza_id":"1","wpgmza_start_location":"19.575828633542443,42.21838678923842","wpgmza_start_zoom":"7","store_locator_enabled":false,"store_locator_search_area":"radial","wpgmza_store_locator_radius_style":"legacy","wpgmza_store_locator_default_radius":"10","store_locator_auto_area_max_zoom":"","store_locator_distance":false,"wpgmza_store_locator_position":false,"store_locator_show_distance":false,"store_locator_category":false,"wpgmza_store_locator_use_their_location":false,"wpgmza_store_locator_bounce":false,"wpgmza_sl_animation":null,"wpgmza_store_locator_hide_before_search":false,"store_locator_query_string":"","store_locator_location_placeholder":"","store_locator_default_address":"","store_locator_name_search":false,"store_locator_name_string":"","store_locator_not_found_message":"","wpgmza_map_align":"1","jump_to_nearest_marker_on_initialization":false,"automatically_pan_to_users_location":false,"override_users_location_zoom_level":false,"override_users_location_zoom_levels":"","show_distance_from_location":false,"map_max_zoom":"21","map_min_zoom":"0","click_open_link":false,"fit_maps_bounds_to_markers":false,"fit_maps_bounds_to_markers_after_filtering":false,"hide_point_of_interest":false,"wpgmza_zoom_on_marker_click":false,"wpgmza_zoom_on_marker_click_slider":"","close_infowindow_on_map_click":false,"disable_lightbox_images":false,"use_Raw_Jpeg_Coordinates":false,"disable_polygon_info_windows":false,"enable_marker_ratings":false,"only_load_markers_within_viewport":false,"iw_primary_color":"#000000","iw_accent_color":"#000000","iw_text_color":"#000000","wpgmza_listmarkers_by":"0","wpgmza_marker_listing_position":false,"zoom_level_on_marker_listing_override":false,"zoom_level_on_marker_listing_click":"","marker_listing_disable_zoom":false,"datatable_no_result_message":"","remove_search_box_datables":false,"dataTable_pagination_style":null,"datatable_search_string":"","datatable_result_start":"","datatable_result_of":"","datatable_result_to":"","datatable_result_total":"","datatable_result_show":"","datatable_result_entries":"","wpgmza_savemap":"Save Map \u00bb"}}' data-map-id='1' Data-maps-engine='open-layers' data-shortcode-attributes='{"id":"1"}' style="display:block; overflow:auto; width:100%; height:400px; float:left;"></div></div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7127347 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="7127347" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-1409e74 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="1409e74" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-ecdee39 elementor-widget elementor-widget-heading" data-id="ecdee39" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h5 class="elementor-heading-title elementor-size-default">Ù…Ø§Ø°Ø§ ÙŠÙ‚ÙˆÙ„ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ Ø¹Ù†Ø§</h5>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9f80908 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="9f80908" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-06c8f4e elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel" data-id="06c8f4e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper-container">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						ÙØ®ÙˆØ±ÙŠÙ† Ø¨ØªÙØ¹ÙŠÙ„ ÙˆØªØ£Ø³ÙŠØ³  Ù‡Ø°Ù‡ Ø§Ù„Ù…Ù†ØµØ© Ø§Ù„Ø±Ø§Ø¦Ø¹Ù‡ Ø§Ù„ØªÙŠ ØªØ¯Ø¹Ù… Ø§Ù„Ø³ÙŠØ§Ø­Ø© Ùˆ Ø´Ø¨Ø§Ø¨ ÙˆØ¨Ù†Ø§Øª Ø§Ù„Ù…Ù†Ø·Ù‚Ø© ØŒ ÙˆØªØ®Ø¯Ù… Ø§Ù„Ø³Ø§Ø¦Ø­ÙŠÙ† ÙˆÙƒÙ„ Ù…Ù† Ù„Ù‡ Ø±ØºØ¨Ù‡ Ø¨Ø§Ø³ØªÙƒØ´Ø§Ù Ø¬Ù…Ø§Ù„ Ù…Ù†Ø·Ù‚Ø© Ø¹Ø³ÙŠØ± .					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://eventssquare.sa/wp-content/uploads/2024/06/Ø³ÙƒØªØ´-Ø§Ø±Øª-1-1.jpeg" alt="Ø³ÙƒØªØ´ Ø§Ø±Ø§Øª">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Ø³ÙƒØªØ´ Ø§Ø±Ø§Øª</span><span class="elementor-testimonial__title">Ù…ØªØ¬Ø±</span></cite>			</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						Ù…Ù†ØµØ© ÙÙŠÙ‡Ø§ Ø§Ù„Ù…Ù†Ø§Ø·Ù‚ Ø§Ù„Ø³ÙŠØ§Ø­ÙŠØ© ÙÙŠ Ø§Ø¨Ù‡Ø§ ÙˆÙƒÙ„ Ø§Ù„Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„Ù„ÙŠ ØªØ­ØªØ§Ø¬Ù‡Ø§ Ø¹Ù† Ø¹Ø³ÙŠØ± .. Ø¹Ù† Ø§Ù„Ø£Ù…Ø§ÙƒÙ† Ø§Ù„ØªØ±Ø§Ø«ÙŠØ© Ø§Ù„Ø¹Ø±ÙŠÙ‚Ø© ÙˆØ§Ù„Ø³ÙŠØ§Ø­ÙŠØ© ÙˆØ§Ù„Ù…Ø·Ø§Ø¹Ù… Ø§Ù„Ù…Ø´Ù‡ÙˆØ±Ø© .. Ø¨Ø§Ù„ØªÙˆÙÙŠÙ‚ Ù„Ù„Ù‚Ø§Ø¦Ù…ÙŠÙ† Ø¹Ù„ÙŠÙ‡Ø§ðŸ™ðŸ»					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„Ø¨ÙƒØ³-Ø§Ù„Ø®Ø§Ø±Ø¬ÙŠ-21.jpeg" alt=" Ø§Ù„Ù†Ø¯ÙŠ Ø§Ù„Ø®Ø§Øµ ">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name"> Ø§Ù„Ù†Ø¯ÙŠ Ø§Ù„Ø®Ø§Øµ </span><span class="elementor-testimonial__title">Ø´Ø§Ù„ÙŠØ©</span></cite>			</div>
+		</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-testimonial">
+							<div class="elementor-testimonial__content">
+					<div class="elementor-testimonial__text">
+						" Ù…Ù†ØµØ© Ø³Ø§Ø­Ø© Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª ØªØ¹ÙƒØ³ Ø¨Ø´ÙƒÙ„ Ø¬Ù…ÙŠÙ„ Ø§Ù„ØªØ±Ø§Ø« ÙˆØ§Ù„Ø«Ù‚Ø§ÙØ© Ø§Ù„Ù…Ø­Ù„ÙŠØ© Ø¥Ù†Ù‡Ø§ Ù…Ù†ØµØ©  Ø±Ø§Ø¦Ø¹Ø© Ù„Ù…Ø¹Ø±ÙØ©  Ø¨Ø§Ù„ÙØ¹Ø§Ù„ÙŠØ§Øª Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø©  ÙˆØ§Ù„Ù…Ø¹Ø§ØµØ±Ø© Ø¹Ù„Ù‰ Ø­Ø¯ Ø³ÙˆØ§Ø¡"					</div>
+									</div>
+						<div class="elementor-testimonial__footer">
+									<div class="elementor-testimonial__image">
+						<img decoding="async" src="https://eventssquare.sa/wp-content/uploads/2024/07/Ø§Ù„ØµÙˆØ±Ø©-Ø§Ù„Ø§-Ø¬Ù†Ø¨-Ø§Ù„Ù…Ø±Ø¨Ø¹Ø§Øª-Ø§Ù„ØµØºÙŠØ±Ø©-.jpeg" alt="WA">
+											</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">WA</span><span class="elementor-testimonial__title">Ù…ØªØ¬Ø±</span></cite>			</div>
+		</div>
+								</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-aabf940 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-parent" data-id="aabf940" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-642f6ec e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="642f6ec" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6c8eda4 e-flex e-con-boxed wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="6c8eda4" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-910ce56 elementor-widget elementor-widget-heading" data-id="910ce56" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Ø§Ù„Ø§Ø´ØªØ±Ø§Ùƒ ÙÙŠ Ø§Ù„Ù†Ø´Ø±Ø© Ø§Ù„Ø¥Ø®Ø¨Ø§Ø±ÙŠØ©</h4>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f5a9914 e-con-full e-flex wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no e-con e-child" data-id="f5a9914" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-949031f elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="949031f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;button_width&quot;:&quot;25&quot;,&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width_mobile&quot;:&quot;20&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<form class="elementor-form" method="post" name="Newsletter">
+			<input type="hidden" name="post_id" value="4170"/>
+			<input type="hidden" name="form_id" value="949031f"/>
+			<input type="hidden" name="referer_title" value="Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ© | Events" />
+
+							<input type="hidden" name="queried_id" value="4170"/>
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-">
+								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-60 elementor-sm-50 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label elementor-screen-only">
+								Email							</label>
+														<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-xs  elementor-field-textual" placeholder="Ø§Ø¯Ø®Ù„ Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø§ÙƒØªØ±ÙˆÙ†ÙŠ" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-25 e-form__buttons elementor-sm-20">
+					<button type="submit" class="elementor-button elementor-size-xs">
+						<span >
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">Ø§Ø´ØªØ±Ùƒ Ø§Ù„Ø§Ù†</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	
+	
+</div><!-- .entry-content .clear -->
+
+	
+	
+</article><!-- #post-## -->
+
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+
+<script nitro-exclude>
+    document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
+</script>	</div> <!-- ast-container -->
+	</div><!-- #content -->
+		
+

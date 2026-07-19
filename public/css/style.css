@@ -1,0 +1,43 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+.acclogin a, .accregister a{border:1px solid #386732;border-radius:8px;padding:5px 10px!important}.acclogin a, .accregister a:hover{background:#fff;color:#386732!important}.acclogin a:hover, .accregister a{background:#386732;color:#fff!important}.acclogin a.elementor-item-active:after, .accregister a.elementor-item-active:after, .acclogin a:hover:after, .accregister a:hover:after{background-color:transparent!important}
+
+button{white-space:nowrap;min-width:150px}
+
+.homeslider .swiper-slide-contents h2{font-size:45px!important}.homeslider .swiper-pagination-bullet{border:3px solid #386732}.homeslider .swiper-pagination-bullet.swiper-pagination-bullet-active{border:3px solid #F9CD18}.homeslider .elementor-swiper-button{border:1px solid #fff;border-radius:25px;padding:4px}
+
+.customgrid .elementor-post__text a.elementor-post__read-more{background:#386732;color:#fff;padding:10px 20px;border-radius:8px;font-size:16px;min-width:150px;text-align:center}.customgrid .elementor-post__text a.elementor-post__read-more:hover{background:#fff;color:#386732;border:1px solid #386732}.customgrid .elementor-posts .elementor-post__badge{background:#F05553}.elementor-posts__hover-gradient .elementor-post__card .elementor-post__thumbnail__link:after{display:none!important}
+
+.customslider .swiper-slide-contents{width:50%}.customslider .swiper-slide-inner .swiper-slide-contents .elementor-slide-description h4{color:#F9CD18}body.rtl .customslider.elementor-widget-slides .elementor-swiper-button-prev{left:10px!important;right:auto!important;top:170px}body.rtl .customslider.elementor-widget-slides .elementor-swiper-button-next{top:210px}body.rtl .customslider.elementor-widget-slides .elementor-swiper-button-prev, body.rtl .customslider.elementor-widget-slides .elementor-swiper-button-next{border:1px solid #FEFEFE;border-radius:25px;padding:5px;left:20px!important}
+
+.custcarousel .slick-initialized .slick-slide{margin:0 10px}.custcarousel a.carousel-arrow.carousel-prev{right:10%;left:auto;top:-35%}.custcarousel a.carousel-arrow.carousel-next{left:10%;right:auto;top:-35%}
+
+.elementor-widget-media-carousel .elementor-swiper-button-prev, .elementor-widget-media-carousel .elementor-swiper-button-next{left:45%!important;right:auto;top:110%!important;background:#fff;border-radius:25px;padding:5px}.elementor-widget-media-carousel .elementor-swiper-button-prev{right:45%!important;left:auto!important}
+
+
+
+.select2-selection .select2-selection__rendered, .select2-container .select2-results__options{direction:rtl;text-align:right}.select2-selection .select2-selection__arrow{position:absolute!important}.forminator-input, .forminator-textarea, .select2-selection .select2-selection__rendered, .select2-container .select2-results__options, .forminator-button-submit{padding:10px 20px!important}.forminator-button-submit{border:1px solid #386732!important;border-radius:10px!important;padding:10px 30px!important}
+
+.um input[type="submit"].um-button, .um input[type="submit"].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active{background:#386732}.um input[type="submit"].um-button:hover, .um a.um-button:hover{border:1px solid #386732!important;background:#fff;color:#386732}.um-col-121{float:left!important;width:48%!important}.um-col-122{float:right!important;width:48%!important}.um .um-field-icon i, .um-field .select2.select2-container .selection .select2-selection .select2-selection__arrow:before{font-size:16px!important}.um-account-main{padding:0px 1.5em 0px 0px!important}
+
+.addimg img{width:100%;height:260px;border-radius:10px}
+.filter-code{width:100%}.filters{background:#fff;border-radius:8px;padding:24px;margin:20px 0}.filters select{width:25%;margin:5px 15px;border-radius:8px;background:#fff;height:40px;padding:5px 15px}.filter-post.ast-row{padding:20px 0;display:flex}.filter-post .post{display:flex}.filter-post .blog-layout-1{background:#fff;border:1px solid #ccc;border-radius:10px;box-shadow:0 0 10px 0 rgba(0,0,0,.15)}.filter-post .post-thumb img{border-radius:10px 10px 0 0}
+.filter-post .entry-content{padding:0 20px;}.filter-post .entry-content .read-more a, .all-posts  a.elementor-post__read-more{background:#386732;color:#fff;border-radius:10px;padding:12px 25px}.filter-post .entry-content .read-more a:hover, .all-posts  a.elementor-post__read-more:hover{background:#fff;color:#386732;border:1px solid #386732}
+
+.about-gallery .e-gallery-container:before{content:'';width:250px;height:250px;background-color:#F9CD18;position:absolute;right:-30px;top:-30px}.about-gallery .e-gallery-container:after{content:'';width:250px;height:250px;background-color:#F9CD18;position:absolute;left:-30px;bottom:-60px;z-index:-1}
+
+.customtab .elementor-tab-title{border:1px solid #FEFEFE!important;border-radius:10px!important;margin:2%;padding:10px 25px!important}.customtab .elementor-tab-title.elementor-active{background:#F9CD18}.customtab .elementor-tabs-content-wrapper{border-top:1px solid #FEFEFE!important;margin-top:20px;padding:20px 0}
+.copyright a{color:#F9CD18}.copyright a:hover{color:#FEFEFE}
+.contact{border:1px solid #DEDEDE;border-radius:16px}
+
+@media (max-width: 1024px) and (min-width: 768px){.filters select, .filters button{width:23%;margin:5px}}
+@media(max-width:767px){.homeslider .swiper-slide-contents h2{font-size:35px!important}.customslider .swiper-slide-contents{width:70%}.about-gallery .e-gallery-container:after{bottom:-100px}.filters select, .filters button{width:100%;margin:10px 0}.elementor-widget-media-carousel .elementor-swiper-button-prev{right:40%!important}.elementor-widget-media-carousel .elementor-swiper-button-next{left:40%!important}}
