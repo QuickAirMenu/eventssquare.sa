@@ -1,8 +1,9 @@
 # 🦁 تقرير Lion — خطة نشر Events-Square (DevOps & Deployment)
 
 > المشروع: `D:\Projects\Events-Square` — Laravel 13 + Inertia 3 + React 19 + Vite 8 + Tailwind 4
-> الدومين: `eventssquare-sa.com` — محلي: SQLite / إنتاج: MySQL 8
-> التاريخ: 2026-08-18
+> **الدومين المعتمد: `eventssquare.sa`** (Hostinger مشترك — LiteSpeed، لا sudo، PHP عبر `/opt/alt/php83`)
+> 🚫 **ممنوع لمس `eventssquare-sa.com` نهائياً** (ووردبريس حي — خارج النطاق)
+> التاريخ: 2026-08-18 — **تم أول نشر فعلي على eventssquare.sa** (هذا التقرير كُتب قبله كخطة؛ الأجزاء عن Nginx/certbot لا تنطبق على الاستضافة المشتركة)
 
 ---
 
