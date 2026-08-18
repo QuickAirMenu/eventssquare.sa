@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتشف عسير | ساحة الفعاليات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Readex Pro', sans-serif;
+        }
+        
+        /* Navbar Styles */
+        .navbar-scroll {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-scroll.scrolled {
+            background: rgba(19, 69, 39, 0.98);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            z-index: 100;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 18px;
+            color: #134527;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+            margin: 4px 8px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .dropdown-menu a:hover {
+            background: #f0f9f4;
+            color: #D92315;
+            transform: translateX(-5px);
+        }
+        
+        .dropdown-arrow {
+            display: inline-block;
+            margin-right: 4px;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* Hero Slider */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(19, 69, 39, 0.75) 0%, rgba(18, 69, 87, 0.65) 100%);
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Slider Controls */
+        .slider-dots {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            z-index: 20;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .slider-dot.active {
+            background: #D92315;
+            width: 40px;
+            border-radius: 6px;
+            border-color: white;
+        }
+        
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            z-index: 20;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.3;
+        }
+        
+        .slider-arrow:hover {
+            background: rgba(217, 35, 21, 0.3);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-50%) scale(1.1);
+            opacity: 1;
+        }
+        
+        .slider-arrow.prev { right: 30px; }
+        .slider-arrow.next { left: 30px; }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .scroll-indicator:hover {
+            opacity: 0.8;
+        }
+        
+        @keyframes bounce-gentle {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+        }
+        
+        .scroll-indicator .mouse {
+            width: 26px;
+            height: 42px;
+            border-radius: 13px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            animation: bounce-gentle 2.5s ease-in-out infinite;
+        }
+        
+        .scroll-indicator .wheel {
+            width: 3px;
+            height: 8px;
+            background: white;
+            border-radius: 2px;
+            margin-top: 8px;
+            animation: scroll-wheel 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes scroll-wheel {
+            0% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+        }
+        
+        .scroll-text {
+            color: white;
+            font-size: 11px;
+            margin-top: 12px;
+            letter-spacing: 1px;
+            opacity: 0.7;
+            font-weight: 500;
+            animation: bounce-gentle 2.5s ease-in-out infinite;
+            text-align: center;
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1.2s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 1s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .btn-hover:hover::before {
+            left: 100%;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .slider-arrow { display: none; }
+            .scroll-indicator { bottom: 70px; }
+        }
+        
+        @media (max-width: 480px) {
+            .scroll-indicator { 
+                transform: translateX(-50%) scale(0.85);
+            }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Transparent Navbar -->
+    <nav class="navbar-scroll fixed top-0 left-0 right-0 z-50 py-3" id="navbar">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="https://cdn-ikpfolh.nitrocdn.com/TvVfWfGAKGajtYDaHExjDUTRpRSaIpHe/assets/images/optimized/rev-47140bb/eventssquare-sa.com/wp-content/uploads/2020/04/EVENTS01@1.5x-768x217.png" 
+                         alt="ساحة الفعاليات" 
+                         class="h-10 md:h-14 w-auto">
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">الرئيسية</a>
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">الفعاليات</a>
+                    
+                    <!-- Dropdown الوجهات -->
+                    <div class="dropdown">
+                        <button class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium flex items-center">
+                            الوجهات
+                            <span class="dropdown-arrow">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#">القصور والقرى</a>
+                            <a href="#">المعالم والمنتزهات</a>
+                            <a href="#">المتاحف والأسواق</a>
+                            <a href="#">الإقامة والتسوق</a>
+                            <a href="#">المأكولات</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">الأنشطة</a>
+                    
+                    <!-- Dropdown الخدمات -->
+                    <div class="dropdown">
+                        <button class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium flex items-center">
+                            الخدمات
+                            <span class="dropdown-arrow">
+                                <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#">الإعلانات</a>
+                            <a href="#">المبيعات</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">استكشفها</a>
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">عن المنصة</a>
+                    <a href="#" class="text-white hover:text-[#D92315] transition-colors duration-300 text-sm font-medium">تواصل معنا</a>
+                </div>
+                
+                <!-- Actions -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <!-- Search -->
+                    <button class="p-2 text-white hover:text-[#D92315] transition-colors duration-300" title="بحث">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Language -->
+                    <a href="#" class="text-white/80 hover:text-white transition-colors duration-300 text-xs font-medium">EN</a>
+                    
+                    <!-- User Avatar with Dropdown -->
+                    <div class="dropdown">
+                        <button class="flex items-center gap-2 p-1.5 rounded-full border-2 border-white/30 hover:border-white transition-all duration-300">
+                            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-[#D92315] to-[#134527] flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#">تسجيل دخول</a>
+                            <a href="#">إنشاء حساب</a>
+                            <a href="#">حسابي</a>
+                            <a href="#">الإعدادات</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white" onclick="toggleMobileMenu()">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden mt-5 pb-4">
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">الرئيسية</a>
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">الفعاليات</a>
+                    
+                    <div>
+                        <button onclick="toggleDropdown('dropdown1')" class="text-white hover:text-[#D92315] py-2 text-sm font-medium flex items-center justify-between w-full">
+                            الوجهات
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="dropdown1" class="hidden pr-4 mt-1">
+                            <a href="#" class="block text-white/70 hover:text-[#D92315] py-1.5 text-xs">القصور والقرى</a>
+                            <a href="#" class="block text-white/70 hover:text-[#D92315] py-1.5 text-xs">المعالم والمنتزهات</a>
+                            <a href="#" class="block text-white/70 hover:text-[#D92315] py-1.5 text-xs">المأكولات</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">الأنشطة</a>
+                    
+                    <div>
+                        <button onclick="toggleDropdown('dropdown2')" class="text-white hover:text-[#D92315] py-2 text-sm font-medium flex items-center justify-between w-full">
+                            الخدمات
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="dropdown2" class="hidden pr-4 mt-1">
+                            <a href="#" class="block text-white/70 hover:text-[#D92315] py-1.5 text-xs">الإعلانات</a>
+                            <a href="#" class="block text-white/70 hover:text-[#D92315] py-1.5 text-xs">المبيعات</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">استكشفها</a>
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">عن المنصة</a>
+                    <a href="#" class="text-white hover:text-[#D92315] py-2 text-sm font-medium">تواصل معنا</a>
+                    
+                    <div class="flex flex-col gap-2 mt-3 pt-3 border-t border-white/20">
+                        <button class="px-5 py-2 border border-white text-white rounded-full text-sm font-medium">تسجيل دخول</button>
+                        <button class="px-5 py-2 bg-[#D92315] text-white rounded-full text-sm font-medium">إنشاء حساب</button>
+                        <a href="#" class="text-center text-white/80 hover:text-white py-1 text-xs">EN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active" style="background-image: url('https://airmenu.net/eventssquare-sa/assets/hero/01-hero.webp');">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 text-glow fade-in">
+                        عسير <span class="text-[#D92315]">عروس الجبال</span>
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white/95 mb-10 leading-relaxed fade-in" style="animation-delay: 0.3s;">
+                        حيث تلامس الجبال السحاب وتحكي الطبيعة أجمل القصص
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center slide-in-right" style="animation-delay: 0.6s;">
+                        <button class="btn-hover px-8 py-3.5 bg-[#D92315] text-white text-lg font-bold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            ابدأ الرحلة
+                        </button>
+                        <button class="btn-hover px-8 py-3.5 border-2 border-white text-white text-lg font-bold rounded-full hover:bg-white hover:text-[#134527] transform hover:scale-105 transition-all duration-300">
+                            اكتشف المزيد
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('https://airmenu.net/eventssquare-sa/assets/hero/02-hero.webp');">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 text-glow">
+                        تراث <span class="text-[#D92315]">وأصالة</span>
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white/95 mb-10 leading-relaxed">
+                        قصور عريقة وقرى تاريخية تروي حكايات 700 عام من الحضارة
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <button class="btn-hover px-8 py-3.5 bg-[#D92315] text-white text-lg font-bold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            استكشف التراث
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('https://airmenu.net/eventssquare-sa/assets/hero/03-hero.webp');">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 text-glow">
+                        مغامرات <span class="text-[#D92315]">لا تُنسى</span>
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white/95 mb-10 leading-relaxed">
+                        تسلق القمم، استكشف الوديان، وعش لحظات التشويق والإثارة
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <button class="btn-hover px-8 py-3.5 bg-[#D92315] text-white text-lg font-bold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            جرب المغامرة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero-slide" style="background-image: url('https://airmenu.net/eventssquare-sa/assets/hero/04-hero.webp');">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 text-glow">
+                        نكهات <span class="text-[#D92315]">عسيرية</span>
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white/95 mb-10 leading-relaxed">
+                        تذوق أطباق المنطقة الأصيلة واستمتع بتجربة طهي لا مثيل لها
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <button class="btn-hover px-8 py-3.5 bg-[#D92315] text-white text-lg font-bold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            اكتشف المأكولات
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="hero-slide" style="background-image: url('https://airmenu.net/eventssquare-sa/assets/hero/05-hero.webp');">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="relative z-10 container mx-auto px-6 h-full flex items-center justify-center">
+                <div class="text-center max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 text-glow">
+                        فعاليات <span class="text-[#D92315]">استثنائية</span>
+                    </h1>
+                    <p class="text-xl md:text-3xl text-white/95 mb-10 leading-relaxed">
+                        حفلات، معارض، ومهرجانات تجمع الثقافة والترفيه في مكان واحد
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <button class="btn-hover px-8 py-3.5 bg-[#D92315] text-white text-lg font-bold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            شاهد الفعاليات
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-arrow prev" onclick="changeSlide(-1)">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </div>
+        <div class="slider-arrow next" onclick="changeSlide(1)">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <div class="slider-dot active" onclick="goToSlide(0)"></div>
+            <div class="slider-dot" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+            <div class="slider-dot" onclick="goToSlide(3)"></div>
+            <div class="slider-dot" onclick="goToSlide(4)"></div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="scrollToContent()">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">اكتشف المزيد</div>
+        </div>
+    </section>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+        
+        // Mobile dropdown toggle
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle('hidden');
+        }
+        
+        // Scroll to content function
+        function scrollToContent() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Hero Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = 5;
+        
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.hero-slide');
+            const dots = document.querySelectorAll('.slider-dot');
+            
+            // Remove active from all
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Handle boundaries
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            
+            // Set current slide
+            currentSlide = index;
+            
+            // Add active to current
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+        
+        function changeSlide(direction) {
+            let newSlide = currentSlide + direction;
+            if (newSlide >= slides.length) newSlide = 0;
+            if (newSlide < 0) newSlide = slides.length - 1;
+            showSlide(newSlide);
+        }
+        
+        function goToSlide(index) {
+            showSlide(index);
+        }
+        
+        // Auto slide every 6 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 6000);
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') changeSlide(1);
+            if (e.key === 'ArrowRight') changeSlide(-1);
+        });
+    </script>
+</body>
+</html>

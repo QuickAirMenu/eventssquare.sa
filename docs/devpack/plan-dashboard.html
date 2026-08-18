@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خطة المشروع | ساحة الفعاليات — Dev Pack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --green:#134527;--teal:#124557;--red:#D92315;--green-light:#16a34a;
+  --sky:#0ea5e9;--amber:#d97706;--sand:#f8f6f0;
+  --g50:#f9fafb;--g100:#f3f4f6;--g200:#e5e7eb;--g500:#6b7280;--g600:#4b5563;--g800:#1f2937;
+  --shadow:0 10px 30px rgba(0,0,0,.08);--shadow-lg:0 25px 60px -15px rgba(19,69,39,.25);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Readex Pro',sans-serif;background:var(--sand);color:var(--g800);direction:rtl}
+img{max-width:100%}
+a{text-decoration:none;color:inherit}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* ===== HERO ===== */
+.hero{background:linear-gradient(135deg,var(--green) 0%,var(--teal) 100%);color:#fff;padding:70px 0 110px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto -80px -160px -80px;height:300px;background:var(--sand);border-radius:50% 50% 0 0}
+.hero .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.hero .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:6px 16px;border-radius:999px;font-size:13px;font-weight:500;backdrop-filter:blur(6px)}
+.hero .badge.nogo{background:var(--red);border-color:var(--red);font-weight:700;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(217,35,21,.5)}50%{box-shadow:0 0 0 12px rgba(217,35,21,0)}}
+.hero h1{font-size:clamp(28px,4vw,44px);font-weight:800;line-height:1.3;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.85;max-width:640px;line-height:1.8}
+.hero .meta{display:flex;gap:24px;margin-top:24px;font-size:13px;opacity:.75;flex-wrap:wrap}
+.hero .meta span i{margin-left:6px}
+
+/* ===== NAV ===== */
+.topnav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--g200);padding:14px 0}
+.topnav .inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topnav .brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);font-size:17px}
+.topnav .brand .dot{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--green),var(--teal));display:grid;place-items:center;color:#fff;font-size:15px}
+.topnav .links{display:flex;gap:22px;font-size:14px;font-weight:500;color:var(--g600)}
+.topnav .links a{transition:.2s}
+.topnav .links a:hover{color:var(--green)}
+@media(max-width:768px){.topnav .links{display:none}}
+
+/* ===== KPI ===== */
+.kpis{margin-top:-70px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding-bottom:20px}
+.kpi{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--shadow);display:flex;align-items:center;gap:16px;border-bottom:3px solid transparent}
+.kpi .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:21px;color:#fff;flex-shrink:0}
+.kpi .num{font-size:28px;font-weight:800;line-height:1.1}
+.kpi .lbl{font-size:13px;color:var(--g500);font-weight:500}
+.kpi.red{border-color:var(--red)}.kpi.red .ic{background:linear-gradient(135deg,#f87171,var(--red))}
+.kpi.green .ic{background:linear-gradient(135deg,var(--green-light),var(--green))}
+.kpi.teal .ic{background:linear-gradient(135deg,#22d3ee,var(--teal))}
+.kpi.sand .ic{background:linear-gradient(135deg,#fbbf24,var(--amber))}
+
+/* ===== SECTIONS ===== */
+section{padding:56px 0}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.sec-head .ic{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--green),var(--teal));color:#fff;display:grid;place-items:center;font-size:19px}
+.sec-head h2{font-size:24px;font-weight:800}
+.sec-head p{font-size:13px;color:var(--g500)}
+
+/* ===== TIMELINE ===== */
+.timeline{display:grid;gap:14px}
+.phase{background:#fff;border-radius:16px;padding:20px 22px;display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;box-shadow:var(--shadow);border-right:4px solid var(--g200)}
+.phase.done{border-right-color:var(--green-light)}
+.phase.now{border-right-color:var(--amber)}
+.phase .step{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:15px;background:var(--g100);color:var(--g500)}
+.phase.done .step{background:var(--green-light);color:#fff}
+.phase.now .step{background:var(--amber);color:#fff}
+.phase h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.phase p{font-size:13px;color:var(--g500);line-height:1.7}
+.phase .stat{font-size:12px;font-weight:700;padding:6px 14px;border-radius:999px;white-space:nowrap}
+.phase.done .stat{background:#dcfce7;color:#166534}
+.phase.now .stat{background:#fef3c7;color:#92400e;animation:pulse2 2s infinite}
+@keyframes pulse2{0%,100%{box-shadow:0 0 0 0 rgba(217,119,6,.35)}50%{box-shadow:0 0 0 10px rgba(217,119,6,0)}}
+.phase .stat.wait{background:var(--g100);color:var(--g500);animation:none}
+
+/* ===== AGENTS ===== */
+.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.agent{background:#fff;border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:.25s;border:1px solid transparent}
+.agent:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--g200)}
+.agent .top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.agent .em{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-size:22px;color:#fff}
+.agent h3{font-size:15px;font-weight:700}
+.agent .role{font-size:11px;color:var(--g500)}
+.agent p{font-size:12.5px;color:var(--g600);line-height:1.7}
+
+/* ===== FINDINGS ===== */
+.verdict{background:linear-gradient(135deg,#7f1d1d,var(--red));color:#fff;border-radius:20px;padding:28px 30px;display:flex;align-items:center;gap:20px;box-shadow:0 20px 50px -12px rgba(217,35,21,.45);margin-bottom:26px}
+.verdict .ic{font-size:40px}
+.verdict h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.verdict p{font-size:14px;opacity:.9;line-height:1.7}
+.report-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.report{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.report .rhead{padding:18px 20px;display:flex;align-items:center;justify-content:space-between;color:#fff}
+.report .rhead h3{font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px}
+.report .rhead .cnt{font-size:12px;background:rgba(255,255,255,.2);padding:4px 12px;border-radius:999px;font-weight:600}
+.report ul{list-style:none;padding:18px 20px;display:grid;gap:10px;flex:1}
+.report li{font-size:13px;line-height:1.7;padding-right:26px;position:relative;color:var(--g600)}
+.report li::before{position:absolute;right:0;top:2px;font-family:"Font Awesome 6 Free";font-weight:900;font-size:12px}
+.report li.crit::before{content:"\f12a";color:var(--red)}
+.report li.high::before{content:"\f06a";color:var(--amber)}
+.report li.ok::before{content:"\f00c";color:var(--green-light)}
+.report li.info::before{content:"\f05a";color:var(--sky)}
+.report .rfoot{padding:14px 20px;background:var(--g50);border-top:1px solid var(--g100);font-size:11.5px;color:var(--g500);display:flex;justify-content:space-between;align-items:center}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 10px;border-radius:999px;margin-left:6px}
+.tag.crit{background:#fee2e2;color:#b91c1c}.tag.high{background:#fef3c7;color:#b45309}.tag.med{background:#dbeafe;color:#1d4ed8}
+
+/* ===== PRIORITIES ===== */
+.prio{display:grid;gap:12px;counter-reset:p}
+.prow{background:#fff;border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:center;box-shadow:var(--shadow)}
+.prow .n{counter-increment:p;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-weight:800;background:var(--g100);color:var(--g600)}
+.prow .n::before{content:counter(p)}
+.prow.p1 .n{background:var(--red);color:#fff}.prow.p2 .n{background:var(--amber);color:#fff}
+.prow.p3 .n{background:var(--sky);color:#fff}.prow.p4 .n{background:var(--teal);color:#fff}
+.prow h4{font-size:14.5px;font-weight:700;margin-bottom:3px}
+.prow p{font-size:12.5px;color:var(--g500)}
+.prow .who{font-size:12px;font-weight:700;color:var(--green);background:#dcfce7;padding:6px 14px;border-radius:999px;white-space:nowrap}
+
+/* ===== SERVER ===== */
+.server{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+@media(max-width:900px){.server{grid-template-columns:1fr}}
+.scard{background:#0f172a;color:#e2e8f0;border-radius:18px;padding:24px;box-shadow:var(--shadow);font-size:13.5px}
+.scard h3{font-size:16px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px;color:#fff}
+.scard h3 i{color:var(--green-light)}
+.kv{display:grid;gap:0;margin-bottom:6px}
+.kv .row{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;border-bottom:1px dashed rgba(255,255,255,.1)}
+.kv .row:last-child{border-bottom:none}
+.kv .k{color:#94a3b8}
+.kv .v{font-weight:600;direction:ltr;text-align:left}
+.kv .v.path{direction:rtl;text-align:right;font-family:inherit}
+.kv .v.pass{color:#fbbf24;letter-spacing:2px}
+.snote{margin-top:14px;background:rgba(217,35,21,.12);border:1px solid rgba(217,35,21,.35);border-radius:12px;padding:12px 14px;font-size:12px;line-height:1.8;color:#fca5a5}
+.snote i{color:var(--red)}
+.flow{background:#fff;border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+.flow h3{font-size:16px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.flow h3 i{color:var(--teal)}
+.fstep{display:flex;gap:14px;padding-bottom:22px;position:relative}
+.fstep:not(:last-child)::before{content:"";position:absolute;right:17px;top:38px;bottom:0;width:2px;background:var(--g200)}
+.fstep .ic{width:36px;height:36px;border-radius:50%;background:var(--g100);display:grid;place-items:center;font-size:13px;color:var(--g600);flex-shrink:0;z-index:1}
+.fstep b{font-size:13.5px;display:block;margin-bottom:3px}
+.fstep span{font-size:12px;color:var(--g500);line-height:1.6}
+
+footer{background:var(--green);color:#fff;padding:34px 0;text-align:center;font-size:13px;opacity:.95}
+footer b{display:block;font-size:15px;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <div class="badge-row">
+      <span class="badge nogo"><i class="fa-solid fa-ban"></i> حكم Cobra: ممنوع النشر — 3 ثغرات Critical</span>
+      <span class="badge"><i class="fa-solid fa-microchip"></i> Laravel 13 · Inertia 3 · React 19 · Tailwind 4</span>
+      <span class="badge"><i class="fa-solid fa-language"></i> عربي RTL</span>
+      <span class="badge"><i class="fa-solid fa-server"></i> Hostinger VPS · eventssquare.sa</span>
+    </div>
+    <h1>ساحة الفعاليات — خطة المشروع ولوحة القيادة</h1>
+    <p>منصة عسير الأولى للفعاليات والوجهات السياحية. هذه اللوحة تُظهر حالة المشروع الحقيقية بعد أول موجة تدقيق وكيلي شاملة نفّذها فريق Dev Pack المكوّن من 10 وكلاء متخصصين.</p>
+    <div class="meta">
+      <span><i class="fa-regular fa-calendar"></i> آخر تحديث: 18 أغسطس 2026</span>
+      <span><i class="fa-solid fa-user-tie"></i> المنسق: Dragon 🐉</span>
+      <span><i class="fa-solid fa-folder-open"></i> التقارير: docs/devpack/reports/ (6 تقارير)</span>
+    </div>
+  </div>
+</header>
+
+<nav class="topnav">
+  <div class="container inner">
+    <a class="brand" href="#"><span class="dot"><i class="fa-solid fa-mountain-sun"></i></span> Events-Square · Dev Pack</a>
+    <div class="links">
+      <a href="#phases">المراحل</a>
+      <a href="#team">الفريق</a>
+      <a href="#findings">نتائج التدقيق</a>
+      <a href="#prio">أولويات الإصلاح</a>
+      <a href="#server">السيرفر والنشر</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="kpis">
+    <div class="kpi red"><div class="ic"><i class="fa-solid fa-skull-crossbones"></i></div><div><div class="num">3</div><div class="lbl">ثغرات Critical تمنع النشر</div></div></div>
+    <div class="kpi sand"><div class="ic"><i class="fa-solid fa-triangle-exclamation"></i></div><div><div class="num">10+</div><div class="lbl">مشاكل High عبر الطبقات</div></div></div>
+    <div class="kpi teal"><div class="ic"><i class="fa-solid fa-file-shield"></i></div><div><div class="num">6</div><div class="lbl">تقارير تدقيق مكتملة</div></div></div>
+    <div class="kpi green"><div class="ic"><i class="fa-solid fa-paw"></i></div><div><div class="num">10</div><div class="lbl">وكلاء جاهزون للعمل</div></div></div>
+  </div>
+</div>
+
+<section id="phases">
+  <div class="container">
+    <div class="sec-head"><div class="ic"><i class="fa-solid fa-diagram-project"></i></div><div><h2>مراحل المشروع</h2><p>خمس مراحل من الفكرة إلى الإنتاج — نحن الآن في Phase 3</p></div></div>
+    <div class="timeline">
+      <div class="phase done"><div class="step"><i class="fa-solid fa-check"></i></div><div><h3>Phase 0 — هيكل Laravel</h3><p>18 Controller · 9 Models · 13 ترحيلاً · لوحة تحكم /admin · صفحات عامة (وجهات، فعاليات، عروض)</p></div><span class="stat">مكتمل</span></div>
+      <div class="phase done"><div class="step"><i class="fa-solid fa-check"></i></div><div><h3>Phase 1 — تثبيت فريق Dev Pack</h3><p>10 وكلاء في .opencode/agent/ + مراجع الفريق في docs/devpack/ + PLAN.md و ISSUES.md</p></div><span class="stat">مكتمل</span></div>
+      <div class="phase done"><div class="step"><i class="fa-solid fa-check"></i></div><div><h3>Phase 2 — موجة التدقيق الوكيلي</h3><p>6 وكلاء بالتوازي: Cobra أمني، Wolf باكند، Panther قاعدة، Fox واجهات، Lion نشر، Hawk جودة → الحكم: NO-GO</p></div><span class="stat">مكتمل — 18 أغسطس</span></div>
+      <div class="phase now"><div class="step">3</div><div><h3>Phase 3 — إصلاحات ما قبل الإنتاج</h3><p>إغلاق الـ 3 Critical الأمنية + إصلاح كسر الواجهة + ترحيل القاعدة + git init — بالترتيب المحدد في أولويات الإصلاح</p></div><span class="stat">جارٍ الآن ←</span></div>
+      <div class="phase"><div class="step">4</div><div><h3>Phase 4 — مطابقة الواجهة للمرجع البصري</h3><p>مواصفات Lynx من homepage.html → بناء Fox (6 أقسام مفقودة: خريطة Leaflet، سلايدر Hero، المعالم...) → نصوص Falcon → مراجعة Viper</p></div><span class="stat wait">بالانتظار</span></div>
+      <div class="phase"><div class="step">5</div><div><h3>Phase 5 — النشر عبر SSH والتوقيع النهائي</h3><p>تنفيذ deploy.sh على السيرفر (Lion) → فحص أمني نهائي (Cobra) → موافقة جودة (Hawk) → إطلاق 🚀</p></div><span class="stat wait">بالانتظار</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="team" style="background:#fff">
+  <div class="container">
+    <div class="sec-head"><div class="ic"><i class="fa-solid fa-paw"></i></div><div><h2>فريق Dev Pack</h2><p>عشرة وكلاء متخصصين — كل وكيل في مساره، Dragon يقود</p></div></div>
+    <div class="agents">
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#16a34a,#134527)">🐉</div><div><h3>Dragon</h3><div class="role">القائد والمعماري</div></div></div><p>ينسق الفريق، يملك PLAN.md، يوزع المهام ويحسم الخلافات. لا يكتب كوداً.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#fb923c,#ea580c)">🦊</div><div><h3>Fox</h3><div class="role">مطور الواجهات</div></div></div><p>React + Inertia + Tailwind، دعم RTL كامل، أداء ومكونات قابلة لإعادة الاستخدام.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#94a3b8,#475569)">🐺</div><div><h3>Wolf</h3><div class="role">مطور الباكند</div></div></div><p>Laravel، APIs، التحقق من المدخلات، الأدوار والصلاحيات، اختبارات الباكند.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#facc15,#b45309)">🐆</div><div><h3>Panther</h3><div class="role">مهندس قاعدة البيانات</div></div></div><p>المخططات، الفهارس، القيود، تحسين الاستعلامات، واستراتيجية النسخ الاحتياطي.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#fbbf24,#d97706)">🦁</div><div><h3>Lion</h3><div class="role">DevOps والنشر</div></div></div><p>السيرفرات، Nginx، SSH، سكربتات النشر، النسخ الاحتياطي ومراقبة السجلات.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#60a5fa,#1d4ed8)">🦅</div><div><h3>Hawk</h3><div class="role">مراجعة كود و QA</div></div></div><p>يراجع كل كود قبل الدمج، يكتشف الأخطاء، ويصون ISSUES.md.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#34d399,#059669)">🦅</div><div><h3>Falcon</h3><div class="role">كاتب المحتوى السعودي</div></div></div><p>نصوص عربية أصيلة بروح سعودية، إشعارات، SEO — يلتزم بمعجم FALCON_LEXICON.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)">🐈</div><div><h3>Lynx</h3><div class="role">مصمم UI/UX</div></div></div><p>وايرفريم، نظام تصميم بالتوكنز، مواصفات مكونات دقيقة جاهزة لبناء Fox.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#f472b6,#db2777)">🐍</div><div><h3>Viper</h3><div class="role">مصمم تجربة العميل</div></div></p><p>خرائط رحلات المستخدم، تقارير الاحتكاك، مراجعات قابلية الاستخدام.</p></div>
+      <div class="agent"><div class="top"><div class="em" style="background:linear-gradient(135deg,#f87171,#b91c1c)">🐍</div><div><h3>Cobra</h3><div class="role">مدقق أمني</div></div></div><p>يفكر كمهاجم: IDOR، RCE، PDPL. الثغرات Critical تمنع النشر — بلا استثناء.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="findings">
+  <div class="container">
+    <div class="sec-head"><div class="ic"><i class="fa-solid fa-magnifying-glass-chart"></i></div><div><h2>نتائج موجة التدقيق</h2><p>18 أغسطس 2026 — ستة وكلاء عملوا بالتوازي على كامل الشيفرة</p></div></div>
+    <div class="verdict">
+      <i class="fa-solid fa-circle-exclamation ic"></i>
+      <div>
+        <h3>حكم Cobra النهائي: ممنوع النشر (NO-GO)</h3>
+        <p>ثلاث ثغرات حرجة: رفع ملفات تعسفي إلى مجلد عام (RCE)، بيانات مدير ملتزقة في الـ Seeder، وقرص رفع عام بلا تحقق. لا نشر قبل إغلاقها جميعاً.</p>
+      </div>
+    </div>
+    <div class="report-grid">
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#7f1d1d,#b91c1c)"><h3>🐍 Cobra — الأمن</h3><span class="cnt">12 ثغرة</span></div>
+        <ul>
+          <li class="crit"><span class="tag crit">C-01</span> رفع ملفات تعسفي عبر avatar → RCE (TestimonialController.php:32)</li>
+          <li class="crit"><span class="tag crit">C-02</span> قرص uploads عام بلا تحقق (filesystems.php:50)</li>
+          <li class="crit"><span class="tag crit">C-03</span> بيانات مدير ملتزقة نصياً في DatabaseSeeder.php:41</li>
+          <li class="high">لا Rate limiting على /login و /contact</li>
+          <li class="high">دور editor يدير المستخدمين — تصعيد صلاحيات</li>
+          <li class="high">قاعدة image تسمح SVG — XSS مخزّن</li>
+          <li class="high">APP_DEBUG=true ومفتاح ملتصق في .env</li>
+          <li class="info">PDPL: لا سياسة خصوصية ولا سجل تدقيق</li>
+        </ul>
+        <div class="rfoot"><span>cobra-security-audit.md</span><span class="tag crit">NO-GO</span></div>
+      </div>
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#475569,#334155)"><h3>🐺 Wolf — الباكند</h3><span class="cnt">17 نتيجة</span></div>
+        <ul>
+          <li class="crit">رفع avatar بلا أي تحقق نوع/حجم (نفس C-01)</li>
+          <li class="high">لا throttle على /login (brute force) و /contact (سبام)</li>
+          <li class="high">editor يدير المستخدمين و syncRoles</li>
+          <li class="high">كلمة مرور المدير Admin@2026 ثابتة نصياً</li>
+          <li class="info">Str::slug ينتج نصاً فارغاً للأسماء العربية</li>
+          <li class="info">لا FormRequests — تحقق مبدعّد داخل المتحكمات</li>
+          <li class="ok">لا مشاكل N+1 — استخدام with() منضبط</li>
+          <li class="ok">paginate في معظم القوائم + تجديد الجلسة عند الدخول</li>
+        </ul>
+        <div class="rfoot"><span>wolf-backend-audit.md</span><span class="tag med">جودة جيدة</span></div>
+      </div>
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#b45309,#92400e)"><h3>🐆 Panther — قاعدة البيانات</h3><span class="cnt">4 مخاطر عالية</span></div>
+        <ul>
+          <li class="high">cascadeOnDelete يمسح المحتوى متخطياً softDeletes → restrict</li>
+          <li class="high">unique(slug) يتعارض مع الحذف الناعم → مركب (slug, deleted_at)</li>
+          <li class="high">slug عربي فارغ → تصادم unique عند ثاني إدخال</li>
+          <li class="high">كلمات مرور admin ثابتة في Seeder</li>
+          <li class="info">فهرس مكرر على listings.slug + فهارس FK ناقصة</li>
+          <li class="info">ترتيب فهارس events لا يطابق الاستعلام</li>
+          <li class="ok">أسعار بالهللات integer + سيدر مرتب idempotent</li>
+        </ul>
+        <div class="rfoot"><span>panther-schema-review.md</span><span class="tag med">ترحيل واحد مطلوب</span></div>
+      </div>
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#ea580c,#c2410c)"><h3>🦊 Fox — الواجهات</h3><span class="cnt">2 كسر + فجوات</span></div>
+        <ul>
+          <li class="crit">React.useState بلا استيراد — صفحة التقييمات تتحطم</li>
+          <li class="high">درج AdminLayout مكسور مع RTL على الجوال</li>
+          <li class="high">الهوية لا تطابق المرجع: ألوان زمردي بدل ‎#134527 وخط Cairo بدل Readex Pro</li>
+          <li class="info">6 أقسام مفقودة: خريطة Leaflet، سلايدر Hero، المعالم، النكهات...</li>
+          <li class="info">ziggy مثبت وغير مستخدم — 83+ رابطاً يدوياً</li>
+          <li class="info">التواريخ تظهر بالهجري (ar-SA) في 9 مواضع</li>
+          <li class="ok">RTL سليم عموماً (ms/me) + لا console.log + alt عربي</li>
+        </ul>
+        <div class="rfoot"><span>fox-frontend-audit.md</span><span class="tag med">3 مراحل تنفيذ</span></div>
+      </div>
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#d97706,#b45309)"><h3>🦁 Lion — النشر</h3><span class="cnt">جاهز ✅</span></div>
+        <ul>
+          <li class="ok">scripts/deploy.sh جاهز: git pull → composer --no-dev → أصول مبنية محلياً → نسخ احتياطي → migrate → كاشات → php-fpm</li>
+          <li class="ok">خطة نشر كاملة: Nginx + HTTPS، قيم .env الإنتاجية، وضع صيانة</li>
+          <li class="high">المشروع ليس git repo بعد — الخطوة صفر قبل أي نشر</li>
+          <li class="info">القرار: بناء Vite محلياً على ويندوز + رفع tar عبر scp</li>
+        </ul>
+        <div class="rfoot"><span>lion-deploy-plan.md</span><span class="tag med">بانتظار git init</span></div>
+      </div>
+      <div class="report">
+        <div class="rhead" style="background:linear-gradient(135deg,#1d4ed8,#1e3a8a)"><h3>🦅 Hawk — الجودة</h3><span class="cnt">9 مشاكل</span></div>
+        <ul>
+          <li class="crit">الاختبارات معطلة: RefreshDatabase معلق + :memory: بلا ترحيلات</li>
+          <li class="high">تغطية حقيقية 0% — ~64 نقطة نهاية بلا اختبار</li>
+          <li class="info">Bug #002 النشرة تلوث جدول contacts</li>
+          <li class="info">Bug #003 المحرر لا يرى رابط لوحة التحكم</li>
+          <li class="info">Bug #005 ملفات ميتة: app.js + welcome.blade.php</li>
+          <li class="ok">نظافة ممتازة: صفر dd/dump/console.log/catch فارغ</li>
+          <li class="ok">Inertia سليم في app.blade.php (rtl + @routes + @vite)</li>
+        </ul>
+        <div class="rfoot"><span>hawk-qa-report.md</span><span class="tag crit">اختبارات معطلة</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prio" style="background:#fff">
+  <div class="container">
+    <div class="sec-head"><div class="ic"><i class="fa-solid fa-list-check"></i></div><div><h2>أولويات Phase 3 — ترتيب Dragon</h2><p>ست موجات إصلاح مرتبة بالخطورة والاعتمادية</p></div></div>
+    <div class="prio">
+      <div class="prow p1"><div class="n"></div><div><h4>إغلاق الثغرات الحرجة الثلاث</h4><p>تحقق نوع/حجم avatar + تخزين خارج public + نقل بيانات المدير إلى env + قفل القرص العام</p></div><span class="who">🐺 Wolf</span></div>
+      <div class="prow p1"><div class="n"></div><div><h4>تقييد دور editor + Rate limiting</h4><p>سحب إدارة المستخدمين/الإعدادات من editor + throttle: 5 على /login و 3 على /contact</p></div><span class="who">🐺 Wolf</span></div>
+      <div class="prow p2"><div class="n"></div><div><h4>ترحيل القاعدة الواحد</h4><p>restrict بدل cascade + unique(slug, deleted_at) + فهارس FK + إصلاح slug العربي + كلمات مرور من env</p></div><span class="who">🐆 Panther</span></div>
+      <div class="prow p2"><div class="n"></div><div><h4>إصلاح كسر الواجهة</h4><p>استيراد useState + درج RTL + تفعيل ziggy + التقويم الميلادي (ar-SA-u-ca-gregory) + حذف الملفات الميتة</p></div><span class="who">🦊 Fox</span></div>
+      <div class="prow p3"><div class="n"></div><div><h4>git init + أول نشر تجريبي</h4><p>تهيئة المستودع والدفع ثم تجربة deploy.sh على السيرفر مع قاعدة staging</p></div><span class="who">🦁 Lion</span></div>
+      <div class="prow p4"><div class="n"></div><div><h4>تفعيل الاختبارات وحماية /admin</h4><p>إصلاح RefreshDatabase + اختبارات الوصول للوحة التحكم + CRUD نموذجي</p></div><span class="who">🦅 Hawk</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="server">
+  <div class="container">
+    <div class="sec-head"><div class="ic"><i class="fa-solid fa-server"></i></div><div><h2>السيرفر والنشر — معتمد ✅</h2><p>تم اعتماد هيكلة Hostinger: laravel_app + public_html كـ symlink — البيانات السرية في scripts/server.env (خارج git)</p></div></div>
+    <div class="server">
+      <div class="scard">
+        <h3><i class="fa-solid fa-terminal"></i> بيانات الاتصال SSH</h3>
+        <div class="kv">
+          <div class="row"><span class="k">الخادم</span><span class="v">62.72.15.76</span></div>
+          <div class="row"><span class="k">البورت</span><span class="v">65002</span></div>
+          <div class="row"><span class="k">المستخدم</span><span class="v">u546723891</span></div>
+          <div class="row"><span class="k">كلمة المرور</span><span class="v pass">••••••••••</span></div>
+          <div class="row"><span class="k">مسار التطبيق</span><span class="v path">domains/eventssquare.sa/laravel_app</span></div>
+          <div class="row"><span class="k">الويب العام (symlink)</span><span class="v path">domains/eventssquare.sa/public_html → laravel_app/public</span></div>
+        </div>
+        <div class="snote"><i class="fa-solid fa-shield-halved"></i> <b>تنبيه Cobra:</b> كلمة المرور محفوظة في scripts/server.env المستثنى من git فقط. يُنصح بالانتقال إلى مفاتيح SSH وتعطيل الدخول بكلمة المرور بعد أول نشر، وتغيير كلمة المرور الحالية لأنها مرّت في محادثة نصية.</div>
+      </div>
+      <div class="flow">
+        <h3><i class="fa-solid fa-route"></i> مسار النشر من ويندوز</h3>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-code"></i></div><div><b>بناء محلي (بدون تشغيل المشروع)</b><span>npm ci && npm run build → إنتاج tar لأصول public/build</span></div></div>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-arrow-up-from-bracket"></i></div><div><b>رفع عبر scp</b><span>scp -P 65002 build.tar.gz u546723891@62.72.15.76:/home/u546723891/domains/eventssquare.sa/laravel_app/</span></div></div>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-play"></i></div><div><b>تشغيل deploy.sh على السيرفر</b><span>ssh → bash scripts/deploy.sh --branch main --assets-tar build.tar.gz</span></div></div>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-database"></i></div><div><b>نسخ احتياطي ثم ترحيل</b><span>mysqldump مضغوط تلقائياً قبل migrate --force</span></div></div>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-rotate"></i></div><div><b>كاشات وعمال وإعادة تشغيل</b><span>config/route/view/event:cache + storage:link + queue:restart + php-fpm</span></div></div>
+        <div class="fstep"><div class="ic"><i class="fa-solid fa-heart-pulse"></i></div><div><b>فحص صحة الموقع</b><span>curl تلقائي للتأكد أن eventssquare.sa يستجيب</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <b>ساحة الفعاليات — Events-Square</b>
+    خطة حية يملكها Dragon 🐉 · تُحدَّث بعد كل جلسة · المصدر: PLAN.md + ISSUES.md + docs/devpack/reports/
+  </div>
+</footer>
+
+</body>
+</html>

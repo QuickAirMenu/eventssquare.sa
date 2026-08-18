@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اكتشف عسير | ساحة الفعاليات</title>
+    <meta name="description" content="ساحة الفعاليات منصة عسير الأولى للفعاليات والوجهات السياحية. اكتشف أجمل الوجهات والقصور التراثية والمطاعم والفعاليات الترفيهية في أبها وعسير، واحجز تجربتك القادمة.">
+    <meta name="keywords" content="ساحة الفعاليات, اكتشف عسير, فعاليات عسير, أبها, وجهات سياحية, قصور تراثية, مطاعم عسير, فعاليات السعودية, السياحة في عسير, Events Square, Asir, Abha">
+    <meta name="author" content="ساحة الفعاليات">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#134527">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="canonical" href="https://eventssquare-sa.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ساحة الفعاليات">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:title" content="اكتشف عسير | ساحة الفعاليات">
+    <meta property="og:description" content="منصة عسير الأولى للفعاليات والوجهات السياحية. اكتشف أجمل الوجهات والقصور التراثية والمطاعم والفعاليات في أبها وعسير.">
+    <meta property="og:url" content="https://eventssquare-sa.com/">
+    <meta property="og:image" content="img/hero-01.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ساحة الفعاليات - اكتشف عسير">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="اكتشف عسير | ساحة الفعاليات">
+    <meta name="twitter:description" content="منصة عسير الأولى للفعاليات والوجهات السياحية.">
+    <meta name="twitter:image" content="img/hero-01.jpeg">
+    <meta name="twitter:site" content="@eventssquare_sa">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <style>
+        :root {
+            --green: #134527;
+            --teal: #124557;
+            --red: #D92315;
+            --green-light: #16a34a;
+            --sky: #0ea5e9;
+            --sand: #f8f6f0;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --shadow: 0 10px 30px rgba(0,0,0,0.08);
+            --shadow-lg: 0 25px 60px -15px rgba(19,69,39,0.25);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scrollbar-color: var(--teal) #eef1ee; scrollbar-width: thin; }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #eef1ee; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--green), var(--teal)); border-radius: 10px; border: 2px solid #eef1ee; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--green); }
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            background: #fff;
+            color: var(--gray-800);
+            overflow-x: hidden;
+            direction: rtl;
+        }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        button { font-family: inherit; cursor: pointer; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+        /* ============ NAVBAR ============ */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 18px 0;
+            transition: all 0.4s ease;
+        }
+        .navbar.scrolled {
+            background: rgba(19, 69, 39, 0.97);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+            padding: 10px 0;
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { height: 44px; width: auto; }
+        .logo img { height: 100%; }
+        @media (min-width: 769px) { .logo { height: 54px; } }
+        .nav-links { display: flex; align-items: center; gap: 26px; list-style: none; }
+        .nav-links a {
+            color: #fff; font-size: 14px; font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--red); }
+        .dropdown { position: relative; }
+        .dropdown > a { display: flex; align-items: center; gap: 4px; }
+        .dropdown-menu {
+            position: absolute; top: 100%; right: 0;
+            background: #fff; min-width: 220px; border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            opacity: 0; visibility: hidden; transform: translateY(-10px);
+            transition: all 0.3s ease; margin-top: 10px; padding: 8px;
+            z-index: 200;
+        }
+        .dropdown:hover .dropdown-menu,
+        .dropdown.open .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu a {
+            display: block; padding: 12px 18px; color: var(--green);
+            border-radius: 8px; font-size: 14px; font-weight: 500;
+            margin: 4px 8px;
+            transition: all 0.3s;
+        }
+        .dropdown-menu a:hover { background: #f0f9f4; color: var(--red); transform: translateX(-5px); }
+        .dropdown-arrow { transition: transform 0.3s; }
+        .dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+        .nav-actions { display: flex; align-items: center; gap: 14px; }
+        .nav-actions .icon-btn {
+            background: none; border: none; color: #fff; width: 36px; height: 36px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; transition: all 0.3s;
+        }
+        .nav-actions .icon-btn:hover { background: rgba(255,255,255,0.1); }
+        .lang-btn {
+            color: #fff; font-size: 12px; font-weight: 700;
+            border: 1.5px solid rgba(255,255,255,0.4); padding: 6px 12px;
+            border-radius: 50px; transition: all 0.3s; background: none;
+            display: inline-flex; align-items: center; gap: 6px;
+        }
+        .lang-btn .flag { display: inline-flex; }
+        .lang-btn .flag-svg { width: 20px; height: auto; display: block; }
+        .lang-btn:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+        .avatar-btn { background: none; border: none; padding: 0; cursor: pointer; display: flex; }
+        .avatar-circle {
+            width: 42px; height: 42px; border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.35);
+            background: linear-gradient(135deg, var(--red), var(--green));
+            display: flex; align-items: center; justify-content: center; color: #fff;
+            transition: all 0.3s;
+        }
+        .avatar-btn:hover .avatar-circle { border-color: #fff; }
+        .btn-login {
+            color: #fff; font-size: 14px; font-weight: 600;
+            border: 1.5px solid #fff; padding: 8px 22px; border-radius: 50px;
+            background: none; transition: all 0.3s;
+        }
+        .btn-login:hover { background: rgba(255,255,255,0.1); }
+        .btn-signup {
+            color: #fff; font-size: 14px; font-weight: 600;
+            background: var(--red); padding: 9px 24px; border-radius: 50px;
+            border: none; transition: all 0.3s;
+            box-shadow: 0 8px 20px rgba(217,35,21,0.35);
+        }
+        .btn-signup:hover { background: #b81e12; transform: translateY(-2px); }
+        .burger { display: none; background: none; border: none; color: #fff; }
+        .mobile-menu {
+            display: none; background: rgba(19,69,39,0.99); margin-top: 16px;
+            border-radius: 16px; padding: 18px; flex-direction: column; gap: 6px;
+        }
+        .mobile-menu.open { display: flex; }
+        .mobile-menu > a { color: #fff; padding: 10px 6px; font-size: 15px; font-weight: 500; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        .mobile-drop-title { display: flex; justify-content: space-between; align-items: center; color: #fff; width: 100%; padding: 10px 6px; background: none; border: none; font-size: 15px; font-weight: 500; }
+        .mobile-sub { display: none; flex-direction: column; padding: 0 16px; }
+        .mobile-sub.open { display: flex; }
+        .mobile-sub a { color: rgba(255,255,255,0.75); padding: 8px 6px; font-size: 13px; }
+        .mobile-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+
+        /* ============ HERO SLIDER ============ */
+        .hero { position: relative; height: 100vh; min-height: 640px; overflow: hidden; }
+        .hero-slide {
+            position: absolute; inset: 0; opacity: 0;
+            background-size: cover; background-position: center;
+            transition: opacity 1.4s ease-in-out;
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-slide::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(19,69,39,0.5) 0%, rgba(18,69,87,0.38) 100%);
+        }
+        .hero-content { position: relative; z-index: 5; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 24px; }
+        .hero-kicker {
+            color: #fcd34d; font-size: 14px; font-weight: 700; letter-spacing: 3px;
+            display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px;
+        }
+        .hero-kicker::before, .hero-kicker::after { content: ''; width: 40px; height: 1.5px; background: #fcd34d; }
+        .hero h1 {
+            color: #fff; font-size: clamp(2rem, 5vw, 3.6rem); font-weight: 800;
+            line-height: 1.4; text-shadow: 0 3px 14px rgba(0,0,0,0.6), 0 8px 45px rgba(0,0,0,0.45);
+            margin-bottom: 34px; max-width: 900px;
+        }
+        .hero h1 span { color: var(--red); }
+        .hero p {
+            color: rgba(255,255,255,0.92); font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+            font-weight: 400; margin-bottom: 38px; max-width: 720px; line-height: 1.8;
+        }
+        .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+        .btn-primary {
+            background: var(--red); color: #fff; padding: 15px 40px;
+            border-radius: 50px; font-size: 17px; font-weight: 700; border: none;
+            box-shadow: 0 10px 30px rgba(217,35,21,0.4);
+            transition: all 0.3s; position: relative; overflow: hidden;
+        }
+        .btn-primary:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 18px 40px rgba(217,35,21,0.5); }
+        .btn-outline {
+            background: transparent; color: #fff; padding: 14px 40px;
+            border-radius: 50px; font-size: 17px; font-weight: 700;
+            border: 2px solid #fff; transition: all 0.3s;
+        }
+        .btn-outline:hover { background: #fff; color: var(--green); transform: translateY(-3px); }
+        .shimmer { position: relative; overflow: hidden; }
+        .shimmer::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.7s;
+        }
+        .shimmer:hover::before { left: 100%; }
+        .hero-arrow {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 20;
+            width: 52px; height: 52px; border-radius: 50%;
+            background: rgba(255,255,255,0.06); backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.15); color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s; opacity: 0.35;
+        }
+        .hero-arrow:hover { opacity: 1; background: rgba(217,35,21,0.4); transform: translateY(-50%) scale(1.12); }
+        .hero-arrow.prev { right: 28px; }
+        .hero-arrow.next { left: 28px; }
+        .hero-dots { position: absolute; bottom: 90px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 20; }
+        .hero-dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.4); border: 2px solid transparent; transition: all 0.3s; cursor: pointer; }
+        .hero-dot.active { background: var(--red); width: 42px; border-radius: 8px; border-color: #fff; }
+        .scroll-indicator { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 20; text-align: center; cursor: pointer; }
+        .mouse {
+            width: 26px; height: 42px; border-radius: 13px; border: 2px solid rgba(255,255,255,0.5);
+            margin: 0 auto; display: flex; justify-content: center; animation: bounce 2.5s infinite;
+        }
+        .wheel { width: 3px; height: 8px; background: #fff; border-radius: 2px; margin-top: 8px; animation: wheel 1.5s infinite; }
+        @keyframes bounce { 0%,100% { transform: translateY(0);} 50% { transform: translateY(10px);} }
+        @keyframes wheel { 0% { opacity: 1; transform: translateY(0);} 100% { opacity: 0; transform: translateY(14px);} }
+        .scroll-text { color: rgba(255,255,255,0.7); font-size: 11px; margin-top: 10px; letter-spacing: 1px; font-weight: 500; }
+
+        /* ============ SECTION HEADER ============ */
+        .section { padding: 90px 0; }
+        .section.alt { background: var(--gray-50); }
+        .section.sand { background: var(--sand); }
+        .section-header { text-align: center; max-width: 720px; margin: 0 auto 55px; }
+        .section-tag {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: var(--red); font-size: 13px; font-weight: 700; letter-spacing: 1px;
+            background: rgba(217,35,21,0.08); padding: 7px 18px; border-radius: 50px;
+            margin-bottom: 16px;
+        }
+        .section-header h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--green); line-height: 1.4; }
+        .section-header p { color: var(--gray-500); font-size: 16px; margin-top: 12px; line-height: 1.9; }
+        .section-link { display: inline-flex; align-items: center; gap: 8px; color: var(--green-light); font-weight: 700; font-size: 15px; transition: gap 0.3s; }
+        .section-link:hover { gap: 14px; }
+
+        /* ============ CARD GRID ============ */
+        .card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+        .card-grid.three { grid-template-columns: repeat(3, 1fr); }
+
+        .destination-card {
+            background: #fff; border-radius: 24px; overflow: hidden;
+            box-shadow: var(--shadow); transition: all 0.5s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .destination-card:hover { transform: translateY(-16px) scale(1.02); box-shadow: 0 30px 60px -15px rgba(22,163,74,0.3); }
+        .card-img { position: relative; height: 280px; overflow: hidden; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s cubic-bezier(0.34,1.56,0.64,1); }
+        .destination-card:hover .card-img img { transform: scale(1.15) rotate(2deg); }
+        .card-img .gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%); }
+        .card-tags { position: absolute; bottom: 14px; right: 14px; left: 14px; display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+        .card-tag {
+            background: rgba(22,163,74,0.95); color: #fff; padding: 5px 12px;
+            border-radius: 50px; font-size: 12px; font-weight: 600;
+            display: inline-flex; align-items: center; gap: 5px;
+            box-shadow: 0 6px 16px rgba(22,163,74,0.4); backdrop-filter: blur(8px);
+        }
+        .card-tag.cat { background: rgba(14,165,233,0.95); box-shadow: 0 6px 16px rgba(14,165,233,0.4); }
+        .card-tag svg { width: 13px; height: 13px; flex-shrink: 0; }
+        .card-tag.status { background: rgba(22,163,74,0.95); }
+        .card-tag.status .status-icon { width: 7px; height: 7px; border-radius: 50%; background: #fff; flex-shrink: 0; animation: pulse-glow 2s ease-in-out infinite; }
+        .card-tag.status.upcoming { background: rgba(245,158,11,0.95); box-shadow: 0 6px 16px rgba(245,158,11,0.4); }
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,255,255,0.7); }
+            50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(255,255,255,0); }
+        }
+        .rating-badge {
+            position: absolute; top: 16px; right: 16px; z-index: 2;
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+            padding: 6px 14px; border-radius: 50px;
+            display: flex; align-items: center; gap: 6px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            animation: float 3s ease-in-out infinite;
+        }
+        .rating-badge .star { color: #f59e0b; width: 16px; height: 16px; }
+        .rating-badge span { font-weight: 700; color: var(--gray-800); font-size: 13px; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+        .card-actions { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; }
+        .card-action {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); transition: all 0.3s;
+        }
+        .card-action svg { width: 18px; height: 18px; color: var(--gray-600); }
+        .card-action:hover { transform: scale(1.15); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22); border-color: #fff; }
+        .card-action.liked { background: var(--red); border-color: var(--red); }
+        .card-action.liked svg { color: #fff; fill: #fff; animation: pop 0.4s ease; }
+        @keyframes pop { 0%,100%{transform:scale(1);} 50%{transform:scale(1.35);} }
+        .card-body { padding: 22px; background-image: radial-gradient(circle, rgba(22,163,74,0.05) 1px, transparent 1px); background-size: 20px 20px; }
+        .card-title {
+            font-size: 24px; font-weight: 700; margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--green-light) 0%, var(--sky) 100%);
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .card-desc { color: var(--gray-500); font-size: 14px; line-height: 1.75; margin-bottom: 18px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+        .card-feature { display: flex; align-items: center; gap: 9px; background: rgba(22,163,74,0.05); padding: 9px; border-radius: 12px; }
+        .card-feature:nth-child(2) { background: rgba(14,165,233,0.06); }
+        .card-feature .feat-icon { width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: rgba(22,163,74,0.18); flex-shrink: 0; }
+        .card-feature:nth-child(2) .feat-icon { background: rgba(14,165,233,0.18); }
+        .card-feature .feat-icon svg { width: 15px; height: 15px; color: var(--green-light); }
+        .card-feature:nth-child(2) .feat-icon svg { color: var(--sky); }
+        .feat-label { font-size: 10px; color: var(--gray-500); }
+        .feat-value { font-weight: 700; color: var(--gray-800); font-size: 12px; }
+        .cta-button {
+            width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;
+            background: rgba(22, 163, 74, 0.08);
+            color: var(--green); padding: 11px 16px; border: 1px solid rgba(22, 163, 74, 0.22);
+            border-radius: 12px; font-weight: 600; font-size: 14px;
+            transition: all 0.3s;
+        }
+        .cta-button:hover { background: rgba(22, 163, 74, 0.15); border-color: rgba(22, 163, 74, 0.4); }
+        .cta-button:active { transform: scale(0.99); }
+        .cta-button svg { width: 16px; height: 16px; transition: transform 0.3s; }
+        .cta-button:hover svg { transform: translateX(-4px); }
+        .bottom-accent { height: 5px; background: linear-gradient(90deg, var(--green-light) 0%, var(--sky) 50%, var(--green-light) 100%); }
+
+        /* ============ DARK FEATURE BAND (الإقامة والتسوق) ============ */
+        .band {
+            background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%);
+            color: #fff; border-radius: 32px; position: relative; overflow: hidden;
+            padding: 70px 60px;
+        }
+        .band::before { content:''; position:absolute; inset:0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.04)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,181.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L0,320Z"/></svg>') no-repeat bottom; background-size: cover; }
+        .band .container { position: relative; z-index: 2; max-width: 100%; padding: 0; }
+        .band .section-tag { color: #fcd34d; background: rgba(252,211,77,0.12); }
+        .band .section-header h2 { color: #fff; }
+        .band .section-header p { color: rgba(255,255,255,0.75); }
+        .band-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+        .band-card {
+            background: rgba(255,255,255,0.07); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.12); border-radius: 24px;
+            overflow: hidden; transition: all 0.5s cubic-bezier(0.34,1.56,0.64,1);
+        }
+        .band-card:hover { background: rgba(255,255,255,0.13); transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.35); }
+        .band-card .card-img { height: 200px; }
+        .band-card .card-body { background: transparent; }
+        .band-card .card-title { color: #fff; -webkit-text-fill-color: #fff; }
+        .band-card .card-desc { color: rgba(255,255,255,0.75); }
+        .band-card .cta-button { background: rgba(255, 255, 255, 0.15); box-shadow: none; border: 1px solid rgba(255, 255, 255, 0.25); font-weight: 700; }
+        .band-card .cta-button:hover { background: var(--red); border-color: var(--red); box-shadow: 0 12px 28px rgba(217, 35, 21, 0.4); }
+
+        /* ============ SLIDER (هرتاج / فعاليات) ============ */
+        .slider-wrap { position: relative; }
+        .slider-track { display: flex; gap: 26px; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+        .slider-track .destination-card { flex: 0 0 calc((100% - 78px) / 4); }
+        .slider-nav { display: flex; gap: 12px; justify-content: center; margin-top: 40px; }
+        .slider-btn {
+            width: 48px; height: 48px; border-radius: 50%;
+            border: 2px solid var(--green-light); color: var(--green-light);
+            background: #fff; display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s;
+        }
+        .slider-btn:hover { background: var(--green-light); color: #fff; transform: scale(1.1); }
+        .slider-btn svg { width: 20px; height: 20px; }
+
+        /* ============ TESTIMONIALS ============ */
+        .testimonials { max-width: 860px; margin: 0 auto; position: relative; }
+        .t-slider { overflow: hidden; border-radius: 24px; }
+        .t-track { display: flex; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
+        .t-card { flex: 0 0 100%; background: #fff; border-radius: 24px; padding: 45px 50px; text-align: center; box-shadow: var(--shadow); }
+        .quote-icon { width: 60px; height: 60px; margin: 0 auto 20px; border-radius: 50%; background: linear-gradient(135deg, var(--green-light), var(--sky)); display: flex; align-items: center; justify-content: center; color: #fff; }
+        .t-text { font-size: 18px; line-height: 2; color: var(--gray-600); font-weight: 400; margin-bottom: 26px; }
+        .t-avatar { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 12px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 20px; color: #fff; }
+        .t-name { font-weight: 800; color: var(--green); font-size: 17px; }
+        .t-role { color: var(--gray-500); font-size: 13px; margin-top: 3px; }
+        .stars { color: #f59e0b; margin-bottom: 18px; font-size: 18px; letter-spacing: 3px; }
+
+        /* ============ NEWSLETTER ============ */
+        .newsletter { padding: 90px 0; }
+        .nl-card {
+            background: linear-gradient(135deg, var(--green) 0%, var(--teal) 100%);
+            border-radius: 32px; padding: 60px; text-align: center; position: relative; overflow: hidden;
+        }
+        .nl-card::before { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background: radial-gradient(circle, rgba(217,35,21,0.35), transparent 70%); top:-120px; left:-80px; }
+        .nl-card::after { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background: radial-gradient(circle, rgba(14,165,233,0.25), transparent 70%); bottom:-120px; right:-80px; }
+        .nl-inner { position: relative; z-index: 2; max-width: 600px; margin: 0 auto; }
+        .nl-card h3 { color: #fff; font-size: clamp(1.6rem,3.5vw,2.3rem); font-weight: 800; margin-bottom: 12px; }
+        .nl-card p { color: rgba(255,255,255,0.8); margin-bottom: 32px; line-height: 1.9; }
+        .nl-form { display: flex; gap: 12px; background: #fff; padding: 8px; border-radius: 50px; box-shadow: 0 20px 50px rgba(0,0,0,0.25); }
+        .nl-form input { flex: 1; border: none; outline: none; padding: 12px 22px; font-size: 15px; font-family: inherit; border-radius: 50px; color: var(--gray-800); }
+        .nl-form input::placeholder { color: var(--gray-500); }
+        .nl-form .btn-primary { border-radius: 50px; white-space: nowrap; }
+        .nl-success { color: #bbf7d0; font-weight: 600; margin-top: 14px; display: none; }
+
+        /* ============ FOOTER ============ */
+        footer { background: #0d2e1c; color: rgba(255,255,255,0.75); padding: 70px 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.3fr; gap: 45px; padding-bottom: 45px; }
+        .footer-about .logo { height: 40px; margin-bottom: 18px; }
+        .footer-about .socials { margin-top: 20px; }
+        .footer-about p { font-size: 14px; line-height: 1.9; max-width: 320px; }
+        footer h4 { color: #fff; font-size: 16px; font-weight: 700; margin-bottom: 20px; position: relative; padding-bottom: 12px; }
+        footer h4::after { content:''; position:absolute; bottom:0; right:0; width: 36px; height: 3px; border-radius: 2px; background: var(--red); }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 11px; }
+        .footer-links a { font-size: 14px; transition: all 0.25s; display: inline-flex; align-items: center; gap: 7px; }
+        .footer-links a:hover { color: #fff; transform: translateX(-5px); }
+        .footer-links a::before { content: '›'; color: var(--red); font-weight: 700; font-size: 18px; line-height: 1; }
+        .footer-contact { list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 14px; line-height: 1.7; }
+        .footer-contact li { display: flex; align-items: flex-start; gap: 10px; }
+        .footer-contact a { transition: color 0.25s; }
+        .footer-contact a:hover { color: #fff; }
+        .footer-contact i { color: var(--red); font-size: 14px; width: 20px; text-align: center; margin-top: 3px; flex-shrink: 0; }
+        .socials { display: flex; gap: 10px; flex-wrap: wrap; }
+        .social {
+            width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,0.1);
+            display: flex; align-items: center; justify-content: center; color: #fff;
+            transition: all 0.3s;
+        }
+        .social:hover { background: var(--red); transform: translateY(-4px); }
+        .social i { font-size: 15px; line-height: 1; }
+        .footer-trust { display: none; }
+        .trust-logos { display: flex; align-items: center; gap: 18px; }
+        .trust-logos img { width: auto; opacity: 0.92; transition: opacity 0.3s; }
+        .trust-logos img:hover { opacity: 1; }
+        .trust-logos .trust-sbc { height: 56px; }
+        .trust-logos .trust-media { height: 32px; }
+        .wa-float, .back-top {
+            position: fixed; left: 22px; z-index: 990; border: none; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: all 0.3s; color: #fff;
+        }
+        .wa-float {
+            bottom: 24px; width: 46px; height: 46px; background: #25D366; font-size: 22px;
+            animation: waPulse 2s infinite;
+        }
+        .back-top { bottom: 80px; width: 46px; height: 46px; background: var(--green); font-size: 18px; opacity: 0; visibility: hidden; }
+        .back-top.show { opacity: 1; visibility: visible; }
+        .back-top i { position: relative; z-index: 1; }
+        .back-progress { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+        .bp-track { fill: none; stroke: rgba(255,255,255,0.2); stroke-width: 2.5; }
+        .bp-fill { fill: none; stroke: rgba(255,255,255,0.85); stroke-width: 2.5; stroke-linecap: round; }
+        .wa-float:hover, .back-top:hover { transform: translateY(-4px); }
+        .wa-float:hover { background: #1fb457; }
+        @keyframes waPulse { 0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.55); } 50% { box-shadow: 0 0 0 14px rgba(37,211,102,0); } }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1); padding: 22px 0;
+            display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+        }
+        .footer-bottom p { font-size: 13px; margin: 0 auto; }
+        .legal { display: flex; gap: 24px; }
+        .legal a { font-size: 13px; transition: color 0.3s; }
+        .legal a:hover { color: #fff; }
+
+        /* ============ REVEAL ============ */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============ DESIGN REFINEMENTS ============ */
+        section[id] { scroll-margin-top: 88px; }
+        ::selection { background: rgba(217, 35, 21, 0.9); color: #fff; }
+        .nav-links a.active { color: var(--red); }
+
+        .hero::before {
+            content: ''; position: absolute; inset: 0; z-index: 4; pointer-events: none;
+            background:
+                radial-gradient(620px 320px at 82% 18%, rgba(252, 211, 77, 0.14), transparent 60%),
+                radial-gradient(540px 320px at 12% 82%, rgba(14, 165, 233, 0.16), transparent 60%);
+        }
+        .hero-content { animation: heroFade 1.2s ease-out; }
+        @keyframes heroFade {
+            from { opacity: 0; transform: translateY(34px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .section-header h2::after {
+            content: ''; display: block; width: 58px; height: 4px; border-radius: 2px;
+            margin: 16px auto 0;
+            background: linear-gradient(90deg, var(--green-light), var(--sky));
+        }
+        .section-header .section-tag + h2::after { margin-top: 16px; }
+
+        .card-grid > *, .band-cards > *, .slider-track > * { opacity: 0; animation: cardIn 0.8s ease forwards; }
+        .card-grid > *:nth-child(2), .band-cards > *:nth-child(2), .slider-track > *:nth-child(2) { animation-delay: 0.08s; }
+        .card-grid > *:nth-child(3), .band-cards > *:nth-child(3), .slider-track > *:nth-child(3) { animation-delay: 0.16s; }
+        .card-grid > *:nth-child(4), .slider-track > *:nth-child(4) { animation-delay: 0.24s; }
+        .card-grid > *:nth-child(5), .slider-track > *:nth-child(5) { animation-delay: 0.32s; }
+        .card-grid > *:nth-child(6), .slider-track > *:nth-child(6) { animation-delay: 0.4s; }
+        @keyframes cardIn { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
+
+        .destination-card { position: relative; }
+        .destination-card::after {
+            content: ''; position: absolute; top: 0; right: 0; left: 0; height: 4px;
+            background: linear-gradient(90deg, var(--green-light), var(--sky), var(--red));
+            transform: scaleX(0); transform-origin: right; transition: transform 0.5s ease;
+        }
+        .destination-card:hover::after { transform: scaleX(1); }
+
+        .btn-primary:focus-visible, .btn-outline:focus-visible,
+        .cta-button:focus-visible, .filter-btn:focus-visible, .card-action:focus-visible {
+            outline: 3px solid rgba(14, 165, 233, 0.5); outline-offset: 2px;
+        }
+
+        /* ============ EXPLORE MAP (استكشف عسير) ============ */
+        .discover-map { position: relative; height: 640px; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow-lg); }
+        #map { position: absolute; inset: 0; z-index: 1; }
+        .discover-map .leaflet-container { font-family: 'Readex Pro', sans-serif; background: #e9f0e6; }
+        .discover-map .leaflet-control-attribution { font-size: 10px; }
+
+        .floating-sidebar {
+            position: absolute; top: 20px; right: 20px; width: 350px; max-height: 596px;
+            background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(12px);
+            border-radius: 20px; padding: 22px; box-shadow: 0 15px 50px rgba(0, 0, 0, 0.22);
+            z-index: 1000; overflow-y: auto; transition: all 0.3s ease;
+        }
+        .floating-sidebar::-webkit-scrollbar { width: 6px; }
+        .floating-sidebar::-webkit-scrollbar-thumb { background: linear-gradient(135deg, var(--green), var(--red)); border-radius: 10px; }
+        .floating-sidebar.minimized { width: 62px; padding: 16px; overflow: hidden; cursor: pointer; }
+        .floating-sidebar.minimized .sidebar-content,
+        .floating-sidebar.minimized .sidebar-header h2 { display: none; }
+        .sidebar-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 3px solid var(--red); }
+        .sidebar-header h2 { color: var(--green); font-size: 1.3rem; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+        .sidebar-toggle { background: linear-gradient(135deg, var(--green), var(--teal)); color: #fff; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; transition: all 0.3s; flex-shrink: 0; }
+        .sidebar-toggle:hover { transform: rotate(90deg); background: linear-gradient(135deg, var(--red), var(--green)); }
+        .filter-section { margin-bottom: 16px; }
+        .filter-buttons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+        .filter-btn {
+            padding: 10px 12px; background: #fff; border: 2px solid var(--gray-200);
+            border-radius: 12px; color: var(--gray-500); font-family: inherit; font-size: 0.88rem;
+            font-weight: 600; cursor: pointer; transition: all 0.3s;
+            display: flex; align-items: center; justify-content: center; gap: 7px;
+        }
+        .filter-btn:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
+        .filter-btn.active { background: linear-gradient(135deg, var(--green), var(--teal)); color: #fff; border-color: var(--green); }
+        .province-list { display: flex; flex-direction: column; gap: 10px; }
+        .province-item { background: #fff; padding: 13px 15px; border-radius: 12px; border: 2px solid var(--gray-100); cursor: pointer; transition: all 0.3s; }
+        .province-item:hover { border-color: var(--green); transform: translateX(-5px); box-shadow: 0 6px 18px rgba(19, 69, 39, 0.12); }
+        .province-item h4 { color: var(--green); font-size: 0.98rem; font-weight: 800; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+        .province-item p { color: var(--gray-500); font-size: 0.82rem; line-height: 1.5; }
+        .custom-marker { background: transparent; border: none; }
+        .marker-pin {
+            width: 38px; height: 38px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--green), var(--teal));
+            display: flex; align-items: center; justify-content: center; color: #fff;
+            font-size: 1.05rem; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+            border: 3px solid #fff; transition: all 0.3s; cursor: pointer;
+        }
+        .marker-pin:hover { transform: scale(1.2); background: linear-gradient(135deg, var(--red), var(--green)); }
+        .marker-pin.capital { width: 50px; height: 50px; font-size: 1.4rem; background: linear-gradient(135deg, var(--red), var(--green)); }
+        .leaflet-popup-content-wrapper { border-radius: 14px; font-family: 'Readex Pro', sans-serif; }
+
+        .info-panel {
+            position: fixed; bottom: -100%; left: 50%; transform: translateX(-50%);
+            width: 92%; max-width: 600px; background: #fff; border-radius: 24px 24px 0 0;
+            padding: 30px; box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.25);
+            z-index: 2000; transition: bottom 0.4s ease; max-height: 82vh; overflow-y: auto;
+        }
+        .info-panel.show { bottom: 0; }
+        .info-panel h3 { color: var(--green); font-size: 1.5rem; font-weight: 800; margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+        .info-detail { margin-bottom: 14px; padding: 14px; background: var(--gray-50); border-radius: 12px; }
+        .info-detail strong { color: var(--green); display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 1rem; }
+        .info-detail p { color: var(--gray-500); line-height: 1.7; }
+        .info-detail ul { list-style: none; }
+        .info-detail ul li { padding: 7px 0; border-bottom: 1px solid var(--gray-200); color: var(--gray-500); }
+        .info-detail ul li:last-child { border-bottom: none; }
+        .info-detail ul li::before { content: '✓'; color: var(--red); font-weight: bold; margin-left: 8px; }
+        .close-btn {
+            position: absolute; top: 18px; left: 18px; background: var(--red); color: #fff;
+            border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+            font-size: 1.1rem; transition: all 0.3s; display: flex; align-items: center; justify-content: center;
+        }
+        .close-btn:hover { background: var(--green); transform: rotate(90deg); }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 1024px) {
+            .card-grid { grid-template-columns: repeat(2, 1fr); }
+            .band-cards { grid-template-columns: repeat(2, 1fr); }
+            .slider-track .destination-card { flex: 0 0 calc((100% - 26px) / 2); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links, .nav-actions .btn-login, .nav-actions .btn-signup { display: none; }
+            .burger { display: flex; }
+        }
+        @media (max-width: 640px) {
+            .card-grid, .band-cards { grid-template-columns: 1fr; }
+            .slider-track .destination-card { flex: 0 0 100%; }
+            .band { padding: 45px 24px; }
+            .nl-card { padding: 40px 24px; }
+            .nl-form { flex-direction: column; border-radius: 24px; }
+            .hero-arrow { display: none; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .t-card { padding: 30px 22px; }
+            .section { padding: 60px 0; }
+            .discover-map { height: 560px; }
+            .floating-sidebar { width: 86%; right: 7%; max-height: 380px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="ساحة الفعاليات">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#events">الفعاليات</a></li>
+                <li class="dropdown">
+                    <a href="#destinations">الوجهات <span class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="#destinations">القصور والقرى</a>
+                        <a href="#destinations">المعالم والمنتزهات</a>
+                        <a href="#destinations">المتاحف والأسواق</a>
+                        <a href="#destinations">الإقامة والتسوق</a>
+                        <a href="#destinations">المأكولات</a>
+                    </div>
+                </li>
+                <li><a href="#activities">الأنشطة</a></li>
+                <li class="dropdown">
+                    <a href="#offers">الخدمات <span class="dropdown-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="#offers">الإعلانات</a>
+                        <a href="#offers">المبيعات</a>
+                    </div>
+                </li>
+                <li><a href="#discover">استكشفها</a></li>
+                <li><a href="#about">عن المنصة</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" title="بحث">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                </button>
+                <button class="lang-btn" onclick="toggleLang(this)" title="تغيير اللغة">
+                    <span class="flag">
+                        <svg class="flag-svg" viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="M0 0 60 30M60 0 0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/><path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>
+                    </span> <span class="lang-text">EN</span>
+                </button>
+                <div class="dropdown">
+                    <button class="avatar-btn" title="حسابي">
+                        <div class="avatar-circle">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                        </div>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#">تسجيل دخول</a>
+                        <a href="#">إنشاء حساب</a>
+                        <a href="#">حسابي</a>
+                        <a href="#">الإعدادات</a>
+                    </div>
+                </div>
+                <button class="burger" onclick="toggleMobile()">
+                    <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home">الرئيسية</a>
+                <a href="#events">الفعاليات</a>
+                <button class="mobile-drop-title" onclick="toggleMobileSub('m1')">الوجهات <span>▾</span></button>
+                <div class="mobile-sub" id="m1">
+                    <a href="#destinations">القصور والقرى</a>
+                    <a href="#destinations">المعالم والمنتزهات</a>
+                    <a href="#destinations">المأكولات</a>
+                </div>
+                <a href="#activities">الأنشطة</a>
+                <button class="mobile-drop-title" onclick="toggleMobileSub('m2')">الخدمات <span>▾</span></button>
+                <div class="mobile-sub" id="m2">
+                    <a href="#offers">الإعلانات</a>
+                    <a href="#offers">المبيعات</a>
+                </div>
+                <a href="#discover">استكشفها</a>
+                <a href="#about">عن المنصة</a>
+                <a href="#contact">تواصل معنا</a>
+                <div class="mobile-actions">
+                    <button class="btn-login" style="width:100%">تسجيل دخول</button>
+                    <button class="btn-signup" style="width:100%">إنشاء حساب</button>
+                    <button class="lang-btn" onclick="toggleLang(this)" style="align-self:center">
+                        <span class="flag">
+                            <svg class="flag-svg" viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="M0 0 60 30M60 0 0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/><path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>
+                        </span> <span class="lang-text">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero" id="home">
+        <div class="hero-slide active" style="background-image:url('img/hero-01.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">أهلاً بعسير</span>
+                <h1>حيث تلتقي السحب بالجبال تبدأ حكاية <span>عسير</span></h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">ابدأ الرحلة الآن</button>
+                    <button class="btn-outline">استكشف الوجهات</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('img/hero-02.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">تراثٌ يتحدث</span>
+                <h1>عبق <span>التاريخ</span> في قصور عسير العريقة</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">رحلة إلى الماضي</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('img/hero-03.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">لحظات لا تُنسى</span>
+                <h1>مغامرات وفعاليات <span>لا تُنسى</span> في قلب عسير</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">تصفح الفعاليات</button>
+                    <button class="btn-outline">خطط تجربتك</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('img/hero-04.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">أصالة الجبال</span>
+                <h1>بين <span>الجبال</span> والضباب ترتسم لوحة عسير</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">اكتشف الطبيعة</button>
+                    <button class="btn-outline">الوجهات</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('img/hero-05.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">نكهة الجنوب</span>
+                <h1>أصالة <span>المطبخ</span> العسيري بنكهة لا تُنسى</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">تذوّق العسير</button>
+                    <button class="btn-outline">جولة المطاعم</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image:url('img/hero-06.jpeg')">
+            <div class="hero-content">
+                <span class="hero-kicker">موسم من البهجة</span>
+                <h1>فعاليات <span>الاحتفاء</span> تزين سماء عسير</h1>
+                <div class="hero-buttons">
+                    <button class="btn-primary shimmer">تصفح الفعاليات</button>
+                    <button class="btn-outline">خطط زيارتك</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="hero-arrow next" onclick="moveHero(1)">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="hero-arrow prev" onclick="moveHero(-1)">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="scroll-indicator" onclick="window.scrollTo({top: window.innerHeight, behavior:'smooth'})">
+            <div class="mouse"><div class="wheel"></div></div>
+            <div class="scroll-text">اكتشف المزيد</div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 1: خطط لقضاء إجازة رائعة ============ -->
+    <section class="section" id="featured">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ وجهات مميزة</span>
+                <h2>خطط لقضاء إجازة استثنائية!</h2>
+                <p>تعرّف على أجمل الوجهات التي تمنحك تجربة متكاملة وجمالًا لا يضاهى، واختر ما يناسبك لتصنع إجازة تُحكى وتُتذكّر</p>
+            </div>
+            <div class="card-grid" id="featuredGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 2: الإقامة والتسوق ============ -->
+    <section class="section alt" id="stay">
+        <div class="container">
+            <div class="band reveal">
+                <div class="section-header">
+                    <span class="section-tag">✦ إقامة وتسوق</span>
+                    <h2>إقامة مريحة وتسوق لا يُنسى</h2>
+                    <p>من الفنادق الفاخرة والشاليهات الهادئة إلى المتاجر التي تروي ذوقك، اجمع بين راحة الإقامة ومتعة التسوق في تجربة واحدة متكاملة</p>
+                </div>
+                <div class="band-cards" id="stayGrid"></div>
+                <div style="text-align:center; margin-top:40px;">
+                    <a href="#" class="section-link">اكتشف المزيد
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 3: عالم النكهات ============ -->
+    <section class="section sand" id="food">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ مأكولات ومشروبات</span>
+                <h2>رحلة في عالم النكهات</h2>
+                <p>استعد لتجربة لا تُنسى يلتقي فيها الطعم الرفيع بجولة فريدة بين المذاقات المحلية الأصيلة والأطباق العالمية الشهية</p>
+            </div>
+            <div class="card-grid" id="foodGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 4: العروض والخدمات ============ -->
+    <section class="section" id="offers">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ عروض وخدمات</span>
+                <h2>عروض وخدمات بانتظارك</h2>
+                <p>تصفح أحدث العروض والخدمات الحصرية، وكن دائمًا على اطلاع بكل جديد لتنال أفضل التجارب بأفضل الأسعار</p>
+            </div>
+            <div class="card-grid" id="offersGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 5: المعالم والوجهات ============ -->
+    <section class="section alt" id="destinations">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ معالم ووجهات</span>
+                <h2>أبرز المعالم والوجهات</h2>
+                <p>خياراتنا المختارة بعناية لأجمل المعالم والوجهات التي تجسّد سحر عسير بجبالها وسهولها وتاريخها العريق</p>
+            </div>
+            <div class="card-grid" id="landmarksGrid"></div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 6: استكشف عسير (خريطة تفاعلية) ============ -->
+    <section class="section sand" id="discover">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ استكشف عسير</span>
+                <h2>خريطة عسير التفاعلية</h2>
+                <p>رحلة ساحرة عبر جبال عسير وسهولها ووديانها؛ تنقّل بين محافظاتها الست عشرة واكتشف أسرار كل ركن</p>
+            </div>
+            <div class="discover-map reveal">
+                <div id="map"></div>
+
+                <div class="floating-sidebar" id="floatingSidebar">
+                    <div class="sidebar-header">
+                        <h2><i class="fa-solid fa-map-location-dot"></i> محافظات عسير</h2>
+                        <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="sidebar-content">
+                        <div class="filter-section">
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-type="all"><i class="fa-solid fa-globe"></i> الكل</button>
+                                <button class="filter-btn" data-type="mountain"><i class="fa-solid fa-mountain"></i> جبلية</button>
+                                <button class="filter-btn" data-type="coastal"><i class="fa-solid fa-umbrella-beach"></i> ساحلية</button>
+                                <button class="filter-btn" data-type="historical"><i class="fa-solid fa-landmark"></i> تاريخية</button>
+                            </div>
+                        </div>
+                        <div class="province-list" id="provinceList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Panel -->
+    <div class="info-panel" id="infoPanel">
+        <button class="close-btn" onclick="closeInfoPanel()"><i class="fa-solid fa-times"></i></button>
+        <div id="infoPanelContent"></div>
+    </div>
+
+    <!-- ============ القسم 7: التراث والثقافة (سلايدر) ============ -->
+    <section class="section sand" id="heritage">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ تراث وثقافة</span>
+                <h2>أصالة تروي الحكاية</h2>
+                <p>تجربة تمزج بين الجمال التاريخي والتنوع الثقافي في قصور وقرى تراثية شامخة عبر الزمن</p>
+            </div>
+            <div class="slider-wrap reveal">
+                <div class="slider-track" id="heritageTrack"></div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="moveSlider('heritage', -1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button class="slider-btn" onclick="moveSlider('heritage', 1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ القسم 7: الفعاليات القادمة (سلايدر) ============ -->
+    <section class="section" id="events">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ فعاليات قادمة</span>
+                <h2>فعاليات تنتظرك</h2>
+                <p>استعد لتجارب وفعاليات عسير القادمة، حيث تنتظرك لحظات فريدة وذكريات لا تُنسى</p>
+            </div>
+            <div class="slider-wrap reveal">
+                <div class="slider-track" id="eventsTrack"></div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="moveSlider('events', -1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button class="slider-btn" onclick="moveSlider('events', 1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ آراء العملاء ============ -->
+    <section class="section sand" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">✦ ماذا يقولون عنا</span>
+                <h2>ماذا يقول العملاء عنا</h2>
+                <p>اكتشف عسير — تجارب حقيقية من زوار المنصة</p>
+            </div>
+            <div class="testimonials reveal">
+                <div class="t-slider">
+                    <div class="t-track" id="tTrack"></div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn" onclick="moveT(-1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+                    </button>
+                    <button class="slider-btn" onclick="moveT(1)">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ النشرة الإخبارية ============ -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="nl-card reveal">
+                <div class="nl-inner">
+                    <h3>الاشتراك في النشرة الإخبارية</h3>
+                    <p>اشترك الآن ليصلك كل جديد من فعاليات ووجهات وعروض منطقة عسير</p>
+                    <form class="nl-form" onsubmit="subscribe(event)">
+                        <input type="email" id="nlEmail" placeholder="ادخل البريد الإلكتروني" required>
+                        <button type="submit" class="btn-primary shimmer">اشترك الآن</button>
+                    </form>
+                    <div class="nl-success" id="nlSuccess">✓ تم الاشتراك بنجاح، شكراً لانضمامك!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img class="logo" src="img/logo-white.png" alt="ساحة الفعاليات">
+                    <p>منصة إلكترونية تفاعلية تهتم في إثراء الحياة ورسم البهجة وخلق عالم من الخيال في معالم ووجهات سياحية أثرية متنوعة</p>
+                    <div class="socials">
+                        <a class="social" href="https://x.com/eventssquare_sa" target="_blank" rel="noopener" title="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a class="social" href="https://t.snapchat.com/9wUjXwds" target="_blank" rel="noopener" title="سناب شات">
+                            <i class="fa-brands fa-snapchat"></i>
+                        </a>
+                        <a class="social" href="https://www.tiktok.com/@eventssquare_sa" target="_blank" rel="noopener" title="تيك توك">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a class="social" href="https://www.instagram.com/events.square" target="_blank" rel="noopener" title="انستقرام">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#events">الفعاليات</a></li>
+                        <li><a href="#destinations">الوجهات</a></li>
+                        <li><a href="#food">المأكولات والمشروبات</a></li>
+                        <li><a href="#activities">أنشطة وتجارب</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>المنصة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#offers">الإعلانات</a></li>
+                        <li><a href="#discover">استكشفها</a></li>
+                        <li><a href="#about">عن المنصة</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>اتصل بنا</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+966554657517" dir="ltr">+966 55 465 7517</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:Hello@EventsSquare.sa" dir="ltr">Hello@EventsSquare.sa</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me/966554657517" target="_blank" rel="noopener">واتساب</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>أبها، منطقة عسير، المملكة العربية السعودية</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-logos">
+                    <img class="trust-sbc" src="img/trust-sbc.png" alt="المركز السعودي للأعمال">
+                    <img class="trust-media" src="img/trust-media.png" alt="الهيئة العامة لتنظيم الإعلام">
+                </div>
+                <p>جميع الحقوق محفوظة لصالح شركة ساحة الفعاليات <span id="year">2023</span> ©</p>
+                <div class="legal">
+                    <a href="#">السياسة والخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const startYear = 2023;
+        const currentYear = new Date().getFullYear();
+        document.getElementById('year').textContent = currentYear > startYear ? `${startYear} - ${currentYear}` : startYear;
+    </script>
+
+    <button class="wa-float" id="waFloat" title="تواصل عبر واتساب" onclick="window.open('https://wa.me/966554657517', '_blank')">
+        <i class="fa-brands fa-whatsapp"></i>
+    </button>
+    <button class="back-top" id="backTop" title="الصعود للأعلى" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <svg class="back-progress" viewBox="0 0 46 46" aria-hidden="true">
+            <circle class="bp-track" cx="23" cy="23" r="20"></circle>
+            <circle class="bp-fill" cx="23" cy="23" r="20"></circle>
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        /* ================= DATA ================= */
+        const IMG = (seed) => {
+            const map = {
+                liwana: 'img/liwana.jpeg',
+                munch: 'img/munch.jpeg',
+                salon: 'img/salon.jpeg',
+                madmak: 'img/madmak.jpeg',
+                mamsha: 'img/mamsha.jpeg',
+                shaaf: 'img/shaaf.jpeg',
+                ain: 'img/ain.jpeg',
+                sketch: 'img/sketch.jpeg',
+                abaya: 'img/abaya.jpeg',
+                pottery: 'img/pottery.jpeg',
+                wa: 'img/wa.jpeg',
+                'madmak-e': 'img/madmak.jpeg',
+                kart: 'img/kart.png',
+                nadee: 'img/nadee.jpeg',
+                'abha-park': 'img/abha-park.jpeg',
+                anefiel: 'img/anefiel.jpeg',
+                lascene: 'img/lascene.jpeg',
+                zorna: 'img/zorna.jpeg',
+                falaq: 'img/falaq.jpeg',
+                senso: 'img/senso.jpeg',
+                malk: 'img/malk.jpeg',
+                umsawda: 'img/umsawda.jpeg',
+                shada: 'img/shada.jpeg',
+                muftaha: 'img/muftaha.jpeg',
+                rigal: 'img/rigal.jpeg',
+                shamsan: 'img/shamsan.jpg'
+            };
+            return map[seed] || `https://picsum.photos/seed/${seed}/800/600`;
+        };
+
+        const featured = [
+            { img: IMG('madmak'), city: 'أبها', cat: 'الفعاليات الترفيهية', title: 'مدماك', desc: 'هي فعالية ترفيهية تم تصميمها بأسلوب معماري مستلهمة من روح عسير المدمجة بالحداثة، تقع بالقرب من منتزه السحاب على إطلالة ساحرة', feats: [['مفتوح', 'يومياً'], ['الموقع', 'السحاب']] },
+            { img: IMG('liwana'), city: 'أبها', cat: 'التجارب السياحية', title: 'مزرعه الليوان', desc: 'تقع مزرعة الليوان في مدينة أبها في قرية آل يوسف التراثية، ويمتاز موقعها بوجود مزرعة وبيت طين تم تطويره إلى وجهة سياحية تراثية مستوحاة من ثقافة المنطقة', feats: [['النوع', 'تراثية'], ['القرب', 'أبها']] },
+            { img: IMG('munch'), city: 'أبها', cat: 'الحلويات والمخبوزات', title: 'منش بيكري', desc: 'استمتع بتجربة لا تُنسى في مخبز منش بيكري المعروف بتقديمه مجموعة متنوعة من المخبوزات والكعك، خاصة كوب كيك اللذيذ', feats: [['مفتوح', 'يومياً'], ['التخصص', 'كوب كيك']] },
+            { img: IMG('salon'), city: 'خميس مشيط', cat: 'الخدمات والمرافق', title: 'صالون نورة القحطاني', desc: 'من الوجهات الرائعة في عالم العناية والجمال يقدم خدمات تجميلية من الاعتناء بالأظافر واليدين والمساج والحمام المغربي وتجربة فريدة من الاسترخاء', feats: [['الخدمات', 'تجميل'], ['الجو', 'استرخاء']] },
+        ];
+
+        const stay = [
+            { img: IMG('nadee'), title: 'شالية الندي الخاص', desc: 'ليلة استثنائية من الراحة والاسترخاء', feats: [['النوع', 'شالية'], ['الموقع', 'أبها']] },
+            { img: IMG('abha-park'), title: 'بارك أبها', desc: 'وجهة مثالية للعائلة', feats: [['النوع', 'تسوق'], ['الموقع', 'أبها']] },
+            { img: IMG('anefiel'), title: 'فندق انيفيل', desc: 'إقامة فاخرة ولحظات سعيدة', feats: [['النوع', 'فندق'], ['الموقع', 'أبها']] },
+        ];
+
+        const food = [
+            { img: IMG('lascene'), city: 'أبها', cat: 'مطاعم', title: 'La-Scene لاسين', desc: 'تجربة طعام راقية بلمسة فرنسية تجمع بين الطعم الرفيع والجلسات المميزة', feats: [['النوع', 'مطعم'], ['المطبخ', 'فرنسي']] },
+            { img: IMG('falaq'), city: 'أبها', cat: 'مأكولات', title: 'فلق', desc: 'طبق في عالم مختلف — نكهات أصيلة تروي حكاية المطبخ المحلي', feats: [['النوع', 'مطعم'], ['التخصص', 'محلي']] },
+            { img: IMG('zorna'), city: 'أبها', cat: 'مطاعم', title: 'زورنا', desc: 'وجهة مميزة لتذوق أشهى الأطباق في أجواء عائلية دافئة', feats: [['النوع', 'مطعم'], ['المناسبة', 'عائلي']] },
+            { img: IMG('senso'), city: 'أبها', cat: 'مطاعم', title: 'مطعم سنسو الإيطالي', desc: 'نكهات إيطالية أصيلة تُحضّر بحب وإتقان لتجربة طعام لا تُنسى', feats: [['النوع', 'مطعم'], ['المطبخ', 'إيطالي']] },
+        ];
+
+        const offers = [
+            { img: IMG('pottery'), city: 'أبها', cat: 'متاجر', title: 'الاكواب yoshapottery', desc: 'قطع فخارية وحرفية فريدة تصنع بحب لتضيف لمسة جمالية لبيتك', feats: [['النوع', 'فخار'], ['المنتجات', 'أكواب']] },
+            { img: IMG('abaya'), city: 'أبها', cat: 'أزياء', title: 'العبايات BR BY BATOOL', desc: 'تشكيلة عبايات عصرية تجمع بين الأناقة والراحة', feats: [['النوع', 'أزياء'], ['التخصص', 'عبايات']] },
+            { img: IMG('sketch'), city: 'أبها', cat: 'فنون', title: 'سكتش ارت', desc: 'حين يكون للفن حكاية — لوحات فنية تعبّر عن روح المنطقة', feats: [['النوع', 'فن'], ['التخصص', 'رسومات']] },
+            { img: IMG('wa'), city: 'أبها', cat: 'متاجر', title: 'WA', desc: 'سلسلة العودة إلى الداخل — منتجات تعيدك لأصالة عسير وجمالها', feats: [['النوع', 'متجر'], ['المفهوم', 'أصالة']] },
+        ];
+
+        const landmarks = [
+            { img: 'img/mashhad.jpeg', city: 'أبها', cat: 'الحدائق والمنتزهات', title: 'حديقة المشهد', desc: 'استكشف حديقة المشهد، ومساحاتها الطبيعية، تضم مرافق للعائلات وألعاب للأطفال ومنافذ لبيع الوجبات والأكلات التراثية والمحلية', feats: [['مفتوح', 'يومياً'], ['الموقع', 'أبها']] },
+            { img: IMG('mamsha'), city: 'أبها', cat: 'الحدائق والمنتزهات', title: 'ممشى ساحة الوطن', desc: 'استمتع بلحظات حيوية ومنعشة في ممشى ساحة الوطن الذي يحتوي على مرافق من مقاعد للجلوس ومواقف للسيارات ومسار للمشي', feats: [['مفتوح', 'يومياً'], ['الموقع', 'أبها']] },
+            { img: IMG('shaaf'), city: 'بللسمر', cat: 'المعالم والمنتزهات', title: 'شعف آل خريم', desc: 'منتزه الشعف آل خريم يرتفع قرابة 2800 مترا فوق سطح البحر، ويتميز بكثافة أشجار العرعر وسهولة التنقل بين الممرات والأشجار', feats: [['الارتفاع', '2800 م'], ['الموقع', 'بللسمر']] },
+            { img: IMG('ain'), city: 'السودة', cat: 'المعالم السياحية', title: 'وادي عين الذيبة', desc: 'تعد عين الذيبة واحدة من أبرز معالم الجذب الطبيعية في منطقة عسير، تضم مجموعة من الشلالات المذهلة ذات المياه العذبة ويوجد بها مختلف النباتات', feats: [['النوع', 'شلالات'], ['الموقع', 'السودة']] },
+        ];
+
+        const heritage = [
+            { img: IMG('malk'), cat: 'القصور التاريخية', title: 'قصر مالك التاريخي', desc: 'قصر مالك التاريخي، يتجسد التاريخ والولاء، استمتع بمشاهدة القطع الأثرية والوثائق في قلب القصر والطبيعة المحيطة من إطلالته الساحرة على المزارع' },
+            { img: IMG('shamsan'), cat: 'القصور التاريخية', title: 'قلعة شمسان التاريخية', desc: 'قلعة شمسان التاريخية في أبها يعود تاريخ تشييدها بتصميمها الأخير إلى أكثر من 100 عام، وشيدت على جبل شمسان وتعتبر مثالاً بارزاً للفنون المعمارية التقليدية' },
+            { img: IMG('shada'), cat: 'القصور التاريخية', title: 'قصر شدا التاريخي', desc: 'استعد للانغماس في مدينة أبها بتاريخ قصر شدا، المعلم التاريخي البارز المبني على نمط عمارة عسير من الحجارة مع تغطية الجدران بطبقة من الجص' },
+            { img: IMG('muftaha'), cat: 'القرى التراثية', title: 'قرية المفتاحة التشكيلية', desc: 'قرية المفتاحة تحفة معمارية تجمع بين الفن والإلهام والأصالة، وتوفر تجربة سياحية فريدة تأخذ الزائر في رحلة عبر التاريخ والثقافة المحلية' },
+            { img: IMG('rigal'), cat: 'القرى التراثية', title: 'قرية رجال ألمع', desc: 'اكتشف جمال وتاريخ القرية التي شيدت مبانيها من الحجر واستمتع بالمعالم الأثرية وتعرف على فن القط العسيري، وتتسم أهميتها التاريخية لأكثر من 700 عام' },
+            { img: IMG('umsawda'), cat: 'القرى التراثية', title: 'قرية وطن امسودة', desc: 'استكشف القرية التاريخية حيث تجتمع روعة الحاضر مع بريق الماضي، تجد فيها القلاع والمعالم الأثرية ومسارات المشي بين الطبيعة والبيوت الأثرية' },
+        ];
+
+        const events = [
+            { img: IMG('madmak-e'), city: 'أبها', cat: 'الفعاليات الترفيهية', title: 'مدماك', desc: 'هي فعالية ترفيهية تم تصميمها بأسلوب معماري مستلهمة من روح عسير المدمجة بالحداثة، تقع بالقرب من منتزه السحاب', feats: [['مفتوح', 'يومياً'], ['الموقع', 'السحاب']], status: 'مستمرة' },
+            { img: IMG('kart'), city: 'أبها', cat: 'الفعاليات الترفيهية', title: 'باتل كارت', desc: 'فعالية تتميز بوجود أول سباق سيارات كارتنج بمزيج ألعاب الفيديو والواقع المعزز، والكثير من الألعاب المختلفة مثل حلبة سباق السيارات وكرة القدم ولعبة الثعبان', feats: [['النوع', 'كارتنج'], ['الموقع', 'أبها']], status: 'مستمرة' },
+        ];
+
+        const testimonials = [
+            { name: 'WA', role: 'متجر', color: '#16a34a', quote: 'منصة ساحة الفعاليات تعكس بشكل جميل التراث والثقافة المحلية، إنها منصة رائعة لمعرفة الفعاليات الجديدة والمعاصرة على حد سواء' },
+            { name: 'سكتش ارات', role: 'متجر', color: '#D92315', quote: 'فخورين بتفعيل وتأسيس هذه المنصة الرائعة التي تدعم السياحة وشباب وبنات المنطقة، وتخدم السائحين وكل من له رغبة باستكشاف جمال منطقة عسير' },
+            { name: 'الندي الخاص', role: 'شالية', color: '#0ea5e9', quote: 'منصة فيها المناطق السياحية في أبها وكل المعلومات اللي تحتاجها عن عسير، عن الأماكن التراثية العريقة والسياحية والمطاعم المشهورة، بالتوفيق للقائمين عليها' },
+        ];
+
+        /* ================= CARD TEMPLATE ================= */
+        const svgPin = '<svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>';
+        const svgCat = '<svg fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>';
+        const svgClock = '<svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+
+        function cardHTML(item) {
+            const tags = `
+                <div class="card-tags">
+                    ${item.city ? `<span class="card-tag">${svgPin} ${item.city}</span>` : ''}
+                    ${item.cat ? `<span class="card-tag cat">${svgCat} ${item.cat}</span>` : ''}
+                    ${item.status ? `<span class="card-tag status ${item.status === 'مستمرة' ? 'active' : 'upcoming'}"><i class="status-icon"></i>${item.status}</span>` : ''}
+                </div>`;
+            const feats = (item.feats || []).map((f, i) => `
+                <div class="card-feature">
+                    <div class="feat-icon">${i === 0 ? svgClock : svgPin}</div>
+                    <div class="feature-text"><p class="feat-label">${f[0]}</p><p class="feat-value">${f[1]}</p></div>
+                </div>`).join('');
+
+            return `
+            <article class="destination-card">
+                <div class="card-img">
+                    <img src="${item.img}" alt="${item.title}" loading="lazy">
+                    <div class="gradient"></div>
+                    <div class="rating-badge">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <span>${item.rating || '4.8'}</span>
+                    </div>
+                    ${tags}
+                    <div class="card-actions">
+                        <button class="card-action" onclick="this.classList.toggle('liked')">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        </button>
+                        <button class="card-action">
+                            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">${item.title}</h3>
+                    <p class="card-desc">${item.desc}</p>
+                    ${feats ? `<div class="card-features">${feats}</div>` : ''}
+                    <button class="cta-button"><span>أعرف المزيد</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                    </button>
+                </div>
+                <div class="bottom-accent"></div>
+            </article>`;
+        }
+
+        function bandCardHTML(item) {
+            const feats = (item.feats || []).map((f, i) => `
+                <div class="card-feature">
+                    <div class="feat-icon">${i === 0 ? svgClock : svgPin}</div>
+                    <div class="feature-text"><p class="feat-label">${f[0]}</p><p class="feat-value">${f[1]}</p></div>
+                </div>`).join('');
+            return `
+            <article class="band-card">
+                <div class="card-img">
+                    <img src="${item.img}" alt="${item.title}" loading="lazy">
+                    <div class="gradient"></div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">${item.title}</h3>
+                    <p class="card-desc">${item.desc}</p>
+                    ${feats ? `<div class="card-features">${feats}</div>` : ''}
+                    <button class="cta-button"><span>أعرف المزيد</span>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+                    </button>
+                </div>
+            </article>`;
+        }
+
+        function render() {
+            document.getElementById('featuredGrid').innerHTML = featured.map(cardHTML).join('');
+            document.getElementById('stayGrid').innerHTML = stay.map(bandCardHTML).join('');
+            document.getElementById('foodGrid').innerHTML = food.map(cardHTML).join('');
+            document.getElementById('offersGrid').innerHTML = offers.map(cardHTML).join('');
+            document.getElementById('landmarksGrid').innerHTML = landmarks.map(cardHTML).join('');
+            document.getElementById('heritageTrack').innerHTML = heritage.map(cardHTML).join('');
+            document.getElementById('eventsTrack').innerHTML = events.map(cardHTML).join('');
+            document.getElementById('tTrack').innerHTML = testimonials.map(t => `
+                <div class="t-card">
+                    <div class="quote-icon">
+                        <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p class="t-text">"${t.quote}"</p>
+                    <div class="t-avatar" style="background:linear-gradient(135deg, ${t.color}, ${t.color}88)">${t.name.trim().charAt(0)}</div>
+                    <div class="t-name">${t.name}</div>
+                    <div class="t-role">${t.role}</div>
+                </div>`).join('');
+        }
+        render();
+
+        /* ================= HERO SLIDER ================= */
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const heroDots = document.getElementById('heroDots');
+        let heroIndex = 0, heroTimer;
+
+        heroSlides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+            dot.onclick = () => showHero(i);
+            heroDots.appendChild(dot);
+        });
+
+        function showHero(i) {
+            heroIndex = (i + heroSlides.length) % heroSlides.length;
+            heroSlides.forEach((s, idx) => s.classList.toggle('active', idx === heroIndex));
+            [...heroDots.children].forEach((d, idx) => d.classList.toggle('active', idx === heroIndex));
+            resetHeroTimer();
+        }
+        function moveHero(dir) { showHero(heroIndex + dir); }
+        function resetHeroTimer() { clearInterval(heroTimer); heroTimer = setInterval(() => showHero(heroIndex + 1), 6000); }
+        resetHeroTimer();
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') moveHero(1);
+            if (e.key === 'ArrowRight') moveHero(-1);
+        });
+
+        /* ================= SECTION SLIDERS (RTL) ================= */
+        const sliders = {};
+        ['heritage', 'events'].forEach(name => {
+            const track = document.getElementById(name + 'Track');
+            const step = (id) => track.querySelector('.destination-card').offsetWidth + 26;
+            const count = track.children.length;
+            sliders[name] = { track, step, count, index: 0, max: Math.max(0, count - 4) };
+        });
+
+        function moveSlider(name, dir) {
+            const s = sliders[name];
+            s.index += dir;
+            s.index = Math.max(0, Math.min(s.index, s.max));
+            s.track.style.transform = `translateX(${s.index * s.step()}px)`;
+        }
+
+        /* ================= TESTIMONIALS ================= */
+        const tTrack = document.getElementById('tTrack');
+        let tIndex = 0;
+        const tCount = testimonials.length;
+        function moveT(dir) {
+            tIndex = (tIndex + dir + tCount) % tCount;
+            tTrack.style.transform = `translateX(${tIndex * 100}%)`;
+        }
+        setInterval(() => moveT(1), 7000);
+
+        /* ================= NAVBAR ================= */
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        /* Scrollspy: highlight active nav link */
+        const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+        const sections = [...navLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+        window.addEventListener('scroll', () => {
+            const pos = window.scrollY + 120;
+            let current = null;
+            sections.forEach(sec => { if (sec.offsetTop <= pos) current = sec.id; });
+            navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+        });
+
+        function toggleMobile() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+        }
+        function toggleMobileSub(id) {
+            document.getElementById(id).classList.toggle('open');
+        }
+
+        /* ================= EXPLORE MAP (استكشف عسير) ================= */
+        const provinces = [            { id: 1, name: 'أبها', type: 'capital', coordinates: [18.2164, 42.5047], population: '450,000', elevation: '2270 م', description: 'عاصمة منطقة عسير وعروس الجنوب السعودي', features: ['منتزه السودة', 'القرية المعلقة', 'قصر شدا', 'جبل السودة 3015م'], icon: 'fa-crown' },
+            { id: 2, name: 'خميس مشيط', type: 'capital', coordinates: [18.3067, 42.7289], population: '550,000', elevation: '2050 م', description: 'مركز تجاري ومدينة حديثة متطورة', features: ['سد بحيرة السد', 'قرية بني عمرو', 'الأسواق الحديثة', 'الواجهة البحرية'], icon: 'fa-city' },
+            { id: 3, name: 'النماص', type: 'mountain', coordinates: [19.1483, 42.1506], population: '80,000', elevation: '2800 م', description: 'قمم جبلية شاهقة وغابات كثيفة', features: ['غابات العرعر', 'منتزه شلال النماص', 'القرى التراثية', 'المدرجات الزراعية'], icon: 'fa-tree' },
+            { id: 4, name: 'محايل', type: 'coastal', coordinates: [17.4761, 42.0544], population: '400,000', elevation: '350 م', description: 'عروس الجنوب وبوابة المنطقة من الغرب', features: ['وادي محايل', 'السوق الشعبي', 'القلاع التاريخية', 'المناخ الدافئ'], icon: 'fa-umbrella-beach' },
+            { id: 5, name: 'رجال ألمع', type: 'historical', coordinates: [18.2000, 42.3000], population: '60,000', elevation: '2100 م', description: 'قرية تراثية عريقة بمتحف فريد', features: ['القرية التراثية', 'متحف رجال ألمع', 'القصور الحجرية', 'السوق القديم'], icon: 'fa-monument' },
+            { id: 6, name: 'أحد رفيدة', type: 'mountain', coordinates: [18.2033, 42.7658], population: '120,000', elevation: '2100 م', description: 'منطقة زراعية خصبة بمناظر طبيعية', features: ['المدرجات الزراعية', 'القرى الجبلية', 'المناخ المعتدل', 'المزارع التقليدية'], icon: 'fa-seedling' },
+            { id: 7, name: 'بارق', type: 'mountain', coordinates: [18.9333, 41.9000], population: '70,000', elevation: '1800 م', description: 'طبيعة ساحرة وأودية خضراء', features: ['وادي بارق', 'الجبال الشاهقة', 'الغابات الكثيفة', 'الشلالات الموسمية'], icon: 'fa-water' },
+            { id: 8, name: 'تنومة', type: 'mountain', coordinates: [18.9200, 42.1500], population: '40,000', elevation: '2600 م', description: 'جبال شاهقة وضباب كثيف على مدار العام', features: ['جبل منعا', 'غابات العرعر', 'الضباب الدائم', 'منتزه الشرف'], icon: 'fa-cloud' },
+            { id: 9, name: 'المجاردة', type: 'mountain', coordinates: [19.6833, 41.8500], population: '50,000', elevation: '1500 م', description: 'منطقة زراعية وتاريخية بطبيعة جميلة', features: ['سد المجاردة', 'القرى التراثية', 'المزارع التقليدية', 'الوديان الخضراء'], icon: 'fa-tractor' },
+            { id: 10, name: 'بيشة', type: 'mountain', coordinates: [19.9833, 42.6000], population: '190,000', elevation: '1150 م', description: 'مركز تجاري وزراعي رئيسي شرق عسير', features: ['موقع العبلاء الأثري', 'وادي بيشة', 'مطار بيشة', 'الأسواق التجارية'], icon: 'fa-store' },
+            { id: 11, name: 'تثليث', type: 'mountain', coordinates: [19.6500, 43.2167], population: '50,000', elevation: '1200 م', description: 'منطقة زراعية شرق عسير بتراث غني', features: ['النخيل والمزارع', 'الطرق التاريخية', 'القرى القديمة', 'الأودية الخضراء'], icon: 'fa-leaf' },
+            { id: 12, name: 'ظهران الجنوب', type: 'historical', coordinates: [19.1000, 42.7833], population: '30,000', elevation: '1400 م', description: 'منطقة تاريخية على طريق التجارة القديم', features: ['طريق التجارة القديم', 'القرى التاريخية', 'المواقع الأثرية', 'النقوش الصخرية'], icon: 'fa-road' },
+            { id: 13, name: 'سراة عبيدة', type: 'mountain', coordinates: [19.0667, 42.4500], population: '80,000', elevation: '2300 م', description: 'منطقة جبلية بطبيعة خلابة وتراث أصيل', features: ['جبال السروات', 'الغابات الكثيفة', 'القرى الجبلية', 'المناظر البانورامية'], icon: 'fa-mountain' },
+            { id: 14, name: 'البرك', type: 'coastal', coordinates: [18.1833, 41.6333], population: '60,000', elevation: '50 م', description: 'محافظة ساحلية على البحر الأحمر', features: ['جزيرة ماركا', 'الشواطئ البحرية', 'الغوص والصيد', 'المحميات البحرية'], icon: 'fa-umbrella-beach' },
+            { id: 15, name: 'بللسمر', type: 'mountain', coordinates: [19.2667, 42.2833], population: '30,000', elevation: '2800 م', description: 'منطقة جبلية بغابات العرعر الكثيفة', features: ['شعف آل خريم', 'غابات العرعر', 'القرى الجبلية', 'المناظر الطبيعية'], icon: 'fa-tree' },
+            { id: 16, name: 'السودة', type: 'mountain', coordinates: [18.2756, 42.3645], population: '10,000', elevation: '3015 م', description: 'أعلى قمة جبلية في المملكة العربية السعودية', features: ['جبل السودة 3015م', 'تلفريك السودة', 'وادي عين الذيبة', 'منتزه الأمير سلطان'], icon: 'fa-mountain' },
+        ];
+
+        try {
+            const map = L.map('map', { center: [18.7, 42.3], zoom: 8, scrollWheelZoom: true });
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors', maxZoom: 18
+        }).addTo(map);
+
+        function createCustomIcon(province) {
+            const isCapital = province.type === 'capital';
+            return L.divIcon({
+                html: `<div class="marker-pin ${isCapital ? 'capital' : ''}"><i class="fa-solid ${province.icon}"></i></div>`,
+                className: 'custom-marker',
+                iconSize: isCapital ? [50, 50] : [38, 38],
+                iconAnchor: isCapital ? [25, 50] : [19, 38],
+                popupAnchor: [0, isCapital ? -50 : -38]
+            });
+        }
+
+        const markers = {};
+        provinces.forEach(province => {
+            const marker = L.marker(province.coordinates, { icon: createCustomIcon(province) }).addTo(map);
+            marker.on('click', () => showProvinceInfo(province));
+            markers[province.id] = marker;
+            marker.bindPopup(`
+                <div style="font-family:'Readex Pro',sans-serif;text-align:center;min-width:200px;">
+                    <h4 style="color:#134527;margin-bottom:8px;font-size:1.1rem;font-weight:800;">
+                        <i class="fa-solid ${province.icon}"></i> ${province.name}
+                    </h4>
+                    <p style="color:#6b7280;font-size:.85rem;margin:4px 0;line-height:1.6;">${province.description}</p>
+                    <p style="color:#16a34a;font-weight:700;font-size:.8rem;margin:6px 0 0;">الارتفاع: ${province.elevation}</p>
+                </div>`);
+        });
+
+        function showProvinceInfo(province) {
+            document.getElementById('infoPanelContent').innerHTML = `
+                <h3><i class="fa-solid ${province.icon}"></i> ${province.name}</h3>
+                <div class="info-detail"><strong><i class="fa-solid fa-circle-info"></i> الوصف</strong><p>${province.description}</p></div>
+                <div class="info-detail"><strong><i class="fa-solid fa-users"></i> عدد السكان</strong><p>${province.population} نسمة</p></div>
+                <div class="info-detail"><strong><i class="fa-solid fa-mountain"></i> الارتفاع</strong><p>${province.elevation}</p></div>
+                <div class="info-detail"><strong><i class="fa-solid fa-star"></i> المعالم البارزة</strong>
+                    <ul>${province.features.map(f => `<li>${f}</li>`).join('')}</ul>
+                </div>`;
+            document.getElementById('infoPanel').classList.add('show');
+            map.setView(province.coordinates, 11, { animate: true });
+        }
+        window.showProvinceInfo = showProvinceInfo;
+
+        function closeInfoPanel() {
+            document.getElementById('infoPanel').classList.remove('show');
+            map.setView([18.7, 42.3], 8, { animate: true });
+        }
+        window.closeInfoPanel = closeInfoPanel;
+
+        function renderProvinceList(list) {
+            document.getElementById('provinceList').innerHTML = list.map(p => `
+                <div class="province-item" onclick='showProvinceInfo(${JSON.stringify(p)})'>
+                    <h4><i class="fa-solid ${p.icon}"></i> ${p.name}</h4>
+                    <p>${p.description}</p>
+                </div>`).join('');
+        }
+        renderProvinceList(provinces);
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const type = this.dataset.type;
+                renderProvinceList(type === 'all' ? provinces : provinces.filter(p => p.type === type));
+                provinces.forEach(p => {
+                    if (type === 'all' || p.type === type) markers[p.id].addTo(map);
+                    else map.removeLayer(markers[p.id]);
+                });
+            });
+        });
+        } catch (e) {
+            document.getElementById('provinceList').innerHTML = '';
+        }
+
+        function toggleSidebar() {
+            document.getElementById('floatingSidebar').classList.toggle('minimized');
+        }
+        window.toggleSidebar = toggleSidebar;
+        document.getElementById('floatingSidebar').addEventListener('click', (e) => {
+            if (e.target.closest('.sidebar-toggle')) return;
+            document.getElementById('floatingSidebar').classList.remove('minimized');
+        });
+
+        /* ================= NEWSLETTER ================= */
+        function subscribe(e) {
+            e.preventDefault();
+            const email = document.getElementById('nlEmail').value;
+            if (email) {
+                document.getElementById('nlSuccess').style.display = 'block';
+                document.getElementById('nlEmail').value = '';
+                setTimeout(() => { document.getElementById('nlSuccess').style.display = 'none'; }, 4000);
+            }
+        }
+
+        /* ================= BACK TO TOP + PROGRESS ================= */
+        const backTop = document.getElementById('backTop');
+        const bpFill = backTop.querySelector('.bp-fill');
+        const BP_C = 2 * Math.PI * 20;
+        bpFill.style.strokeDasharray = BP_C;
+        bpFill.style.strokeDashoffset = BP_C;
+        function updateBackTop() {
+            const scrollTop = window.scrollY;
+            const scrollable = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = scrollable > 0 ? Math.min(scrollTop / scrollable, 1) : 0;
+            bpFill.style.strokeDashoffset = BP_C * (1 - progress);
+            backTop.classList.toggle('show', scrollTop > 400);
+        }
+        window.addEventListener('scroll', updateBackTop, { passive: true });
+        updateBackTop();
+
+        const FLAG_UK = '<svg class="flag-svg" viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/><path d="M0 0 60 30M60 0 0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/><path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>';
+        const FLAG_SA = '<svg class="flag-svg" viewBox="0 0 900 600" aria-hidden="true"><rect width="900" height="600" fill="#006C35"/><text x="450" y="260" text-anchor="middle" font-family="' + "'Readex Pro'" + ', Arial, sans-serif" fill="#fff" font-size="92" font-weight="700">لا إله إلا الله</text><text x="450" y="390" text-anchor="middle" font-family="' + "'Readex Pro'" + ', Arial, sans-serif" fill="#fff" font-size="92" font-weight="700">محمد رسول الله</text><g fill="#fff"><path d="M370 500 H500"/><path d="M370 500 350 492 350 508 Z"/><rect x="500" y="486" width="26" height="28" rx="3"/><rect x="526" y="494" width="14" height="12" rx="2"/></g></svg>';
+        function toggleLang(btn) {
+            const flag = btn.querySelector('.flag');
+            const text = btn.querySelector('.lang-text');
+            const isEn = text.textContent === 'EN';
+            flag.innerHTML = isEn ? FLAG_SA : FLAG_UK;
+            text.textContent = isEn ? 'عربي' : 'EN';
+        }
+    </script>
+
+    <script>
+        /* ================= REVEAL ON SCROLL (standalone so it always runs) ================= */
+        (function () {
+            const reveals = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window && reveals.length) {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+                }, { threshold: 0.12 });
+                reveals.forEach(el => io.observe(el));
+                setTimeout(() => {
+                    document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+                }, 4000);
+            } else {
+                reveals.forEach(el => el.classList.add('visible'));
+            }
+        })();
+    </script>
+</body>
+
+</html>

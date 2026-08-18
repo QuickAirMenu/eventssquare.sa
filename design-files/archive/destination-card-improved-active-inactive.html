@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كارد حديقة المشهد - فعالة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #16a34a;
+            --secondary-color: #0ea5e9;
+            --accent-color: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f0fdf4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        /* Card Container - عرض ثابت 320px */
+        .destination-card {
+            width: 320px;
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .destination-card:hover {
+            transform: translateY(-16px) scale(1.02);
+            box-shadow: 0 30px 60px -15px rgba(22, 163, 74, 0.3);
+        }
+
+        /* Image Section */
+        .image-container {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .destination-card:hover .image-container img {
+            transform: scale(1.15) rotate(2deg);
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+            transition: opacity 0.5s;
+        }
+
+        .destination-card:hover .gradient-overlay {
+            opacity: 0.9;
+        }
+
+        /* Floating Badge */
+        .rating-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 6px 14px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .rating-badge .star {
+            color: #f59e0b;
+            width: 16px;
+            height: 16px;
+        }
+
+        .rating-badge span {
+            font-weight: 700;
+            color: #1f2937;
+            font-size: 13px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .action-btn {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background: white;
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .action-btn svg {
+            width: 18px;
+            height: 18px;
+            color: #4b5563;
+        }
+
+        .action-btn.liked svg {
+            color: var(--accent-color);
+            fill: var(--accent-color);
+        }
+
+        .action-btn.liked {
+            animation: pulse 0.5s ease;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+
+        /* Location Tags Container - في سطر واحد */
+        .location-tags {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            left: 16px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        /* Location Tag */
+        .location-tag {
+            background: rgba(22, 163, 74, 0.95);
+            backdrop-filter: blur(12px);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 8px 20px rgba(22, 163, 74, 0.4);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .location-tag:hover {
+            transform: translateY(-2px);
+        }
+
+        .location-tag.category {
+            background: rgba(14, 165, 233, 0.95);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+        }
+
+        .location-tag.status {
+            background: rgba(22, 163, 74, 0.95);
+            box-shadow: 0 8px 20px rgba(22, 163, 74, 0.4);
+        }
+
+        .location-tag.status.inactive {
+            background: rgba(239, 68, 68, 0.95);
+            box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .location-tag svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+
+        .location-tag .status-icon {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: white;
+            animation: pulse-glow 2s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { 
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            50% { 
+                opacity: 0.7;
+                box-shadow: 0 0 0 4px rgba(255, 255, 255, 0);
+            }
+        }
+
+        .location-tag span {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* Content Section */
+        .card-content {
+            padding: 20px;
+            background-image: radial-gradient(circle, rgba(22, 163, 74, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        /* Title */
+        .card-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Description */
+        .card-description {
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(22, 163, 74, 0.05);
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .feature-item:nth-child(2) {
+            background: rgba(14, 165, 233, 0.05);
+        }
+
+        .feature-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.2) 0%, rgba(22, 163, 74, 0.3) 100%);
+            flex-shrink: 0;
+        }
+
+        .feature-item:nth-child(2) .feature-icon {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.2) 0%, rgba(14, 165, 233, 0.3) 100%);
+        }
+
+        .feature-icon svg {
+            width: 18px;
+            height: 18px;
+            color: var(--primary-color);
+        }
+
+        .feature-item:nth-child(2) .feature-icon svg {
+            color: var(--secondary-color);
+        }
+
+        .feature-text {
+            flex: 1;
+        }
+
+        .feature-label {
+            font-size: 11px;
+            color: #9ca3af;
+        }
+
+        .feature-value {
+            font-weight: 700;
+            color: #1f2937;
+            font-size: 13px;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            width: 100%;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.7s;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(22, 163, 74, 0.4);
+        }
+
+        .cta-button svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover svg {
+            transform: translateX(-4px);
+        }
+
+        /* Bottom Accent */
+        .bottom-accent {
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--primary-color) 100%);
+        }
+
+        /* Responsive */
+        @media (max-width: 360px) {
+            .destination-card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="destination-card">
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="https://cdn-ikpfolh.nitrocdn.com/TvVfWfGAKGajtYDaHExjDUTRpRSaIpHe/assets/images/optimized/rev-47140bb/eventssquare-sa.com/wp-content/uploads/2024/08/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D9%87%D8%AF-2048x1536.jpeg" alt="حديقة المشهد">
+            <div class="gradient-overlay"></div>
+            
+            <!-- Rating Badge -->
+            <div class="rating-badge">
+                <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <span>4.8</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn" id="likeBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                    </svg>
+                </button>
+                <button class="action-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                        <polyline points="16 6 12 2 8 6"/>
+                        <line x1="12" y1="2" x2="12" y2="15"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Location Tags في سطر واحد -->
+            <div class="location-tags">
+                <div class="location-tag">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>أبها</span>
+                </div>
+                <div class="location-tag category">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                    </svg>
+                    <span>حدائق ومنتزهات</span>
+                </div>
+                <div class="location-tag status" id="statusBadge">
+                    <div class="status-icon"></div>
+                    <span id="statusText">فعالة</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="card-content">
+            <!-- Title -->
+            <h2 class="card-title">حديقة المشهد</h2>
+
+            <!-- Description -->
+            <p class="card-description">
+                استكشف حديقة المشهد ومساحاتها الخضراء الطبيعية، حيث تقدم مرافق للأطفال ومسابح لعيش الرفاهيات وملاعب الرياضة والمجلسية.
+            </p>
+
+            <!-- Features -->
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <p class="feature-label">مفتوح</p>
+                        <p class="feature-value">يومياً</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="feature-text">
+                        <p class="feature-label">المسافة</p>
+                        <p class="feature-value">5 كم</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-button">
+                <span>اكتشف المزيد</span>
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <line x1="19" y1="12" x2="5" y2="12"/>
+                    <polyline points="12 19 5 12 12 5"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Bottom Accent -->
+        <div class="bottom-accent"></div>
+    </div>
+
+    <script>
+        // Like Button Functionality
+        const likeBtn = document.getElementById('likeBtn');
+        let isLiked = false;
+
+        likeBtn.addEventListener('click', function() {
+            isLiked = !isLiked;
+            if (isLiked) {
+                this.classList.add('liked');
+            } else {
+                this.classList.remove('liked');
+            }
+        });
+
+        // Status Toggle Functionality
+        const statusBadge = document.getElementById('statusBadge');
+        const statusText = document.getElementById('statusText');
+        let isActive = true;
+
+        statusBadge.addEventListener('click', function() {
+            isActive = !isActive;
+            if (isActive) {
+                this.classList.remove('inactive');
+                statusText.textContent = 'فعالة';
+            } else {
+                this.classList.add('inactive');
+                statusText.textContent = 'منتهية';
+            }
+        });
+    </script>
+</body>
+</html>

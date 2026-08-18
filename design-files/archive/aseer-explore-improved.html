@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استكشف عسير - خريطة تفاعلية</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            direction: rtl;
+            overflow-x: hidden;
+            background: #f8f9fa;
+        }
+        
+        /* Hero Section - مختصر */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #134527 0%, #124557 100%);
+            color: white;
+            padding: 60px 20px 50px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,133.3C672,139,768,181,864,181.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.4;
+        }
+        
+        .hero h1 i {
+            color: #D92315;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* Map Container */
+        .map-container {
+            position: relative;
+            max-width: 1800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        
+        /* Map */
+        #map {
+            height: 700px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Floating Sidebar - عائم على الخريطة */
+        .floating-sidebar {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            width: 350px;
+            max-height: 660px;
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+            z-index: 1000;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-sidebar:hover {
+            box-shadow: 0 20px 60px rgba(19, 69, 39, 0.3);
+        }
+        
+        .floating-sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .floating-sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .floating-sidebar::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #134527, #D92315);
+            border-radius: 10px;
+        }
+        
+        .sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #D92315;
+        }
+        
+        .sidebar-header h2 {
+            color: #134527;
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .sidebar-toggle {
+            background: linear-gradient(135deg, #134527, #124557);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-toggle:hover {
+            transform: rotate(90deg);
+            background: linear-gradient(135deg, #D92315, #134527);
+        }
+        
+        /* Filter Buttons - مدمجة */
+        .filter-section {
+            margin-bottom: 20px;
+        }
+        
+        .filter-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        
+        .filter-btn {
+            padding: 10px 15px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .filter-btn:hover {
+            border-color: #134527;
+            color: #134527;
+            transform: translateY(-2px);
+        }
+        
+        .filter-btn.active {
+            background: linear-gradient(135deg, #134527, #124557);
+            color: white;
+            border-color: #134527;
+        }
+        
+        /* Province List */
+        .province-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .province-item {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            border: 2px solid #f0f0f0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .province-item:hover {
+            border-color: #134527;
+            transform: translateX(-5px);
+            box-shadow: 0 5px 15px rgba(19, 69, 39, 0.1);
+        }
+        
+        .province-item.active {
+            background: linear-gradient(135deg, rgba(19, 69, 39, 0.1), rgba(18, 69, 87, 0.1));
+            border-color: #134527;
+        }
+        
+        .province-item h4 {
+            color: #134527;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .province-item p {
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        
+        /* Info Panel */
+        .info-panel {
+            position: fixed;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            border-radius: 20px 20px 0 0;
+            padding: 30px;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.2);
+            z-index: 2000;
+            transition: bottom 0.4s ease;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .info-panel.show {
+            bottom: 0;
+        }
+        
+        .info-panel h3 {
+            color: #134527;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .info-detail {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .info-detail strong {
+            color: #134527;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .info-detail p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .info-detail ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-detail ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e0e0e0;
+            color: #666;
+        }
+        
+        .info-detail ul li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-detail ul li::before {
+            content: '✓';
+            color: #D92315;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #D92315;
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-btn:hover {
+            background: #134527;
+            transform: rotate(90deg);
+        }
+        
+        /* Custom Markers */
+        .custom-marker {
+            background: transparent;
+            border: none;
+        }
+        
+        .marker-pin {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #134527, #124557);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 3px solid white;
+        }
+        
+        .marker-pin:hover {
+            transform: scale(1.2);
+            background: linear-gradient(135deg, #D92315, #134527);
+        }
+        
+        .marker-pin.capital {
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #D92315, #134527);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .floating-sidebar {
+                width: 90%;
+                right: 5%;
+                max-height: 400px;
+            }
+            
+            #map {
+                height: 500px;
+            }
+            
+            .filter-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Minimize sidebar option */
+        .floating-sidebar.minimized {
+            width: 60px;
+            padding: 15px;
+            overflow: hidden;
+        }
+        
+        .floating-sidebar.minimized .sidebar-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero animate__animated animate__fadeIn">
+        <div class="hero-content">
+            <h1><i class="fa-solid fa-mountain"></i> استكشف عسير - أعلى قمة في المملكة</h1>
+            <p>رحلة ساحرة عبر جبال عسير وسهولها ووديانها. تجربة فريدة تجمع بين الطبيعة الخلابة والتراث العريق والطقس المعتدل</p>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <!-- Map -->
+        <div id="map"></div>
+        
+        <!-- Floating Sidebar -->
+        <div class="floating-sidebar" id="floatingSidebar">
+            <div class="sidebar-header">
+                <h2><i class="fa-solid fa-map-location-dot"></i> محافظات عسير</h2>
+                <button class="sidebar-toggle" onclick="toggleSidebar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-type="all">
+                            <i class="fa-solid fa-globe"></i> الكل
+                        </button>
+                        <button class="filter-btn" data-type="mountain">
+                            <i class="fa-solid fa-mountain"></i> جبلية
+                        </button>
+                        <button class="filter-btn" data-type="coastal">
+                            <i class="fa-solid fa-umbrella-beach"></i> ساحلية
+                        </button>
+                        <button class="filter-btn" data-type="historical">
+                            <i class="fa-solid fa-landmark"></i> تاريخية
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Province List -->
+                <div class="province-list" id="provinceList"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel" id="infoPanel">
+        <button class="close-btn" onclick="closeInfoPanel()">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        <div id="infoPanelContent"></div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        // بيانات المحافظات
+        const provinces = [
+            {
+                id: 1,
+                name: 'أبها',
+                type: 'capital',
+                coordinates: [18.2164, 42.5047],
+                population: '450,000',
+                elevation: '2270 م',
+                description: 'عاصمة منطقة عسير وعروس الجنوب السعودي',
+                features: ['منتزه السودة', 'القرية المعلقة', 'قصر شدا', 'جبل السودة 3015م'],
+                icon: 'fa-crown'
+            },
+            {
+                id: 2,
+                name: 'خميس مشيط',
+                type: 'capital',
+                coordinates: [18.3067, 42.7289],
+                population: '550,000',
+                elevation: '2050 م',
+                description: 'مركز تجاري ومدينة حديثة متطورة',
+                features: ['سد بحيرة السد', 'قرية بني عمرو', 'الأسواق الحديثة', 'الواجهة البحرية'],
+                icon: 'fa-city'
+            },
+            {
+                id: 3,
+                name: 'النماص',
+                type: 'mountain',
+                coordinates: [19.1483, 42.1506],
+                population: '80,000',
+                elevation: '2800 م',
+                description: 'قمم جبلية شاهقة وغابات كثيفة',
+                features: ['غابات العرعر', 'منتزه شلال النماص', 'القرى التراثية', 'المدرجات الزراعية'],
+                icon: 'fa-tree'
+            },
+            {
+                id: 4,
+                name: 'محايل',
+                type: 'coastal',
+                coordinates: [17.4761, 42.0544],
+                population: '400,000',
+                elevation: '350 م',
+                description: 'عروس الجنوب وبوابة المنطقة من الغرب',
+                features: ['وادي محايل', 'السوق الشعبي', 'القلاع التاريخية', 'المناخ الدافئ'],
+                icon: 'fa-umbrella-beach'
+            },
+            {
+                id: 5,
+                name: 'رجال ألمع',
+                type: 'historical',
+                coordinates: [18.2000, 42.3000],
+                population: '60,000',
+                elevation: '2100 م',
+                description: 'قرية تراثية عريقة بمتحف فريد',
+                features: ['القرية التراثية', 'متحف رجال ألمع', 'القصور الحجرية', 'السوق القديم'],
+                icon: 'fa-monument'
+            },
+            {
+                id: 6,
+                name: 'أحد رفيدة',
+                type: 'mountain',
+                coordinates: [18.2033, 42.7658],
+                population: '120,000',
+                elevation: '2100 م',
+                description: 'منطقة زراعية خصبة بمناظر طبيعية',
+                features: ['المدرجات الزراعية', 'القرى الجبلية', 'المناخ المعتدل', 'المزارع التقليدية'],
+                icon: 'fa-seedling'
+            },
+            {
+                id: 7,
+                name: 'بارق',
+                type: 'mountain',
+                coordinates: [18.9333, 41.9000],
+                population: '70,000',
+                elevation: '1800 م',
+                description: 'طبيعة ساحرة وأودية خضراء',
+                features: ['وادي بارق', 'الجبال الشاهقة', 'الغابات الكثيفة', 'الشلالات الموسمية'],
+                icon: 'fa-water'
+            },
+            {
+                id: 8,
+                name: 'تنومة',
+                type: 'mountain',
+                coordinates: [18.9200, 42.1500],
+                population: '40,000',
+                elevation: '2600 م',
+                description: 'جبال شاهقة وضباب كثيف على مدار العام',
+                features: ['جبل منعا', 'غابات العرعر', 'الضباب الدائم', 'منتزه الشرف'],
+                icon: 'fa-cloud'
+            },
+            {
+                id: 9,
+                name: 'المجاردة',
+                type: 'mountain',
+                coordinates: [19.6833, 41.8500],
+                population: '50,000',
+                elevation: '1500 م',
+                description: 'منطقة زراعية وتاريخية بطبيعة جميلة',
+                features: ['سد المجاردة', 'القرى التراثية', 'المزارع التقليدية', 'الوديان الخضراء'],
+                icon: 'fa-tractor'
+            },
+            {
+                id: 10,
+                name: 'بيشة',
+                type: 'mountain',
+                coordinates: [19.9833, 42.6000],
+                population: '190,000',
+                elevation: '1150 م',
+                description: 'مركز تجاري وزراعي رئيسي شرق عسير',
+                features: ['موقع العبلاء الأثري', 'وادي بيشة', 'مطار بيشة', 'الأسواق التجارية'],
+                icon: 'fa-store'
+            },
+            {
+                id: 11,
+                name: 'تثليث',
+                type: 'mountain',
+                coordinates: [19.6500, 43.2167],
+                population: '50,000',
+                elevation: '1200 م',
+                description: 'منطقة زراعية شرق عسير بتراث غني',
+                features: ['النخيل والمزارع', 'الطرق التاريخية', 'القرى القديمة', 'الأودية الخضراء'],
+                icon: 'fa-leaf'
+            },
+            {
+                id: 12,
+                name: 'ظهران الجنوب',
+                type: 'historical',
+                coordinates: [19.1000, 42.7833],
+                population: '30,000',
+                elevation: '1400 م',
+                description: 'منطقة تاريخية على طريق التجارة القديم',
+                features: ['طريق التجارة القديم', 'القرى التاريخية', 'المواقع الأثرية', 'النقوش الصخرية'],
+                icon: 'fa-road'
+            },
+            {
+                id: 13,
+                name: 'سراة عبيدة',
+                type: 'mountain',
+                coordinates: [19.0667, 42.4500],
+                population: '80,000',
+                elevation: '2300 م',
+                description: 'منطقة جبلية بطبيعة خلابة وتراث أصيل',
+                features: ['جبال السروات', 'الغابات الكثيفة', 'القرى الجبلية', 'المناظر البانورامية'],
+                icon: 'fa-mountain'
+            },
+            {
+                id: 14,
+                name: 'البرك',
+                type: 'coastal',
+                coordinates: [18.1833, 41.6333],
+                population: '60,000',
+                elevation: '50 م',
+                description: 'محافظة ساحلية على البحر الأحمر',
+                features: ['جزيرة ماركا', 'الشواطئ البحرية', 'الغوص والصيد', 'المحميات البحرية'],
+                icon: 'fa-umbrella-beach'
+            },
+            {
+                id: 15,
+                name: 'بللسمر',
+                type: 'mountain',
+                coordinates: [19.2667, 42.2833],
+                population: '30,000',
+                elevation: '2800 م',
+                description: 'منطقة جبلية بغابات العرعر الكثيفة',
+                features: ['شعف آل خريم', 'غابات العرعر', 'القرى الجبلية', 'المناظر الطبيعية'],
+                icon: 'fa-tree'
+            },
+            {
+                id: 16,
+                name: 'السودة',
+                type: 'mountain',
+                coordinates: [18.2756, 42.3645],
+                population: '10,000',
+                elevation: '3015 م',
+                description: 'أعلى قمة جبلية في المملكة العربية السعودية',
+                features: ['جبل السودة 3015م', 'تلفريك السودة', 'وادي عين الذيبة', 'منتزه الأمير سلطان'],
+                icon: 'fa-mountain'
+            }
+        ];
+
+        // إنشاء الخريطة
+        const map = L.map('map', {
+            center: [18.7, 42.3],
+            zoom: 8,
+            zoomControl: true,
+            scrollWheelZoom: true
+        });
+
+        // إضافة طبقة الخريطة
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        // إنشاء أيقونة مخصصة
+        function createCustomIcon(province) {
+            const isCapital = province.type === 'capital';
+            return L.divIcon({
+                html: `
+                    <div class="marker-pin ${isCapital ? 'capital' : ''}">
+                        <i class="${province.icon}"></i>
+                    </div>
+                `,
+                className: 'custom-marker',
+                iconSize: isCapital ? [50, 50] : [40, 40],
+                iconAnchor: isCapital ? [25, 50] : [20, 40],
+                popupAnchor: [0, isCapital ? -50 : -40]
+            });
+        }
+
+        // إضافة العلامات على الخريطة
+        let markers = {};
+        provinces.forEach(province => {
+            const marker = L.marker(province.coordinates, {
+                icon: createCustomIcon(province)
+            }).addTo(map);
+
+            marker.on('click', () => showProvinceInfo(province));
+            markers[province.id] = marker;
+
+            // Popup
+            const popupContent = `
+                <div style="font-family: 'Readex Pro', sans-serif; text-align: center; min-width: 200px;">
+                    <h4 style="color: #134527; margin-bottom: 10px; font-size: 1.2rem;">
+                        <i class="${province.icon}"></i> ${province.name}
+                    </h4>
+                    <p style="color: #666; font-size: 0.9rem; margin: 5px 0;">${province.description}</p>
+                    <button onclick="showProvinceInfo(${JSON.stringify(province).replace(/"/g, '&quot;')})" 
+                            style="margin-top: 10px; padding: 8px 20px; background: linear-gradient(135deg, #134527, #124557); 
+                            color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">
+                        عرض التفاصيل
+                    </button>
+                </div>
+            `;
+            marker.bindPopup(popupContent);
+        });
+
+        // عرض معلومات المحافظة
+        function showProvinceInfo(province) {
+            const panel = document.getElementById('infoPanel');
+            const content = document.getElementById('infoPanelContent');
+            
+            content.innerHTML = `
+                <h3><i class="${province.icon}"></i> ${province.name}</h3>
+                <div class="info-detail">
+                    <strong><i class="fa-solid fa-info-circle"></i> الوصف</strong>
+                    <p>${province.description}</p>
+                </div>
+                <div class="info-detail">
+                    <strong><i class="fa-solid fa-users"></i> عدد السكان</strong>
+                    <p>${province.population} نسمة</p>
+                </div>
+                <div class="info-detail">
+                    <strong><i class="fa-solid fa-mountain"></i> الارتفاع</strong>
+                    <p>${province.elevation}</p>
+                </div>
+                <div class="info-detail">
+                    <strong><i class="fa-solid fa-star"></i> المعالم البارزة</strong>
+                    <ul>
+                        ${province.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            panel.classList.add('show');
+            
+            // التركيز على المحافظة في الخريطة
+            map.setView(province.coordinates, 11, {
+                animate: true,
+                duration: 1
+            });
+        }
+
+        // إغلاق لوحة المعلومات
+        function closeInfoPanel() {
+            document.getElementById('infoPanel').classList.remove('show');
+            map.setView([18.7, 42.3], 8, { animate: true });
+        }
+
+        // إنشاء قائمة المحافظات
+        function renderProvinceList(filteredProvinces) {
+            const list = document.getElementById('provinceList');
+            list.innerHTML = filteredProvinces.map(p => `
+                <div class="province-item" onclick='showProvinceInfo(${JSON.stringify(p).replace(/'/g, "\\'")})'>
+                    <h4><i class="${p.icon}"></i> ${p.name}</h4>
+                    <p>${p.description}</p>
+                </div>
+            `).join('');
+        }
+
+        // عرض جميع المحافظات في البداية
+        renderProvinceList(provinces);
+
+        // الفلترة
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const type = this.dataset.type;
+                const filtered = type === 'all' 
+                    ? provinces 
+                    : provinces.filter(p => p.type === type);
+                
+                renderProvinceList(filtered);
+                
+                // إظهار/إخفاء العلامات
+                provinces.forEach(p => {
+                    if (type === 'all' || p.type === type) {
+                        markers[p.id].addTo(map);
+                    } else {
+                        map.removeLayer(markers[p.id]);
+                    }
+                });
+            });
+        });
+
+        // تصغير/تكبير القائمة الجانبية
+        function toggleSidebar() {
+            const sidebar = document.getElementById('floatingSidebar');
+            sidebar.classList.toggle('minimized');
+        }
+
+        // جعل showProvinceInfo متاحة عالمياً
+        window.showProvinceInfo = showProvinceInfo;
+    </script>
+</body>
+</html>
