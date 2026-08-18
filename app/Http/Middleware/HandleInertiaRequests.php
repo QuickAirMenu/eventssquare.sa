@@ -48,7 +48,7 @@ class HandleInertiaRequests extends Middleware
             'navigationCategories' => fn () => \App\Models\Category::where('is_active', true)
                 ->whereNotNull('parent_id')
                 ->orderBy('sort_order')
-                ->get(['id', 'name', 'slug', 'parent_id']),
+                ->get(['id', 'name', 'slug', 'icon', 'parent_id']),
         ];
     }
 }

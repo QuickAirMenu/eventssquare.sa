@@ -26,7 +26,7 @@ class ListingController extends Controller
 
         return Inertia::render('Listings/Index', [
             'listings' => $listings,
-            'categories' => Category::where('is_active', true)->whereNull('parent_id')->orderBy('sort_order')->get(),
+            'categories' => $this->destinationSubcategories(),
             'cities' => City::where('is_active', true)->get(),
             'filters' => $request->only(['category', 'city', 'search']),
         ]);
@@ -46,7 +46,7 @@ class ListingController extends Controller
 
         return Inertia::render('Listings/Index', [
             'listings' => $listings,
-            'categories' => Category::where('is_active', true)->whereNull('parent_id')->orderBy('sort_order')->get(),
+            'categories' => $this->destinationSubcategories(),
             'cities' => City::where('is_active', true)->get(),
             'activeCategory' => $category,
             'filters' => ['category' => $category->slug, 'city' => $request->input('city')],
@@ -67,11 +67,20 @@ class ListingController extends Controller
 
         return Inertia::render('Listings/Index', [
             'listings' => $listings,
-            'categories' => Category::where('is_active', true)->whereNull('parent_id')->orderBy('sort_order')->get(),
+            'categories' => [],
             'cities' => City::where('is_active', true)->get(),
             'activeCategory' => $category,
             'filters' => ['category' => $category?->slug, 'city' => $request->input('city')],
         ]);
+    }
+
+    protected function destinationSubcategories()
+    {
+        return Category::where('is_active', true)
+            ->whereNotNull('parent_id')
+            ->where('type', 'destination')
+            ->orderBy('sort_order')
+            ->get(['id', 'name', 'name_en', 'slug', 'icon', 'parent_id']);
     }
 
     public function show(Listing $listing): Response

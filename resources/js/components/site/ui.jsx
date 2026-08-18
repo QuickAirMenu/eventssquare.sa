@@ -1,3 +1,5 @@
+import { Link } from '@inertiajs/react';
+
 export function SectionHeader({ tag, title, description, link, linkText = 'اكتشف المزيد' }) {
     return (
         <div className="section-header">
@@ -6,13 +8,13 @@ export function SectionHeader({ tag, title, description, link, linkText = 'اك�
             {description && <p>{description}</p>}
             {link && (
                 <div style={{ textAlign: 'center', marginTop: 22 }}>
-                    <a href={link} className="section-link">
+                    <Link href={link} className="section-link">
                         {linkText}
                         <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <path d="M19 12H5" />
                             <path d="M12 19l-7-7 7-7" />
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             )}
         </div>

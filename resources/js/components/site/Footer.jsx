@@ -1,4 +1,4 @@
-import { Link, router, usePage } from '@inertiajs/react';
+import { Link, usePage } from '@inertiajs/react';
 
 const SOCIAL_ICONS = {
     twitter: 'fa-brands fa-x-twitter',

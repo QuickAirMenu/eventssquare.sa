@@ -32,6 +32,12 @@ class EventController extends Controller
     {
         return Inertia::render('Events/Show', [
             'event' => $event->load(['city', 'category']),
+            'relatedEvents' => Event::with(['city'])
+                ->where('id', '!=', $event->id)
+                ->where('starts_at', '>=', now()->subHours(6))
+                ->orderBy('starts_at')
+                ->limit(3)
+                ->get(),
         ]);
     }
 }

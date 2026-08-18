@@ -66,7 +66,7 @@ export default function Home({
             word: 'التاريخ',
             post: ' في قصور عسير العريقة',
             buttons: [
-                { label: 'رحلة إلى الماضي', href: route('listings.category', 'تراث-وثقافة'), primary: true },
+                { label: 'رحلة إلى الماضي', href: route('listings.category', 'قصور-وقرى-تراثية'), primary: true },
             ],
         },
         {
@@ -127,7 +127,7 @@ export default function Home({
     const subscribe = (e) => {
         e.preventDefault();
         router.post(
-            route('contact'),
+            route('contact.store'),
             { name: 'مشترك النشرة', subject: 'اشتراك النشرة', message: 'اشتراك في النشرة البريدية', email: nlEmail },
             { onSuccess: () => setNlDone(true) }
         );
