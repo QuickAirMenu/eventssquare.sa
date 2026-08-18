@@ -17,6 +17,8 @@ class Offer extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $appends = ['cover_url'];
+
     protected function casts(): array
     {
         return [

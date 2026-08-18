@@ -420,29 +420,33 @@ class DatabaseSeeder extends Seeder
                 'slug' => 'yoshapottery-offer',
                 'description' => 'استمتع بخصومات على الأكواب الفنية من يوشا بوتري.',
                 'link' => 'https://eventssquare-sa.com/yoshapottery/',
+                'cover_image' => '/img/pottery.jpeg',
             ],
             [
                 'title' => 'العبايات — BR BY BATOOL', 'title_en' => 'Abayas — BR BY BATOOL',
                 'slug' => 'br-by-batool-offer',
                 'description' => 'تشكيلات جديدة من العبايات بأسعار مميزة.',
                 'link' => 'https://eventssquare-sa.com/br-by-batool/',
+                'cover_image' => '/img/abaya.jpeg',
             ],
             [
                 'title' => 'سكتش ارت', 'title_en' => 'Sketch Art',
                 'slug' => 'sketch-art-offer',
                 'description' => 'حين يكون للفن حكاية — قطع فنية مميزة بأسعار خاصة.',
                 'link' => 'https://eventssquare-sa.com/sketch-art/',
+                'cover_image' => '/img/sketch.jpeg',
             ],
             [
                 'title' => 'متجر WA — العودة إلى الداخل', 'title_en' => 'WA — Back to Inner',
                 'slug' => 'wa-offer',
                 'description' => 'سلسلة العودة إلى الداخل بمنتجات تحمل هوية المنطقة.',
                 'link' => 'https://eventssquare-sa.com/wa/',
+                'cover_image' => '/img/wa.jpeg',
             ],
         ];
 
         foreach ($offers as $offer) {
-            Offer::firstOrCreate(
+            Offer::updateOrCreate(
                 ['slug' => $offer['slug']],
                 [...$offer, 'is_active' => true]
             );
