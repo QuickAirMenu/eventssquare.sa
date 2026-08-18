@@ -34,13 +34,13 @@ class DatabaseSeeder extends Seeder
             Role::firstOrCreate(['name' => $role]);
         }
 
-        $adminEmail = env('SEED_ADMIN_EMAIL');
-        $adminPassword = env('SEED_ADMIN_PASSWORD');
-        $editorEmail = env('SEED_EDITOR_EMAIL');
-        $editorPassword = env('SEED_EDITOR_PASSWORD');
+        $adminEmail = config('seed.admin_email');
+        $adminPassword = config('seed.admin_password');
+        $editorEmail = config('seed.editor_email');
+        $editorPassword = config('seed.editor_password');
 
         if (! $adminEmail || ! $adminPassword) {
-            throw new RuntimeException('SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD must be set in .env before seeding.');
+            throw new \RuntimeException('SEED_ADMIN_EMAIL and SEED_ADMIN_PASSWORD must be set in .env before seeding.');
         }
 
         $admin = User::firstOrCreate(
