@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ساحة الفعاليات — Events-Square (PLAN)</title>
+<style>
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 300; font-display: swap; src: url('public/fonts/readex-pro-latin-300.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 300; font-display: swap; src: url('public/fonts/readex-pro-arabic-300.woff2') format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 400; font-display: swap; src: url('public/fonts/readex-pro-latin-400.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 400; font-display: swap; src: url('public/fonts/readex-pro-arabic-400.woff2') format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 500; font-display: swap; src: url('public/fonts/readex-pro-latin-500.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 500; font-display: swap; src: url('public/fonts/readex-pro-arabic-500.woff2') format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 600; font-display: swap; src: url('public/fonts/readex-pro-latin-600.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 600; font-display: swap; src: url('public/fonts/readex-pro-arabic-600.woff2') format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 700; font-display: swap; src: url('public/fonts/readex-pro-latin-700.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+    @font-face { font-family: 'Readex Pro'; font-style: normal; font-weight: 700; font-display: swap; src: url('public/fonts/readex-pro-arabic-700.woff2') format('woff2'); unicode-range: U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC,U+102E0-102FB,U+10E60-10E7E,U+10EC2-10EC4,U+10EFC-10EFF,U+1EE00-1EE03,U+1EE05-1EE1F,U+1EE21-1EE22,U+1EE24,U+1EE27,U+1EE29-1EE32,U+1EE34-1EE37,U+1EE39,U+1EE3B,U+1EE42,U+1EE47,U+1EE49,U+1EE4B,U+1EE4D-1EE4F,U+1EE51-1EE52,U+1EE54,U+1EE57,U+1EE59,U+1EE5B,U+1EE5D,U+1EE5F,U+1EE61-1EE62,U+1EE64,U+1EE67-1EE6A,U+1EE6C-1EE72,U+1EE74-1EE77,U+1EE79-1EE7C,U+1EE7E,U+1EE80-1EE89,U+1EE8B-1EE9B,U+1EEA1-1EEA3,U+1EEA5-1EEA9,U+1EEAB-1EEBB,U+1EEF0-1EEF1; }
+
+    :root {
+        --green: #134527;
+        --green-light: #1F7045;
+        --teal: #124557;
+        --sky: #5BA7A9;
+        --red: #D92315;
+        --sand: #F5EBDD;
+        --bg: #F7F4EF;
+        --text: #1F2937;
+        --muted: #6B7280;
+        --line: #E5E7EB;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Readex Pro', 'Segoe UI', Tahoma, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+        padding-bottom: 60px;
+    }
+
+    .page-hero {
+        background: linear-gradient(135deg, var(--green), var(--teal));
+        color: #fff;
+        padding: 48px 24px;
+        text-align: center;
+    }
+    .page-hero h1 { font-size: 32px; font-weight: 700; letter-spacing: -.5px; }
+    .page-hero p { margin-top: 10px; font-size: 15px; opacity: .85; }
+    .page-hero .badge {
+        display: inline-block;
+        margin-top: 14px;
+        padding: 5px 16px;
+        border-radius: 999px;
+        background: rgba(255,255,255,.15);
+        border: 1px solid rgba(255,255,255,.35);
+        font-size: 13px;
+    }
+
+    .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+
+    section.card {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 30px rgba(19,69,39,.07);
+        padding: 26px 28px;
+        margin-top: 26px;
+    }
+    h2 {
+        font-size: 20px;
+        color: var(--green);
+        border-inline-start: 4px solid var(--green);
+        padding-inline-start: 12px;
+        margin-bottom: 14px;
+    }
+    h3 { font-size: 16px; color: var(--teal); margin: 16px 0 8px; }
+
+    ul, ol { padding-inline-start: 22px; }
+    li { margin: 5px 0; }
+    p { margin: 6px 0; }
+
+    .warn {
+        background: #FDF1F0;
+        border: 1px solid #F5C6C2;
+        border-inline-start: 5px solid var(--red);
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin-top: 12px;
+    }
+    .warn strong { color: var(--red); }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+    th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: right; vertical-align: top; }
+    th { background: var(--green); color: #fff; font-weight: 600; }
+    tr:nth-child(even) td { background: #F9F7F2; }
+
+    .check { color: #16A34A; }
+    .remain { color: #B45309; }
+    .tag {
+        display: inline-block;
+        border-radius: 999px;
+        padding: 2px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-inline-end: 6px;
+    }
+    .tag.green { background: #E6F4EA; color: var(--green-light); }
+    .tag.red { background: #FDEBE9; color: var(--red); }
+    .tag.teal { background: #E3F0F4; color: var(--teal); }
+    .tag.sand { background: var(--sand); color: #8A6D3B; }
+    .tag.sky { background: #E4F3F3; color: #2F7779; }
+
+    code {
+        background: #F1EFEA;
+        border-radius: 6px;
+        padding: 1px 7px;
+        font-size: 13px;
+        color: var(--teal);
+        direction: ltr;
+        unicode-bidi: isolate;
+        font-family: Consolas, monospace;
+        white-space: nowrap;
+    }
+
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 12px; }
+    .team-card {
+        background: #FAF8F4;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px;
+        text-align: center;
+    }
+    .team-card .emoji { font-size: 26px; }
+    .team-card .name { font-weight: 700; color: var(--green); font-size: 15px; margin-top: 4px; }
+    .team-card .role { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+    .footer-note {
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 34px;
+    }
+</style>
+</head>
+<body>
+
+<div class="page-hero">
+    <h1>ساحة الفعاليات — Events-Square</h1>
+    <p>خطة المشروع (PLAN) — مصدر الحقيقة الوحيد</p>
+    <span class="badge">يملك هذا الملف Dragon 🐉 ويحدّثه بعد كل جلسة</span>
+</div>
+
+<div class="container">
+
+    <!-- القواعد الصارمة -->
+    <section class="card">
+        <h2>🚫 قواعد صارمة (لا تُناقش — أمر القائد)</h2>
+        <div class="warn">
+            <p><strong>1. ممنوع نهائياً لمس <code>eventssquare-sa.com</code></strong> — موقع ووردبريس حي خارج نطاقنا. لا تعديل، لا symlink، لا ملفات، لا backup، لا شيء.</p>
+            <p style="margin-top:8px;"><strong>2. التطوير والتشغيل حصراً على <code>eventssquare.sa</code></strong> (Laravel في <code>~/domains/eventssquare.sa/laravel_app</code>).</p>
+        </div>
+    </section>
+
+    <!-- الرؤية -->
+    <section class="card">
+        <h2>الرؤية</h2>
+        <p>منصة عسير الأولى للفعاليات والوجهات السياحية: موقع عام (وجهات، فعاليات، عروض) + لوحة تحكم <code>/admin</code>، عربي RTL بالكامل.</p>
+    </section>
+
+    <!-- الحالة الحالية -->
+    <section class="card">
+        <h2>الحالة الحالية — 2026-08-29 (مراجعة ما بعد النشر)</h2>
+        <ul>
+            <li><span class="check">✅</span> <strong>الملف الأمني مُغلق بالكامل:</strong> C-01/02/03 Critical + H-01…H-04 High أُصلحت وتم التحقق بالصياغة.</li>
+            <li><span class="check">✅</span> <strong>موجة المسارات الإنجليزية + ترحيل السلاغات:</strong> منشورة (<span class="tag green">f90f8df</span>) — 11 مساراً إنجليزياً + 11 بوابة 301 (عبر <code>Route::redirect</code> آمنة مع route:cache) + ترحيل اندماجي متسامح للسلاغات.</li>
+            <li><span class="check">✅</span> <strong>التوقيع النهائي ما قبل النشر:</strong> Hawk 🟢 APPROVE (18/18 اختبار، route:cache يعمل) + Cobra 🟢 CLEARED (WS-01/03/04 مؤكدة).</li>
+            <li><span class="check">✅</span> <strong>موجة إعادة تصميم الواجهة «Clean &amp; Modern Professional»:</strong> منشورة (<span class="tag green">2b315d4</span>) — Login/Register/Contact + ملف أنماط مشترك <code>fieldStyles.js</code>.</li>
+            <li><span class="check">✅</span> <strong><code>APP_URL</code> في إنتاج <code>.env</code> صُحّح</strong> إلى <code>https://eventsquare.sa</code> (كان يشير للدومين الممنوع) + نسخة احتياطية 600.</li>
+            <li><span class="tag red">🔴 WS-07 Critical (مفتوح)</span> <strong>النطاق <code>eventsquare.sa</code> ليس في DNS العام (NXDOMAIN)</strong> — الموقع يعمل من داخل السيرفر فقط، ولا يُزار من الخارج حتى يُفعَّل التسجيل/التفويض لدى المسجّل و hPanel. <strong>الفحص الخارجي حكمه BLOCK</strong> رغم نجاح النشر التقني.</li>
+            <li>هيكل Laravel 13 + Inertia 3 + React 19 + Tailwind 4: 18 Controller، 9 Models، ترحيلات، صفحات عامة + إدارة، و اختبارات عامة 18/18.</li>
+            <li>قاعدة البيانات: SQLite محلياً وإنتاجياً مؤقتاً (MySQL لاحقاً من hPanel). النشر: بناء محلي على ويندوز ثم رفع عبر SSH.</li>
+        </ul>
+    </section>
+
+    <!-- القرارات المعمارية -->
+    <section class="card">
+        <h2>القرارات المعمارية</h2>
+        <table>
+            <thead><tr><th>#</th><th>القرار</th><th>السبب</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>Inertia + React (مونوليث) بدل API منفصل</td><td>موقع واحد، لا تطبيق جوال حالياً</td></tr>
+                <tr><td>2</td><td>SQLite محلياً / MySQL إنتاجاً</td><td>بساطة التطوير على ويندوز</td></tr>
+                <tr><td>3</td><td>spatie/laravel-permission</td><td>أدوار وصلاحيات لوحة التحكم</td></tr>
+                <tr><td>4</td><td>بناء محلي + رفع SSH</td><td>متطلب القائد — بدون تشغيل محلي</td></tr>
+                <tr><td>5</td><td>هيكلة Hostinger: <code>domains/eventssquare.sa/laravel_app</code> + <code>public_html</code> → symlink إلى <code>laravel_app/public</code></td><td>معيار المزوّد — معتمد 2026-08-18</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- السيرفر -->
+    <section class="card">
+        <h2>السيرفر (الإنتاج) — <span class="tag sand">منشور تقنياً 2026-08-28</span> <span class="tag red">DNS غير مفعّل</span></h2>
+        <ul>
+            <li><span class="check">✅</span> <code>laravel_app</code> على <code>62.72.15.76:65002</code> + <code>public_html</code> symlink → الموقع يخدم عبر PHP 8.3/8.4 FPM.</li>
+            <li><span class="tag red">⛔</span> <code>https://eventsquare.sa</code> غير قابل للوصول من <strong>الخارج</strong> (NXDOMAIN — WS-07). كل الفحوص الداخلية 200/301 لا تعوّض الوصول العام.</li>
+            <li>SSH: مفتاح ed25519 مثبّت (بعد كلمة المرور) — <code>62.72.15.76:65002</code>. <strong>يلزم تغيير كلمة المرور بعد التداول.</strong></li>
+            <li>git: مستودع bare على السيرفر <code>~/repos/eventsquare.git</code> — الدفع: <code>git push server master</code>.</li>
+            <li>PHP CLI: الافتراضي 8.1 عبر cl.selector — النشر يتطلب <code>export PATH=/opt/alt/php84/usr/bin:$PATH</code> (N7).</li>
+            <li>القاعدة: SQLite إنتاجياً مؤقتاً (N1) — الترحيل إلى MySQL عند توفرها من hPanel.</li>
+            <li>الأصول: تُبنى محلياً <code>npm run build</code> وتُرفع tar إلى <code>public/build</code>.</li>
+            <li>بيانات مدير الإنتاج: في <code>scripts/server.env</code> (PROD_ADMIN_*) — محلية فقط.</li>
+            <li><span class="tag red">محظور</span> <code>eventsquare-sa.com</code> (ووردبريس) بقرار القائد — لا يُلمس إطلاقاً.</li>
+        </ul>
+    </section>
+
+    <!-- قرارات النشر -->
+    <section class="card">
+        <h2>قرارات النشر (سجل)</h2>
+        <table>
+            <thead><tr><th>#</th><th>القرار</th><th>السبب</th></tr></thead>
+            <tbody>
+                <tr><td>N1</td><td>SQLite إنتاجياً بدل MySQL</td><td>استضافة مشتركة بلا صلاحية إنشاء قواعد من الشل — يُرحّل لاحقاً</td></tr>
+                <tr><td>N2</td><td>مستودع git bare على السيرفر بدل GitHub</td><td>لا حاجة لحساب وسيط؛ النشر: <code>git push server</code> ثم استنساخ</td></tr>
+                <tr><td>N3</td><td>مفتاح SSH للأتمتة</td><td>توصية Cobra — يعمل الآن</td></tr>
+                <tr><td>N4</td><td>خط Readex Pro مستضاف ذاتياً في <code>public/fonts/</code> (مجموعة عربية + لاتينية)</td><td>الإضافة نزّلت اللاتيني فقط ولم تُحقن — الموقع عربي</td></tr>
+                <tr><td>N5</td><td>حذف وسم <code>&lt;style&gt;</code> الدخيل من app.css</td><td>محول CSS ابتلع كتلة <code>:root</code> كلها → ضياع كل ألوان التصميم (أُصلح ونُشر)</td></tr>
+                <tr><td>N6</td><td>قاعدة الترتيب الإلزامي للنشر: <code>php artisan migrate --force</code> ثم <code>db:seed --force</code> (وليس العكس أبداً)</td><td>منع تكرار/تصادم سلاغات <code>categories</code> بين الترحيل والسيدر (Bug #009 / WS-01)</td></tr>
+                <tr><td>N7</td><td>تشغيل <code>deploy.sh</code> يتطلب PHP ≥ 8.3 في المسار: <code>export PATH=/opt/alt/php84/usr/bin:$PATH</code> قبل التنفيذ</td><td><code>php</code> الافتراضي عبر cl.selector يعيد 8.1.34 فيفشل preflight <code>PHP &gt;= 8.3</code> (رُصد في النشر الحي 2026-08-28)</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- المراحل -->
+    <section class="card">
+        <h2>المراحل</h2>
+        <ul>
+            <li><span class="check">✅</span> Phase 0 — هيكل Laravel + لوحة تحكم أولية</li>
+            <li><span class="check">✅</span> Phase 1 — تثبيت فريق Dev Pack في <code>.opencode/agent/</code></li>
+            <li><span class="check">✅</span> Phase 2 — موجة التدقيق الوكيل (2026-08-18) → 6 تقارير في <code>docs/devpack/reports/</code></li>
+            <li><span class="check">✅</span> Phase 3 — الإصلاحات الأمنية (C-01..03 + H-01..04) — مغلقة كلها</li>
+            <li><span class="check">✅</span> Phase 4 — نظام التصميم + بناء كل صفحات الواجهة (2026-08-18) + موجات Fox (بحث، DiscoverAsir، واتساب، تبويبات خادمية، meta، English routes + UI waves)</li>
+            <li><span class="tag teal">✅</span> Phase 5 — النشر عبر SSH (Lion) تم تنفيذه مرتين: <code>f90f8df</code> ثم <code>2b315d4</code> + التوقيع النهائي (Hawk APPROVE + Cobra CLEARED). <strong>بقي: إعادة الفحص الخارجي بعد تفعيل DNS (WS-07).</strong></li>
+        </ul>
+    </section>
+
+    <!-- الموجات -->
+    <section class="card">
+        <h2>موجات 2026-08-28 (خلاصة موحّدة)</h2>
+        <ul>
+            <li><strong>تحسينات الواجهة &amp; توحيد السلاغ (Fox):</strong> «المبيعات» في قائمة الجوال + توحيد «العروض والإعلانات»؛ تبويبات الفعاليات فلترة خادمية <code>?status=</code>؛ أزرار الباقات تمرر اسم الباقة + واتساب ديناميكي؛ <code>?package=</code> تلقائي في Contact؛ زر واتساب في CTA الفعالية؛ LCP <code>eager</code> للـ Cover؛ فلاتر DiscoverAsir عميلية؛ بحث <code>?search=</code> مع debounce؛ meta descriptions عربية لـ 8 صفحات.</li>
+            <li><strong>توحيد السلاغات للخمس فئات إلى الإنجليزية</strong> (خريطة منسق): <code>palaces-heritage-villages</code>، <code>landmarks-parks</code>، <code>museums-souks</code>، <code>stay-shopping</code>، <code>food-drinks</code>. المسارات العربية الـ11 ← إنجليزي مع 301 دائم.</li>
+            <li><strong>الإصلاحات الإلزامية قبل النشر (Wolf):</strong> Bug #006 (الكلوجرات الـ13 استُبدلت بـ <code>Route::redirect</code> + Api Controllers — route:cache يعمل)، WS-01 (ترحيل اندماجي متسامح)، Bug #007/WS-04 (تجميع OR + is_active)، WS-03 (trustHosts)، Bug #011 (abort_unless للتصنيف)، N6.</li>
+            <li><strong>Redesign «Clean &amp; Modern Professional» (Fox):</strong> <code>fieldStyles.js</code> مشترك؛ Login/Register: بطاقة بيضاء نظيفة بظل ناعم + عمود ترويجي mesh-gradient هادئ بدل الدوائر + شريط إحصاء اجتماعي + حلقة موبايل مدمجة؛ Contact: بطاقات موحّدة بظل/hover خفيف. إصلاح Bug #008 حُفّظ (<code>#6b7280</code> → <code>#4b5563</code>).</li>
+        </ul>
+    </section>
+
+    <!-- سجل النشر -->
+    <section class="card">
+        <h2>🦁 سجل النشر الحي (Lion)</h2>
+        <table>
+            <thead><tr><th>الموجة</th><th>النتيجة</th><th>الفحوص</th></tr></thead>
+            <tbody>
+                <tr><td><span class="tag teal">f90f8df</span> English routes + slugs migration + UI/UX (2026-08-28)</td><td><span class="check">✅ ناجح</span> (migrate 29ms، caches، queue:restart)</td><td>داخلياً: <code>/</code> 200، <code>/destinations</code> 200، <code>/الوجهات</code> 301→destinations</td></tr>
+                <tr><td><span class="tag teal">2b315d4</span> Redesign UI (2026-08-28b)</td><td><span class="check">✅ ناجح</span> (لا موجات جديدة → migrate: nothing)</td><td>داخلياً: <code>/</code>, <code>/login</code>, <code>/register</code>, <code>/contact-us</code> = 200 (ملاحظة: الصفحة العامة هي <code>/contact-us</code> وليس <code>/contact</code>)</td></tr>
+                <tr><td><span class="tag sand">صيانة</span> تصحيح <code>APP_URL</code> في .env</td><td><span class="check">✅ تم</span> (+ نسخة احتياطية 600، config:cache)</td><td><code>config('app.url')</code> = <code>https://eventsquare.sa</code>؛ الموقع 200؛ لا إشارة للدومين الممنوع في Login/Register/Contact</td></tr>
+            </tbody>
+        </table>
+        <p style="margin-top:8px;font-size:14px;"><strong>انحرافات بيئية موثّقة:</strong> PHP CLI 8.1 افتراضياً (N7) • لا systemctl لإعادة php-fpm • DB_CONNECTION=sqlite (N1) • <span class="remain">4 روابط عروض في قاعدة البيانات ما تزال تشير إلى <code>eventsquare-sa.com</code> (بيانات سيدر — يُقرَّر لاحقاً)</span>.</p>
+    </section>
+
+    <!-- الحالة الأمنية -->
+    <section class="card">
+        <h2>الحالة الأمنية (WS) — الآنية</h2>
+        <table>
+            <thead><tr><th>ID</th><th>الوصف</th><th>الحالة</th></tr></thead>
+            <tbody>
+                <tr><td><strong>WS-07</strong> 🔴</td><td>Config/DNS — <code>eventsquare.sa</code> غير موجود في DNS العام (NXDOMAIN) والموقع غير قابل للوصول من الخارج</td><td><span class="tag red">Open (Critical)</span> — يحتاج تفعيل التسجيل/التفويض + vhost/SSL في hPanel ثم إعادة الفحص الخارجي</td></tr>
+                <tr><td><strong>WS-01</strong> 🟡</td><td>ترحيل السلاغات — اندماجي متسامح</td><td><span class="tag green">Fixed ✅</span></td></tr>
+                <tr><td><strong>WS-02</strong> 🟢</td><td>Enumeration عبر رسالة تسجيل بريد مكرر</td><td><span class="tag sand">Open</span> (مخفف بـ throttle — يلزم قبل الإطلاق الكامل)</td></tr>
+                <tr><td><strong>WS-03</strong> 🟢</td><td>Open-Redirect عبر Host header</td><td><span class="tag green">Fixed ✅</span> (trustHosts)</td></tr>
+                <tr><td><strong>WS-04</strong> ℹ️</td><td>OR غير مجمّع في discover()</td><td><span class="tag green">Fixed ✅</span></td></tr>
+                <tr><td><strong>WS-05</strong> 🟡</td><td>PDPL — شروط/خصوصية غير منشورة بينما النصوص تردّ عليها</td><td><span class="tag sand">Open</span> (يلزم قبل الإطلاق الكامل)</td></tr>
+                <tr><td><strong>WS-06</strong> ℹ️</td><td>تسريب محتمل لمفاتيح settings</td><td><span class="tag sand">Accepted Risk</span> (whitelist مستقبلاً)</td></tr>
+                <tr><td><strong>WS-08</strong> ℹ️</td><td><code>eventsquare-sa.com</code> أيضاً NXDOMAIN (توثيقي، خارج النطاق)</td><td><span class="tag sand">Open (Info)</span></td></tr>
+            </tbody>
+        </table>
+        <p style="margin-top:8px;font-size:14px;"><strong>أبرز الأقفال:</strong> C-01..03 + H-01..04 (2026-08-18) • Bug #001d (اختبارات 18/18) • #006 • #007 • #008 • #009 • #010 • #011 • WS-01/03/04 • M1..M8 + LCP/L4/L6.</p>
+    </section>
+
+    <!-- متبقٍ معروف -->
+    <section class="card">
+        <h2>متبقٍ معروف</h2>
+        <ul>
+            <li><span class="tag red">🔴 WS-07</span> تفعيل تسجيل/تفويض DNS لـ <code>eventsquare.sa</code> لدى المسجّل ولوحة Hostinger (A → 62.72.15.76) + vhost LiteSpeed + SSL (AutoSSL) — ثم إعادة الفحص الخارجي كاملاً (قرر Cobra).</li>
+            <li>ترحيل Panther (restrict/unique مركب/فهارس FK) — من موجة التدقيق</li>
+            <li>الترحيل إلى MySQL في الإنتاج (بيانات من hPanel)</li>
+            <li>خرائط Leaflet التفاعلية (الرئيسية/اكتشف عسير) — مؤجل بقرار</li>
+            <li>WS-02 رسالة تسجيل موحّدة • WS-05 صفحات شروط/خصوصية فعلية (PDPL)</li>
+            <li>Bug #002 النشرة تلوث contacts • #003 is_admin للمحرر</li>
+            <li>Bug #012 down() يعكس صفوفاً لم يمسسها up() (غير مانعة — ذاتية الشفاء)</li>
+            <li>تغيير كلمة مرور السيرفر بعد تداولها (إجراء تشغيلي)</li>
+            <li>تصفير 4 روابط عروض تشير إلى الدومين الممنوع في بيانات السيدر</li>
+        </ul>
+    </section>
+
+    <!-- نتائج التدقيق -->
+    <section class="card">
+        <h2>نتائج موجة التدقيق (2026-08-18) — حكم Cobra الأصلي: <span class="tag red">ممنوع النشر (NO-GO)</span> ← أغلق لاحقاً</h2>
+        <table>
+            <thead><tr><th>الوكيل</th><th>أبرز النتائج</th></tr></thead>
+            <tbody>
+                <tr><td><strong>Cobra</strong></td><td>3 Critical: رفع ملفات تعسفي عبر <code>avatar</code> (→ RCE)، بيانات مدير ثابتة في DatabaseSeeder؛ 4 High: لا throttle على /login، editor يدير المستخدمين (تصعيد)، SVG=XSS، APP_DEBUG=true</td></tr>
+                <tr><td><strong>Wolf</strong></td><td>لا rate limiting على /contact، لا FormRequests، slug عربي فارغ، 17 نتيجة</td></tr>
+                <tr><td><strong>Panther</strong></td><td>cascadeOnDelete يمسح متخطياً softDeletes → restrict؛ unique(slug) يتعارض؛ فهارس FK ناقصة</td></tr>
+                <tr><td><strong>Fox</strong></td><td>كسران (useState بلا استيراد + درج RTL)؛ الألوان/الخط؛ 6 أقسام مفقودة؛ ziggy غير مستخدم؛ تواريخ هجرية</td></tr>
+                <tr><td><strong>Lion</strong></td><td><code>scripts/deploy.sh</code> جاهز + خطة نشر + الخطوة 0 (git)</td></tr>
+                <tr><td><strong>Hawk</strong></td><td>تغطية اختبارات 0% + RefreshDatabase معطّل؛ bugs #002–#009</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- الفريق -->
+    <section class="card">
+        <h2>الفريق</h2>
+        <div class="team-grid">
+            <div class="team-card"><div class="emoji">🐉</div><div class="name">Dragon</div><div class="role">قائد الفريق والمعماري — منسق</div></div>
+            <div class="team-card"><div class="emoji">🦊</div><div class="name">Fox</div><div class="role">واجهات React/Inertia + RTL</div></div>
+            <div class="team-card"><div class="emoji">🐺</div><div class="name">Wolf</div><div class="role">Laravel + API + منطق الأعمال</div></div>
+            <div class="team-card"><div class="emoji">🐆</div><div class="name">Panther</div><div class="role">قاعدة البيانات والفهارس</div></div>
+            <div class="team-card"><div class="emoji">🦁</div><div class="name">Lion</div><div class="role">DevOps + النشر عبر SSH</div></div>
+            <div class="team-card"><div class="emoji">🦅</div><div class="name">Hawk</div><div class="role">مراجعة كود وQA</div></div>
+            <div class="team-card"><div class="emoji">🦅</div><div class="name">Falcon</div><div class="role">محتوى عربي (معجم: docs/devpack/FALCON_LEXICON.md)</div></div>
+            <div class="team-card"><div class="emoji">🐈</div><div class="name">Lynx</div><div class="role">تصميم UI/UX</div></div>
+            <div class="team-card"><div class="emoji">🐍</div><div class="name">Viper</div><div class="role">تجربة العميل CX</div></div>
+            <div class="team-card"><div class="emoji">🐍</div><div class="name">Cobra</div><div class="role">تدقيق أمني + PDPL</div></div>
+        </div>
+    </section>
+
+    <!-- جلسة الحالية -->
+    <section class="card">
+        <h2>جلسة الحالية</h2>
+        <p><strong>الهدف:</strong> إكمال مرحلة الإطلاق بعد موجة الإصلاحات الإلزامية — التوقيع النهائي (Hawk APPROVE + Cobra CLEARED) → النشر الحي مرتين (f90f8df، 2b315d4) → تصحيح APP_URL → المراجعة الأمنية ما بعد النشر.</p>
+        <p><strong>الوكيل النشط:</strong> Dragon (تنسيق) + Lion (نشر) + Cobra (فحص خارجي).</p>
+        <p><strong>القرار المعلق:</strong> تفعيل DNS الخاص بـ <code>eventsquare.sa</code> (بيد المالك/لوحة الاستضافة) كشرط لإعادة الفحص الخارجي والاعتراف بـ «نشر حي». ولاحقاً: موجات Panther/MySQL/Leaflet + إغلاق WS-02/WS-05.</p>
+    </section>
+
+    <p class="footer-note">نسخة HTML موازية لـ <code>PLAN.md</code> — يُحدّثها المشرف عند كل تغيير في الخطة <a href="PLAN.md">(اعرض الملف الأصلي)</a></p>
+</div>
+
+</body>
+</html>

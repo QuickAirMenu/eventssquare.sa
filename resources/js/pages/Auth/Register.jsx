@@ -100,7 +100,7 @@ export default function Register() {
                                                     className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl text-[15px]"
                                                     style={benefitIconStyle}
                                                 >
-                                                    <i className={b.icon} />
+                                                    <i className={b.icon} aria-hidden="true" />
                                                 </span>
                                                 <span className="text-[14.5px] font-medium leading-[1.7] text-white/90">{b.text}</span>
                                             </div>
@@ -117,7 +117,7 @@ export default function Register() {
                                             ))}
                                         </div>
                                         <p className="mt-5 flex items-center justify-center gap-2 text-[12px] text-white/60">
-                                            <i className="fa-solid fa-shield-halved text-[#fcd34d]" />
+                                            <i className="fa-solid fa-shield-halved text-[#fcd34d]" aria-hidden="true" />
                                             منصة عسير الأولى للفعاليات والوجهات — بياناتك محمية بالكامل
                                         </p>
                                     </div>
@@ -149,7 +149,7 @@ export default function Register() {
                                             className="mb-5 flex items-center gap-3 rounded-2xl px-4 py-3 text-[13.5px] font-semibold text-[#134527]"
                                             style={flashSuccessStyle}
                                         >
-                                            <i className="fa-solid fa-circle-check text-[#16a34a]" />
+                                            <i className="fa-solid fa-circle-check text-[#16a34a]" aria-hidden="true" />
                                             {flash.success}
                                         </div>
                                     )}
@@ -160,7 +160,7 @@ export default function Register() {
                                             className="mb-5 flex items-start gap-3 rounded-2xl px-4 py-3 text-[13.5px] font-semibold text-[#D92315]"
                                             style={flashErrorStyle}
                                         >
-                                            <i className="fa-solid fa-triangle-exclamation mt-0.5" />
+                                            <i className="fa-solid fa-triangle-exclamation mt-0.5" aria-hidden="true" />
                                             <span>{form.errors.email || form.errors.password || form.errors.name}</span>
                                         </div>
                                     )}
@@ -169,7 +169,7 @@ export default function Register() {
                                         <div>
                                             <label style={labelStyle}>الاسم الكامل</label>
                                             <div style={{ position: 'relative' }}>
-                                                <i className="fa-solid fa-user" style={fieldIcon()} />
+                                                <i className="fa-solid fa-user" aria-hidden="true" style={fieldIcon()} />
                                                 <input
                                                     style={inputStyle}
                                                     type="text"
@@ -188,7 +188,7 @@ export default function Register() {
                                         <div>
                                             <label style={labelStyle}>البريد الإلكتروني</label>
                                             <div style={{ position: 'relative' }}>
-                                                <i className="fa-solid fa-envelope" style={fieldIcon()} />
+                                                <i className="fa-solid fa-envelope" aria-hidden="true" style={fieldIcon()} />
                                                 <input
                                                     style={inputStyle}
                                                     dir="ltr"
@@ -207,7 +207,7 @@ export default function Register() {
                                         <div>
                                             <label style={labelStyle}>كلمة المرور</label>
                                             <div style={{ position: 'relative' }}>
-                                                <i className="fa-solid fa-lock" style={fieldIcon()} />
+                                                <i className="fa-solid fa-lock" aria-hidden="true" style={fieldIcon()} />
                                                 <input
                                                     style={{ ...inputStyle, paddingInlineEnd: 52 }}
                                                     type={showPassword ? 'text' : 'password'}
@@ -222,9 +222,10 @@ export default function Register() {
                                                     type="button"
                                                     onClick={() => setShowPassword((s) => !s)}
                                                     aria-label={showPassword ? 'إخفاء كلمة المرور' : 'إظهار كلمة المرور'}
+                                                    className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]"
                                                     style={eyeButtonStyle}
                                                 >
-                                                    <i className={showPassword ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'} />
+                                                    <i aria-hidden="true" className={showPassword ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'} />
                                                 </button>
                                             </div>
 
@@ -249,7 +250,7 @@ export default function Register() {
                                         <div>
                                             <label style={labelStyle}>تأكيد كلمة المرور</label>
                                             <div style={{ position: 'relative' }}>
-                                                <i className="fa-solid fa-lock" style={fieldIcon()} />
+                                                <i className="fa-solid fa-lock" aria-hidden="true" style={fieldIcon()} />
                                                 <input
                                                     style={{ ...inputStyle, paddingInlineEnd: 52 }}
                                                     type={showConfirm ? 'text' : 'password'}
@@ -264,11 +265,18 @@ export default function Register() {
                                                     type="button"
                                                     onClick={() => setShowConfirm((s) => !s)}
                                                     aria-label={showConfirm ? 'إخفاء تأكيد كلمة المرور' : 'إظهار تأكيد كلمة المرور'}
+                                                    className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]"
                                                     style={eyeButtonStyle}
                                                 >
-                                                    <i className={showConfirm ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'} />
+                                                    <i aria-hidden="true" className={showConfirm ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'} />
                                                 </button>
                                             </div>
+                                            {form.data.password_confirmation && form.data.password && form.data.password !== form.data.password_confirmation && (
+                                                <p className="mt-2 flex items-center gap-1.5 text-[12px] font-semibold text-[#D92315]">
+                                                    <i aria-hidden="true" className="fa-solid fa-triangle-exclamation text-[11px]" />
+                                                    كلمتا المرور غير متطابقتين
+                                                </p>
+                                            )}
                                             {form.errors.password_confirmation && <p style={errorStyle}>{form.errors.password_confirmation}</p>}
                                         </div>
 
@@ -278,11 +286,18 @@ export default function Register() {
                                             disabled={form.processing}
                                             style={{ ...submitBtnStyle, opacity: form.processing ? 0.65 : 1, cursor: form.processing ? 'not-allowed' : 'pointer' }}
                                         >
-                                            {form.processing ? 'جارٍ التسجيل...' : 'سجّل الآن واستكشف عسير'}
+                                            {form.processing ? (
+                                                <>
+                                                    <i aria-hidden="true" className="fa-solid fa-circle-notch fa-spin" />
+                                                    جارٍ التسجيل...
+                                                </>
+                                            ) : (
+                                                'سجّل الآن'
+                                            )}
                                         </button>
                                     </form>
 
-                                    <p className="mt-5 text-center text-[12.5px] leading-[1.8] text-[#4b5563]">
+                                    <p className="mt-5 text-center text-[13px] font-medium leading-[1.9] text-[#374151]">
                                         بالتسجيل في ساحة الفعاليات، توافق على شروط الاستخدام وسياسة الخصوصية.
                                     </p>
 
@@ -294,7 +309,7 @@ export default function Register() {
                                     </p>
 
                                     <p className="mt-4 flex items-center justify-center gap-2 text-[12px] text-[#4b5563]">
-                                        <i className="fa-solid fa-lock text-[11px] text-[#16a34a]" />
+                                        <i className="fa-solid fa-lock text-[11px] text-[#16a34a]" aria-hidden="true" />
                                         خصوصية بياناتك محمية بالكامل
                                     </p>
                                 </div>

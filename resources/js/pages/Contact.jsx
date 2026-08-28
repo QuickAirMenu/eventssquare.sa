@@ -130,7 +130,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>الاسم الكامل</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-user" style={fieldIcon()} />
+                                            <i className="fa-solid fa-user" aria-hidden="true" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 autoComplete="name"
@@ -146,7 +146,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>البريد الإلكتروني</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-envelope" style={fieldIcon()} />
+                                            <i className="fa-solid fa-envelope" aria-hidden="true" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 dir="ltr"
@@ -164,7 +164,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>رقم الجوال</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-phone" style={fieldIcon()} />
+                                            <i className="fa-solid fa-phone" aria-hidden="true" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 dir="ltr"
@@ -183,7 +183,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>الموضوع</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-bullhorn" style={fieldIcon()} />
+                                            <i className="fa-solid fa-bullhorn" aria-hidden="true" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 value={form.data.subject}
@@ -198,7 +198,7 @@ export default function Contact() {
                                     <div className="sm:col-span-2">
                                         <label style={labelStyle}>الرسالة</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-message" style={{ ...fieldIcon(), top: 24 }} />
+                                            <i className="fa-solid fa-message" aria-hidden="true" style={{ ...fieldIcon(), top: 24 }} />
                                             <textarea
                                                 style={{ ...inputStyle, resize: 'vertical', minHeight: 150, paddingTop: 16 }}
                                                 value={form.data.message}
@@ -217,7 +217,14 @@ export default function Contact() {
                                             disabled={form.processing}
                                             style={{ ...submitBtnStyle, opacity: form.processing ? 0.65 : 1, cursor: form.processing ? 'not-allowed' : 'pointer' }}
                                         >
-                                            {form.processing ? 'جارٍ الإرسال...' : 'أرسل رسالتك'}
+                                            {form.processing ? (
+                                                <>
+                                                    <i aria-hidden="true" className="fa-solid fa-circle-notch fa-spin" />
+                                                    جارٍ الإرسال...
+                                                </>
+                                            ) : (
+                                                'أرسل رسالتك'
+                                            )}
                                         </button>
                                     </div>
                                 </form>
@@ -238,7 +245,7 @@ export default function Contact() {
                                     href={c.href}
                                     target={c.href.startsWith('http') ? '_blank' : undefined}
                                     rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                                    className={`group ${sideShadow} ${sideHover}`}
+                                    className={`group ${sideShadow} ${sideHover} focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]`}
                                     style={sideCardStyle}
                                 >
                                     <div className="flex items-center gap-4 p-5">
@@ -246,12 +253,12 @@ export default function Contact() {
                                             className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
                                             style={{ background: 'linear-gradient(135deg, var(--green-light), var(--sky))', boxShadow: '0 10px 22px rgba(22,163,74,0.28)' }}
                                         >
-                                            <i className={`${c.icon} text-[19px]`} />
+                                            <i aria-hidden="true" className={`${c.icon} text-[19px]`} />
                                         </span>
                                         <div className="min-w-0 flex-1">
                                             <div className="flex items-center justify-between gap-2">
                                                 <h4 className="text-[16px] font-extrabold text-[#134527]">{c.title}</h4>
-                                                <i className="fa-solid fa-arrow-left text-[12px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
+                                                <i aria-hidden="true" className="fa-solid fa-arrow-left text-[12px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
                                             </div>
                                             <p className="mt-1 text-[12.5px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
                                             <span dir="ltr" className="mt-1.5 block truncate text-[13.5px] font-bold text-[#1f7045]">{c.value}</span>
@@ -268,7 +275,7 @@ export default function Contact() {
                                         className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
                                         style={{ background: 'linear-gradient(135deg, var(--teal), var(--sky))', boxShadow: '0 10px 22px rgba(18,69,87,0.28)' }}
                                     >
-                                        <i className="fa-solid fa-clock text-[19px]" />
+                                        <i aria-hidden="true" className="fa-solid fa-clock text-[19px]" />
                                     </span>
                                     <div className="min-w-0 flex-1">
                                         <h4 className="text-[16px] font-extrabold text-[#134527]">ساعات العمل</h4>
@@ -301,7 +308,7 @@ export default function Contact() {
                                             className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white"
                                             style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))', boxShadow: '0 10px 22px rgba(22,163,74,0.28)' }}
                                         >
-                                            <i className="fa-solid fa-map-location-dot text-[17px]" />
+                                            <i aria-hidden="true" className="fa-solid fa-map-location-dot text-[17px]" />
                                         </span>
                                         <h4 className="text-[17px] font-extrabold text-[#134527]">موقعنا</h4>
                                     </div>
@@ -310,9 +317,9 @@ export default function Contact() {
                                         href={`https://maps.google.com/?q=${encodeURIComponent(address)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#16a34a] hover:text-white hover:shadow-[0_12px_28px_-8px_rgba(22,163,74,0.45)]"
+                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#16a34a] hover:text-white hover:shadow-[0_12px_28px_-8px_rgba(22,163,74,0.45)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]"
                                     >
-                                        <i className="fa-solid fa-location-arrow text-[13px]" />
+                                        <i aria-hidden="true" className="fa-solid fa-location-arrow text-[13px]" />
                                         افتح في خرائط جوجل
                                     </a>
                                 </div>
