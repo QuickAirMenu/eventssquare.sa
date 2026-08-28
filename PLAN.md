@@ -45,6 +45,7 @@
 | N4 | خط Readex Pro مستضاف ذاتياً في `public/fonts/` (مجموعة عربية + لاتينية) بدل إضافة bunny | الإضافة نزّلت اللاتيني فقط ولم تُحقن — الموقع عربي |
 | N5 | حذف وسم `<style>` الدخيل من app.css | محول CSS ابتلع كتلة `:root` كلها → ضياع كل ألوان التصميم (أُصلح ونُشر) |
 | N6 | قاعدة الترتيب الإلزامي للنشر: `php artisan migrate --force` ثم `db:seed --force` (وليس العكس أبداً) | منع تكرار/تصادم سلاغات `categories` بين الترحيل والسيدر (Bug #009 / WS-01) — الترحيل أصبح اندماجياً متسامحاً لكن الترتيب يبقى إلزامياً |
+| N7 | تشغيل `deploy.sh` يتطلب PHP ≥ 8.3 في المسار: `export PATH=/opt/alt/php84/usr/bin:$PATH` قبل التنفيذ | `php` الافتراضي عبر `/etc/cl.selector/php-cli` يعيد 8.1.34 فيفشل preflight `PHP >= 8.3 required` (رُصد في النشر الحي 2026-08-28) |
 
 ## المراحل
 - [x] Phase 0 — هيكل Laravel + لوحة تحكم أولية
@@ -85,6 +86,13 @@
 - ترحيل Panther (restrict/unique مركب/فهارس FK) — من موجة التدقيق
 - تفعيل الاختبارات (Bug #001d) + اختبارات /admin
 - Bug #002 النشرة تلوث contacts (نموذج مصمم هكذا حالياً) / Bug #003 is_admin للمحرر / Bug #004 التواريخ (أُصلح في الصفحات الجديدة)
+
+## 🦁 Lion — النشر الحي (2026-08-28): ✅ اكتمل بنجاح
+
+- **الموجة:** مسارات إنجليزية (301) + ترحيل سلاغات + UI/UX — مرفوعة والمستودع البير على السيرفر تحدّث إليها عبر `deploy.sh --branch master`.
+- **التنفيذ:** `git fetch/reset` إلى `f90f8df` → `composer install --no-dev` → فك الأصول المسطّحة إلى `public/build` → `migrate --force` (`update_category_slugs_to_english`) → caches → `queue:restart`. **لم يُشغَّل seed** (سلوك مقصود).
+- **الفحوص:** `/` 200 ✅ | `/destinations` 200 ✅ | `/الوجهات` 301 → `/destinations` ✅ | الموقع يُخدم عبر PHP 8.3.30 FPM.
+- **انحرافات بيئية مسجّلة:** N7 (PHP 8.1 افتراضياً — تم تجاوزه بـ PATH) + `APP_URL=eventssquare-sa.com` في .env الإنتاج + لا systemctl لإعادة php-fpm + `DB_CONNECTION=sqlite` (N1). التفاصيل في ISSUES.md "سجل النشر الحي".
 
 ## نتائج موجة التدقيق — حكم Cobra: 🚫 ممنوع النشر (NO-GO)
 | الوكيل | أبرز النتائج |
@@ -139,3 +147,9 @@
 - ✅ **Bug #011 Low:** `abort_unless($category->is_active, 404)` في `ListingController::byCategory()`.
 - ✅ **Bug #009 Low:** قاعدة ترتيب النشر الإلزامية موثّقة كـ N6 في قرارات النشر.
 - الملفات: `routes/web.php`, `routes/api.php`, `app/Http/Controllers/Api/HealthController.php` (جديد), `app/Http/Controllers/Api/UserController.php` (جديد), `database/migrations/2026_08_28_000000_update_category_slugs_to_english.php`, `app/Http/Controllers/HomeController.php`, `app/Http/Controllers/ListingController.php`, `bootstrap/app.php`. لم تُلمس `resources/js/**`.
+
+## موجة إعادة تصميم الواجهة «Clean & Modern Professional» — 2026-08-28 (Fox)
+- **ملف مشترك جديد `resources/js/components/site/fieldStyles.js`:** يصدّر `inputStyle`, `labelStyle`, `errorStyle`, `fieldIcon`, `focusStyle`, `blurStyle`, `eyeButtonStyle`, `cardStyle`, `sideCardStyle`, `submitBtnStyle`, `promoStyle`, `promoMobileStyle`, `benefitIconStyle`, `statsBarStyle`, `flashSuccessStyle`, `flashErrorStyle` — استُورد في الصفحات الثلاث بدل النسخ اللاصق.
+- **Login.jsx / Register.jsx:** بطاقة بيضاء نظيفة بظل ناعم `0 20px 50px -12px rgba(19,69,39,0.12)` وزوايا 24px؛ العمود الترويجي أُعيد تصميمه: بدل الدوائر المبعثرة → **mesh gradient هادئ** (لمسة ضوئية علوية + توهج سفلي خفيف + تدرج أخضر→teal)، شعار أبيض + عنوان واثق + 3 فوائد بأيقونات داخل **دوائر زجاجية** + **شريط إحصاء اجتماعي** (3 أرقام وافية) + سطر ثقة؛ على الموبايل → **حلقة مدمجة أنيقة** (`0 0 26px 26px`) بشعار وجملة قصيرة بارتفاع أصغر. النماذج: هرمية عنوان أوضح، حقول مشتركة من `fieldStyles.js`، Focus ring `#16a34a` مع border `#e5e7eb` وخطأ `var(--red)`، مدخلات بريد/جوال `dir="ltr"`، `aria-label` لأزرار العين، زر أخضر (`btn-primary` + `submitBtnStyle` inline) يحافظ على `disabled`، `bottom-accent` محفوظ في الصفحات الثلاث.
+- **Contact.jsx:** hero + البطاقات الوظيفية محفوظة (selectedPackage/flash/settings الديناميكي كما هي)؛ بطاقات القنوات/الساعات/الموقع أصبحت موحّدة بظل ناعم وزوايا 20px + **hover خفيف** (`-translate-y-1` + ظل)، أيقونات دائرية متدرجة، ترويسة قنوات أنظف، والحقول من الملف المشترك.
+- ✅ `npm run build` ينجح (2.1s) — CSS: 75KB، Login/Register/Contact تنتج chunk منفصلة. لم تُلمس أي صفحة أخرى ولم تتغير أي مسارات/منطق نماذج.

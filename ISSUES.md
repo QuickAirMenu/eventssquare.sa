@@ -178,6 +178,25 @@
 **ملاحظة الشفاء الذاتي:**
 لا يوجد فقدان بيانات أو انتهاك unique؛ إعادة `up()` تصلحها كلها (عربي فقط → إنجليزي). والإجرائي الموصى به في PLAN.md N6 (`migrate --force` قبل `db:seed --force`) يمنع السيناريو. الإصلاح المقترح إن رُغب بالدقة: تسجيل أثر الترحيل (مثلاً عمود مؤقت/جدول سجل) أو توثيق أن down() تحوّل «كل» الإنجليزية إلى العربية كمحطة رجوع للعصر العربي ككل.
 
+## 🦁 Lion — سجل النشر الحي (2026-08-28): موجة المسارات الإنجليزية + ترحيل السلاغات + UI/UX
+
+> تنفيذ Lion على السيرفر. الإجمالي: ✅ نُشر بنجاح (التفاصيل في الملخص أدناه). الانحرافات أدناه بيئية/تشغيلية — لم يُعدَّل أي كود تطبيق.
+
+### الملخص الفني
+- الدومين: `https://eventssquare.sa` — مجلد التطبيق: `/home/u546723891/domains/eventssquare.sa/laravel_app`
+- git: `1fa5149..f90f8df master` عبر `scripts/deploy.sh --branch master --assets-tar /home/u546723891/assets-events.tar.gz` — HEAD عند `f90f8df`
+- composer install --no-dev ✅ | الأصول: tarball مسطّح (`manifest.json` على الجذر) → `public/build` ✅
+- migrate --force: `2026_08_28_000000_update_category_slugs_to_english` ✅ (لم يُشغَّل seed — كما هو مقرر)
+- config/route/view/event cache ✅ | queue:restart ✅ | storage:link (رابط موجود مسبقاً — حالة سليمة)
+- الفحوص بعد النشر: `/` → **200** | `/destinations` → **200** | `/الوجهات` → **301** → `location: /destinations` ✅
+- `php artisan route:list --path=destinations` → `listings.index › ListingController@index` ✅
+
+### انحرافات / ملاحظات بيئية (لا تُعدّل كوداً — قرارات لاحقة)
+1. **INFRA — PHP CLI الافتراضي 8.1 يكسر preflight الـ deploy:** `/usr/bin/php` → `/etc/cl.selector/php-cli` (CloudLinux selector) يعيد **PHP 8.1.34**، فيفشل `deploy.sh` عند `PHP >= 8.3 required`. الحل المعتمد في هذه الموجة: `export PATH=/opt/alt/php84/usr/bin:/usr/local/bin:/usr/bin:/bin` قبل `bash scripts/deploy.sh`. الموقع نفسه يُخدم عبر FPM 8.3.30 (`x-powered-by: PHP/8.3.30`). **مقترح:** تجهيز PHP 8.3/8.4 في PATH داخل `deploy.sh` أو توثيق إلزامي في PLAN.md.
+2. **DEV — `APP_URL` في `.env` إنتاجياً `https://eventssquare-sa.com`** رغم أن النشر والتحقق على `eventssquare.sa`. لم يُمسّ (الدومين الممنوع لمسه في PLAN.md)، ولأن توجيه الـ301 الناتج نسبي (`/destinations`) لم يؤثر على الفحص. لكنه يبقى مصدراً محتملاً لروابط مطلقة خاطئة (بريد، Ziggy base URL). **مقترح:** تصحيحه إلى `https://eventssquare.sa` في موجة لاحقة بموافقة القائد.
+3. **INFRA — خطوة "Restarting php-fpm" no-op على الاستضافة المشتركة:** لا `systemctl` بصلاحية المستخدم، فالخطوة لا تفعل شيئاً بصمت. لا أثر سلبي مؤكد — الكود الجديد التُقط فوراً (الفحوص 200/301 في نفس الدقائق). **مقترح:** اعتماد بديل مثل `kill -USR2` لـ PHP-FPM المعروف أو تجاهل مقصود موثق.
+4. **DB — `DB_CONNECTION=sqlite` إنتاجياً (N1 سابق):** deploy.sh تخطّى mysqldump backup حسب التصميم (`DB_CONNECTION is not mysql, or mysqldump missing — backup skipped`). الترحيل نفّذ على sqlite بنجاح. مطابق للقرار N1 في PLAN.md — يُرحَّل إلى MySQL عند توفره من hPanel.
+
 ## قالب المشكلة
 
 ```markdown
@@ -281,3 +300,13 @@
 - ✅ **WS-03 Low (trustHosts):** أُضيف `$middleware->trustHosts(at: ['^eventssquare\.sa$', '^www\.eventssquare\.sa$', '^localhost$'])` في `bootstrap/app.php` — الوسيط وُجد في النسخة (`Illuminate\Http\Middleware\TrustHosts` عبر `getGlobalMiddleware()`) ولا يقرأ `config('app.trusted_hosts')` في هذه النسخة. **مغلق**
 - ✅ **Bug #011 Low (is_active للتصنيف):** `abort_unless($category->is_active, 404);` في بداية `ListingController::byCategory()`. **مغلق**
 - ✅ **Bug #009 Low (ترتيب النشر):** سطر N6 في `PLAN.md` (قرارات النشر): إلزام `php artisan migrate --force` ثم `db:seed --force` (وليس العكس أبداً). **مغلق**
+
+## مغلق — موجة إعادة تصميم الواجهة «Clean & Modern Professional» (2026-08-28، نفّذ Fox)
+
+> ملف مشترك جديد `resources/js/components/site/fieldStyles.js` ثم إعادة بناء Login/Register/Contact — البناء `npm run build` ✅ (2.1s). لم تُلمس صفحات أخرى.
+
+- ✅ **Login.jsx:** بطاقة سبلت نظيفة بظل ناعم وزوايا 24px؛ العمود الترويجي تدرج هادئ (mesh gradient بدل الدوائر) مع لمسة ضوئية علوية، عنوان واثق، 3 فوائد بدوائر زجاجية، شريط إحصاء اجتماعي (فعالية/وجهة/محافظة)، حماية RTL؛ شريط موبايل مدمج مقوّس `0 0 26px 26px`؛ حقول مشتركة من `fieldStyles.js`؛ زر أخضر يحافظ على disabled.
+- ✅ **Register.jsx:** نفس الهيكل مع فوائد التسجيل ومؤشر قوة كلمة المرور محفوظ؛ حجم/زوايا/ظلال موحّدة؛ عين للحقلين مع `aria-label`.
+- ✅ **Contact.jsx:** حُفظت كل الدوال (selectedPackage من props ثم query، flash، settings الديناميكي phone/whatsapp/email/address)؛ البطاقات الجانبية موحّدة بظل ناعم وhover خفيف، أيقونات دائرية متدرجة، بطاقة النموذج بترويسة أوضح، الحقول من الملف المشترك.
+- ✅ **Bug #008 (تباين النصوص):** باعتبارها مفتوحة — كل النصوص الوصفية في الصفحات الثلاث تعتمد الآن `#4b5563` (≈6.8:1 على الساند) بدل `#6b7280`، بما يحقق ≥4.5:1 المطلوب في WCAG AA.
+- ✅ **fieldStyles.js (جديد):** `inputStyle/labelStyle/errorStyle/fieldIcon/focusStyle/blurStyle/eyeButtonStyle/cardStyle/sideCardStyle/submitBtnStyle/promoStyle/promoMobileStyle/benefitIconStyle/statsBarStyle/flashSuccessStyle/flashErrorStyle` — مصدر أنماط موحّد للصفحات الثلاث.

@@ -1,5 +1,17 @@
 import { Head, useForm, usePage } from '@inertiajs/react';
 import AppLayout from '@/layouts/AppLayout';
+import {
+    inputStyle,
+    labelStyle,
+    errorStyle,
+    fieldIcon,
+    focusStyle,
+    blurStyle,
+    cardStyle,
+    sideCardStyle,
+    submitBtnStyle,
+    flashSuccessStyle,
+} from '@/components/site/fieldStyles';
 
 const channels = [
     {
@@ -28,33 +40,9 @@ const channels = [
     },
 ];
 
-const inputStyle = {
-    width: '100%',
-    border: '2px solid #e5e7eb',
-    borderRadius: 14,
-    paddingBlock: 13,
-    paddingInline: 16,
-    paddingInlineStart: 46,
-    fontSize: 15,
-    fontFamily: 'inherit',
-    color: '#1f2937',
-    background: '#fff',
-    outline: 'none',
-    transition: 'border-color 0.3s, box-shadow 0.3s',
-};
-
-const labelStyle = { display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' };
-const errorStyle = { marginTop: 5, fontSize: 12.5, color: '#D92315' };
-
-const fieldIcon = (icon) => ({
-    position: 'absolute',
-    insetInlineStart: 16,
-    top: '50%',
-    transform: 'translateY(-50%)',
-    color: '#9ca3af',
-    fontSize: 14,
-    pointerEvents: 'none',
-});
+/** ظل ناعم موحّد للبطاقات الجانبية + hover خفيف عبر كلاسات Tailwind */
+const sideShadow = 'shadow-[0_20px_50px_-12px_rgba(19,69,39,0.12)]';
+const sideHover = 'transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_48px_-14px_rgba(19,69,39,0.22)]';
 
 export default function Contact() {
     const { flash, settings, package: packageProp } = usePage().props;
@@ -94,13 +82,6 @@ export default function Contact() {
                 : { ...c, value: settings?.email || c.value, href: `mailto:${settings?.email || c.value}` },
     );
 
-    const focusStyle = { borderColor: 'var(--green-light)', boxShadow: '0 0 0 4px rgba(22,163,74,0.12)' };
-
-    const blurStyle = (hasError) => ({
-        borderColor: hasError ? 'var(--red)' : '#e5e7eb',
-        boxShadow: 'none',
-    });
-
     return (
         <>
             <Head title="تواصل معنا">
@@ -117,14 +98,18 @@ export default function Contact() {
             <section className="section">
                 <div className="container">
                     <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_380px]">
-                        <div className="destination-card">
+                        {/* بطاقة النموذج */}
+                        <div style={cardStyle}>
                             <div className="p-7 sm:p-9">
-                                <h2 className="mb-6 text-[22px] font-extrabold text-[#134527]">أرسل رسالتك</h2>
+                                <h2 className="text-[22px] font-extrabold text-[#134527]">أرسل رسالتك</h2>
+                                <p className="mt-2 text-[13.5px] leading-[1.8] text-[#4b5563]">
+                                    سيصلنا استفسارك فوراً، وسيرد عليك الفريق خلال 24 ساعة.
+                                </p>
 
                                 {selectedPackage && (
                                     <div
-                                        className="mb-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold"
-                                        style={{ background: 'rgba(22,163,74,0.08)', color: '#134527', border: '1px solid rgba(22,163,74,0.2)' }}
+                                        className="mt-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold"
+                                        style={{ ...flashSuccessStyle, color: '#134527' }}
                                     >
                                         <i className="fa-solid fa-gift text-[#16a34a]" />
                                         تم تحديد الباقة: <strong className="mr-1">{selectedPackage}</strong> — أكمل بياناتك وسيتواصل معك فريقنا.
@@ -133,19 +118,19 @@ export default function Contact() {
 
                                 {flash?.success && (
                                     <div
-                                        className="mb-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold text-white"
-                                        style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))' }}
+                                        className="mt-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold"
+                                        style={{ ...flashSuccessStyle, color: '#134527' }}
                                     >
-                                        <i className="fa-solid fa-circle-check text-lg" />
+                                        <i className="fa-solid fa-circle-check text-[#16a34a]" />
                                         وصلتنا رسالتك — سيتواصل معك فريقنا خلال 24 ساعة.
                                     </div>
                                 )}
 
-                                <form onSubmit={submit} className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                                <form onSubmit={submit} className="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
                                     <div>
                                         <label style={labelStyle}>الاسم الكامل</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-user" style={fieldIcon('user')} />
+                                            <i className="fa-solid fa-user" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 autoComplete="name"
@@ -161,7 +146,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>البريد الإلكتروني</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-envelope" style={fieldIcon('email')} />
+                                            <i className="fa-solid fa-envelope" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 dir="ltr"
@@ -179,7 +164,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>رقم الجوال</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-phone" style={fieldIcon('phone')} />
+                                            <i className="fa-solid fa-phone" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 dir="ltr"
@@ -198,7 +183,7 @@ export default function Contact() {
                                     <div>
                                         <label style={labelStyle}>الموضوع</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-bullhorn" style={fieldIcon('subject')} />
+                                            <i className="fa-solid fa-bullhorn" style={fieldIcon()} />
                                             <input
                                                 style={inputStyle}
                                                 value={form.data.subject}
@@ -213,7 +198,7 @@ export default function Contact() {
                                     <div className="sm:col-span-2">
                                         <label style={labelStyle}>الرسالة</label>
                                         <div style={{ position: 'relative' }}>
-                                            <i className="fa-solid fa-message" style={{ ...fieldIcon('message'), top: 24 }} />
+                                            <i className="fa-solid fa-message" style={{ ...fieldIcon(), top: 24 }} />
                                             <textarea
                                                 style={{ ...inputStyle, resize: 'vertical', minHeight: 150, paddingTop: 16 }}
                                                 value={form.data.message}
@@ -226,7 +211,12 @@ export default function Contact() {
                                         {form.errors.message && <p style={errorStyle}>{form.errors.message}</p>}
                                     </div>
                                     <div className="sm:col-span-2">
-                                        <button type="submit" className="btn-primary w-full" disabled={form.processing} style={{ opacity: form.processing ? 0.7 : 1 }}>
+                                        <button
+                                            type="submit"
+                                            className="btn-primary w-full active:scale-[0.98]"
+                                            disabled={form.processing}
+                                            style={{ ...submitBtnStyle, opacity: form.processing ? 0.65 : 1, cursor: form.processing ? 'not-allowed' : 'pointer' }}
+                                        >
                                             {form.processing ? 'جارٍ الإرسال...' : 'أرسل رسالتك'}
                                         </button>
                                     </div>
@@ -235,8 +225,12 @@ export default function Contact() {
                             <div className="bottom-accent" />
                         </div>
 
+                        {/* العمود الجانبي */}
                         <div className="flex flex-col gap-5">
-                            <h3 className="text-center text-[20px] font-extrabold text-[#134527]">قنوات تواصل مباشرة</h3>
+                            <div className="text-center">
+                                <p className="text-[12.5px] font-bold text-[#16a34a]">فريقنا جاهز للإجابة</p>
+                                <h3 className="mt-1 text-[20px] font-extrabold text-[#134527]">قنوات تواصل مباشرة</h3>
+                            </div>
 
                             {channelList.map((c) => (
                                 <a
@@ -244,22 +238,23 @@ export default function Contact() {
                                     href={c.href}
                                     target={c.href.startsWith('http') ? '_blank' : undefined}
                                     rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                                    className="destination-card group"
+                                    className={`group ${sideShadow} ${sideHover}`}
+                                    style={sideCardStyle}
                                 >
-                                    <div className="flex items-center gap-4 p-6">
+                                    <div className="flex items-center gap-4 p-5">
                                         <span
-                                            className="flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-full text-white"
-                                            style={{ background: 'linear-gradient(135deg, var(--green-light), var(--sky))', boxShadow: '0 10px 24px rgba(22,163,74,0.3)' }}
+                                            className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
+                                            style={{ background: 'linear-gradient(135deg, var(--green-light), var(--sky))', boxShadow: '0 10px 22px rgba(22,163,74,0.28)' }}
                                         >
-                                            <i className={`${c.icon} text-[20px]`} />
+                                            <i className={`${c.icon} text-[19px]`} />
                                         </span>
                                         <div className="min-w-0 flex-1">
                                             <div className="flex items-center justify-between gap-2">
-                                                <h4 className="text-[17px] font-extrabold text-[#134527]">{c.title}</h4>
-                                                <i className="fa-solid fa-arrow-left text-[13px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
+                                                <h4 className="text-[16px] font-extrabold text-[#134527]">{c.title}</h4>
+                                                <i className="fa-solid fa-arrow-left text-[12px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
                                             </div>
-                                            <p className="mt-1 text-[13px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
-                                            <span dir="ltr" className="mt-1.5 block truncate text-[14px] font-bold text-[#1f7045]">{c.value}</span>
+                                            <p className="mt-1 text-[12.5px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
+                                            <span dir="ltr" className="mt-1.5 block truncate text-[13.5px] font-bold text-[#1f7045]">{c.value}</span>
                                         </div>
                                     </div>
                                     <div className="bottom-accent" />
@@ -267,17 +262,17 @@ export default function Contact() {
                             ))}
 
                             {/* بطاقة ساعات العمل */}
-                            <div className="destination-card">
-                                <div className="flex items-start gap-4 p-6">
+                            <div className={`${sideShadow} ${sideHover}`} style={sideCardStyle}>
+                                <div className="flex items-start gap-4 p-5">
                                     <span
-                                        className="flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-full text-white"
-                                        style={{ background: 'linear-gradient(135deg, var(--teal), var(--sky))', boxShadow: '0 10px 24px rgba(18,69,87,0.3)' }}
+                                        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
+                                        style={{ background: 'linear-gradient(135deg, var(--teal), var(--sky))', boxShadow: '0 10px 22px rgba(18,69,87,0.28)' }}
                                     >
-                                        <i className="fa-solid fa-clock text-[20px]" />
+                                        <i className="fa-solid fa-clock text-[19px]" />
                                     </span>
                                     <div className="min-w-0 flex-1">
-                                        <h4 className="text-[17px] font-extrabold text-[#134527]">ساعات العمل</h4>
-                                        <div className="mt-2 space-y-1.5 text-[13px] leading-[1.8] text-[#4b5563]">
+                                        <h4 className="text-[16px] font-extrabold text-[#134527]">ساعات العمل</h4>
+                                        <div className="mt-2 space-y-1.5 text-[12.5px] leading-[1.8] text-[#4b5563]">
                                             <p className="flex items-center justify-between gap-2">
                                                 <span className="font-semibold text-[#134527]">الأحد – الخميس</span>
                                                 <span dir="ltr" className="font-bold text-[#1f7045]">9ص – 5م</span>
@@ -288,7 +283,7 @@ export default function Contact() {
                                             </p>
                                         </div>
                                         {settings?.address && (
-                                            <p className="mt-3 flex items-start gap-2 border-t border-[#e5e7eb] pt-3 text-[12.5px] leading-[1.7] text-[#4b5563]">
+                                            <p className="mt-3 flex items-start gap-2 border-t border-[#e5e7eb] pt-3 text-[12px] leading-[1.7] text-[#4b5563]">
                                                 <i className="fa-solid fa-location-dot mt-0.5 text-[#16a34a]" />
                                                 <span>{address}</span>
                                             </p>
@@ -299,23 +294,23 @@ export default function Contact() {
                             </div>
 
                             {/* بطاقة الموقع */}
-                            <div className="destination-card">
+                            <div className={`${sideShadow} ${sideHover}`} style={sideCardStyle}>
                                 <div className="p-6">
                                     <div className="flex items-center gap-3">
                                         <span
-                                            className="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full text-white"
-                                            style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))', boxShadow: '0 10px 24px rgba(22,163,74,0.3)' }}
+                                            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-white"
+                                            style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))', boxShadow: '0 10px 22px rgba(22,163,74,0.28)' }}
                                         >
-                                            <i className="fa-solid fa-map-location-dot text-[18px]" />
+                                            <i className="fa-solid fa-map-location-dot text-[17px]" />
                                         </span>
                                         <h4 className="text-[17px] font-extrabold text-[#134527]">موقعنا</h4>
                                     </div>
-                                    <p className="mt-3 text-[13.5px] leading-[1.8] text-[#4b5563]">{address}</p>
+                                    <p className="mt-3 text-[13px] leading-[1.8] text-[#4b5563]">{address}</p>
                                     <a
                                         href={`https://maps.google.com/?q=${encodeURIComponent(address)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:bg-[#16a34a] hover:text-white"
+                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#16a34a] hover:text-white hover:shadow-[0_12px_28px_-8px_rgba(22,163,74,0.45)]"
                                     >
                                         <i className="fa-solid fa-location-arrow text-[13px]" />
                                         افتح في خرائط جوجل
