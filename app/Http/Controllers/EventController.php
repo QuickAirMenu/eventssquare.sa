@@ -14,9 +14,12 @@ class EventController extends Controller
     {
         $now = now();
 
+        $search = trim((string) $request->input('search'));
+
         $events = Event::with(['city', 'category'])
             ->when($request->input('city'), fn ($q, $slug) => $q->whereHas('city', fn ($c) => $c->where('slug', $slug)))
             ->when($request->input('status'), fn ($q, $s) => $q->where('status', $s))
+            ->when($search !== '', fn ($q) => $q->where(fn ($qq) => $qq->where('title', 'like', "%{$search}%")->orWhere('description', 'like', "%{$search}%")))
             ->orderBy('starts_at')
             ->paginate(9)
             ->withQueryString();
@@ -24,7 +27,7 @@ class EventController extends Controller
         return Inertia::render('Events/Index', [
             'events' => $events,
             'cities' => City::where('is_active', true)->get(),
-            'filters' => $request->only(['city', 'status']),
+            'filters' => $request->only(['city', 'status', 'search']),
         ]);
     }
 

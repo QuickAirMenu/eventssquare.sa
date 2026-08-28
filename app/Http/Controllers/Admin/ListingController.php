@@ -96,7 +96,7 @@ class ListingController extends Controller
             'latitude' => ['nullable', 'numeric', 'between:-90,90'],
             'longitude' => ['nullable', 'numeric', 'between:-180,180'],
             'phone' => ['nullable', 'string', 'max:20'],
-            'website' => ['nullable', 'url', 'max:190'],
+            'website' => ['nullable', 'url', 'starts_with:http://,https://', 'max:190'],
             'price_halalas' => ['nullable', 'integer', 'min:0'],
             'gallery' => ['nullable', 'array'],
             'gallery.*' => ['url'],

@@ -20,6 +20,10 @@ return Application::configure(basePath: dirname(__DIR__))
             HandleInertiaRequests::class,
         ]);
 
+        // WS-03: منع توجيه ما بعد الدخول إلى نطاقات خارجية (Host header poisoning).
+        // الوسيط يُضاف تلقائياً إلى السطر العالمي فور استدعاء trustHosts().
+        $middleware->trustHosts(at: ['^eventssquare\.sa$', '^www\.eventssquare\.sa$', '^localhost$']);
+
         $middleware->alias([
             'role' => RoleMiddleware::class,
             'admin' => AdminMiddleware::class,

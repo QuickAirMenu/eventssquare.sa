@@ -1,4 +1,4 @@
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link, useForm, usePage } from '@inertiajs/react';
 import AppLayout from '@/layouts/AppLayout';
 import { SectionHeader } from '@/components/site/ui';
 
@@ -52,10 +52,50 @@ const benefits = [
     { icon: 'fa-headset', title: 'دعم قريب', desc: 'فريقنا يرد على استفساراتك خلال 24 ساعة، ويرافقك من أول إعلان حتى قياس نتائجه.' },
 ];
 
+const inputStyle = {
+    width: '100%',
+    border: '2px solid #e5e7eb',
+    borderRadius: 14,
+    padding: '13px 16px',
+    fontSize: 15,
+    fontFamily: 'inherit',
+    color: '#1f2937',
+    background: '#fff',
+    outline: 'none',
+    transition: 'border-color 0.3s',
+};
+
+const errorStyle = { marginTop: 5, fontSize: 12.5, color: '#D92315' };
+
 export default function Sales() {
+    const { settings } = usePage().props;
+
+    // رقم الواتساب يُقرأ من الإعدادات (settings.whatsapp) — نفس المفتاح في Footer/Contact
+    const whatsappRaw = settings?.whatsapp || '+966500000000';
+    const whatsappNumber = whatsappRaw.replace(/\D/g, '');
+    const waLink = `https://wa.me/${whatsappNumber}`;
+
+    const quoteForm = useForm({ name: '', phone: '', package: '', message: '', subject: '' });
+
+    const submitQuote = (e) => {
+        e.preventDefault();
+        // subject يُشتق من الباقة المختارة، ويُرسل مع rest الحقول عبر contact.store
+        const quotePackage = quoteForm.data.package || 'باقة عامة';
+        quoteForm.setData('subject', `طلب عرض سعر - ${quotePackage}`);
+        quoteForm.post(route('contact.store'), {
+            preserveScroll: true,
+            onSuccess: () => {
+                quoteForm.reset();
+                quoteForm.clearErrors();
+            },
+        });
+    };
+
     return (
         <>
-            <Head title="أعلن معنا" />
+            <Head title="أعلن معنا">
+                <meta name="description" content="ضع علامتك في قلب عسير — باقات إعلانية وتجارية لعرض وجهتك أمام آلاف زوار ساحة الفعاليات شهرياً، مع وصول مستهدف وتقارير واضحة." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">
@@ -100,7 +140,7 @@ export default function Sales() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <Link href={route('contact')} className={`cta-button ${p.featured ? 'featured' : ''}`} style={p.featured ? { background: 'var(--green)', color: '#fff', borderColor: 'var(--green)' } : undefined}>
+                                    <Link href={route('contact', { package: p.name })} className={`cta-button ${p.featured ? 'featured' : ''}`} style={p.featured ? { background: 'var(--green)', color: '#fff', borderColor: 'var(--green)' } : undefined}>
                                         {p.cta}
                                     </Link>
                                 </div>
@@ -141,9 +181,87 @@ export default function Sales() {
                         title="اطلب عرض سعر مخصصاً"
                         description="أرسل بياناتك، ويعود إليك فريقنا بعرض يوازن هدفك وميزانيتك خلال 24 ساعة — بدون التزام من طرفك."
                     />
+
+                    <div className="mx-auto mb-12 max-w-3xl">
+                        <div className="rounded-3xl border border-[#e5e7eb] bg-white p-7 shadow-[0_10px_30px_rgba(0,0,0,0.06)] sm:p-9">
+                            {quoteForm.recentlySuccessful && (
+                                <div
+                                    className="mb-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold text-white"
+                                    style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))' }}
+                                >
+                                    <i className="fa-solid fa-circle-check text-lg" />
+                                    وصل طلبك بنجاح — سيعود إليك فريقنا بعرض سعر مخصص خلال 24 ساعة.
+                                </div>
+                            )}
+
+                            <form onSubmit={submitQuote} className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+                                <div>
+                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                        الاسم
+                                    </label>
+                                    <input
+                                        style={inputStyle}
+                                        value={quoteForm.data.name}
+                                        onChange={(e) => { quoteForm.setData('name', e.target.value); quoteForm.clearErrors('name'); }}
+                                        placeholder="اسمك الكامل"
+                                    />
+                                    {quoteForm.errors.name && <p style={errorStyle}>{quoteForm.errors.name}</p>}
+                                </div>
+                                <div>
+                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                        رقم الجوال
+                                    </label>
+                                    <input
+                                        style={inputStyle}
+                                        dir="ltr"
+                                        type="tel"
+                                        inputMode="tel"
+                                        value={quoteForm.data.phone}
+                                        onChange={(e) => { quoteForm.setData('phone', e.target.value); quoteForm.clearErrors('phone'); }}
+                                        placeholder="+9665XXXXXXXX"
+                                    />
+                                    {quoteForm.errors.phone && <p style={errorStyle}>{quoteForm.errors.phone}</p>}
+                                </div>
+                                <div>
+                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                        الباقة المطلوبة
+                                    </label>
+                                    <select
+                                        style={{ ...inputStyle, appearance: 'auto' }}
+                                        value={quoteForm.data.package}
+                                        onChange={(e) => { quoteForm.setData('package', e.target.value); quoteForm.clearErrors('package'); }}
+                                    >
+                                        <option value="">— اختر باقة —</option>
+                                        {packages.map((p) => (
+                                            <option key={p.name} value={p.name}>{p.name}</option>
+                                        ))}
+                                    </select>
+                                    {quoteForm.errors.package && <p style={errorStyle}>{quoteForm.errors.package}</p>}
+                                </div>
+                                <div className="sm:col-span-2">
+                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                        رسالتك
+                                    </label>
+                                    <textarea
+                                        style={{ ...inputStyle, resize: 'vertical', minHeight: 110 }}
+                                        value={quoteForm.data.message}
+                                        onChange={(e) => { quoteForm.setData('message', e.target.value); quoteForm.clearErrors('message'); }}
+                                        placeholder="حدثنا عن نشاطك واحتياجاتك، لنجهّز لك عرضاً مخصصاً."
+                                    />
+                                    {quoteForm.errors.message && <p style={errorStyle}>{quoteForm.errors.message}</p>}
+                                </div>
+                                <div className="sm:col-span-2">
+                                    <button type="submit" className="btn-primary w-full" disabled={quoteForm.processing} style={{ opacity: quoteForm.processing ? 0.7 : 1 }}>
+                                        {quoteForm.processing ? 'جارٍ الإرسال...' : 'أرسل طلب عرض السعر'}
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         <a
-                            href="https://wa.me/966500000000"
+                            href={waLink}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn-primary"

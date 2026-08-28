@@ -21,7 +21,9 @@ const stats = [
 export default function About() {
     return (
         <>
-            <Head title="عن المنصة" />
+            <Head title="عن المنصة">
+                <meta name="description" content="تعرّف على ساحة الفعاليات — منصة عسير الإلكترونية للوجهات السياحية والفعاليات والعروض، وقصّتها في إثراء الحياة ورسم البهجة." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">

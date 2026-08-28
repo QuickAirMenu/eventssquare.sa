@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Attributes\Fillable;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -54,6 +55,13 @@ class Listing extends Model
         return str_starts_with($this->cover_image, '/')
             ? asset($this->cover_image)
             : Storage::disk('public')->url($this->cover_image);
+    }
+
+    protected function website(): Attribute
+    {
+        return Attribute::make(
+            get: fn (?string $value) => $value !== null && ! str_starts_with($value, 'http') ? null : $value,
+        );
     }
 
     protected static function booted(): void

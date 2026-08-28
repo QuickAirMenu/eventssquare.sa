@@ -1,4 +1,4 @@
-import { Head, Link } from '@inertiajs/react';
+import { Head, Link, usePage } from '@inertiajs/react';
 import AppLayout from '@/layouts/AppLayout';
 import EventCard from '@/components/site/EventCard';
 import { SectionHeader, Cover } from '@/components/site/ui';
@@ -10,7 +10,13 @@ const STATUS = {
 };
 
 export default function EventShow({ event, relatedEvents }) {
+    const { settings } = usePage().props;
     const status = STATUS[event.status] || STATUS.upcoming;
+
+    // رقم الواتساب يُقرأ من الإعدادات (settings.whatsapp) — نفس المفتاح في Footer/Contact
+    const whatsappNumber = (settings?.whatsapp || '+966500000000').replace(/\D/g, '');
+    const bookingMsg = encodeURIComponent(`مرحبا، أود الحجز لفعالية: ${event.name}`);
+    const waBookingLink = `https://wa.me/${whatsappNumber}?text=${bookingMsg}`;
     const date = event.starts_at
         ? new Date(event.starts_at).toLocaleDateString('ar-SA-u-ca-gregory', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
         : null;
@@ -35,7 +41,7 @@ export default function EventShow({ event, relatedEvents }) {
             <Head title={event.name} />
 
             <section className="relative h-[420px] overflow-hidden">
-                <Cover src={event.cover_url} alt={event.name} className="absolute inset-0 h-full w-full object-cover" fallbackIcon="fa-solid fa-calendar-star" />
+                <Cover src={event.cover_url} alt={event.name} eager className="absolute inset-0 h-full w-full object-cover" fallbackIcon="fa-solid fa-calendar-star" />
                 <div
                     className="absolute inset-0"
                     style={{ background: 'linear-gradient(to top, rgba(13,46,28,0.94) 0%, rgba(13,46,28,0.45) 45%, rgba(13,46,28,0.15) 100%)' }}
@@ -116,9 +122,18 @@ export default function EventShow({ event, relatedEvents }) {
                                 <i className="fa-solid fa-ticket text-3xl text-[#fcd34d]" />
                                 <p className="mt-3 text-lg font-extrabold">هل أنت مستعد للحضور؟</p>
                                 <p className="mt-1.5 text-sm leading-relaxed text-white/75">تابعنا على وسائل التواصل لمعرفة مواعيد الحجز والتذاكر</p>
+                                <a
+                                    href={waBookingLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-5 inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#25D366] px-7 text-sm font-bold text-white transition hover:bg-[#1fb457]"
+                                >
+                                    <i className="fa-brands fa-whatsapp text-lg" />
+                                    تواصل / احجز عبر واتساب
+                                </a>
                                 <Link
                                     href={route('events.index')}
-                                    className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-[#D92315] px-7 text-sm font-bold text-white transition hover:bg-[#b81e12]"
+                                    className="mt-3 inline-flex h-11 items-center justify-center rounded-full border border-white/40 px-7 text-sm font-bold text-white/90 transition hover:bg-white/10"
                                 >
                                     استعرض كل الفعاليات
                                 </Link>

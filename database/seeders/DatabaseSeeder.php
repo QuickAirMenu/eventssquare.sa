@@ -116,11 +116,11 @@ class DatabaseSeeder extends Seeder
         );
 
         $subs = [
-            ['name' => 'القصور والقرى التراثية', 'name_en' => 'Palaces & Heritage Villages', 'slug' => 'قصور-وقرى-تراثية', 'icon' => 'castle', 'sort_order' => 1],
-            ['name' => 'المعالم والمنتزهات', 'name_en' => 'Landmarks & Parks', 'slug' => 'معالم-ومنتزهات', 'icon' => 'tree', 'sort_order' => 2],
-            ['name' => 'المتاحف والأسواق', 'name_en' => 'Museums & Souks', 'slug' => 'متاحف-وأسواق-شعبية', 'icon' => 'museum', 'sort_order' => 3],
-            ['name' => 'الإقامة والتسوق', 'name_en' => 'Stay & Shopping', 'slug' => 'الإقامة-والتسوق', 'icon' => 'bed', 'sort_order' => 4],
-            ['name' => 'المأكولات والمشروبات', 'name_en' => 'Food & Beverages', 'slug' => 'مأكولات-ومشروبات', 'icon' => 'utensils', 'sort_order' => 5],
+            ['name' => 'القصور والقرى التراثية', 'name_en' => 'Palaces & Heritage Villages', 'slug' => 'palaces-heritage-villages', 'icon' => 'castle', 'sort_order' => 1],
+            ['name' => 'المعالم والمنتزهات', 'name_en' => 'Landmarks & Parks', 'slug' => 'landmarks-parks', 'icon' => 'tree', 'sort_order' => 2],
+            ['name' => 'المتاحف والأسواق', 'name_en' => 'Museums & Souks', 'slug' => 'museums-souks', 'icon' => 'museum', 'sort_order' => 3],
+            ['name' => 'الإقامة والتسوق', 'name_en' => 'Stay & Shopping', 'slug' => 'stay-shopping', 'icon' => 'bed', 'sort_order' => 4],
+            ['name' => 'المأكولات والمشروبات', 'name_en' => 'Food & Beverages', 'slug' => 'food-drinks', 'icon' => 'utensils', 'sort_order' => 5],
         ];
 
         foreach ($subs as $sub) {
@@ -158,7 +158,7 @@ class DatabaseSeeder extends Seeder
 
         $listings = [
             [
-                'category_id' => $cat('معالم-ومنتزهات'), 'city_id' => $abha->id,
+                'category_id' => $cat('landmarks-parks'), 'city_id' => $abha->id,
                 'name' => 'فعالية مدماك', 'name_en' => 'Madmak',
                 'slug' => 'madmak',
                 'cover_image' => '/img/madmak.jpeg',
@@ -167,7 +167,7 @@ class DatabaseSeeder extends Seeder
                 'is_featured' => true,
             ],
             [
-                'category_id' => $cat('الإقامة-والتسوق'), 'city_id' => $abha->id,
+                'category_id' => $cat('stay-shopping'), 'city_id' => $abha->id,
                 'name' => 'مزرعة الليوان', 'name_en' => 'Laiwan Farm',
                 'slug' => 'laiwan-farm',
                 'cover_image' => '/img/liwana.jpeg',
@@ -176,7 +176,7 @@ class DatabaseSeeder extends Seeder
                 'is_featured' => true,
             ],
             [
-                'category_id' => $cat('معالم-ومنتزهات'), 'city_id' => $abha->id,
+                'category_id' => $cat('landmarks-parks'), 'city_id' => $abha->id,
                 'name' => 'حديقة المشهد', 'name_en' => 'Al Mashhad Park',
                 'slug' => 'mashhad-park',
                 'cover_image' => '/img/mashhad.jpeg',
@@ -184,7 +184,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'استكشف حديقة المشهد ومساحتها الطبيعية، تضم مرافق للعائلات وألعاب للأطفال ومنافذ لبيع الوجبات والأكلات التراثية والمحلية.',
             ],
             [
-                'category_id' => $cat('معالم-ومنتزهات'), 'city_id' => $abha->id,
+                'category_id' => $cat('landmarks-parks'), 'city_id' => $abha->id,
                 'name' => 'ممشى ساحة الوطن', 'name_en' => 'Sahat Al Watan Walkway',
                 'slug' => 'sahat-al-watan',
                 'cover_image' => '/img/mamsha.jpeg',
@@ -192,7 +192,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'استمتع بلحظات حيوية ومنعشة في ممشى ساحة الوطن الذي يحتوي على مرافق من مقاعد للجلوس ومواقف للسيارات ومسار للمشي.',
             ],
             [
-                'category_id' => $cat('معالم-ومنتزهات'), 'city_id' => $billasmar->id,
+                'category_id' => $cat('landmarks-parks'), 'city_id' => $billasmar->id,
                 'name' => 'شعف آل خريم', 'name_en' => 'Shaaf Al Khuraym',
                 'slug' => 'shaaf-al-khuraym',
                 'cover_image' => '/img/shaaf.jpeg',
@@ -200,7 +200,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'منتزه الشعف آل خريم يرتفع قرابة 2800 متراً فوق سطح البحر، ويتميز بكثافة أشجار العرعر وسهولة التنقل بين الممرات والأشجار.',
             ],
             [
-                'category_id' => $cat('معالم-ومنتزهات'), 'city_id' => $soudah->id,
+                'category_id' => $cat('landmarks-parks'), 'city_id' => $soudah->id,
                 'name' => 'وادي عين الذيبة', 'name_en' => 'Ain Al Thaibah Valley',
                 'slug' => 'ain-al-thaibah',
                 'cover_image' => '/img/ain.jpeg',
@@ -208,7 +208,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'تعد عين الذيبة واحدة من أبرز معالم الجذب الطبيعية في منطقة عسير، تضم مجموعة من الشلالات المذهلة ذات المياه العذبة ويوجد بها مختلف النباتات.',
             ],
             [
-                'category_id' => $cat('قصور-وقرى-تراثية'), 'city_id' => $abha->id,
+                'category_id' => $cat('palaces-heritage-villages'), 'city_id' => $abha->id,
                 'name' => 'قصر مالك التاريخي', 'name_en' => 'Malik Historical Palace',
                 'slug' => 'malik-palace',
                 'cover_image' => '/img/malk.jpeg',
@@ -217,7 +217,7 @@ class DatabaseSeeder extends Seeder
                 'is_featured' => true,
             ],
             [
-                'category_id' => $cat('قصور-وقرى-تراثية'), 'city_id' => $abha->id,
+                'category_id' => $cat('palaces-heritage-villages'), 'city_id' => $abha->id,
                 'name' => 'قلعة شمسان التاريخية', 'name_en' => 'Shamsan Historical Castle',
                 'slug' => 'shamsan-castle',
                 'cover_image' => '/img/shamsan.jpg',
@@ -225,7 +225,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'قلعة شمسان التاريخية في أبها يعود تاريخ تشييدها بتصميمها الأخير إلى أكثر من 100 عام، وشيدت على جبل شمسان وتعتبر مثالاً بارزاً للأسلوب والفنون المعمارية التقليدية.',
             ],
             [
-                'category_id' => $cat('قصور-وقرى-تراثية'), 'city_id' => $abha->id,
+                'category_id' => $cat('palaces-heritage-villages'), 'city_id' => $abha->id,
                 'name' => 'قصر شدا التاريخي', 'name_en' => 'Shada Historical Palace',
                 'slug' => 'shada-palace',
                 'cover_image' => '/img/shada.jpeg',
@@ -233,7 +233,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'استعد للانغماس في مدينة أبها بتاريخ قصر شدا، المعلم التاريخي البارز الممتد لأعوام والمبني على نمط عمارة عسير، بني القصر من الحجارة مع تغطية الجدران بطبقة من الجص من الداخل والخارج.',
             ],
             [
-                'category_id' => $cat('قصور-وقرى-تراثية'), 'city_id' => $abha->id,
+                'category_id' => $cat('palaces-heritage-villages'), 'city_id' => $abha->id,
                 'name' => 'قرية المفتاحة التشكيلية', 'name_en' => 'Al Muftaha Art Village',
                 'slug' => 'muftaha-village',
                 'cover_image' => '/img/muftaha.jpeg',
@@ -242,7 +242,7 @@ class DatabaseSeeder extends Seeder
                 'is_featured' => true,
             ],
             [
-                'category_id' => $cat('قصور-وقرى-تراثية'), 'city_id' => $rjal->id,
+                'category_id' => $cat('palaces-heritage-villages'), 'city_id' => $rjal->id,
                 'name' => 'قرية رجال ألمع', 'name_en' => 'Rijal Almaa Village',
                 'slug' => 'rijal-almaa',
                 'cover_image' => '/img/rigal.jpeg',
@@ -251,7 +251,7 @@ class DatabaseSeeder extends Seeder
                 'is_featured' => true,
             ],
             [
-                'category_id' => $cat('الإقامة-والتسوق'), 'city_id' => $abha->id,
+                'category_id' => $cat('stay-shopping'), 'city_id' => $abha->id,
                 'name' => 'بارك أبها', 'name_en' => 'Abha Park',
                 'slug' => 'abha-park',
                 'cover_image' => '/img/abha-park.jpeg',
@@ -259,7 +259,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'بارك أبها وجهة مثالية للعائلة مع تجارب ترفيهية متنوعة ومساحات خضراء مريحة.',
             ],
             [
-                'category_id' => $cat('الإقامة-والتسوق'), 'city_id' => $abha->id,
+                'category_id' => $cat('stay-shopping'), 'city_id' => $abha->id,
                 'name' => 'شالية الندي الخاص', 'name_en' => 'Al Nadi Private Chalet',
                 'slug' => 'al-nadi-chalet',
                 'cover_image' => '/img/nadee.jpeg',
@@ -267,7 +267,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'شالية الندي الخاص يقدم ليلة استثنائية من الراحة والاسترخاء في أجواء مميزة.',
             ],
             [
-                'category_id' => $cat('الإقامة-والتسوق'), 'city_id' => $abha->id,
+                'category_id' => $cat('stay-shopping'), 'city_id' => $abha->id,
                 'name' => 'فندق انيفيل', 'name_en' => 'Enville Hotel',
                 'slug' => 'enville-hotel',
                 'cover_image' => '/img/anefiel.jpeg',
@@ -275,7 +275,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'فندق انيفيل يوفر إقامة فاخرة ولحظات سعيدة مع خدمات مميزة وموقع رائع.',
             ],
             [
-                'category_id' => $cat('مأكولات-ومشروبات'), 'city_id' => $abha->id,
+                'category_id' => $cat('food-drinks'), 'city_id' => $abha->id,
                 'name' => 'منش بيكري', 'name_en' => 'Monsh Bakery',
                 'slug' => 'monsh-bakery',
                 'cover_image' => '/img/munch.jpeg',
@@ -283,7 +283,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'استمتع بتجربة لا تُنسى في مخبز منش بيكري المعروف بتقديمه مجموعة متنوعة من المخبوزات والكعك، خاصة كوب كيك اللذيذ.',
             ],
             [
-                'category_id' => $cat('مأكولات-ومشروبات'), 'city_id' => $abha->id,
+                'category_id' => $cat('food-drinks'), 'city_id' => $abha->id,
                 'name' => 'مطعم لاسين La-Scene', 'name_en' => 'La-Scene',
                 'slug' => 'la-scene',
                 'cover_image' => '/img/lascene.jpeg',
@@ -291,7 +291,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'مطعم لاسين La-Scene يقدم تجربة مطعمية راقية بنكهات مميزة.',
             ],
             [
-                'category_id' => $cat('مأكولات-ومشروبات'), 'city_id' => $abha->id,
+                'category_id' => $cat('food-drinks'), 'city_id' => $abha->id,
                 'name' => 'مطعم فلق', 'name_en' => 'Falaq Restaurant',
                 'slug' => 'falaq',
                 'cover_image' => '/img/falaq.jpeg',
@@ -299,7 +299,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'مطعم فلق يقدم أطباقاً في عالم مختلف من النكهات.',
             ],
             [
-                'category_id' => $cat('مأكولات-ومشروبات'), 'city_id' => $abha->id,
+                'category_id' => $cat('food-drinks'), 'city_id' => $abha->id,
                 'name' => 'مطعم زورنا', 'name_en' => 'Zourna',
                 'slug' => 'zourna',
                 'cover_image' => '/img/zorna.jpeg',
@@ -307,7 +307,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'مطعم زورنا يقدم مأكولات متنوعة بجودة عالية.',
             ],
             [
-                'category_id' => $cat('مأكولات-ومشروبات'), 'city_id' => $abha->id,
+                'category_id' => $cat('food-drinks'), 'city_id' => $abha->id,
                 'name' => 'مطعم سنسو الإيطالي', 'name_en' => 'Senso Italian Restaurant',
                 'slug' => 'senso',
                 'cover_image' => '/img/senso.jpeg',
@@ -315,7 +315,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'مطعم سنسو الإيطالي يقدم نكهات إيطالية أصيلة في أجواء راقية.',
             ],
             [
-                'category_id' => $cat('متاحف-وأسواق-شعبية'), 'city_id' => $khamis->id,
+                'category_id' => $cat('museums-souks'), 'city_id' => $khamis->id,
                 'name' => 'صالون نورة القحطاني', 'name_en' => 'Noura Al Qahtani Salon',
                 'slug' => 'noura-salon',
                 'cover_image' => '/img/salon.jpeg',
@@ -323,7 +323,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'من الوجهات الرائعة في عالم العناية والجمال يقدم خدمات تجميلية من الاعتناء بالأظافر واليدين والمساج والحمام المغربي وتجربة فريدة من الاسترخاء والجمال.',
             ],
             [
-                'category_id' => $cat('متاحف-وأسواق-شعبية'), 'city_id' => $abha->id,
+                'category_id' => $cat('museums-souks'), 'city_id' => $abha->id,
                 'name' => 'متجر الاكواب - يوشا بوتري', 'name_en' => 'Yosha Pottery',
                 'slug' => 'yoshapottery',
                 'cover_image' => '/img/pottery.jpeg',
@@ -331,7 +331,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'متجر يوشا بوتري يقدم أكواباً فنية مميزة من الخزف بأيدي حرفيين.',
             ],
             [
-                'category_id' => $cat('متاحف-وأسواق-شعبية'), 'city_id' => $abha->id,
+                'category_id' => $cat('museums-souks'), 'city_id' => $abha->id,
                 'name' => 'العبايات - BR BY BATOOL', 'name_en' => 'BR BY BATOOL',
                 'slug' => 'br-by-batool',
                 'cover_image' => '/img/abaya.jpeg',
@@ -339,7 +339,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'متجر BR BY BATOOL يقدم تشكيلات راقية من العبايات بتصاميم عصرية.',
             ],
             [
-                'category_id' => $cat('متاحف-وأسواق-شعبية'), 'city_id' => $abha->id,
+                'category_id' => $cat('museums-souks'), 'city_id' => $abha->id,
                 'name' => 'سكتش ارت', 'name_en' => 'Sketch Art',
                 'slug' => 'sketch-art',
                 'cover_image' => '/img/sketch.jpeg',
@@ -347,7 +347,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'متجر سكتش ارت حين يكون للفن حكاية، يقدم قطعاً فنية مميزة.',
             ],
             [
-                'category_id' => $cat('متاحف-وأسواق-شعبية'), 'city_id' => $abha->id,
+                'category_id' => $cat('museums-souks'), 'city_id' => $abha->id,
                 'name' => 'متجر WA', 'name_en' => 'WA Store',
                 'slug' => 'wa-store',
                 'cover_image' => '/img/wa.jpeg',

@@ -44,6 +44,7 @@
 | N3 | مفتاح SSH للأتمتة | توصية Cobra — يعمل الآن |
 | N4 | خط Readex Pro مستضاف ذاتياً في `public/fonts/` (مجموعة عربية + لاتينية) بدل إضافة bunny | الإضافة نزّلت اللاتيني فقط ولم تُحقن — الموقع عربي |
 | N5 | حذف وسم `<style>` الدخيل من app.css | محول CSS ابتلع كتلة `:root` كلها → ضياع كل ألوان التصميم (أُصلح ونُشر) |
+| N6 | قاعدة الترتيب الإلزامي للنشر: `php artisan migrate --force` ثم `db:seed --force` (وليس العكس أبداً) | منع تكرار/تصادم سلاغات `categories` بين الترحيل والسيدر (Bug #009 / WS-01) — الترحيل أصبح اندماجياً متسامحاً لكن الترتيب يبقى إلزامياً |
 
 ## المراحل
 - [x] Phase 0 — هيكل Laravel + لوحة تحكم أولية
@@ -59,6 +60,25 @@
   - إصلاحات مصاحبة: Bug #001 (useState)، #005 (ملفات ميتة حُذفت)، EventController (عرض الكل)
   - ✅ `npm run build` ينجح (3.2s)
 - [ ] Phase 5 — النشر عبر SSH (Lion) + التوقيع النهائي (Hawk + Cobra)
+
+## موجة تحسينات الواجهة — 2026-08-28 (Fox)
+- M1/M5: إضافة «المبيعات» لقائمة الجوال + توحيد تسمية القائمة المنسدلة إلى «العروض والإعلانات» في Navbar
+- M4: تبويبات الفعاليات أصبحت فلترة خادمية عبر `?status=` (بدل الفلترة العميلية) — `Events/Index.jsx`
+- M2/M3: أزرار الباقات تمرر اسم الباقة + واتساب ديناميكي من `settings.whatsapp` + نموذج «اطلب عرض سعر مخصصاً» في Sales
+- M8: حقل الجوال `type="tel"` + تمرير `package` تلقائياً في Contact
+- M6: زر «تواصل / احجز عبر واتساب» في CTA صفحة الفعالية (رسالة تحمل اسم الفعالية)
+- LCP: prop `eager` لمكوّن `Cover` ورفع lazy عن صور الغلاف في Events/Show وListings/Show
+- L4: إزالة `dir="ltr"` من حقول كلمات المرور (Login/Register)
+- H4: تفعيل فلاتر «استكشف عسير» عميلياً حسب التصنيف + حالة فارغة
+- H3: شريط بحث مع debounce في Listings/Index وEvents/Index (`?search=`)
+- L6: meta descriptions عربية لـ 8 صفحات
+- ✅ `npm run build` ينجح (README nav)
+
+## موجة تحسينات الواجهة & توحيد السلاغ — 2026-08-28 (Fox)
+- **توحيد السلاغات للخمس فئات إلى الإنجليزية** (خريطة منسق — لا تُغيَّر): `قصور-وقرى-تراثية → palaces-heritage-villages`، `معالم-ومنتزهات → landmarks-parks`، `متاحف-وأسواق-شعبية → museums-souks`، `الإقامة-والتسوق → stay-shopping`، `مأكولات-ومشروبات → food-drinks` — في Home.jsx وFooter.jsx وDiscoverAsir.jsx (FILTER_MAP). النافبار/الفوتر الداخلي يسحبان slugs ديناميكياً — لم يُلمس.
+- **Login.jsx/Register.jsx:** إعادة هيكلة ببطاقة سبلت `lg:grid-cols-2` (`max-w-[900px]`) بعمود إعلامي متدرج (خلفية green→teal، دوائر زخرفية، شعار، عنوان، 3 نقاط فوائد بأيقونات + رقم ثقة) يظهر يمين RTL، وشريط علوي على الجوال. تجارب: إظهار/إخفاء كلمة المرور بعين الى داخل الحقل، رسالة خطأ بارزة أعلى النموذج، صندوق نجاح flash، مؤشر قوة كلمة المرور (Register)، أيقونات حقول بمحاذاة RTL + فواصل خضراء عند التركيز، زر كامل العرض، تذكرة «نسيت كلمة المرور؟ قريباً»، نص ثقة «خصوصيتك محمية», autocomplete مناسب + aria-label.
+- **Contact.jsx:** أيقونات حقول + فواصل تركيز خضراء، بطاقة «ساعات العمل» (أحد–خميس 9ص-5م، جمعة–سبت إجازة) مع `settings.address`، بطاقة «موقعنا» مع زر «افتح في خرائط جوجل» (`maps.google.com/?q=` بتشفير encodeURIComponent)، بطاقات قنوات بأسهم `fa-arrow-left` وظل أقوى عند hover وقيم أبرز، استجابة جوال محفوظة.
+- ✅ `npm run build` ينجح (2.6s) — السلاغات العربية الخمسة غير موجودة في `resources/js` (تحقق grep)
 
 ## متبقٍ معروف (Phase 5 وما قبلها)
 - خرائط Leaflet التفاعلية (الرئيسية/اكتشف عسير) — مؤجل بقرار
@@ -101,3 +121,21 @@
 ## جلسة الحالية
 **الهدف:** تشغيل الفريق بالوضع الوكيل — موجة تدقيق شاملة، كل وكيل يكتب تقريره في `docs/devpack/reports/`.
 **الوكيل النشط:** Dragon (تنسيق) + 6 وكلاء تدقيق متوازين.
+
+## تحديث 2026-08-28 — موجة باك-إند (نفّذ Wolf)
+- ✅ `?search` على الأحداث (title/description + trim + ترقيم) — EventController::index
+- ✅ تأكيد دعم `?search` في ListingController (كان موجوداً ويمرر filters.search)
+- ✅ DiscoverAsir: تمرير الوجهات الكاملة عبر مفتاح `listings` (حد 40) + `heritageListings` متوافق — HomeController::discover
+- ✅ Hawk #10: تقييد `Listing.website` و`Offer.link` بـ `starts_with:http://,https://` (تحقق بالمتحكمات) + accessor يعيد null للروابط غير http (حماية عند العرض)
+- ✅ `/contact?package=...` تُمرَّر من PageController::contact trim إلى صفحة Contact
+- ✅ تأكيد أن contact.store يقبل `subject` (موجود ومخزَّن) — لا 422 من حقول /sales
+- ملاحظة: لا صفحات `policy`/`terms` في routes/web.php حالياً (قرار لاحق للمشرف)
+
+## تحديث 2026-08-28 — موجة الإصلاحات الإلزامية قبل النشر (نفّذ Wolf + مراجعة Cobra/Hawk)
+- ✅ **Bug #006 High:** الـ13 كلوجر (11 في `routes/web.php` + 2 في `routes/api.php`) استُبدلت بالكامل — `Route::redirect(...)` للـ301 + `HealthController`/`UserController` للـAPI. **التحقق:** `php artisan route:cache` ينجح ثم `route:clear` (كانت تكسر `route:cache` بـ `LogicException: Uses Closure`).
+- ✅ **WS-01 Medium:** ترحيل السلاغات أصبح اندماجياً متسامحاً (`DB::table` حصراً — تصنيفات بلا softDeletes): يُدمج الصفين/ينقل المراجع/يحدّث العربي فقط/يتجاهل الإنجليزي فقط. `down()` يعكس بأمان. + سطر N6 في قرارات النشر أعلاه.
+- ✅ **Bug #007 / WS-04 Medium:** تجميع OR في `HomeController::discover()` — كل فرع محمي بـ `is_active`.
+- ✅ **WS-03 Low:** تفعيل `trustHosts` لنطاقات المشروع منعاً لتوجيه ما بعد الدخول إلى نطاقات خارجية (Host header poisoning). الخيار المُتخذ: `$middleware->trustHosts(at: [...])` في `bootstrap/app.php` (لا `config('app.trusted_hosts')` — النسخة المثبتة من Laravel 13 لا تقرؤه).
+- ✅ **Bug #011 Low:** `abort_unless($category->is_active, 404)` في `ListingController::byCategory()`.
+- ✅ **Bug #009 Low:** قاعدة ترتيب النشر الإلزامية موثّقة كـ N6 في قرارات النشر.
+- الملفات: `routes/web.php`, `routes/api.php`, `app/Http/Controllers/Api/HealthController.php` (جديد), `app/Http/Controllers/Api/UserController.php` (جديد), `database/migrations/2026_08_28_000000_update_category_slugs_to_english.php`, `app/Http/Controllers/HomeController.php`, `app/Http/Controllers/ListingController.php`, `bootstrap/app.php`. لم تُلمس `resources/js/**`.

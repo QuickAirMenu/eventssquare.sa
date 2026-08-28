@@ -34,6 +34,8 @@ class ListingController extends Controller
 
     public function byCategory(Category $category, Request $request): Response
     {
+        abort_unless($category->is_active, 404);
+
         $ids = [$category->id, ...$category->children()->pluck('id')->all()];
 
         $listings = Listing::with(['category', 'city'])

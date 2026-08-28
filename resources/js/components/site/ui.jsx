@@ -21,9 +21,9 @@ export function SectionHeader({ tag, title, description, link, linkText = 'اك�
     );
 }
 
-export function Cover({ src, alt, className = '', fallbackIcon = 'fa-solid fa-mountain-sun' }) {
+export function Cover({ src, alt, className = '', fallbackIcon = 'fa-solid fa-mountain-sun', eager = false }) {
     if (src) {
-        return <img src={src} alt={alt || ''} loading="lazy" className={className} />;
+        return <img src={src} alt={alt || ''} loading={eager ? 'eager' : 'lazy'} className={className} />;
     }
     return (
         <div className={`cover-fallback ${className}`}>

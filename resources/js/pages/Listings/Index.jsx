@@ -1,4 +1,5 @@
-import { Head, Link } from '@inertiajs/react';
+import { useRef, useState } from 'react';
+import { Head, Link, router, usePage } from '@inertiajs/react';
 import AppLayout from '@/layouts/AppLayout';
 import DestinationCard from '@/components/site/DestinationCard';
 import Pagination from '@/components/site/Pagination';
@@ -13,12 +14,41 @@ const CAT_ICONS = {
 
 export default function ListingsIndex({ listings, categories, category = null, activeCategory = null }) {
     const current = activeCategory || category;
+    const filters = usePage().props.filters ?? {};
+    const activeSearch = filters.search ?? '';
+
     const rows = Array.isArray(listings) ? listings : listings?.data ?? [];
     const paginator = Array.isArray(listings) ? null : listings;
 
+    // حقل بحث مع debounce خفيف (~350ms)
+    const [searchInput, setSearchInput] = useState(activeSearch);
+    const searchTimer = useRef(null);
+    const onSearch = (e) => {
+        const value = e.target.value;
+        setSearchInput(value);
+        clearTimeout(searchTimer.current);
+        searchTimer.current = setTimeout(() => {
+            if (current) {
+                router.get(
+                    route('listings.category', current.slug),
+                    { search: value || undefined },
+                    { preserveState: true, preserveScroll: true, replace: true }
+                );
+            } else {
+                router.get(
+                    route('listings.index'),
+                    { search: value || undefined },
+                    { preserveState: true, preserveScroll: true, replace: true }
+                );
+            }
+        }, 350);
+    };
+
     return (
         <>
-            <Head title={current ? `${current.name} — الوجهات` : 'الوجهات السياحية'} />
+            <Head title={current ? `${current.name} — الوجهات` : 'الوجهات السياحية'}>
+                <meta name="description" content="استكشف دليل الوجهات السياحية في عسير — معالم وتراث ومنتزهات ومطاعم وإقامة مصنفة حسب اهتمامك لتصنع رحلتك القادمة." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">
@@ -51,6 +81,20 @@ export default function ListingsIndex({ listings, categories, category = null, a
                                 {c.name}
                             </Link>
                         ))}
+                    </div>
+
+                    <div className="mx-auto mb-12 max-w-xl">
+                        <div className="relative">
+                            <i className="fa-solid fa-magnifying-glass pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#9ca3af]" />
+                            <input
+                                type="search"
+                                dir="rtl"
+                                value={searchInput}
+                                onChange={onSearch}
+                                placeholder="ابحث في الوجهات السياحية"
+                                className="w-full rounded-full border-2 border-[#e5e7eb] bg-white py-3.5 pr-11 pl-5 text-[15px] text-[#1f2937] shadow-[0_10px_30px_rgba(0,0,0,0.05)] outline-none transition focus:border-[#16a34a]"
+                            />
+                        </div>
                     </div>
 
                     {rows.length > 0 ? (

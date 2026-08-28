@@ -40,10 +40,10 @@ class HomeController extends Controller
                 ->latest()
                 ->limit(4)
                 ->get(),
-            'stayListings' => $byCategory('الإقامة-والتسوق', 3),
-            'foodListings' => $byCategory('مأكولات-ومشروبات', 4),
-            'landmarkListings' => $byCategory('معالم-ومنتزهات', 4),
-            'heritageListings' => $byCategory('قصور-وقرى-تراثية', 8),
+            'stayListings' => $byCategory('stay-shopping', 3),
+            'foodListings' => $byCategory('food-drinks', 4),
+            'landmarkListings' => $byCategory('landmarks-parks', 4),
+            'heritageListings' => $byCategory('palaces-heritage-villages', 8),
             'upcomingEvents' => Event::with(['city', 'category'])
                 ->where('starts_at', '>=', now()->subHours(6))
                 ->orderBy('starts_at')
@@ -65,13 +65,34 @@ class HomeController extends Controller
 
     public function discover(): Response
     {
+        $destinationSlugs = [
+            'palaces-heritage-villages',
+            'landmarks-parks',
+            'museums-souks',
+            'stay-shopping',
+            'food-drinks',
+        ];
+
+        $listings = Listing::with(['category', 'city'])
+            ->where('is_active', true)
+            ->whereHas('category', function ($q) use ($destinationSlugs) {
+                $q->where('is_active', true)
+                    ->where(function ($w) use ($destinationSlugs) {
+                        $w->whereIn('slug', $destinationSlugs)
+                            ->orWhere('type', 'destination');
+                    });
+            })
+            ->orderByRaw('is_featured DESC, id DESC')
+            ->limit(40)
+            ->get();
+
+        $heritageListings = (clone $listings)
+            ->filter(fn (Listing $l) => $l->category?->slug === 'palaces-heritage-villages')
+            ->values();
+
         return Inertia::render('DiscoverAsir', [
-            'heritageListings' => Listing::with(['category', 'city'])
-                ->where('is_active', true)
-                ->whereHas('category', fn ($q) => $q->where('type', 'destination'))
-                ->inRandomOrder()
-                ->limit(6)
-                ->get(),
+            'heritageListings' => $heritageListings->isNotEmpty() ? $heritageListings : $listings,
+            'listings' => $listings,
             'cities' => City::where('is_active', true)->get(),
         ]);
     }

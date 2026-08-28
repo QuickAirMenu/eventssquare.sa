@@ -66,7 +66,7 @@ export default function Home({
             word: 'التاريخ',
             post: ' في قصور عسير العريقة',
             buttons: [
-                { label: 'رحلة إلى الماضي', href: route('listings.category', 'قصور-وقرى-تراثية'), primary: true },
+                { label: 'رحلة إلى الماضي', href: route('listings.category', 'palaces-heritage-villages'), primary: true },
             ],
         },
         {
@@ -98,8 +98,8 @@ export default function Home({
             word: 'المطبخ',
             post: ' العسيري بنكهة لا تُنسى',
             buttons: [
-                { label: 'تذوّق العسير', href: route('listings.category', 'مأكولات-ومشروبات'), primary: true },
-                { label: 'جولة المطاعم', href: route('listings.category', 'مأكولات-ومشروبات') },
+                { label: 'تذوّق العسير', href: route('listings.category', 'food-drinks'), primary: true },
+                { label: 'جولة المطاعم', href: route('listings.category', 'food-drinks') },
             ],
         },
         {
@@ -135,7 +135,9 @@ export default function Home({
 
     return (
         <>
-            <Head title="اكتشف عسير | ساحة الفعاليات" />
+            <Head title="اكتشف عسير | ساحة الفعاليات">
+                <meta name="description" content="اكتشف عسير مع ساحة الفعاليات — وجهات سياحية وفعاليات ومهرجانات وعروض من أبها إلى جبال المنطقة وسواحلها في مكان واحد." />
+            </Head>
 
             <section className="hero" id="home">
                 {heroSlides.map((s, i) => (
@@ -210,7 +212,7 @@ export default function Home({
                             ))}
                         </div>
                         <div style={{ textAlign: 'center', marginTop: 40 }}>
-                            <Link href={route('listings.category', 'الإقامة-والتسوق')} className="section-link">
+                            <Link href={route('listings.category', 'stay-shopping')} className="section-link">
                                 اكتشف المزيد
                                 <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M19 12H5" /><path d="M12 19l-7-7 7-7" /></svg>
                             </Link>
@@ -225,7 +227,7 @@ export default function Home({
                         tag="مأكولات ومشروبات"
                         title="رحلة في عالم النكهات"
                         description="استعد لتجربة لا تُنسى يلتقي فيها الطعم الرفيع بجولة فريدة بين المذاقات المحلية الأصيلة والأطباق العالمية الشهية"
-                        link={route('listings.category', 'مأكولات-ومشروبات')}
+                        link={route('listings.category', 'food-drinks')}
                     />
                     <div className="card-grid">
                         {foodListings.map((listing) => (
@@ -257,7 +259,7 @@ export default function Home({
                         tag="معالم ووجهات"
                         title="أبرز المعالم والوجهات"
                         description="خياراتنا المختارة بعناية لأجمل المعالم والوجهات التي تجسّد سحر عسير بجبالها وسهولها وتاريخها العريق"
-                        link={route('listings.category', 'معالم-ومنتزهات')}
+                        link={route('listings.category', 'landmarks-parks')}
                     />
                     <div className="card-grid">
                         {landmarkListings.map((listing) => (

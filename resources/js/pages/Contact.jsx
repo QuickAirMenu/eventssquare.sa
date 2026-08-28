@@ -32,30 +32,47 @@ const inputStyle = {
     width: '100%',
     border: '2px solid #e5e7eb',
     borderRadius: 14,
-    padding: '13px 16px',
+    paddingBlock: 13,
+    paddingInline: 16,
+    paddingInlineStart: 46,
     fontSize: 15,
     fontFamily: 'inherit',
     color: '#1f2937',
     background: '#fff',
     outline: 'none',
-    transition: 'border-color 0.3s',
+    transition: 'border-color 0.3s, box-shadow 0.3s',
 };
 
 const labelStyle = { display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' };
 const errorStyle = { marginTop: 5, fontSize: 12.5, color: '#D92315' };
 
+const fieldIcon = (icon) => ({
+    position: 'absolute',
+    insetInlineStart: 16,
+    top: '50%',
+    transform: 'translateY(-50%)',
+    color: '#9ca3af',
+    fontSize: 14,
+    pointerEvents: 'none',
+});
+
 export default function Contact() {
-    const { flash, settings } = usePage().props;
+    const { flash, settings, package: packageProp } = usePage().props;
 
     const phone = settings?.phone || '+966500000000';
     const whatsapp = (settings?.whatsapp || '+966500000000').replace(/[^\d]/g, '');
+    const address = settings?.address || 'أبها، منطقة عسير، المملكة العربية السعودية';
+
+    // الباقة المرسلة عبر query (?package=...) — متسامح: من props أولاً، ثم من window.location.search
+    const urlParams = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : new URLSearchParams();
+    const selectedPackage = packageProp || urlParams.get('package') || '';
 
     const form = useForm({
         name: '',
         email: '',
         phone: '',
-        subject: '',
-        message: '',
+        subject: selectedPackage ? `طلب عرض سعر - الباقة: ${selectedPackage}` : '',
+        message: selectedPackage ? `أرغب بالاستفسار عن الباقة: ${selectedPackage}` : '',
     });
 
     const submit = (e) => {
@@ -77,9 +94,18 @@ export default function Contact() {
                 : { ...c, value: settings?.email || c.value, href: `mailto:${settings?.email || c.value}` },
     );
 
+    const focusStyle = { borderColor: 'var(--green-light)', boxShadow: '0 0 0 4px rgba(22,163,74,0.12)' };
+
+    const blurStyle = (hasError) => ({
+        borderColor: hasError ? 'var(--red)' : '#e5e7eb',
+        boxShadow: 'none',
+    });
+
     return (
         <>
-            <Head title="تواصل معنا" />
+            <Head title="تواصل معنا">
+                <meta name="description" content="تواصل مع فريق ساحة الفعاليات — اترك رسالتك وسيرد عليك خلال 24 ساعة، أو راسلنا مباشرة عبر الهاتف والواتساب." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">
@@ -95,6 +121,16 @@ export default function Contact() {
                             <div className="p-7 sm:p-9">
                                 <h2 className="mb-6 text-[22px] font-extrabold text-[#134527]">أرسل رسالتك</h2>
 
+                                {selectedPackage && (
+                                    <div
+                                        className="mb-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold"
+                                        style={{ background: 'rgba(22,163,74,0.08)', color: '#134527', border: '1px solid rgba(22,163,74,0.2)' }}
+                                    >
+                                        <i className="fa-solid fa-gift text-[#16a34a]" />
+                                        تم تحديد الباقة: <strong className="mr-1">{selectedPackage}</strong> — أكمل بياناتك وسيتواصل معك فريقنا.
+                                    </div>
+                                )}
+
                                 {flash?.success && (
                                     <div
                                         className="mb-6 flex items-center gap-3 rounded-2xl px-5 py-4 text-[14px] font-semibold text-white"
@@ -108,55 +144,85 @@ export default function Contact() {
                                 <form onSubmit={submit} className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                                     <div>
                                         <label style={labelStyle}>الاسم الكامل</label>
-                                        <input
-                                            style={inputStyle}
-                                            value={form.data.name}
-                                            onChange={(e) => { form.setData('name', e.target.value); form.clearErrors('name'); }}
-                                            placeholder="مثال: عبدالله محمد"
-                                        />
+                                        <div style={{ position: 'relative' }}>
+                                            <i className="fa-solid fa-user" style={fieldIcon('user')} />
+                                            <input
+                                                style={inputStyle}
+                                                autoComplete="name"
+                                                value={form.data.name}
+                                                onChange={(e) => { form.setData('name', e.target.value); form.clearErrors('name'); }}
+                                                onFocus={(e) => Object.assign(e.currentTarget.style, focusStyle)}
+                                                onBlur={(e) => Object.assign(e.currentTarget.style, blurStyle(!!form.errors.name))}
+                                                placeholder="مثال: عبدالله محمد"
+                                            />
+                                        </div>
                                         {form.errors.name && <p style={errorStyle}>{form.errors.name}</p>}
                                     </div>
                                     <div>
                                         <label style={labelStyle}>البريد الإلكتروني</label>
-                                        <input
-                                            style={inputStyle}
-                                            dir="ltr"
-                                            type="email"
-                                            value={form.data.email}
-                                            onChange={(e) => { form.setData('email', e.target.value); form.clearErrors('email'); }}
-                                            placeholder="name@example.com"
-                                        />
+                                        <div style={{ position: 'relative' }}>
+                                            <i className="fa-solid fa-envelope" style={fieldIcon('email')} />
+                                            <input
+                                                style={inputStyle}
+                                                dir="ltr"
+                                                type="email"
+                                                autoComplete="email"
+                                                value={form.data.email}
+                                                onChange={(e) => { form.setData('email', e.target.value); form.clearErrors('email'); }}
+                                                onFocus={(e) => Object.assign(e.currentTarget.style, focusStyle)}
+                                                onBlur={(e) => Object.assign(e.currentTarget.style, blurStyle(!!form.errors.email))}
+                                                placeholder="name@example.com"
+                                            />
+                                        </div>
                                         {form.errors.email && <p style={errorStyle}>{form.errors.email}</p>}
                                     </div>
                                     <div>
                                         <label style={labelStyle}>رقم الجوال</label>
-                                        <input
-                                            style={inputStyle}
-                                            dir="ltr"
-                                            value={form.data.phone}
-                                            onChange={(e) => { form.setData('phone', e.target.value); form.clearErrors('phone'); }}
-                                            placeholder="+9665XXXXXXXX"
-                                        />
+                                        <div style={{ position: 'relative' }}>
+                                            <i className="fa-solid fa-phone" style={fieldIcon('phone')} />
+                                            <input
+                                                style={inputStyle}
+                                                dir="ltr"
+                                                type="tel"
+                                                inputMode="tel"
+                                                autoComplete="tel"
+                                                value={form.data.phone}
+                                                onChange={(e) => { form.setData('phone', e.target.value); form.clearErrors('phone'); }}
+                                                onFocus={(e) => Object.assign(e.currentTarget.style, focusStyle)}
+                                                onBlur={(e) => Object.assign(e.currentTarget.style, blurStyle(!!form.errors.phone))}
+                                                placeholder="+9665XXXXXXXX"
+                                            />
+                                        </div>
                                         {form.errors.phone && <p style={errorStyle}>{form.errors.phone}</p>}
                                     </div>
                                     <div>
                                         <label style={labelStyle}>الموضوع</label>
-                                        <input
-                                            style={inputStyle}
-                                            value={form.data.subject}
-                                            onChange={(e) => { form.setData('subject', e.target.value); form.clearErrors('subject'); }}
-                                            placeholder="مثال: استفسار عن فعالية قادمة"
-                                        />
+                                        <div style={{ position: 'relative' }}>
+                                            <i className="fa-solid fa-bullhorn" style={fieldIcon('subject')} />
+                                            <input
+                                                style={inputStyle}
+                                                value={form.data.subject}
+                                                onChange={(e) => { form.setData('subject', e.target.value); form.clearErrors('subject'); }}
+                                                onFocus={(e) => Object.assign(e.currentTarget.style, focusStyle)}
+                                                onBlur={(e) => Object.assign(e.currentTarget.style, blurStyle(!!form.errors.subject))}
+                                                placeholder="مثال: استفسار عن فعالية قادمة"
+                                            />
+                                        </div>
                                         {form.errors.subject && <p style={errorStyle}>{form.errors.subject}</p>}
                                     </div>
                                     <div className="sm:col-span-2">
                                         <label style={labelStyle}>الرسالة</label>
-                                        <textarea
-                                            style={{ ...inputStyle, resize: 'vertical', minHeight: 150 }}
-                                            value={form.data.message}
-                                            onChange={(e) => { form.setData('message', e.target.value); form.clearErrors('message'); }}
-                                            placeholder="اكتب رسالتك هنا بتفصيل، وسيرد عليك فريقنا خلال 24 ساعة."
-                                        />
+                                        <div style={{ position: 'relative' }}>
+                                            <i className="fa-solid fa-message" style={{ ...fieldIcon('message'), top: 24 }} />
+                                            <textarea
+                                                style={{ ...inputStyle, resize: 'vertical', minHeight: 150, paddingTop: 16 }}
+                                                value={form.data.message}
+                                                onChange={(e) => { form.setData('message', e.target.value); form.clearErrors('message'); }}
+                                                onFocus={(e) => Object.assign(e.currentTarget.style, focusStyle)}
+                                                onBlur={(e) => Object.assign(e.currentTarget.style, blurStyle(!!form.errors.message))}
+                                                placeholder="اكتب رسالتك هنا بتفصيل، وسيرد عليك فريقنا خلال 24 ساعة."
+                                            />
+                                        </div>
                                         {form.errors.message && <p style={errorStyle}>{form.errors.message}</p>}
                                     </div>
                                     <div className="sm:col-span-2">
@@ -171,8 +237,15 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-5">
                             <h3 className="text-center text-[20px] font-extrabold text-[#134527]">قنوات تواصل مباشرة</h3>
+
                             {channelList.map((c) => (
-                                <a key={c.title} href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined} className="destination-card">
+                                <a
+                                    key={c.title}
+                                    href={c.href}
+                                    target={c.href.startsWith('http') ? '_blank' : undefined}
+                                    rel={c.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                    className="destination-card group"
+                                >
                                     <div className="flex items-center gap-4 p-6">
                                         <span
                                             className="flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-full text-white"
@@ -180,15 +253,76 @@ export default function Contact() {
                                         >
                                             <i className={`${c.icon} text-[20px]`} />
                                         </span>
-                                        <div>
-                                            <h4 className="text-[17px] font-extrabold text-[#134527]">{c.title}</h4>
-                                            <p className="mt-1 text-[13px] leading-[1.7] text-[#6b7280]">{c.desc}</p>
-                                            <span dir="ltr" className="mt-1.5 block text-[14px] font-bold text-[#1f7045]">{c.value}</span>
+                                        <div className="min-w-0 flex-1">
+                                            <div className="flex items-center justify-between gap-2">
+                                                <h4 className="text-[17px] font-extrabold text-[#134527]">{c.title}</h4>
+                                                <i className="fa-solid fa-arrow-left text-[13px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
+                                            </div>
+                                            <p className="mt-1 text-[13px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
+                                            <span dir="ltr" className="mt-1.5 block truncate text-[14px] font-bold text-[#1f7045]">{c.value}</span>
                                         </div>
                                     </div>
                                     <div className="bottom-accent" />
                                 </a>
                             ))}
+
+                            {/* بطاقة ساعات العمل */}
+                            <div className="destination-card">
+                                <div className="flex items-start gap-4 p-6">
+                                    <span
+                                        className="flex h-[56px] w-[56px] shrink-0 items-center justify-center rounded-full text-white"
+                                        style={{ background: 'linear-gradient(135deg, var(--teal), var(--sky))', boxShadow: '0 10px 24px rgba(18,69,87,0.3)' }}
+                                    >
+                                        <i className="fa-solid fa-clock text-[20px]" />
+                                    </span>
+                                    <div className="min-w-0 flex-1">
+                                        <h4 className="text-[17px] font-extrabold text-[#134527]">ساعات العمل</h4>
+                                        <div className="mt-2 space-y-1.5 text-[13px] leading-[1.8] text-[#4b5563]">
+                                            <p className="flex items-center justify-between gap-2">
+                                                <span className="font-semibold text-[#134527]">الأحد – الخميس</span>
+                                                <span dir="ltr" className="font-bold text-[#1f7045]">9ص – 5م</span>
+                                            </p>
+                                            <p className="flex items-center justify-between gap-2">
+                                                <span className="font-semibold text-[#134527]">الجمعة – السبت</span>
+                                                <span className="text-[#4b5563]">إجازة أسبوعية</span>
+                                            </p>
+                                        </div>
+                                        {settings?.address && (
+                                            <p className="mt-3 flex items-start gap-2 border-t border-[#e5e7eb] pt-3 text-[12.5px] leading-[1.7] text-[#4b5563]">
+                                                <i className="fa-solid fa-location-dot mt-0.5 text-[#16a34a]" />
+                                                <span>{address}</span>
+                                            </p>
+                                        )}
+                                    </div>
+                                </div>
+                                <div className="bottom-accent" />
+                            </div>
+
+                            {/* بطاقة الموقع */}
+                            <div className="destination-card">
+                                <div className="p-6">
+                                    <div className="flex items-center gap-3">
+                                        <span
+                                            className="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full text-white"
+                                            style={{ background: 'linear-gradient(135deg, var(--green-light), var(--green))', boxShadow: '0 10px 24px rgba(22,163,74,0.3)' }}
+                                        >
+                                            <i className="fa-solid fa-map-location-dot text-[18px]" />
+                                        </span>
+                                        <h4 className="text-[17px] font-extrabold text-[#134527]">موقعنا</h4>
+                                    </div>
+                                    <p className="mt-3 text-[13.5px] leading-[1.8] text-[#4b5563]">{address}</p>
+                                    <a
+                                        href={`https://maps.google.com/?q=${encodeURIComponent(address)}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:bg-[#16a34a] hover:text-white"
+                                    >
+                                        <i className="fa-solid fa-location-arrow text-[13px]" />
+                                        افتح في خرائط جوجل
+                                    </a>
+                                </div>
+                                <div className="bottom-accent" />
+                            </div>
                         </div>
                     </div>
                 </div>

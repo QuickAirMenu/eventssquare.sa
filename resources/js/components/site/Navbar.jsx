@@ -57,7 +57,7 @@ export default function Navbar() {
                     <li><Link href={route('activities.index')}>الأنشطة</Link></li>
                     <li className="dropdown">
                         <Link href={route('offers.index')}>
-                            الخدمات <span className="dropdown-arrow">▾</span>
+                            العروض والإعلانات <span className="dropdown-arrow">▾</span>
                         </Link>
                         <div className="dropdown-menu">
                             <Link href={route('offers.index')}>الإعلانات</Link>
@@ -131,6 +131,7 @@ export default function Navbar() {
                         )}
                         <Link href={route('activities.index')}>الأنشطة</Link>
                         <Link href={route('offers.index')}>العروض والإعلانات</Link>
+                        <Link href={route('sales')}>المبيعات</Link>
                         <Link href={route('discover')}>استكشفها</Link>
                         <Link href={route('about')}>عن المنصة</Link>
                         <Link href={route('contact')}>تواصل معنا</Link>

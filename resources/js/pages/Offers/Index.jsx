@@ -8,7 +8,9 @@ export default function OffersIndex({ offers }) {
 
     return (
         <>
-            <Head title="العروض والإعلانات" />
+            <Head title="العروض والإعلانات">
+                <meta name="description" content="اكتشف أحدث العروض والخدمات الحصرية في عسير — صفقات وأنشطة تخفيضات في المتناول، وكن أول من يعرف بكل جديد." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">

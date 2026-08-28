@@ -74,7 +74,7 @@ class OfferController extends Controller
             'title_en' => ['nullable', 'string', 'max:190'],
             'slug' => ['nullable', 'string', 'max:190', Rule::unique('offers', 'slug')->ignore($request->route('offer'))],
             'description' => ['nullable', 'string'],
-            'link' => ['nullable', 'url', 'max:190'],
+            'link' => ['nullable', 'url', 'starts_with:http://,https://', 'max:190'],
             'valid_from' => ['nullable', 'date'],
             'valid_until' => ['nullable', 'date', 'after_or_equal:valid_from'],
             'is_active' => ['boolean'],

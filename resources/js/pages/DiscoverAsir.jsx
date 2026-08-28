@@ -11,15 +11,42 @@ const filters = [
     { key: 'heritage', label: 'تاريخية', icon: 'fa-solid fa-landmark' },
 ];
 
-export default function DiscoverAsir({ heritageListings }) {
+// تعيين الفلاتر إلى تصنيفات الوجهات الخمس المعروفة (بـ slug).
+// جبلية ← معالم/منتزهات + مأكولات ومشروبات (أماكن طبيعية وتجارب محلية)
+// ساحلية ← إقامة وتسوق + مأكولات ومشروبات (استجمام وضيافة)
+// تاريخية ← قصور وقرى تراثية + متاحف وأسواق شعبية (تراث وثقافة)
+const FILTER_MAP = {
+    mountain: ['landmarks-parks', 'food-drinks'],
+    coastal: ['stay-shopping', 'food-drinks'],
+    heritage: ['palaces-heritage-villages', 'museums-souks'],
+};
+
+const matchesFilter = (listing, key) => {
+    const cat = listing?.category;
+    const slug = cat?.slug ?? '';
+    const name = cat?.name ?? '';
+    if (FILTER_MAP[key]?.includes(slug)) return true;
+    // fallback مرن على الاسم/الـ slug (محمي بـ optional chaining) لأي تصنيف مستقبلي
+    if (key === 'mountain' && (/جبل|منتزه|طبيع|مرتفع/i.test(name) || /jabal|park|mountain/i.test(slug))) return true;
+    if (key === 'coastal' && (/ساحل|شاطئ/i.test(name) || /coast|beach|sea/i.test(slug))) return true;
+    if (key === 'heritage' && (/تراث|تاريخ|متاحف|قصر|أسواق/i.test(name) || /heritage|histor|museum|qasr/i.test(slug))) return true;
+    return false;
+};
+
+export default function DiscoverAsir({ heritageListings, listings: fullListings }) {
     const [activeFilter, setActiveFilter] = useState('all');
     const pageProps = usePage().props;
 
-    const listings = heritageListings ?? pageProps.heritageListings ?? [];
+    // Wolf يمرر قائمة listings كاملة (بالفئة category) — نعتمدها، مع مرونة عند غيابها
+    const listings = fullListings ?? pageProps.listings ?? heritageListings ?? pageProps.heritageListings ?? [];
+
+    const filtered = activeFilter === 'all' ? listings : listings.filter((l) => matchesFilter(l, activeFilter));
 
     return (
         <>
-            <Head title="استكشف عسير" />
+            <Head title="استكشف عسير">
+                <meta name="description" content="استكشف عسير — جبال وسواحل وتراث في تجربة واحدة. تصفح الوجهات الجبلية والتاريخية والوجهات الساحلية وخطط لرحلتك القادمة." />
+            </Head>
 
             <section className="page-hero">
                 <div className="container">
@@ -44,9 +71,9 @@ export default function DiscoverAsir({ heritageListings }) {
                         ))}
                     </div>
 
-                    {listings.length > 0 ? (
+                    {filtered.length > 0 ? (
                         <div className="card-grid-sm">
-                            {listings.map((listing) => (
+                            {filtered.map((listing) => (
                                 <DestinationCard key={listing.id} listing={listing} />
                             ))}
                         </div>
@@ -55,8 +82,8 @@ export default function DiscoverAsir({ heritageListings }) {
                             <span className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[rgba(22,163,74,0.08)] text-[#16a34a]">
                                 <i className="fa-solid fa-map-location-dot text-3xl" />
                             </span>
-                            <h3 className="text-xl font-extrabold text-[#134527]">لا توجد وجهات بعد</h3>
-                            <p className="mt-2 text-sm text-[#6b7280]">ترقب إضافة وجهات جديدة قريباً</p>
+                            <h3 className="text-xl font-extrabold text-[#134527]">لا توجد وجهات في هذا التصنيف</h3>
+                            <p className="mt-2 text-sm text-[#6b7280]">جرّب اختيار تصنيف آخر أو ترقب إضافة وجهات جديدة قريباً</p>
                         </div>
                     )}
                 </div>

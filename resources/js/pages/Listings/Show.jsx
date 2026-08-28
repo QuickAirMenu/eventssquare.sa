@@ -25,7 +25,7 @@ export default function ListingShow({ listing, related }) {
             <Head title={listing.name} />
 
             <section className="relative h-[420px] overflow-hidden">
-                <Cover src={listing.cover_url} alt={listing.name} className="absolute inset-0 h-full w-full object-cover" />
+                <Cover src={listing.cover_url} alt={listing.name} eager className="absolute inset-0 h-full w-full object-cover" />
                 <div
                     className="absolute inset-0"
                     style={{ background: 'linear-gradient(to top, rgba(13,46,28,0.94) 0%, rgba(13,46,28,0.45) 45%, rgba(13,46,28,0.15) 100%)' }}

@@ -40,7 +40,7 @@ export default function Footer() {
                             <li><Link href={route('home')}>الرئيسية</Link></li>
                             <li><Link href={route('events.index')}>الفعاليات</Link></li>
                             <li><Link href={route('listings.index')}>الوجهات</Link></li>
-                            <li><Link href={route('listings.category', 'مأكولات-ومشروبات')}>المأكولات والمشروبات</Link></li>
+                            <li><Link href={route('listings.category', 'food-drinks')}>المأكولات والمشروبات</Link></li>
                             <li><Link href={route('activities.index')}>أنشطة وتجارب</Link></li>
                         </ul>
                     </div>
