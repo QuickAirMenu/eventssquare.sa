@@ -359,3 +359,48 @@
 - ✅ **Contact.jsx:** حُفظت كل الدوال (selectedPackage من props ثم query، flash، settings الديناميكي phone/whatsapp/email/address)؛ البطاقات الجانبية موحّدة بظل ناعم وhover خفيف، أيقونات دائرية متدرجة، بطاقة النموذج بترويسة أوضح، الحقول من الملف المشترك.
 - ✅ **Bug #008 (تباين النصوص):** باعتبارها مفتوحة — كل النصوص الوصفية في الصفحات الثلاث تعتمد الآن `#4b5563` (≈6.8:1 على الساند) بدل `#6b7280`، بما يحقق ≥4.5:1 المطلوب في WCAG AA.
 - ✅ **fieldStyles.js (جديد):** `inputStyle/labelStyle/errorStyle/fieldIcon/focusStyle/blurStyle/eyeButtonStyle/cardStyle/sideCardStyle/submitBtnStyle/promoStyle/promoMobileStyle/benefitIconStyle/statsBarStyle/flashSuccessStyle/flashErrorStyle` — مصدر أنماط موحّد للصفحات الثلاث.
+
+## تسجيل تشخيصي (2026-08-29): JSON خام في المتصفح + حالة DNS المتقلبة — من جلسة تحقق مباشرة
+
+> دوّن من جلسة المتابعة بعد «التوقيع النهائي». لوحظت ظواهر جديدة على `eventsquare.sa` قبل دفعة `0f3552a` (لم تُنشر بعد — نُشر آخرها `2b315d4`).
+
+### Bug #012 High — المتصفح يعرض JSON خام لصفحات Inertia بدل قالب HTML
+
+**Found by:** المستخدم (فتح `https://eventsquare.sa/register` ورأى JSON نصياً)  
+**Severity:** High  
+**Agent responsible:** Lion + Fox  
+**Status:** Open  
+
+**Description:**
+عند فتح `https://eventsquare.sa/register` من المتصفح مباشرةً يظهر جسم الرد كاملاً كنص JSON خام:
+`{"component":"Auth/Register","props":{...},"url":"/register","version":"07e4f6f9af0b2258a9c21e37cfe7b9e9","sharedProps":[...]}` — بدل صفحة HTML التي يجب أن يبنيها `app.blade.php` (`@inertia`).
+المنطق البرمجي سليم: بدون هيدر `X-Inertia` (زيارة المتصفح الأولى) يعيد `Inertia\Response::toResponse` عرض القالب HTML لا JSON. لذلك السبب على الأرجح في **طبقة كاش كاملة الصفحة** (LiteSpeed على Hostinger — «Server: LiteSpeed» شوهد في فحوص سابقة) التي خزّنت استجابة XHR (JSON) من جلسة Inertia داخلية ثم تُسلّمها لأي زيارة مباشرة لاحقة لأنها **لا تتضمن `Vary: X-Inertia`/`Accept`** — سلوك LiteSpeed التقليدي مع Inertia.
+
+**Steps to reproduce:**
+1. افتح `https://eventsquare.sa/register` في متصفح جديد (بلا تظليل Inertia).
+
+**Expected behavior:**
+HTML كامل من `app.blade.php` (مع `data-page` المحقون وأصول Vite).
+
+**Actual behavior:**
+جسم استجابة JSON الخاص بالصفحة ظاهر كنص في المتصفح (نفس الشكل الذي يستهلكه Inertia لاحقاً عبر XHR).
+
+**Suggested fix (للتحقق أولاً ثم التنفيذ):**
+1. تأكيد التشخيص من رؤوس الرد الحية: `Cache-Control`, `Content-Type`, `X-LiteSpeed-Cache`, `Vary`. إن وُجد `X-LiteSpeed-Cache: HIT` → السبب مؤكد.
+2. تعطيل كاش الصفحة الكاملة لمسار Laravel (`.htaccess` بـ `CacheStoreNoCache on` ضمن `<IfModule LiteSpeed>`، أو في hPanel) أو ضبط هيدر `X-LiteSpeed-Cache-Control: no-cache`/`Cache-Control: private, no-store` على الردود (MIDDLEWARE على `web` يضيفه لردود Inertia HTML وJSON على السواء).
+3. مسح/تطهير كاش LiteSpeed الحالي بعد أي تغيير، ثم إعادة فتح `/register`, `/login`, `/contact-us`.
+4. ملاحظة: `version` في JSON المرصود (`07e4f6f9af0b2258a9c21e37cfe7b9e9`) يُحتسب من الأصول المنشورة — دلالة أن الاستجابة مأخوذة من النظام الحي نفسه وليس صفحة قديمة.
+
+### WS-07 UPDATE — DNS تحرك جزئياً (IPv6 فقط) والوصول من IPv4 لا يزال معطلاً
+
+**Status:** Open (تحديث أدلة 2026-08-29 — يُستبدل بها جدول فحص Cobra السابق حتى تظهر A)
+
+- `nslookup eventsquare.sa 1.1.1.1` يُرجع الآن **عنواني IPv6 فقط** (`2a02:4780:84:7d9:b6ed:5b07:13b:9343` و`2a02:4780:84:b984:dfbb:1d18:604e:8d57` — شبكة Hostinger)، دون أي سجل A. `Resolve-DnsName -Server 1.1.1.1` أرجَع فارغاً لغير الفقرات — تقلب مسجّل.
+- من IPv4 خارجي: `--resolve eventsquare.sa:443:62.72.15.76` → **000** (لا اتصال)، و`https://62.72.15.76` بلا SNI مع `Host: eventsquare.sa` → **404**، و`Host: eventsquare.sa` على :80 → **403 hPanel**. من السيرفر نفسه: `getent hosts eventsquare.sa` → باطل، و`curl https://eventsquare.sa/register` → **000**.
+- الأثر: المستخدم حصل على الصفحة (وشاهد JSON Bug #012) — أي أنه وصل عبر مسار IPv6/بروكسي Hostinger؛ أمّا عملاء IPv4 (والسيرفر نفسه) فلا يَصلون أصلاً. المطلوب لازال كما قرر Cobra: **سجل `A → 62.72.15.76` يفعل** + تأكيد أن vhost شبكة eventsquare.sa معرّف في hPanel + SSL — مع ملاحظة أن الـ IPv6 الموجود وحده لا يكفي للوصول العام المنتظم.
+
+### ملاحظات تكوين (غير مانعة — تُسجَّل)
+
+- `~/public_html` (الدومين الافتراضي عند الحساب) يشير بـ symlink إلى **`domains/eventsquare-sa.com/public_html`** وليس `eventsquare.sa` — للنطاق المدعوم `eventsquare.sa` مسار مستقل (`/home/u546723891/domains/eventsquare.sa/laravel_app`)؛ أُكد وجوده (فشل `ls` سابق كان عابراً).
+- عبر SSH ظهر `HOME=C:Usersuser` (قيمة مشوهة بيئة Windows) رغم أن `~` تمدّد سليماً إلى `/home/u546723891` — ظاهرة البيئة عند الجلسة؛ لا أثر تنفيذي رصد.
+- صفقات/عروض مسجّلة سابقاً: 4 روابط عروض في قاعدة الإنتاج ما زالت تشير إلى `eventsquare-sa.com` (خارج نطاق هذا التقرير — مسجّلة).
