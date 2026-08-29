@@ -1,5 +1,5 @@
 import { Link, router, usePage } from '@inertiajs/react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const ICONS = {
     castle: 'fa-solid fa-chess-rook',
@@ -10,11 +10,16 @@ const ICONS = {
 };
 
 export default function Navbar() {
+    const { url } = usePage();
     const { settings, auth, navigationCategories } = usePage().props;
     const [scrolled, setScrolled] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
     const [mobileSub, setMobileSub] = useState(null);
     const [userOpen, setUserOpen] = useState(false);
+
+    const userMenuRef = useRef(null);
+
+    const isActive = (fn) => (fn(url) ? 'active' : '');
 
     const subcategories = navigationCategories ?? [];
 
@@ -28,7 +33,17 @@ export default function Navbar() {
     useEffect(() => {
         setMobileOpen(false);
         setUserOpen(false);
-    }, [location.pathname]);
+    }, [url]);
+
+    useEffect(() => {
+        const onMouseDown = (e) => {
+            if (userMenuRef.current && !userMenuRef.current.contains(e.target)) {
+                setUserOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', onMouseDown);
+        return () => document.removeEventListener('mousedown', onMouseDown);
+    }, []);
 
     const user = auth?.user;
 
@@ -40,13 +55,16 @@ export default function Navbar() {
                 </Link>
 
                 <ul className="nav-links">
-                    <li><Link href={route('home')} className="active">الرئيسية</Link></li>
-                    <li><Link href={route('events.index')}>الفعاليات</Link></li>
+                    <li><Link href={route('home')} className={isActive((u) => u === '/')}>الرئيسية</Link></li>
+                    <li><Link href={route('events.index')} className={isActive((u) => u.startsWith('/events'))}>الفعاليات</Link></li>
                     <li className="dropdown">
-                        <Link href={route('listings.index')}>
+                        <Link href={route('listings.index')} className={isActive((u) => u.startsWith('/listings') || u.startsWith('/categories'))}>
                             الوجهات <span className="dropdown-arrow">▾</span>
                         </Link>
                         <div className="dropdown-menu">
+                            <Link href={route('listings.index')}>
+                                <i className="fa-solid fa-list-ul text-xs" /> جميع الوجهات
+                            </Link>
                             {subcategories.map((sub) => (
                                 <Link key={sub.id} href={route('listings.category', sub.slug)}>
                                     <i className={`${ICONS[sub.icon] || 'fa-solid fa-location-dot'} text-xs`} /> {sub.name}
@@ -54,9 +72,9 @@ export default function Navbar() {
                             ))}
                         </div>
                     </li>
-                    <li><Link href={route('activities.index')}>الأنشطة</Link></li>
+                    <li><Link href={route('activities.index')} className={isActive((u) => u.startsWith('/activities'))}>الأنشطة</Link></li>
                     <li className="dropdown">
-                        <Link href={route('offers.index')}>
+                        <Link href={route('offers.index')} className={isActive((u) => u.startsWith('/offers'))}>
                             العروض والإعلانات <span className="dropdown-arrow">▾</span>
                         </Link>
                         <div className="dropdown-menu">
@@ -64,18 +82,17 @@ export default function Navbar() {
                             <Link href={route('sales')}>المبيعات</Link>
                         </div>
                     </li>
-                    <li><Link href={route('discover')}>استكشفها</Link></li>
-                    <li><Link href={route('about')}>عن المنصة</Link></li>
-                    <li><Link href={route('contact')}>تواصل معنا</Link></li>
+                    <li><Link href={route('discover')} className={isActive((u) => u.startsWith('/discover'))}>استكشفها</Link></li>
+                    <li><Link href={route('about')} className={isActive((u) => u === '/about')}>عن المنصة</Link></li>
+                    <li><Link href={route('contact')} className={isActive((u) => u === '/contact-us')}>تواصل معنا</Link></li>
                 </ul>
 
                 <div className="nav-actions">
-                    <div className="dropdown">
+                    <div className="dropdown" ref={userMenuRef}>
                         <button
                             className="avatar-btn"
                             title="حسابي"
                             onClick={() => setUserOpen((v) => !v)}
-                            onBlur={() => setTimeout(() => setUserOpen(false), 150)}
                         >
                             <div className="avatar-circle">
                                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -116,8 +133,8 @@ export default function Navbar() {
             {mobileOpen && (
                 <div className="container">
                     <div className="mobile-menu open">
-                        <Link href={route('home')}>الرئيسية</Link>
-                        <Link href={route('events.index')}>الفعاليات</Link>
+                        <Link href={route('home')} className={isActive((u) => u === '/')}>الرئيسية</Link>
+                        <Link href={route('events.index')} className={isActive((u) => u.startsWith('/events'))}>الفعاليات</Link>
                         <button className="mobile-drop-title" onClick={() => setMobileSub(mobileSub === 'dest' ? null : 'dest')}>
                             الوجهات <span>▾</span>
                         </button>
@@ -129,12 +146,12 @@ export default function Navbar() {
                                 ))}
                             </div>
                         )}
-                        <Link href={route('activities.index')}>الأنشطة</Link>
-                        <Link href={route('offers.index')}>العروض والإعلانات</Link>
-                        <Link href={route('sales')}>المبيعات</Link>
-                        <Link href={route('discover')}>استكشفها</Link>
-                        <Link href={route('about')}>عن المنصة</Link>
-                        <Link href={route('contact')}>تواصل معنا</Link>
+                        <Link href={route('activities.index')} className={isActive((u) => u.startsWith('/activities'))}>الأنشطة</Link>
+                        <Link href={route('offers.index')} className={isActive((u) => u.startsWith('/offers'))}>العروض والإعلانات</Link>
+                        <Link href={route('sales')} className={isActive((u) => u === '/sales')}>المبيعات</Link>
+                        <Link href={route('discover')} className={isActive((u) => u.startsWith('/discover'))}>استكشفها</Link>
+                        <Link href={route('about')} className={isActive((u) => u === '/about')}>عن المنصة</Link>
+                        <Link href={route('contact')} className={isActive((u) => u === '/contact-us')}>تواصل معنا</Link>
                         <div className="mobile-actions">
                             {user ? (
                                 <button className="btn-login" style={{ width: '100%' }} onClick={() => router.post(route('logout'))}>

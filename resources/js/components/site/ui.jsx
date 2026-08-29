@@ -26,8 +26,8 @@ export function Cover({ src, alt, className = '', fallbackIcon = 'fa-solid fa-mo
         return <img src={src} alt={alt || ''} loading={eager ? 'eager' : 'lazy'} className={className} />;
     }
     return (
-        <div className={`cover-fallback ${className}`}>
-            <i className={fallbackIcon} style={{ fontSize: 42, opacity: 0.9 }} />
+        <div className={`cover-fallback ${className}`} role="img" aria-label={alt || 'صورة'}>
+            <i className={fallbackIcon} style={{ fontSize: 42, opacity: 0.9 }} aria-hidden="true" />
         </div>
     );
 }

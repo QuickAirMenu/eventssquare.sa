@@ -21,10 +21,10 @@ function RowSlider({ items, render }) {
             </div>
             <div className="slider-nav">
                 <button type="button" className="slider-btn" onClick={() => move(-1)}>
-                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" /></svg>
+                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
                 </button>
                 <button type="button" className="slider-btn" onClick={() => move(1)}>
-                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
+                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" /></svg>
                 </button>
             </div>
         </div>
@@ -46,6 +46,7 @@ export default function Home({
     const [tIndex, setTIndex] = useState(0);
     const [nlEmail, setNlEmail] = useState('');
     const [nlDone, setNlDone] = useState(false);
+    const [nlError, setNlError] = useState(null);
 
     const heroSlides = [
         {
@@ -126,10 +127,14 @@ export default function Home({
 
     const subscribe = (e) => {
         e.preventDefault();
+        setNlError(null);
         router.post(
-            route('contact.store'),
-            { name: 'مشترك النشرة', subject: 'اشتراك النشرة', message: 'اشتراك في النشرة البريدية', email: nlEmail },
-            { onSuccess: () => setNlDone(true) }
+            route('newsletter.subscribe'),
+            { email: nlEmail },
+            {
+                onSuccess: () => setNlDone(true),
+                onError: (errors) => setNlError(errors?.email || 'حدث خطأ، حاول مرة أخرى'),
+            }
         );
     };
 
@@ -139,6 +144,7 @@ export default function Home({
                 <meta name="description" content="اكتشف عسير مع ساحة الفعاليات — وجهات سياحية وفعاليات ومهرجانات وعروض من أبها إلى جبال المنطقة وسواحلها في مكان واحد." />
             </Head>
 
+            <div className="home-page">
             <section className="hero" id="home">
                 {heroSlides.map((s, i) => (
                     <div
@@ -338,14 +344,14 @@ export default function Home({
                                     className="slider-btn"
                                     onClick={() => setTIndex((i) => Math.max(0, i - 1))}
                                 >
-                                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" /></svg>
+                                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
                                 </button>
                                 <button
                                     type="button"
                                     className="slider-btn"
                                     onClick={() => setTIndex((i) => Math.min(testimonials.length - 1, i + 1))}
                                 >
-                                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
+                                    <svg fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" /></svg>
                                 </button>
                             </div>
                         </div>
@@ -370,14 +376,22 @@ export default function Home({
                                     />
                                     <button type="submit" className="btn-primary shimmer">اشترك الآن</button>
                                 </form>
-                                <div className="nl-success" style={{ display: nlDone ? 'block' : 'none' }}>
-                                    ✓ تم الاشتراك بنجاح، شكراً لانضمامك!
-                                </div>
+                                {nlError && (
+                                    <div className="nl-error" style={{ color: 'var(--red)', fontSize: '0.85rem', marginTop: '0.6rem' }}>
+                                        {nlError}
+                                    </div>
+                                )}
+                                {nlDone && (
+                                    <div className="nl-success">
+                                        ✓ تم الاشتراك بنجاح، شكراً لانضمامك!
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>
                 </section>
             )}
+            </div>
         </>
     );
 }

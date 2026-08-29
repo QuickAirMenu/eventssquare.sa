@@ -15,6 +15,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
@@ -38,6 +39,10 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/sales', [PageController::class, 'sales'])->name('sales');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact-us', [ContactController::class, 'store'])->middleware('throttle:3,10')->name('contact.store');
+
+Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
+Route::get('/terms', [PageController::class, 'terms'])->name('terms');
+Route::post('/newsletter/subscribe', [NewsletterController::class, 'store'])->middleware('throttle:3,10')->name('newsletter.subscribe');
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'create'])->name('login');

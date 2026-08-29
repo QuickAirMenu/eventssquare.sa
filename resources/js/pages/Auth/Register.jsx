@@ -167,10 +167,11 @@ export default function Register() {
 
                                     <form onSubmit={submit} className="flex flex-col gap-6">
                                         <div>
-                                            <label style={labelStyle}>الاسم الكامل</label>
+                                            <label htmlFor="register-name" style={labelStyle}>الاسم الكامل</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-user" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="register-name"
                                                     style={inputStyle}
                                                     type="text"
                                                     autoComplete="name"
@@ -186,10 +187,11 @@ export default function Register() {
                                         </div>
 
                                         <div>
-                                            <label style={labelStyle}>البريد الإلكتروني</label>
+                                            <label htmlFor="register-email" style={labelStyle}>البريد الإلكتروني</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-envelope" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="register-email"
                                                     style={inputStyle}
                                                     dir="ltr"
                                                     type="email"
@@ -205,10 +207,11 @@ export default function Register() {
                                         </div>
 
                                         <div>
-                                            <label style={labelStyle}>كلمة المرور</label>
+                                            <label htmlFor="register-password" style={labelStyle}>كلمة المرور</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-lock" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="register-password"
                                                     style={{ ...inputStyle, paddingInlineEnd: 52 }}
                                                     type={showPassword ? 'text' : 'password'}
                                                     autoComplete="new-password"
@@ -248,10 +251,11 @@ export default function Register() {
                                         </div>
 
                                         <div>
-                                            <label style={labelStyle}>تأكيد كلمة المرور</label>
+                                            <label htmlFor="register-confirm" style={labelStyle}>تأكيد كلمة المرور</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-lock" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="register-confirm"
                                                     style={{ ...inputStyle, paddingInlineEnd: 52 }}
                                                     type={showConfirm ? 'text' : 'password'}
                                                     autoComplete="new-password"
@@ -298,7 +302,15 @@ export default function Register() {
                                     </form>
 
                                     <p className="mt-5 text-center text-[14px] font-medium leading-[1.9] text-[#374151]">
-                                        بالتسجيل في ساحة الفعاليات، توافق على شروط الاستخدام وسياسة الخصوصية.
+                                        بالتسجيل في ساحة الفعاليات، توافق على{' '}
+                                        <Link href={route('terms')} className="font-bold text-[#1f7045] hover:text-[#16a34a]">
+                                            شروط الاستخدام
+                                        </Link>{' '}
+                                        و{' '}
+                                        <Link href={route('privacy')} className="font-bold text-[#1f7045] hover:text-[#16a34a]">
+                                            سياسة الخصوصية
+                                        </Link>
+                                        .
                                     </p>
 
                                     <p className="mt-4 text-center text-[15px] text-[#4b5563]">

@@ -38,7 +38,7 @@ export default function EventCard({ event }) {
                             <span className="feat-value block">{date}</span>
                         </div>
                     </div>
-                    <div className="card-feature nth2">
+                    <div className="card-feature">
                         <span className="feat-icon"><i className="fa-solid fa-city text-[13px]" /></span>
                         <div>
                             <span className="feat-label">المدينة</span>

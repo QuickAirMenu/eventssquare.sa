@@ -147,10 +147,11 @@ export default function Login() {
 
                                     <form onSubmit={submit} className="flex flex-col gap-6">
                                         <div>
-                                            <label style={labelStyle}>البريد الإلكتروني</label>
+                                            <label htmlFor="login-email" style={labelStyle}>البريد الإلكتروني</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-envelope" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="login-email"
                                                     style={inputStyle}
                                                     dir="ltr"
                                                     type="email"
@@ -167,10 +168,11 @@ export default function Login() {
                                         </div>
 
                                         <div>
-                                            <label style={labelStyle}>كلمة المرور</label>
+                                            <label htmlFor="login-password" style={labelStyle}>كلمة المرور</label>
                                             <div style={{ position: 'relative' }}>
                                                 <i className="fa-solid fa-lock" aria-hidden="true" style={fieldIcon()} />
                                                 <input
+                                                    id="login-password"
                                                     style={{ ...inputStyle, paddingInlineEnd: 52 }}
                                                     type={showPassword ? 'text' : 'password'}
                                                     autoComplete="current-password"
@@ -194,8 +196,9 @@ export default function Login() {
                                         </div>
 
                                         <div className="flex items-center justify-between">
-                                            <label className="flex cursor-pointer items-center gap-2.5 rounded-lg py-2 text-[14px] font-medium text-[#4b5563]">
+                                            <label htmlFor="login-remember" className="flex cursor-pointer items-center gap-2.5 rounded-lg py-2 text-[14px] font-medium text-[#4b5563]">
                                                 <input
+                                                    id="login-remember"
                                                     type="checkbox"
                                                     checked={form.data.remember}
                                                     onChange={(e) => form.setData('remember', e.target.checked)}
@@ -203,9 +206,12 @@ export default function Login() {
                                                 />
                                                 تذكرني
                                             </label>
-                                            <span
+                                            <button
+                                                type="button"
                                                 className="inline-flex items-center gap-2 text-[13.5px] text-[#4b5563]"
+                                                style={{ cursor: 'default', background: 'none', border: 'none', padding: 0 }}
                                                 title="استعادة كلمة المرور متاحة قريباً — راسلنا عبر واتساب إن احتجت الدخول الآن."
+                                                aria-disabled="true"
                                             >
                                                 نسيت كلمة المرور؟
                                                 <span
@@ -214,7 +220,7 @@ export default function Login() {
                                                 >
                                                     قريباً
                                                 </span>
-                                            </span>
+                                            </button>
                                         </div>
 
                                         <button

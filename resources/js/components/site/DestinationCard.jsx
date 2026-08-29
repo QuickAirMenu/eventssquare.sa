@@ -11,8 +11,8 @@ const CAT_ICONS = {
 
 export default function DestinationCard({ listing, variant = '' }) {
     const features = [];
-    if (listing.city?.name) features.push({ icon: 'fa-solid fa-location-dot', label: 'المدينة', value: listing.city.name, cls: '' });
-    if (listing.category?.name) features.push({ icon: CAT_ICONS[listing.category.icon] || 'fa-solid fa-tag', label: 'الفئة', value: listing.category.name, cls: 'nth2' });
+    if (listing.city?.name) features.push({ icon: 'fa-solid fa-location-dot', label: 'المدينة', value: listing.city.name });
+    if (listing.category?.name) features.push({ icon: CAT_ICONS[listing.category.icon] || 'fa-solid fa-tag', label: 'الفئة', value: listing.category.name });
 
     return (
         <Link
@@ -43,8 +43,8 @@ export default function DestinationCard({ listing, variant = '' }) {
 
                 {features.length > 0 && (
                     <div className="card-features">
-                        {features.map((f, i) => (
-                            <div key={i} className={`card-feature ${f.cls}`}>
+                        {features.map((f) => (
+                            <div key={f.label} className="card-feature">
                                 <span className="feat-icon"><i className={`${f.icon} text-[13px]`} /></span>
                                 <div>
                                     <span className="feat-label">{f.label}</span>

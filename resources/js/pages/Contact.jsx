@@ -128,10 +128,11 @@ export default function Contact() {
 
                                 <form onSubmit={submit} className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-2">
                                     <div>
-                                        <label style={labelStyle}>الاسم الكامل</label>
+                                        <label htmlFor="contact-name" style={labelStyle}>الاسم الكامل</label>
                                         <div style={{ position: 'relative' }}>
                                             <i className="fa-solid fa-user" aria-hidden="true" style={fieldIcon()} />
                                             <input
+                                                id="contact-name"
                                                 style={inputStyle}
                                                 autoComplete="name"
                                                 value={form.data.name}
@@ -144,10 +145,11 @@ export default function Contact() {
                                         {form.errors.name && <p style={errorStyle}>{form.errors.name}</p>}
                                     </div>
                                     <div>
-                                        <label style={labelStyle}>البريد الإلكتروني</label>
+                                        <label htmlFor="contact-email" style={labelStyle}>البريد الإلكتروني</label>
                                         <div style={{ position: 'relative' }}>
                                             <i className="fa-solid fa-envelope" aria-hidden="true" style={fieldIcon()} />
                                             <input
+                                                id="contact-email"
                                                 style={inputStyle}
                                                 dir="ltr"
                                                 type="email"
@@ -162,10 +164,11 @@ export default function Contact() {
                                         {form.errors.email && <p style={errorStyle}>{form.errors.email}</p>}
                                     </div>
                                     <div>
-                                        <label style={labelStyle}>رقم الجوال</label>
+                                        <label htmlFor="contact-phone" style={labelStyle}>رقم الجوال</label>
                                         <div style={{ position: 'relative' }}>
                                             <i className="fa-solid fa-phone" aria-hidden="true" style={fieldIcon()} />
                                             <input
+                                                id="contact-phone"
                                                 style={inputStyle}
                                                 dir="ltr"
                                                 type="tel"
@@ -181,10 +184,11 @@ export default function Contact() {
                                         {form.errors.phone && <p style={errorStyle}>{form.errors.phone}</p>}
                                     </div>
                                     <div>
-                                        <label style={labelStyle}>الموضوع</label>
+                                        <label htmlFor="contact-subject" style={labelStyle}>الموضوع</label>
                                         <div style={{ position: 'relative' }}>
                                             <i className="fa-solid fa-bullhorn" aria-hidden="true" style={fieldIcon()} />
                                             <input
+                                                id="contact-subject"
                                                 style={inputStyle}
                                                 value={form.data.subject}
                                                 onChange={(e) => { form.setData('subject', e.target.value); form.clearErrors('subject'); }}
@@ -196,10 +200,11 @@ export default function Contact() {
                                         {form.errors.subject && <p style={errorStyle}>{form.errors.subject}</p>}
                                     </div>
                                     <div className="sm:col-span-2">
-                                        <label style={labelStyle}>الرسالة</label>
+                                        <label htmlFor="contact-message" style={labelStyle}>الرسالة</label>
                                         <div style={{ position: 'relative' }}>
                                             <i className="fa-solid fa-message" aria-hidden="true" style={{ ...fieldIcon(), top: 24 }} />
                                             <textarea
+                                                id="contact-message"
                                                 style={{ ...inputStyle, resize: 'vertical', minHeight: 150, paddingTop: 16 }}
                                                 value={form.data.message}
                                                 onChange={(e) => { form.setData('message', e.target.value); form.clearErrors('message'); }}

@@ -92,8 +92,8 @@ export default function Footer() {
                     </div>
                     <p>جميع الحقوق محفوظة لصالح شركة {name} {new Date().getFullYear()} ©</p>
                     <div className="legal">
-                        <a href="#">السياسة والخصوصية</a>
-                        <a href="#">الشروط والأحكام</a>
+                        <Link href={route('privacy')}>السياسة والخصوصية</Link>
+                        <Link href={route('terms')}>الشروط والأحكام</Link>
                     </div>
                 </div>
             </div>

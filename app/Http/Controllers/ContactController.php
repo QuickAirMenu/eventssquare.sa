@@ -21,10 +21,6 @@ class ContactController extends Controller
 
         Contact::create($validated);
 
-        if (($validated['subject'] ?? '') === 'اشتراك النشرة') {
-            return back()->with('success', 'تم الاشتراك في النشرة بنجاح، شكراً لانضمامك!');
-        }
-
         return back()->with('success', 'تم استلام رسالتك بنجاح، سنتواصل معك قريباً.');
     }
 }

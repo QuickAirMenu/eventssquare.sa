@@ -26,4 +26,14 @@ class PageController extends Controller
     {
         return Inertia::render('Sales');
     }
+
+    public function privacy(): Response
+    {
+        return Inertia::render('Legal/Privacy');
+    }
+
+    public function terms(): Response
+    {
+        return Inertia::render('Legal/Terms');
+    }
 }

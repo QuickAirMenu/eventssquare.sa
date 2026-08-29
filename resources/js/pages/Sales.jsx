@@ -1,6 +1,7 @@
 import { Head, Link, useForm, usePage } from '@inertiajs/react';
 import AppLayout from '@/layouts/AppLayout';
 import { SectionHeader } from '@/components/site/ui';
+import { inputStyle, labelStyle, errorStyle } from '@/components/site/fieldStyles';
 
 const packages = [
     {
@@ -51,21 +52,6 @@ const benefits = [
     { icon: 'fa-chart-column', title: 'تقارير واضحة', desc: 'تعرف عدد من شاهد إعلانك ومن تواصل معك، فتقيس أثر كل ريال تنفقه.' },
     { icon: 'fa-headset', title: 'دعم قريب', desc: 'فريقنا يرد على استفساراتك خلال 24 ساعة، ويرافقك من أول إعلان حتى قياس نتائجه.' },
 ];
-
-const inputStyle = {
-    width: '100%',
-    border: '2px solid #e5e7eb',
-    borderRadius: 14,
-    padding: '13px 16px',
-    fontSize: 15,
-    fontFamily: 'inherit',
-    color: '#1f2937',
-    background: '#fff',
-    outline: 'none',
-    transition: 'border-color 0.3s',
-};
-
-const errorStyle = { marginTop: 5, fontSize: 12.5, color: '#D92315' };
 
 export default function Sales() {
     const { settings } = usePage().props;
@@ -196,11 +182,11 @@ export default function Sales() {
 
                             <form onSubmit={submitQuote} className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                                 <div>
-                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                    <label style={labelStyle}>
                                         الاسم
                                     </label>
                                     <input
-                                        style={inputStyle}
+                                        style={{ ...inputStyle, paddingInlineStart: 16, paddingBlock: 13 }}
                                         value={quoteForm.data.name}
                                         onChange={(e) => { quoteForm.setData('name', e.target.value); quoteForm.clearErrors('name'); }}
                                         placeholder="اسمك الكامل"
@@ -208,11 +194,11 @@ export default function Sales() {
                                     {quoteForm.errors.name && <p style={errorStyle}>{quoteForm.errors.name}</p>}
                                 </div>
                                 <div>
-                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                    <label style={labelStyle}>
                                         رقم الجوال
                                     </label>
                                     <input
-                                        style={inputStyle}
+                                        style={{ ...inputStyle, paddingInlineStart: 16, paddingBlock: 13 }}
                                         dir="ltr"
                                         type="tel"
                                         inputMode="tel"
@@ -223,11 +209,11 @@ export default function Sales() {
                                     {quoteForm.errors.phone && <p style={errorStyle}>{quoteForm.errors.phone}</p>}
                                 </div>
                                 <div>
-                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                    <label style={labelStyle}>
                                         الباقة المطلوبة
                                     </label>
                                     <select
-                                        style={{ ...inputStyle, appearance: 'auto' }}
+                                        style={{ ...inputStyle, appearance: 'auto', paddingInlineStart: 16, paddingBlock: 13 }}
                                         value={quoteForm.data.package}
                                         onChange={(e) => { quoteForm.setData('package', e.target.value); quoteForm.clearErrors('package'); }}
                                     >
@@ -239,11 +225,11 @@ export default function Sales() {
                                     {quoteForm.errors.package && <p style={errorStyle}>{quoteForm.errors.package}</p>}
                                 </div>
                                 <div className="sm:col-span-2">
-                                    <label style={{ display: 'block', marginBottom: 7, fontSize: 14, fontWeight: 600, color: '#134527' }}>
+                                    <label style={labelStyle}>
                                         رسالتك
                                     </label>
                                     <textarea
-                                        style={{ ...inputStyle, resize: 'vertical', minHeight: 110 }}
+                                        style={{ ...inputStyle, resize: 'vertical', minHeight: 110, paddingInlineStart: 16, paddingBlock: 13 }}
                                         value={quoteForm.data.message}
                                         onChange={(e) => { quoteForm.setData('message', e.target.value); quoteForm.clearErrors('message'); }}
                                         placeholder="حدثنا عن نشاطك واحتياجاتك، لنجهّز لك عرضاً مخصصاً."
