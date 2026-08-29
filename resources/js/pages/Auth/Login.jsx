@@ -47,7 +47,7 @@ export default function Login() {
 
             <section className="section sand" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
                 <div className="container">
-                    <div className="mx-auto w-full max-w-[920px]">
+                    <div className="mx-auto w-full max-w-[1040px]">
                         <div style={cardStyle}>
                             <div className="grid lg:grid-cols-2">
                                 {/* العمود الترويجي — شاشات لوحية فما فوق */}
@@ -63,11 +63,11 @@ export default function Login() {
                                     <div className="relative">
                                         <img src="/img/logo-white.png" alt="ساحة الفعاليات" className="h-[50px] w-auto" />
                                         <div className="mt-9">
-                                            <h2 className="text-[27px] font-extrabold leading-[1.6]">
+                                            <h2 className="text-[31px] font-extrabold leading-[1.6]">
                                                 مرحباً بعودتك…
                                                 <span className="block text-[#fcd34d]">عسير بانتظارك</span>
                                             </h2>
-                                            <p className="mt-3 text-[13.5px] leading-[1.9] text-white/70">
+                                            <p className="mt-3 text-[15px] leading-[1.9] text-white/80">
                                                 سجّل دخولك لتجد فعالياتك ووجهاتك وعروضك في مكان واحد.
                                             </p>
                                         </div>
@@ -82,7 +82,7 @@ export default function Login() {
                                                 >
                                                     <i className={b.icon} aria-hidden="true" />
                                                 </span>
-                                                <span className="text-[14.5px] font-medium leading-[1.7] text-white/90">{b.text}</span>
+                                                <span className="text-[16px] font-medium leading-[1.8] text-white/90">{b.text}</span>
                                             </div>
                                         ))}
                                     </div>
@@ -91,12 +91,12 @@ export default function Login() {
                                         <div className="grid grid-cols-3 divide-x divide-white/15 p-1" style={statsBarStyle}>
                                             {stats.map((s) => (
                                                 <div key={s.label} className="rounded-2xl px-2 py-3 text-center">
-                                                    <p className="text-[21px] font-extrabold leading-none text-white">{s.value}</p>
-                                                    <p className="mt-1.5 text-[11px] font-medium text-white/70">{s.label}</p>
+                                                    <p className="text-[22px] font-extrabold leading-none text-white">{s.value}</p>
+                                                    <p className="mt-1.5 text-[12.5px] font-medium text-white/80">{s.label}</p>
                                                 </div>
                                             ))}
                                         </div>
-                                        <p className="mt-5 flex items-center justify-center gap-2 text-[12px] text-white/60">
+                                        <p className="mt-5 flex items-center justify-center gap-2 text-[13px] text-white/75">
                                             <i className="fa-solid fa-shield-halved text-[#fcd34d]" aria-hidden="true" />
                                             منصة عسير الأولى للفعاليات والوجهات — بياناتك محمية بالكامل
                                         </p>
@@ -117,8 +117,8 @@ export default function Login() {
                                 {/* عمود النموذج */}
                                 <div className="px-7 pb-10 pt-10 sm:px-10">
                                     <div className="mb-8 text-center lg:text-right">
-                                        <h1 className="text-[26px] font-extrabold text-[#134527]">أهلاً بعودتك</h1>
-                                        <p className="mt-2 text-[13.5px] leading-[1.9] text-[#4b5563]">
+                                        <h1 className="text-[30px] font-extrabold text-[#134527]">أهلاً بعودتك</h1>
+                                        <p className="mt-2 text-[15px] leading-[1.9] text-[#4b5563]">
                                             أكمل من حيث توقفت — فعاليات عسير ووجهاتها بانتظارك.
                                         </p>
                                     </div>
@@ -145,7 +145,7 @@ export default function Login() {
                                         </div>
                                     )}
 
-                                    <form onSubmit={submit} className="flex flex-col gap-5">
+                                    <form onSubmit={submit} className="flex flex-col gap-6">
                                         <div>
                                             <label style={labelStyle}>البريد الإلكتروني</label>
                                             <div style={{ position: 'relative' }}>
@@ -194,7 +194,7 @@ export default function Login() {
                                         </div>
 
                                         <div className="flex items-center justify-between">
-                                            <label className="flex cursor-pointer items-center gap-2.5 rounded-lg py-2 text-[13px] font-medium text-[#4b5563]">
+                                            <label className="flex cursor-pointer items-center gap-2.5 rounded-lg py-2 text-[14px] font-medium text-[#4b5563]">
                                                 <input
                                                     type="checkbox"
                                                     checked={form.data.remember}
@@ -204,7 +204,7 @@ export default function Login() {
                                                 تذكرني
                                             </label>
                                             <span
-                                                className="inline-flex items-center gap-2 text-[12.5px] text-[#4b5563]"
+                                                className="inline-flex items-center gap-2 text-[13.5px] text-[#4b5563]"
                                                 title="استعادة كلمة المرور متاحة قريباً — راسلنا عبر واتساب إن احتجت الدخول الآن."
                                             >
                                                 نسيت كلمة المرور؟
@@ -234,14 +234,14 @@ export default function Login() {
                                         </button>
                                     </form>
 
-                                    <p className="mt-6 text-center text-[14px] text-[#4b5563]">
+                                    <p className="mt-6 text-center text-[15px] text-[#4b5563]">
                                         ليس لديك حساب؟{' '}
                                         <Link href={route('register')} className="font-bold text-[#1f7045] hover:text-[#16a34a]">
                                             سجّل الآن
                                         </Link>
                                     </p>
 
-                                    <p className="mt-4 flex items-center justify-center gap-2 text-[12px] text-[#4b5563]">
+                                    <p className="mt-4 flex items-center justify-center gap-2 text-[13.5px] text-[#4b5563]">
                                         <i className="fa-solid fa-lock text-[11px] text-[#16a34a]" aria-hidden="true" />
                                         خصوصية بياناتك محمية بالكامل
                                     </p>

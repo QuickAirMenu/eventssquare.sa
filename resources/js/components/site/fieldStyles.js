@@ -11,10 +11,10 @@ export const inputStyle = {
     width: '100%',
     border: '2px solid #e5e7eb',
     borderRadius: 14,
-    paddingBlock: 13,
+    paddingBlock: 16,
     paddingInline: 16,
-    paddingInlineStart: 46,
-    fontSize: 15,
+    paddingInlineStart: 48,
+    fontSize: 16,
     fontFamily: 'inherit',
     color: '#1f2937',
     background: '#fff',
@@ -24,26 +24,26 @@ export const inputStyle = {
 
 export const labelStyle = {
     display: 'block',
-    marginBottom: 7,
-    fontSize: 14,
+    marginBottom: 9,
+    fontSize: 15,
     fontWeight: 600,
     color: '#134527',
 };
 
 export const errorStyle = {
-    marginTop: 5,
-    fontSize: 12.5,
+    marginTop: 6,
+    fontSize: 13.5,
     color: '#D92315',
 };
 
 /** أيقونة داخل الحقل — تدعم RTL عبر insetInlineStart */
 export const fieldIcon = () => ({
     position: 'absolute',
-    insetInlineStart: 16,
+    insetInlineStart: 17,
     top: '50%',
     transform: 'translateY(-50%)',
     color: '#9ca3af',
-    fontSize: 14,
+    fontSize: 15,
     pointerEvents: 'none',
 });
 
@@ -100,8 +100,8 @@ export const submitBtnStyle = {
     background: 'linear-gradient(135deg, #16a34a 0%, #134527 100%)',
     boxShadow: '0 14px 30px -10px rgba(22,163,74,0.5)',
     borderRadius: 16,
-    paddingBlock: 14,
-    fontSize: 16,
+    paddingBlock: 16,
+    fontSize: 17,
     transition: 'transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease',
 };
 

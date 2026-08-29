@@ -97,12 +97,12 @@ export default function Contact() {
 
             <section className="section">
                 <div className="container">
-                    <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_380px]">
+                    <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr_420px]">
                         {/* بطاقة النموذج */}
                         <div style={cardStyle}>
-                            <div className="p-7 sm:p-9">
-                                <h2 className="text-[22px] font-extrabold text-[#134527]">أرسل رسالتك</h2>
-                                <p className="mt-2 text-[13.5px] leading-[1.8] text-[#4b5563]">
+                            <div className="p-8 sm:p-10">
+                                <h2 className="text-[24px] font-extrabold text-[#134527]">أرسل رسالتك</h2>
+                                <p className="mt-2 text-[15px] leading-[1.8] text-[#4b5563]">
                                     سيصلنا استفسارك فوراً، وسيرد عليك الفريق خلال 24 ساعة.
                                 </p>
 
@@ -126,7 +126,7 @@ export default function Contact() {
                                     </div>
                                 )}
 
-                                <form onSubmit={submit} className="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
+                                <form onSubmit={submit} className="mt-7 grid grid-cols-1 gap-6 sm:grid-cols-2">
                                     <div>
                                         <label style={labelStyle}>الاسم الكامل</label>
                                         <div style={{ position: 'relative' }}>
@@ -235,8 +235,8 @@ export default function Contact() {
                         {/* العمود الجانبي */}
                         <div className="flex flex-col gap-5">
                             <div className="text-center">
-                                <p className="text-[12.5px] font-bold text-[#16a34a]">فريقنا جاهز للإجابة</p>
-                                <h3 className="mt-1 text-[20px] font-extrabold text-[#134527]">قنوات تواصل مباشرة</h3>
+                                <p className="text-[13px] font-bold text-[#16a34a]">فريقنا جاهز للإجابة</p>
+                                <h3 className="mt-1 text-[22px] font-extrabold text-[#134527]">قنوات تواصل مباشرة</h3>
                             </div>
 
                             {channelList.map((c) => (
@@ -248,7 +248,7 @@ export default function Contact() {
                                     className={`group ${sideShadow} ${sideHover} focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]`}
                                     style={sideCardStyle}
                                 >
-                                    <div className="flex items-center gap-4 p-5">
+                                    <div className="flex items-center gap-4 p-6">
                                         <span
                                             className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
                                             style={{ background: 'linear-gradient(135deg, var(--green-light), var(--sky))', boxShadow: '0 10px 22px rgba(22,163,74,0.28)' }}
@@ -257,11 +257,11 @@ export default function Contact() {
                                         </span>
                                         <div className="min-w-0 flex-1">
                                             <div className="flex items-center justify-between gap-2">
-                                                <h4 className="text-[16px] font-extrabold text-[#134527]">{c.title}</h4>
+                                                <h4 className="text-[17px] font-extrabold text-[#134527]">{c.title}</h4>
                                                 <i aria-hidden="true" className="fa-solid fa-arrow-left text-[12px] text-[#16a34a] transition-transform duration-300 group-hover:-translate-x-1" />
                                             </div>
-                                            <p className="mt-1 text-[12.5px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
-                                            <span dir="ltr" className="mt-1.5 block truncate text-[13.5px] font-bold text-[#1f7045]">{c.value}</span>
+                                            <p className="mt-1 text-[13.5px] leading-[1.7] text-[#4b5563]">{c.desc}</p>
+                                            <span dir="ltr" className="mt-1.5 block truncate text-[14px] font-bold text-[#1f7045]">{c.value}</span>
                                         </div>
                                     </div>
                                     <div className="bottom-accent" />
@@ -270,7 +270,7 @@ export default function Contact() {
 
                             {/* بطاقة ساعات العمل */}
                             <div className={`${sideShadow} ${sideHover}`} style={sideCardStyle}>
-                                <div className="flex items-start gap-4 p-5">
+                                <div className="flex items-start gap-4 p-6">
                                     <span
                                         className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-white"
                                         style={{ background: 'linear-gradient(135deg, var(--teal), var(--sky))', boxShadow: '0 10px 22px rgba(18,69,87,0.28)' }}
@@ -278,8 +278,8 @@ export default function Contact() {
                                         <i aria-hidden="true" className="fa-solid fa-clock text-[19px]" />
                                     </span>
                                     <div className="min-w-0 flex-1">
-                                        <h4 className="text-[16px] font-extrabold text-[#134527]">ساعات العمل</h4>
-                                        <div className="mt-2 space-y-1.5 text-[12.5px] leading-[1.8] text-[#4b5563]">
+                                        <h4 className="text-[17px] font-extrabold text-[#134527]">ساعات العمل</h4>
+                                        <div className="mt-2 space-y-1.5 text-[13.5px] leading-[1.8] text-[#4b5563]">
                                             <p className="flex items-center justify-between gap-2">
                                                 <span className="font-semibold text-[#134527]">الأحد – الخميس</span>
                                                 <span dir="ltr" className="font-bold text-[#1f7045]">9ص – 5م</span>
@@ -290,7 +290,7 @@ export default function Contact() {
                                             </p>
                                         </div>
                                         {settings?.address && (
-                                            <p className="mt-3 flex items-start gap-2 border-t border-[#e5e7eb] pt-3 text-[12px] leading-[1.7] text-[#4b5563]">
+                                            <p className="mt-3 flex items-start gap-2 border-t border-[#e5e7eb] pt-3 text-[13px] leading-[1.7] text-[#4b5563]">
                                                 <i className="fa-solid fa-location-dot mt-0.5 text-[#16a34a]" />
                                                 <span>{address}</span>
                                             </p>
@@ -312,12 +312,12 @@ export default function Contact() {
                                         </span>
                                         <h4 className="text-[17px] font-extrabold text-[#134527]">موقعنا</h4>
                                     </div>
-                                    <p className="mt-3 text-[13px] leading-[1.8] text-[#4b5563]">{address}</p>
+                                    <p className="mt-3 text-[14px] leading-[1.8] text-[#4b5563]">{address}</p>
                                     <a
                                         href={`https://maps.google.com/?q=${encodeURIComponent(address)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[14px] font-bold text-[#1f7045] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#16a34a] hover:text-white hover:shadow-[0_12px_28px_-8px_rgba(22,163,74,0.45)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]"
+                                        className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl border-2 border-[#16a34a] bg-white py-3 text-[15px] font-bold text-[#1f7045] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#16a34a] hover:text-white hover:shadow-[0_12px_28px_-8px_rgba(22,163,74,0.45)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a]"
                                     >
                                         <i aria-hidden="true" className="fa-solid fa-location-arrow text-[13px]" />
                                         افتح في خرائط جوجل
